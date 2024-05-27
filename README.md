@@ -16,37 +16,37 @@
 ForestDragon
 
 ## Scenario structure
-01_The_Book                                                                                                                                      
-02_Invasion                                                                                                                                      
-03_No_Hope                                                                                                                                      
-04_Daeola                                                                                                                                      
-04x_At_Kings_Service                                                                                                                                      
-05_Crossfire                                                                                                                                      
-06_Trapped_King                                                                                                                                      
-06x_Confrontation                                                                                                                                      
-06xx_New_Service                                                                                                                                      
-07_Way_of_Light                                                                                                                                     
-08_Hunt  
+- 01_The_Book                                                                                                                                      
+- 02_Invasion                                                                                                                                      
+- 03_No_Hope                                                                                                                                      
+- 04_Daeola                                                                                                                                      
+- 04x_At_Kings_Service                                                                                                                                      
+- 05_Crossfire                                                                                                                                      
+- 06_Trapped_King                                                                                                                                      
+- 06x_Confrontation                                                                                                                                      
+- 06xx_New_Service                                                                                                                                      
+- 07_Way_of_Light                                                                                                                                     
+- 08_Hunt  
 
 ### Haralin's branch 
-09h_Avenger 
-09hx_Funeral 
-10h_Massacre 
-10hx_Exposure 
-11h_Outskirts_of_South_Bay
-11hx_Exile
-12h_Temple_in_the_Deep
+- 09h_Avenger 
+- 09hx_Funeral 
+- 10h_Massacre 
+- 10hx_Exposure 
+- 11h_Outskirts_of_South_Bay
+- 11hx_Exile
+- 12h_Temple_in_the_Deep
 
 ### Daeola's branch
-09d_Sacrifice
-09dx_Funeral 
-09dxx_New_Dawn
-10d_Outskirts_of_Southbay
-10dx_Council_of_Kings 
-11d_Return_to_Scarhane 
-12d_Cave_Rats
-13d_Jevyans_Haven
-14d_The_Epilogue
+- 09d_Sacrifice
+- 09dx_Funeral 
+- 09dxx_New_Dawn
+- 10d_Outskirts_of_Southbay
+- 10dx_Council_of_Kings 
+- 11d_Return_to_Scarhane 
+- 12d_Cave_Rats
+- 13d_Jevyans_Haven
+- 14d_The_Epilogue
 
 
 ## MVP Target
