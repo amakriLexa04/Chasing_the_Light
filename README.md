@@ -12,7 +12,7 @@
 ## Developer
 [amakri](https://github.com/amakriLexa04)
 
-## Feedback and Playtesting
+## Playtester
 ForestDragon
 
 ## Scenario structure
