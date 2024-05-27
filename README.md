@@ -28,24 +28,24 @@ ForestDragon
 07_Way_of_Light                                                                                                                                     
 08_Hunt  
 
-### Haralin's branch                                                                                                                                  
-09h_Avenger                                                                                                                                      
-09hx_Funeral                                                                                                                                      
-10h_Massacre                                                                                                                                      
-10hx_Exposure                                                                                                                                      
-11h_Outskirts_of_South_Bay                                                                                                                                      
-11hx_Exile                                                                                                                                      
+### Haralin's branch 
+09h_Avenger 
+09hx_Funeral 
+10h_Massacre 
+10hx_Exposure 
+11h_Outskirts_of_South_Bay
+11hx_Exile
 12h_Temple_in_the_Deep
 
-### Daeola's branch    
-09d_Sacrifice                                                                                                                                        
-09dx_Funeral                                                                                                                                           
-09dxx_New_Dawn                                                                                                                                            
+### Daeola's branch
+09d_Sacrifice
+09dx_Funeral 
+09dxx_New_Dawn
 10d_Outskirts_of_Southbay
-10dx_Council_of_Kings                                                                                                                                                                                                                                                                                                           
-11d_Return_to_Scarhane    
-12d_Cave_Rats            
-13d_Jevyans_Haven  
+10dx_Council_of_Kings 
+11d_Return_to_Scarhane 
+12d_Cave_Rats
+13d_Jevyans_Haven
 14d_The_Epilogue
 
 
