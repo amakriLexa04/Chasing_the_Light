@@ -30,7 +30,7 @@ ForestDragon
 - 07_Way_of_Light                                                                                                                                     
 - 08_Hunt  
 
-### Haralin's branch 
+#### Haralin's branch 
 - 09h_Avenger 
 - 09hx_Funeral 
 - 10h_Massacre 
@@ -39,7 +39,7 @@ ForestDragon
 - 11hx_Exile
 - 12h_Temple_in_the_Deep
 
-### Daeola's branch
+#### Daeola's branch
 - 09d_Sacrifice
 - 09dx_Funeral 
 - 09dxx_New_Dawn
