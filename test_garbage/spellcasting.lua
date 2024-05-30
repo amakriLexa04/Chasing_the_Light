@@ -704,7 +704,7 @@ function display_skills_dialog(selecting)
 								end
 							
 							-- errors (extra spaces are to center the text)
-							elseif (wml.variables['spellcasted_this_turn_d']) then
+							elseif (wml.variables['spellcasted_this_turn']) then
 								dialog[buttonid].label = small and _"<span size='small'>1 spell/turn</span>" or _"<span> Can only cast\n1 spell per turn</span>"
 								dialog[buttonid].enabled = false
 							elseif (not (daeola.race=='human')) then
@@ -803,6 +803,22 @@ function display_skills_dialog(selecting)
 	
 	end
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

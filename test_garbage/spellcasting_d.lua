@@ -36,29 +36,6 @@ end
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 --###########################################################################################################################################################
 --                                                                  DEFINE SKILLS
 --###########################################################################################################################################################
@@ -102,39 +79,11 @@ local skills = {
 -- LOCKED INDICATOR
 --###############################
 local locked = {
-	id          = "skill_locked",
+	id          = "skill_locked_d",
 	label       = label("<span color='grey'>Locked</span>"),
 	image       = "icons/locked.png", 
 	description = "<span color='grey'>This option is not available yet.</span>",
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 --###########################################################################################################################################################
@@ -274,7 +223,7 @@ function display_skills_dialog(selecting)
 					-- also update variables
 					for j,skill in pairs(skills[i]) do
 						result_table[skill.id] = (j==button.selected_index) and "yes" or "no"
-						if (skill.id=="skill_locked") then result_table[skill.id]="no" end
+						if (skill.id=="skill_locked_d") then result_table[skill.id]="no" end
 					end
 				end
 				
@@ -305,7 +254,7 @@ function display_skills_dialog(selecting)
 								end
 							
 							-- errors (extra spaces are to center the text)
-							elseif (wml.variables['spellcasted_this_turn']) then
+							elseif (wml.variables['spellcasted_this_turn_d']) then
 								dialog[buttonid].label = small and _"<span size='small'>1 spell/turn</span>" or _"<span> Can only cast\n1 spell per turn</span>"
 								dialog[buttonid].enabled = false
 							elseif (not (daeola.race=='human')) then
@@ -331,7 +280,7 @@ function display_skills_dialog(selecting)
 									if (skill.xp_cost)  then daeola.experience  =daeola.experience  -skill.xp_cost  end
 									if (skill.atk_cost) then daeola.attacks_left=daeola.attacks_left-skill.atk_cost end
 									wml.variables['skill_id'] = skill.id
-									wml.variables['spellcasted_this_turn'] = skill.id
+									wml.variables['spellcasted_this_turn_d'] = skill.id
 									gui.widget.close(dialog)
 								end
 							end
@@ -375,30 +324,6 @@ function display_skills_dialog(selecting)
 		end)
 	end
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

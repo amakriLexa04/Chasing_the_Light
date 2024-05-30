@@ -36,14 +36,13 @@ end
 
 
 
+
 --###########################################################################################################################################################
---                                                                  DEFINE SKILLS
+--                                                                  DEFINE skill_d
 --###########################################################################################################################################################
 function label(text)     return "<span size='1000'> \n</span><span size='large'>"..text.."</span><span size='8000'>\n </span>"  end
-local skills = {
-	--###############################
-	-- GROUP 0 SKILLS
-	--###############################
+local skills_d = {
+
 	[0] = {
 		-------------------------
 		-- MAGIC MISSILE
@@ -54,31 +53,26 @@ local skills = {
 			image       = "attacks/magic-missile.png",
 			description = _"<span color='#ad6a61'><i><b>Attack:</b></i></span> Ranged 7x3 fire, <i>magical</i>.",
 		},
-		
 	},
-	--###############################
-	-- GROUP 1 SKILLS
-	--###############################
 	[1] = {
 		
 		-------------------------
 		-- LEVITATE
 		-------------------------
-		[2] = {
+		[1] = {
 			id          = "skill_levitate_d",
 			label       = label(_"Levitate"),
 			image       = "icons/levitate.png",
 			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> to gain <i>flight</i> and the <i>skirmisher</i> ability until the start of your next turn or until cancelled.",
-			xp_cost=8, --XP=8 is also used in S04
+			xp_cost=8,
 		},
-		
-	},		
-
+	},
+	
 }
 --###############################
 -- LOCKED INDICATOR
 --###############################
-local locked = {
+local locked_d = {
 	id          = "skill_locked_d",
 	label       = label("<span color='grey'>Locked</span>"),
 	image       = "icons/locked.png", 
@@ -86,13 +80,18 @@ local locked = {
 }
 
 
+
+
+
+
+
+
 --###########################################################################################################################################################
 --                                                                  SKILL DIALOG
 --###########################################################################################################################################################
 function display_skills_dialog(selecting)
-	local result_table = {} -- table used to return selected skills
+	local result_table = {} -- table used to return selected skills_d
 	local daeola   = ( wesnoth.units.find_on_map({ id="daeola"      }) )[1]
-	local apprentice = ( wesnoth.units.find_on_map({ type="daeola L1" }) )[1]
 	
 	--###############################
 	-- CREATE DIALOG
@@ -108,14 +107,12 @@ function display_skills_dialog(selecting)
 	-------------------------
 	local spacer = "                                                                  "
 	local                title_text = selecting and _"Select Daeola’s Spells"       or _"Cast Daeola’s Spells"
-	if (apprentice) then title_text = selecting and _"Select The Apprentice’s Spells" or _"Cast The Apprentice’s Spells" end
 	table.insert( grid[2], T.row{ T.column{ T.label{
 		definition="title",
 		horizontal_alignment="center",
 		label = spacer..title_text..spacer,
 	}}} )
-	local                help_text = _"<span size='2000'> \n</span><span size='small'><i>Daeola knows many useful spells, and will learn more as he levels-up automatically throughout the campaign. Daeola does not use XP to level-up.\nInstead, Daeola uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on Daeola to cast them</b>. You can only cast 1 spell per turn.</i></span>"
-	if (apprentice) then help_text = _"<span size='2000'> \n</span><span size='small'><i>The apprentice knows several useful spells, and will learn more as he levels-up automatically throughout the campaign. The apprentice does not use XP to level-up.\nInstead, he uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on the apprentice to cast them</b>. You can only cast 1 spell per turn.</i></span>" end
+	local                help_text = _"<span size='2000'> \n</span><span size='small'><i>Daeola knows many useful spells, and will learn more as he levels-up automatically throughout the campaign. daeola does not use XP to level-up.\nInstead, Daeola uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on Daeola to cast them</b>. You can only cast 1 spell per turn.</i></span>"
 	table.insert( grid[2], T.row{ T.column{T.label{ use_markup=true, label=help_text }}} )
 	table.insert( grid[2], T.row{ T.column{T.label{label="  "}}} )
 	
@@ -125,24 +122,24 @@ function display_skills_dialog(selecting)
 	-- each button/image/label id ends with the index of the skill group it corresponds to
 	-- put all these in 1 big grid, so they can have their own table-layout
 	local skill_grid = T.grid{}
-	for i=0,#skills,1 do if (i>daeola.level) then skills[i]=nil end end -- don't show skill groups if underleveled
-	for i=0,#skills,1 do
-		-- lock skills
-		for j=1,#skills[i],1 do
-			if (not wml.variables[ "unlock_"..string.sub(skills[i][j].id,7,-1) ]) then skills[i][j]=locked end
+	for i=0,#skills_d,1 do if (i>daeola.level) then skills_d[i]=nil end end -- don't show skill groups if underleveled
+	for i=0,#skills_d,1 do
+		-- lock skills_d
+		for j=1,#skills_d[i],1 do
+			if (not wml.variables[ "unlock_"..string.sub(skills_d[i][j].id,7,-1) ]) then skills_d[i][j]=locked end
 		end
 		
 		local button
 		local subskill_row
 		if (selecting) then
-			-- menu button for selecting skills
+			-- menu button for selecting skills_d
 			button = T.menu_button{  id="button"..i, use_markup=true  }
-			for j=1,#skills[i],1 do
-				table.insert( button[2], T.option{label=skills[i][j].label} )
+			for j=1,#skills_d[i],1 do
+				table.insert( button[2], T.option{label=skills_d[i][j].label} )
 			end
-		else -- button for casting spells, or label for displaying skills
-			for j=1,#skills[i],1 do
-				local skill = skills[i][j]
+		else -- button for casting spells, or label for displaying skills_d
+			for j=1,#skills_d[i],1 do
+				local skill = skills_d[i][j]
 				if (wml.variables[skill.id]) then
 					if (not skill.xp_cost) then button=T.label{  id="button"..i, use_markup=true, label=skill.label }
 					else                        button=T.button{ id="button"..i, use_markup=true, label=skill.label } end
@@ -204,26 +201,26 @@ function display_skills_dialog(selecting)
 	-------------------------
 	local function preshow(dialog)
 		-- for the button corresponding to each skill group
-		for i,group in pairs(skills) do
+		for i,group in pairs(skills_d) do
 			button = dialog["button"..i]
 			
-			-- menu callbacks for selecting skills
+			-- menu callbacks for selecting skills_d
 			if (selecting) then
 				-- default to whatever skill we had selected last time
-				for j,skill in pairs(skills[i]) do
+				for j,skill in pairs(skills_d[i]) do
 					if (wml.variables[skill.id]) then button.selected_index=j end
 				end
 				
 				-- whenever we refresh the menu, update the image and label
 				refresh = function(button)
-					if (not skills[i][1]) then return end
-					dialog["image"..i].label = skills[i][button.selected_index].image
-					dialog["label"..i].label = skills[i][button.selected_index].description
+					if (not skills_d[i][1]) then return end
+					dialog["image"..i].label = skills_d[i][button.selected_index].image
+					dialog["label"..i].label = skills_d[i][button.selected_index].description
 					
 					-- also update variables
-					for j,skill in pairs(skills[i]) do
+					for j,skill in pairs(skills_d[i]) do
 						result_table[skill.id] = (j==button.selected_index) and "yes" or "no"
-						if (skill.id=="skill_locked_d") then result_table[skill.id]="no" end
+						if (skill.id=="skill_locked") then result_table[skill.id]="no" end
 					end
 				end
 				
@@ -231,9 +228,9 @@ function display_skills_dialog(selecting)
 				refresh(button)
 				button.on_modified = refresh
 			
-			-- fixed labels for casting/displaying skills/spells
+			-- fixed labels for casting/displaying skills_d/spells
 			else dialog["button"..i].visible = false
-				for j,skill in pairs(skills[i]) do
+				for j,skill in pairs(skills_d[i]) do
 					if (not wml.variables[skill.id]) then goto continue end
 					
 					-- if we know this skill, reveal and initialize the UI
@@ -328,6 +325,30 @@ end
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 --###########################################################################################################################################################
 --                                                                      "MAIN"
 --###########################################################################################################################################################
@@ -341,23 +362,23 @@ end
 -------------------------
 -- DETECT DOUBLECLICKS
 -------------------------
-local last_click = os.clock()
+local last_click_d = os.clock()
 wesnoth.game_events.on_mouse_action = function(x,y)
 	local selected_unit = wesnoth.units.find_on_map{ x=x, y=y }
 	if (not selected_unit[1] or selected_unit[1].id~='daeola') then return end
 	if (wml.variables['is_during_attack']) then return end
 	if (wml.variables['not_player_turn'] ) then return end
 	
-	if (os.clock()-last_click<0.25) then
+	if (os.clock()-last_click_d<0.25) then
 		wesnoth.audio.play("miss-2.ogg")
 		if (wml.variables['no_spellcasting_event_d']) then
 			wesnoth.game_events.fire(wml.variables['no_spellcasting_event_d'], x, y)
 		else
 			display_skills_dialog()
 		end
-		last_click = 0 -- prevent accidentally immediately re-opening the dialog
+		last_click_d = 0 -- prevent accidentally immediately re-opening the dialog
 	else
-		last_click = os.clock()
+		last_click_d = os.clock()
 	end
 end
 
@@ -370,5 +391,3 @@ function wml_actions.listen_for_mousemove(cfg)
 		 wesnoth.game_events.on_mouse_move = nil --only trigger once
 	end
 end
-
-
