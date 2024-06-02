@@ -349,6 +349,16 @@ local skills_d = {
 			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> to gain <i>flight</i> and the <i>skirmisher</i> ability until the start of your next turn or until cancelled.",
 			xp_cost=8,
 		},
+		-------------------------
+		-- SWAP
+		-------------------------
+		[2] = {
+			id          = "skill_swap_d",
+			label       = label(_"Swap"),
+			image       = "icons/levitate.png",
+			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> to TEST.",
+			xp_cost=0,
+		},
 	},
 	
 }
@@ -539,6 +549,7 @@ function display_skills_dialog(selecting)
 		label=(selecting and _"Confirm Spells <small><i>(can be changed every scenario)</i></small>" or "Cancel"),
 	}}})
 	
+
 	
 	
 	
@@ -762,7 +773,22 @@ function display_skills_dialog(selecting)
 	-- SHOW DIALOG
 	-------------------------
 	wml.variables['skill_id'] = nil
-	wesnoth.interface.select_unit() -- deselect haralin/daeola
+	
+	 
+	if (selected_unit_id == 'daeola') then
+
+
+	wesnoth.interface.game_display.selected_unit = nil
+	 
+	wesnoth.interface.delay(300)
+	
+	
+	
+    wesnoth.select_unit()
+	wesnoth.deselect_hex()
+    wesnoth.fire("redraw") -- deselect haralin/daeola
+	
+	end
 	
 	if (selected_unit_id == 'haralin') then
 	
@@ -802,6 +828,10 @@ function display_skills_dialog(selecting)
 	end
 	
 	end
+
+
+
+
 end
 
 
@@ -822,10 +852,12 @@ end
 -- DEFINE WML TAGS
 -------------------------
 function wml_actions.select_haralin_skills(cfg)
+    selected_unit_id = 'haralin'
 	display_skills_dialog(true)
 end
 
 function wml_actions.select_daeola_skills(cfg)
+    selected_unit_id = 'daeola'
 	display_skills_dialog(true)
 end
 
@@ -872,5 +904,4 @@ function wml_actions.listen_for_mousemove(cfg)
 		 wesnoth.game_events.on_mouse_move = nil --only trigger once
 	end
 end
-
 
