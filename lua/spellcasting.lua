@@ -355,9 +355,22 @@ local skills_d = {
 		[2] = {
 			id          = "skill_swap_d",
 			label       = label(_"Swap"),
-			image       = "icons/levitate.png",
+			image       = "icons/swap.png",
 			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> to TEST.",
-			xp_cost=0,
+			xp_cost=8,
+		},
+	},
+	[2] = {
+		
+		-------------------------
+		-- DISTANT HEAL
+		-------------------------
+		[1] = {
+			id          = "skill_disheal_d",
+			label       = label(_"Distant Heal"),
+			image       = "icons/disheal.png",
+			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> to TEST.",
+			xp_cost=8,
 		},
 	},
 	
@@ -479,7 +492,7 @@ function display_skills_dialog(selecting)
 	elseif(selected_unit_id == 'daeola') then
 	
 	local skill_grid = T.grid{}
-	for i=0,#skills_d,1 do if (i>daeola.level) then skills_d[i]=nil end end -- don't show skill groups if underleveled
+	for i=0,#skills_d,1 do if (i>daeola.level + 1) then skills_d[i]=nil end end -- don't show skill groups if underleveled
 	for i=0,#skills_d,1 do
 		-- lock skills_d
 		for j=1,#skills_d[i],1 do
@@ -789,6 +802,14 @@ function display_skills_dialog(selecting)
     wesnoth.fire("redraw") -- deselect haralin/daeola
 	
 	end
+	
+	if (selected_unit_id == 'haralin') then
+	
+    wesnoth.select_unit() -- deselect haralin/daeola
+	
+	end
+	
+
 	
 	if (selected_unit_id == 'haralin') then
 	
