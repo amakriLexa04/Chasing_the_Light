@@ -338,25 +338,24 @@ local skills_d = {
 		},
 	},
 	[1] = {
-		
-		-------------------------
-		-- LEVITATE
-		-------------------------
-		[1] = {
-			id          = "skill_levitate_d",
-			label       = label(_"Levitate"),
-			image       = "icons/levitate.png",
-			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> to gain <i>flight</i> and the <i>skirmisher</i> ability until the start of your next turn or until cancelled.",
-			xp_cost=8,
-		},
 		-------------------------
 		-- SWAP
 		-------------------------
-		[2] = {
+		[1] = {
 			id          = "skill_swap_d",
 			label       = label(_"Swap"),
 			image       = "icons/swap.png",
 			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> to TEST.",
+			xp_cost=8,
+		},
+		-------------------------
+		-- LEVITATE
+		-------------------------
+		[2] = {
+			id          = "skill_levitate_d",
+			label       = label(_"Levitate"),
+			image       = "icons/levitate.png",
+			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> to gain <i>flight</i> and the <i>skirmisher</i> ability until the start of your next turn or until cancelled.",
 			xp_cost=8,
 		},
 	},
