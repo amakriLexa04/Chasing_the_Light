@@ -53,4 +53,4 @@ ForestDragon
 
 ## MVP Target
 `Note: this is the target that has to be met for a release on the add-on server.`
-3,5/11 scenarios completed.
+3,5/27 scenarios completed.
