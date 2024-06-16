@@ -491,7 +491,7 @@ function display_skills_dialog(selecting)
 	elseif(selected_unit_id == 'daeola') then
 	
 	local skill_grid = T.grid{}
-	for i=0,#skills_d,1 do if (i>daeola.level + 1) then skills_d[i]=nil end end -- don't show skill groups if underleveled
+	for i=0,#skills_d,1 do if (i>daeola.level + 2) then skills_d[i]=nil end end -- don't show skill groups if underleveled
 	for i=0,#skills_d,1 do
 		-- lock skills_d
 		for j=1,#skills_d[i],1 do
