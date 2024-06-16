@@ -23,29 +23,30 @@ ForestDragon
 - 03_No_Hope                                                                                                                                      
 - 04_Daeola                                                                                                                                      
 - 04x_At_Kings_Service                                                                                                                                      
-- 05_Crossfire                                                                                                                                      
-- 06_Trapped_King                                                                                                                                      
-- 06x_Confrontation                                                                                                                                      
-- 06xx_New_Service                                                                                                                                      
-- 07_Way_of_Light                                                                                                                                     
-- 08_Hunt  
+- 05_Crossfire
+- 06_Unnamed_cave_scenario                                                                                                                                      
+- 07_Trapped_King                                                                                                                                      
+- 07x_Confrontation                                                                                                                                      
+- 07xx_New_Service                                                                                                                                      
+- 08_Way_of_Light                                                                                                                                     
+- 09_Hunt  
 
 #### Haralin's branch 
-- 09h_Avenger 
-- 09hx_Funeral 
-- 10h_Massacre 
-- 10hx_Exposure 
-- 11h_Outskirts_of_South_Bay
-- 11hx_Exile
-- 12h_Temple_in_the_Deep
+- 10h_Avenger 
+- 10hx_Funeral 
+- 11h_Massacre 
+- 11hx_Exposure 
+- 12h_Outskirts_of_South_Bay
+- 12hx_Exile
+- 13h_Temple_in_the_Deep
 
 #### Daeola's branch
-- 09d_Sacrifice
-- 09dx_Funeral 
-- 09dxx_New_Dawn
-- 10d_Outskirts_of_Southbay
-- 10dx_Council_of_Kings 
-- 11d_Return_to_Scarhane 
-- 12d_Cave_Rats
-- 13d_Jevyans_Haven
-- 14d_The_Epilogue
+- 10d_Sacrifice
+- 10dx_Funeral 
+- 10dxx_New_Dawn
+- 11d_Outskirts_of_Southbay
+- 11dx_Council_of_Kings 
+- 12d_Return_to_Scarhane 
+- 13d_Cave_Rats
+- 14d_Jevyans_Haven
+- 15d_The_Epilogue
