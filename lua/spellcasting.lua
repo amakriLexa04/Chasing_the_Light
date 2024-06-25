@@ -336,6 +336,16 @@ local skills_d = {
 			image       = "attacks/magic-missile.png",
 			description = _"<span color='#ad6a61'><i><b>Attack:</b></i></span> Ranged 7x3 fire, <i>magical</i>.",
 		},
+		-------------------------
+		-- DISTANT ATTACK
+		-------------------------
+		[2] = {
+			id          = "skill_disattack_d",
+			label       = label(_"Lightbeam"),
+			image       = "attacks/lightbeam.png",
+			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>10xp</i></span> to TEST 9x3 arcane radius 7.",
+			xp_cost=10,
+		},
 	},
 	[1] = {
 		-------------------------
@@ -345,7 +355,7 @@ local skills_d = {
 			id          = "skill_swap_d",
 			label       = label(_"Swap"),
 			image       = "icons/swap.png",
-			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> to TEST.",
+			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> to TEST radius 4.",
 			xp_cost=8,
 		},
 		-------------------------
@@ -368,7 +378,7 @@ local skills_d = {
 			id          = "skill_disheal_d",
 			label       = label(_"Distant Heal"),
 			image       = "icons/disheal.png",
-			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> to TEST.",
+			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> to TEST +8 heal radius 8.",
 			xp_cost=8,
 		},
 	},
