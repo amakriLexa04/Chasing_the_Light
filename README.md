@@ -24,7 +24,7 @@ ForestDragon
 - 04_Daeola                                                                                                                                      
 - 04x_Southbay                                                                                                                                      
 - 05_Aftermath
-- 06_Unnamed_cave_scenario                                                                                                                                      
+- 06_Miscreants                                                                                                                                    
 - 07_Trapped_King                                                                                                                                      
 - 07x_Confrontation                                                                                                                                      
 - 07xx_New_Service                                                                                                                                      
