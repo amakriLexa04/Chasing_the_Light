@@ -62,13 +62,19 @@ local skills = {
 			description = _"<span color='#ad6a61'><i><b>Attack:</b></i></span> Ranged 9x2 impact, <i>magical</i>.",
 		},
 		-------------------------
-		-- MAGIC MISSILE
+		-- SUMMON
 		-------------------------
 		[2] = {
-			id          = "skill_magic_missile",
-			label       = label(_"Magic Missile"),
-			image       = "attacks/magic-missile.png",
-			description = _"<span color='#ad6a61'><i><b>Attack:</b></i></span> Ranged 7x3 fire, <i>magical</i>.",
+			id          = "skill_summon",
+			label       = label(_"Summon"),
+			image       = "icons/animate-mud.png",
+			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Закличте духа природи до себе на допомогу, навіть знаходячись за межами цитаделі.\n            Для цього закляття використовується <span color='#FFD700'><i >золото</i></span>.",
+			subskills   = {
+				[1]={ id="skill_summon_mud",     gold_cost=8,  label="  <span>Mud (<span color='#FFD700'><i >8g</i></span>)</span>   " },
+				[2]={ id="skill_summon_stone",   gold_cost=10,  label="   <span>Stone (<span  color='#FFD700'><i >10g</i></span>)</span>   " },
+				[3]={ id="skill_summon_water",   gold_cost=10, label="   <span>Water (<span  color='#FFD700'><i>10g</i></span>)</span>   " },
+				[4]={ id="skill_summon_air",     gold_cost=10, label="   <span>Air (<span   color='#FFD700'><i>10g</i></span>)</span>   " },
+                [5]={ id="skill_summon_fire",    gold_cost=12, label="   <span>Fire (<span   color='#FFD700'><i>12g</i></span>)</span>   " }, },
 		},
 		-------------------------
 		-- SHIELD
@@ -80,10 +86,10 @@ local skills = {
 			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> to gain <i>+20% dodge chance</i> until the start of your next turn or until cancelled.",
 			xp_cost=8, --XP is also used in S04
 		},
--- 		------------------------- removed; too powerful
+-- 		------------------------- 
 -- 		-- STASIS
 -- 		-------------------------
--- 		[3] = {
+-- 		[4] = {
 -- 			id          = "skill_stasis",
 -- 			label       = label("Stasis"),
 -- 			image       = "icons/stasis.png",
@@ -93,21 +99,12 @@ local skills = {
 		-------------------------
 		-- PANACEA
 		-------------------------
-		[3] = {
+		[4] = {
 			id          = "skill_panacea",
 			label       = label(_"Panacea"),
 			image       = "icons/potion_green_small.png",
 			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> to fully heal the lowest-health adjacent ally, and increase\n           its attacks, strikes, and damage by its level. <span color='#bb0000'><b>Next turn, it dies.</b></span>",
-			xp_cost=8, --XP is also used in spellcasting.cfg
-		},
-		-------------------------
-		-- ANIMATE MUD
-		-------------------------
-		[4] = {
-			id          = "skill_animate_mud",
-			label       = label(_"Animate Mud"),
-			image       = "icons/animate-mud.png",
-			description = _"<span color='#a9a150'><i><b>Passive:</b></i></span> Learn to recruit <i>Mudcrawlers</i>. Mudcrawlers gain +100% damage and XP\n               while adjacent to you, but dissolve at the end of each scenario.",
+			xp_cost=8,
 		},
 	},
 	--###############################
@@ -299,7 +296,7 @@ local skills = {
 			label       = label(_"Time Dilation"),
 			image       = "icons/time-dilation.png",
 			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>48xp</i></span> to grant yourself and all allies double movement and a second attack this turn.\n           When this turn ends, affected units become slowed.",
-			xp_cost=48, --XP=48 is also used in S04
+			xp_cost=48,
 		},
 		-------------------------
 		-- CATACLYSM
@@ -461,7 +458,11 @@ function display_skills_dialog(selecting)
 						subskill_row = T.row{}
 						for k=1,#skill.subskills,1 do
 							local subskill = skill.subskills[k]
+							if (not wml.variables[ "unlock_"..string.sub(skill.subskills[k].id,7,-1) ]) then
+							table.insert( subskill_row[2], T.column{T.button{id=subskill.id,use_markup=true,enabled=false,label=_"<span>Locked</span>"}} );
+							else
 							table.insert( subskill_row[2], T.column{T.button{id=subskill.id,use_markup=true,label=subskill.label}} );
+							end
 						end
 					end
 				end
@@ -637,6 +638,8 @@ function display_skills_dialog(selecting)
 								end
 							
 							-- errors (extra spaces are to center the text)
+							elseif (not wml.variables[ "unlock_"..string.sub(skill.id,7,-1) ]) then
+								dialog[buttonid].enabled = false
 							elseif (wml.variables['spellcasted_this_turn']) then
 								dialog[buttonid].label = small and _"<span size='small'>1 spell/turn</span>" or _"<span> Can only cast\n1 spell per turn</span>"
 								dialog[buttonid].enabled = false
@@ -649,9 +652,11 @@ function display_skills_dialog(selecting)
 							elseif (wml.variables['counterspell_active']) then -- haralin counterspell
 								dialog[buttonid].label = small and _"<span size='small'>Counterspelled</span>" or _"<span>  Blocked by\n Counterspell</span>"
 								dialog[buttonid].enabled = false
-							
 							elseif (skill.xp_cost and skill.xp_cost>haralin.experience) then
 								dialog[buttonid].label = small and _"<span size='small'>No XP</span>" or label('Insufficient XP')
+								dialog[buttonid].enabled = false
+					     	elseif (skill.gold_cost and skill.gold_cost>wesnoth.sides[1].gold) then
+								dialog[buttonid].label = small and _"<span size='small'>No Gold</span>" or label('Insufficient Gold')
 								dialog[buttonid].enabled = false
 							elseif (skill.atk_cost and skill.atk_cost>haralin.attacks_left) then
 								dialog[buttonid].label = small and _"<span size='small'>No Attack</span>" or label('No Attack')
@@ -661,6 +666,7 @@ function display_skills_dialog(selecting)
 							else
 								dialog[buttonid].on_button_click = function()
 									if (skill.xp_cost)  then haralin.experience  =haralin.experience  -skill.xp_cost  end
+									if (skill.gold_cost)  then wesnoth.sides[1].gold =wesnoth.sides[1].gold  -skill.gold_cost  end
 									if (skill.atk_cost) then haralin.attacks_left=haralin.attacks_left-skill.atk_cost end
 									wml.variables['skill_id'] = skill.id
 									wml.variables['spellcasted_this_turn'] = skill.id
@@ -737,6 +743,8 @@ function display_skills_dialog(selecting)
 								end
 							
 							-- errors (extra spaces are to center the text)
+							elseif (not wml.variables[ "unlock_"..string.sub(skill.id,7,-1) ]) then
+								dialog[buttonid].enabled = false
 							elseif (wml.variables['spellcasted_this_turn_d']) then
 								dialog[buttonid].label = small and _"<span size='small'>1 spell/turn</span>" or _"<span> Can only cast\n1 spell per turn</span>"
 								dialog[buttonid].enabled = false
@@ -749,7 +757,9 @@ function display_skills_dialog(selecting)
 							elseif (wml.variables['counterspell_active']) then -- daeola counterspell
 								dialog[buttonid].label = small and _"<span size='small'>Counterspelled</span>" or _"<span>  Blocked by\n Counterspell</span>"
 								dialog[buttonid].enabled = false
-							
+							elseif (skill.gold_cost and skill.gold_cost>wesnoth.sides[1].gold) then
+								dialog[buttonid].label = small and _"<span size='small'>No Gold</span>" or label('Insufficient Gold')
+								dialog[buttonid].enabled = false
 							elseif (skill.xp_cost and skill.xp_cost>daeola.experience) then
 								dialog[buttonid].label = small and _"<span size='small'>No XP</span>" or label('Insufficient XP')
 								dialog[buttonid].enabled = false
@@ -761,6 +771,7 @@ function display_skills_dialog(selecting)
 							else
 								dialog[buttonid].on_button_click = function()
 									if (skill.xp_cost)  then daeola.experience  =daeola.experience  -skill.xp_cost  end
+									if (skill.gold_cost)  then wesnoth.sides[1].gold =wesnoth.sides[1].gold  -skill.gold_cost  end
 									if (skill.atk_cost) then daeola.attacks_left=daeola.attacks_left-skill.atk_cost end
 									wml.variables['skill_id'] = skill.id
 									wml.variables['spellcasted_this_turn_d'] = skill.id
