@@ -36,7 +36,7 @@ ForestDragon
 - 10hx_Funeral 
 - 11h_Massacre 
 - 11hx_Exposure(назва/зміст може змінитися) 
-- 12h_Southbay_Revisited
+- 12h_Southbay_Outskirts(назва може змінитися)
 - 13h_Caror(назва може змінитися)
 - 14h_Unnamed_Scenario(назва може змінитися)
 - 14hx_Exile(назва може змінитися)
@@ -46,9 +46,9 @@ ForestDragon
 - 10d_Sacrifice
 - 10dx_Funeral 
 - 10dxx_New_Dawn
-- 11d_Outskirts_of_Southbay
-- 11dx_Council_of_Kings 
-- 12d_Return_to_Scarhane 
+- 11d_Southbay_Outskirts(назва може змінитися)
+- 11dx_Council_of_Kings(назва може змінитися) 
+- 12d_Scarhane_Revisited
 - 13d_Cave_Rats
 - 14d_Jevyans_Haven
-- 15d_The_Epilogue
+- 15d_Epilogue?
