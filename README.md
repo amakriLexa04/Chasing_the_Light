@@ -7,8 +7,8 @@
 
 **Ukrainian:** Це історія про найпершого мага людей Зеленого Острову, про якого зараз вже й не згадують в Весноті, навіть чаклунам з Алдуїну більше невідомо його славетне ім'я. Але чому того, хто заклав основи людської магії, боровся проти Владик-лічей та навіть скам'янив самого Владику Карора, було навіки забуто? Що ж, всі відповіді на ці питання ви дізнаєтеся тут, почуєте розповідь його перемоги та невдачі, радості та нещастя, становлення та падіння.
 
-(Важкий рівень, 13-15 сценаріїв)
-- **Scenario Count**: 5,7/28 (Tentative)
+(Важкий рівень, 15 сценаріїв)
+- **Scenario Count**: 6/28 (Tentative)
 - **Difficulty Level**: Hard
 
 ## Developer
@@ -25,9 +25,9 @@ ForestDragon
 - 04x_Southbay                                                                                                                                      
 - 05_Aftermath
 - 06_Miscreants                                                                                                                                    
-- 07_Trapped_King                                                                                                                                      
-- 07x_Confrontation                                                                                                                                      
-- 07xx_New_Service                                                                                                                                      
+- 07_Scarhane                                                                                                                                      
+- 07x_Confrontation(назва може змінитися)                                                                                                                                      
+- 07xx_New_Service(назва може змінитися)                                                                                                                                      
 - 08_Way_of_Light                                                                                                                                     
 - 09_Hunt  
 
@@ -35,10 +35,12 @@ ForestDragon
 - 10h_Avenger 
 - 10hx_Funeral 
 - 11h_Massacre 
-- 11hx_Exposure 
-- 12h_Outskirts_of_South_Bay
-- 12hx_Exile
-- 13h_Temple_in_the_Deep
+- 11hx_Exposure(назва/зміст може змінитися) 
+- 12h_Southbay_Revisited
+- 13h_Caror(назва може змінитися)
+- 14h_Unnamed_Scenario(назва може змінитися)
+- 14hx_Exile(назва може змінитися)
+- 15h_Temple_in_the_Deep
 
 #### Daeola's branch
 - 10d_Sacrifice
