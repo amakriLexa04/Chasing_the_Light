@@ -3,7 +3,7 @@
 ## Campaign Description
 **English:** This is the story of the very first Mage of the good people of the Green Isle, who is no longer remembered in Wesnoth, even the wise wizards of Alduin no longer know his glorious name. But why has the person, who laid the foundations of human magic, fought against the Lich-Lords and even petrified Lich-Lord Caror himself, been forgotten forever? Well, you will find all the answers to these questions here, and hear the story of his victories and failures, joys and sorrows, rise and fall.
 
-(Hard level, 13-15 scenarios)
+(Hard level, 15 scenarios)
 
 **Ukrainian:** Це історія про найпершого мага людей Зеленого Острову, про якого зараз вже й не згадують в Весноті, навіть чаклунам з Алдуїну більше невідомо його славетне ім'я. Але чому того, хто заклав основи людської магії, боровся проти Владик-лічей та навіть скам'янив самого Владику Карора, було навіки забуто? Що ж, всі відповіді на ці питання ви дізнаєтеся тут, почуєте розповідь його перемоги та невдачі, радості та нещастя, становлення та падіння.
 
