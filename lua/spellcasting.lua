@@ -67,7 +67,7 @@ local skills = {
 		[2] = {
 			id          = "skill_summon",
 			label       = label(_"Summon"),
-			image       = "icons/animate-mud.png",
+			image       = "icons/summon.png",
 			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Закличте духа природи до себе на допомогу, навіть знаходячись за межами цитаделі.\n            Для цього закляття використовується <span color='#FFD700'><i >золото</i></span>.",
 			subskills   = {
 				[1]={ id="skill_summon_mud",     gold_cost=8,  label="  <span>Mud (<span color='#FFD700'><i >8g</i></span>)</span>   " },
@@ -131,22 +131,22 @@ local skills = {
 			xp_cost=8, --XP=8 is also used in S04
 		},
 		-------------------------
-		-- FIND FAMILIAR
-		-------------------------
-		[3] = {
-			id          = "skill_find_familiar",
-			label       = label(_"Find Familiar"),
-			image       = "icons/find-familiar.png",
-			description = _"<span color='#a9a150'><i><b>Passive:</b></i></span> Begin each scenario with your trusty pet raven.\n               Your familiar’s level and xp persist across scenarios, but reset if it dies.",
-		},
-		-------------------------
 		-- MNEMONIC
 		-------------------------
-		[4] = {
+		[3] = {
 			id          = "skill_mnemonic",
 			label       = label(_"Mnemonic"),
 			image       = "icons/mnemonic.png",
 			description = _"<span color='#a9a150'><i><b>Passive:</b></i></span> Whenever an adjacent ally gains xp, you gain the same amount of xp.",
+		},
+		-------------------------
+		-- FIND FAMILIAR
+		-------------------------
+		[4] = {
+			id          = "skill_find_familiar",
+			label       = label(_"Find Familiar"),
+			image       = "icons/find-familiar.png",
+			description = _"<span color='#a9a150'><i><b>Passive:</b></i></span> Begin each scenario with your trusty pet raven.\n               Your familiar’s level and xp persist across scenarios, but reset if it dies.",
 		},
 	},
 	--###############################
