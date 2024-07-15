@@ -84,22 +84,22 @@ local skills = {
 			label       = label(_"Shield"),
 			image       = "icons/shield.png",
 			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> to gain <i>+20% dodge chance</i> until the start of your next turn or until cancelled.",
-			xp_cost=8, --XP is also used in S04
+			xp_cost=8,
 		},
--- 		------------------------- 
--- 		-- STASIS
--- 		-------------------------
--- 		[4] = {
--- 			id          = "skill_stasis",
--- 			label       = label("Stasis"),
--- 			image       = "icons/stasis.png",
--- 			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> and <span color='#c06a61'><i>your attack</i></span> to <i>petrify</i> yourself and adjacent units until the start of your next turn.",
--- 			xp_cost=8, 
--- 		},
+ 		------------------------- 
+ 		-- STASIS
+ 		-------------------------
+ 		[4] = {
+ 			id          = "skill_stasis",
+ 			label       = label("Stasis"),
+ 			image       = "icons/stasis.png",
+ 			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> and <span color='#c06a61'><i>your attack</i></span> to <i>petrify</i> yourself and adjacent units until the start of your next turn.",
+ 			xp_cost=12, 
+ 		},
 		-------------------------
 		-- PANACEA
 		-------------------------
-		[4] = {
+		[5] = {
 			id          = "skill_panacea",
 			label       = label(_"Panacea"),
 			image       = "icons/potion_green_small.png",
@@ -128,7 +128,7 @@ local skills = {
 			label       = label(_"Levitate"),
 			image       = "icons/levitate.png",
 			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> to gain <i>flight</i> and the <i>skirmisher</i> ability until the start of your next turn or until cancelled.",
-			xp_cost=8, --XP=8 is also used in S04
+			xp_cost=8,
 		},
 		-------------------------
 		-- MNEMONIC
@@ -158,14 +158,23 @@ local skills = {
 		-------------------------
 		[1] = {
 			id          = "skill_fireball2",
-			label       = label(_"Fireball"),
+			label       = label(_"Lesser Fireball"),
 			image       = "attacks/fireball.png",
 			description = _"<span color='#ad6a61'><i><b>Attack:</b></i></span> Ranged 8x4 fire, <i>magical</i>.",
 		},
 		-------------------------
-		-- ENERVATE
+		-- GLAMOUR
 		-------------------------
 		[2] = {
+			id          = "skill_glamour",
+			label       = label(_"Glamour"),
+			image       = "icons/glamour.png", 
+			description = _"<span color='#a9a150'><i><b>Passive:</b></i></span> Gain the <i>leadership</i> ability.",
+		},
+		-------------------------
+		-- ENERVATE
+		-------------------------
+		[3] = {
 			id          = "skill_enervate",
 			label       = label(_"Siphon"),
 			image       = "icons/enervate.png", -- better than fireball2 vs orcs or undead, but sarians resist arcane and are vulnerable to fire. You also get this a few scenarios later than fireball2.
@@ -174,7 +183,7 @@ local skills = {
 		-------------------------
 		-- BLIZZARD
 		-------------------------
-		[3] = {
+		[4] = {
 			id          = "skill_blizzard",
 			label       = label(_"Blizzard"),
 			image       = "icons/blizzard.png",
@@ -184,17 +193,17 @@ local skills = {
 		-------------------------
 		-- COUNTERSPELL
 		-------------------------
-		[4] = {
+		[5] = {
 			id          = "skill_counterspell",
 			label       = label(_"Counterspell"),
 			image       = "icons/counterspell.png",
 			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>16xp</i></span> to <i>disallow magical attacks</i> in a 3-hex radius, until cancelled.\n           Prevents spellcasting, but not passive skills.",
-			xp_cost=16, --XP=16 is also used in S04
+			xp_cost=16,
 		},
 		-------------------------
 		-- POLYMORPH
 		-------------------------
-		[5] = {
+		[6] = {
 			id          = "skill_polymorph",
 			label       = label(_"Polymorph"),
 			image       = "icons/polymorph.png",
@@ -204,15 +213,6 @@ local skills = {
 				[2]={ id="skill_polymorph_bear",   xp_cost=8,  label="   <span>Bear (<span  color='#00bbe6'><i >8xp</i></span>)</span>   " },
 				[3]={ id="skill_polymorph_crab",   xp_cost=16, label="   <span>Crab (<span  color='#00bbe6'><i>16xp</i></span>)</span>   " },
 				[4]={ id="skill_polymorph_roc",    xp_cost=32, label="   <span>Roc (<span   color='#00bbe6'><i>32xp</i></span>)</span>   " }, },
-		},
-		-------------------------
-		-- GLAMOUR
-		-------------------------
-		[6] = {
-			id          = "skill_glamour",
-			label       = label(_"Glamour"),
-			image       = "icons/glamour.png", 
-			description = _"<span color='#a9a150'><i><b>Passive:</b></i></span> Gain the <i>leadership</i> ability.",
 		},
 	},
 	--###############################
