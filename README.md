@@ -27,7 +27,7 @@ ForestDragon
 - 06_Miscreants                                                                                                                                    
 - 07_Scarhane                                                                                                                                      
 - 07x_Confrontation(назва може змінитися)                                                                                                                                      
-- 07xx_New_Service(назва може змінитися)                                                                                                                                      
+- 07xx_Separation(назву буде змінено)                                                                                                                                      
 - 08_Way_of_Light                                                                                                                                     
 - 09_Hunt  
 
@@ -38,7 +38,7 @@ ForestDragon
 - 11hx_Exposure(назва/зміст може змінитися) 
 - 12h_Southbay_Outskirts(назва може змінитися)
 - 13h_Caror(назва може змінитися)
-- 14h_Unnamed_Scenario(назва може змінитися)
+- 14h_Unnamed_Scenario(назву буде змінено)
 - 14hx_Exile(назва може змінитися)
 - 15h_Temple_in_the_Deep
 
@@ -47,7 +47,7 @@ ForestDragon
 - 10dx_Funeral 
 - 10dxx_New_Dawn
 - 11d_Southbay_Outskirts(назва може змінитися)
-- 11dx_Council_of_Kings(назва може змінитися) 
+- 11dx_Council_of_Kings(назву буде змінено) 
 - 12d_Scarhane_Revisited
 - 13d_Cave_Rats
 - 14d_Jevyans_Haven
