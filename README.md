@@ -26,29 +26,29 @@ ForestDragon
 - 05_Aftermath✔
 - 06_Miscreants                                                                                                                                    
 - 07_Scarhane                                                                                                                                      
-- 07x_Confrontation(назва може змінитися)                                                                                                                                      
-- 07xx_Separation(назву буде змінено)                                                                                                                                      
-- 08_Way_of_Light                                                                                                                                     
-- 09_Hunt  
+- 08_Confrontation(назва може змінитися)                                                                                                                                      
+- 08x_Separation(назву буде змінено)                                                                                                                                      
+- 09_Way_of_Light                                                                                                                                     
+- 10_Hunt  
 
 #### Haralin's branch 
-- 10h_Avenger 
-- 10hx_Funeral 
-- 11h_Massacre 
-- 11hx_Exposure(назва/зміст може змінитися) 
-- 12h_Southbay_Outskirts(назва може змінитися)
-- 13h_Caror(назва може змінитися)
-- 14h_Unnamed_Scenario(назву буде змінено)
-- 14hx_Exile(назва може змінитися)
-- 15h_Temple_in_the_Deep
+- 11h_Avenger 
+- 11hx_Funeral 
+- 12h_Massacre 
+- 12hx_Exposure(назва/зміст може змінитися) 
+- 13h_Southbay_Outskirts(назва може змінитися)
+- 14h_Caror(назва може змінитися)
+- 15h_Unnamed_Scenario(назву буде змінено)
+- 15hx_Exile(назва може змінитися)
+- 16h_Temple_in_the_Deep
 
 #### Daeola's branch
-- 10d_Sacrifice
-- 10dx_Funeral 
-- 10dxx_New_Dawn
-- 11d_Southbay_Outskirts(назва може змінитися)
-- 11dx_Council_of_Kings(назву буде змінено) 
-- 12d_Scarhane_Revisited
-- 13d_Cave_Rats
-- 14d_Jevyans_Haven
-- 15d_Epilogue?
+- 11d_Sacrifice
+- 11dx_Funeral 
+- 11dxx_New_Dawn
+- 12d_Southbay_Outskirts(назва може змінитися)
+- 12dx_Council_of_Kings(назву буде змінено) 
+- 13d_Scarhane_Revisited
+- 14d_Cave_Rats
+- 15d_Jevyans_Haven
+- 16d_Epilogue?
