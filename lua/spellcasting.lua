@@ -1,4 +1,4 @@
-local _ = wesnoth.textdomain "wesnoth-tdg"
+local _ = wesnoth.textdomain "wesnoth-chasing_the_light"
 
 local selected_unit_id
 -- to make code shorter
