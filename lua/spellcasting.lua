@@ -71,7 +71,7 @@ local skills = {
 			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Закличте духа природи до себе на допомогу, навіть знаходячись за межами цитаделі.\n            Для цього закляття використовується <span color='#FFD700'><i >золото</i></span>.",
 			subskills   = {
 				[1]={ id="skill_summon_mud",     gold_cost=8,  label="  <span>Mud (<span color='#FFD700'><i >8g</i></span>)</span>   " },
-				[2]={ id="skill_summon_stone",   gold_cost=10,  label="   <span>Stone (<span  color='#FFD700'><i >10g</i></span>)</span>   " },
+				[2]={ id="skill_summon_rock",   gold_cost=10,  label="   <span>Stone (<span  color='#FFD700'><i >10g</i></span>)</span>   " },
 				[3]={ id="skill_summon_water",   gold_cost=10, label="   <span>Water (<span  color='#FFD700'><i>10g</i></span>)</span>   " },
 				[4]={ id="skill_summon_air",     gold_cost=10, label="   <span>Air (<span   color='#FFD700'><i>10g</i></span>)</span>   " },
                 [5]={ id="skill_summon_fire",    gold_cost=12, label="   <span>Fire (<span   color='#FFD700'><i>12g</i></span>)</span>   " }, },
