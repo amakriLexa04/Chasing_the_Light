@@ -35,7 +35,6 @@ ForestDragon
 - 11h_Avenger 
 - 11hx_Funeral 
 - 12h_Massacre 
-- 12hx_Exposure(назва/зміст може змінитися) 
 - 13h_Southbay_Outskirts(назва може змінитися)
 - 14h_Caror(назва може змінитися)
 - 15h_Unnamed_Scenario(назву буде змінено)
