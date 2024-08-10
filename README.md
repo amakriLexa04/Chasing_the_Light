@@ -45,8 +45,7 @@ ForestDragon
 - 11d_Sacrifice
 - 11dx_Funeral 
 - 11dxx_New_Dawn
-- 12d_Southbay_Outskirts(назва може змінитися)
-- 12dx_Council_of_Kings(назву буде змінено) 
+- 12d_Southbay_Outskirts(назва може змінитися) 
 - 13d_Scarhane_Revisited
 - 14d_Cave_Rats
 - 15d_Jevyans_Haven
