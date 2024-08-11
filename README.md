@@ -35,7 +35,6 @@ ForestDragon
 - 11h_Avenger 
 - 11hx_Funeral 
 - 12h_Massacre 
-- 12hx_Exposure(назва/зміст може змінитися) 
 - 13h_Southbay_Outskirts(назва може змінитися)
 - 14h_Caror(назва може змінитися)
 - 15h_Unnamed_Scenario(назву буде змінено)
@@ -46,8 +45,7 @@ ForestDragon
 - 11d_Sacrifice
 - 11dx_Funeral 
 - 11dxx_New_Dawn
-- 12d_Southbay_Outskirts(назва може змінитися)
-- 12dx_Council_of_Kings(назву буде змінено) 
+- 12d_Southbay_Outskirts(назва може змінитися) 
 - 13d_Scarhane_Revisited
 - 14d_Cave_Rats
 - 15d_Jevyans_Haven
