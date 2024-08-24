@@ -15,7 +15,7 @@
 [amakri](https://github.com/amakriLexa04)
 
 ## Playtester
-ForestDragon
+[ForestDragon](https://github.com/ForestDragon-wesnoth)
 
 ## Scenario structure
 - 01_The_Book✔                                                                                                                                      
