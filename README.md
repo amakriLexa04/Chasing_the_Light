@@ -5,7 +5,6 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 
 (Hard level, 16 scenarios)
 
-- **Scenario Count**: 6,94/28 (Tentative)
 
 ## Developer
 [amakri](https://github.com/amakriLexa04)
