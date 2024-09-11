@@ -1,15 +1,10 @@
 # Chasing the Light
 
 ## Campaign Description
-**English:** This is the story of the very first Mage of the good people of the Green Isle, who is no longer remembered in Wesnoth, even the wise wizards of Alduin no longer know his glorious name. But why has the person, who laid the foundations of human magic, fought against the Lich-Lords and even petrified Lich-Lord Caror himself, been forgotten forever? Well, you will find all the answers to these questions here, and hear the story of his victories and failures, joys and sorrows, rise and fall.
+Peaceful life of the Green Isle's inhabitants turned into a nightmare in an instant when legions of living dead invaded their land from the far East. Play as Haralin, a young peasant from a small village near Blackmore who one day began to hear a mysterious voice calling itself messenger of the Light. Can you discover previously unknown powers, turn the tide of war and save your homeland from the hideous Wesfolk?
 
 (Hard level, 16 scenarios)
 
-**Ukrainian:** Це історія про найпершого мага людей Зеленого Острову, про якого зараз вже й не згадують в Весноті, навіть чаклунам з Алдуїну більше невідомо його славетне ім'я. Але чому того, хто заклав основи людської магії, боровся проти Владик-лічей та навіть скам'янив самого Владику Карора, було навіки забуто? Що ж, всі відповіді на ці питання ви дізнаєтеся тут, почуєте розповідь його перемоги та невдачі, радості та нещастя, становлення та падіння.
-
-(Важкий рівень, 16 сценаріїв)
-- **Scenario Count**: 6,94/28 (Tentative)
-- **Difficulty Level**: Hard
 
 ## Developer
 [amakri](https://github.com/amakriLexa04)
