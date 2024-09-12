@@ -19,8 +19,8 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 - 04_Daeola✔                                                                                                                                      
 - 04x_Southbay✔                                                                                                                                      
 - 05_Aftermath✔
-- 06_Miscreants🔁                                                                                                                                  
-- 07_Scarhane                                                                                                                                      
+- 06_Miscreants✔                                                                                                                              
+- 07_Scarhane🔁                                                                                                                                        
 - 08_Confrontation(назва може змінитися)                                                                                                                                      
 - 08x_Separation(назву буде змінено)                                                                                                                                      
 - 09_Way_of_Light                                                                                                                                     
