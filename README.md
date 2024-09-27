@@ -1,7 +1,7 @@
 # Chasing the Light
 
 ## Campaign Description
-Peaceful life of the Green Isle's inhabitants turned into a nightmare in an instant when legions of living dead invaded their land from the far East. Play as Haralin, a young peasant from a small village near Blackmore who one day began to hear a mysterious voice calling itself messenger of the Light. Can you discover previously unknown powers, turn the tide of war and save your homeland from the hideous Wesfolk?
+Peaceful life of the Green Isle's inhabitants turned into a nightmare in an instant when legions of living dead invaded their land from the far West. Play as Haralin, a young peasant from a small village near Blackmore who one day began to hear a mysterious voice calling itself messenger of the Light. Can you discover previously unknown powers, turn the tide of war and save your homeland from the hideous Wesfolk?
 
 (Hard level, 16 scenarios)
 
