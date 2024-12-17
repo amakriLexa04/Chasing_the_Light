@@ -103,7 +103,7 @@ local skills = {
 			id          = "skill_panacea",
 			label       = label(_"Panacea"),
 			image       = "icons/potion_green_small.png",
-			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> to fully heal the lowest-health adjacent ally, and increase\n           its attacks, strikes, and damage by its level. <span color='#bb0000'><b>Next turn, it dies.</b></span>",
+			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span><span color='#00bbe6'><i>8xp</i></span> to fully heal the lowest-health adjacent ally, and increase\n           its attacks, strikes, and damage by its level. <span color='#bb0000'><b>Next turn, it dies.</b></span>",
 			xp_cost=8,
 		},
 	},
@@ -148,6 +148,20 @@ local skills = {
 			image       = "icons/find-familiar.png",
 			description = _"<span color='#a9a150'><i><b>Passive:</b></i></span> Begin each scenario with your trusty pet raven.\n               Your familiar’s level and xp persist across scenarios, but reset if it dies.",
 		},
+		-------------------------
+		-- BEND NATURE(?)
+		-------------------------
+		[5] = {
+			id          = "skill_bend",
+			label       = label(_"Bend Nature"),
+			image       = "icons/landmass.png",
+			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Написати опис.\n            Для цього закляття використовується <span color='#00bbe6'><i>досвід</i></span> та <span color='#FFD700'><i >золото</i></span>.",
+			subskills   = {
+				[1]={ id="skill_bend_earth",     xp_cost=16, gold_cost=10,  label="  <span>Earth (<span color='#00bbe6'><i>16xp</i></span> <span color='#FFD700'><i>10g</i></span>)</span>   " },
+				[2]={ id="skill_bend_water",    xp_cost=8,  gold_cost=10, label="   <span>Water (<span color='#00bbe6'><i>8xp</i></span> <span color='#FFD700'><i>10g</i></span>)</span>   " },
+				[3]={ id="skill_bend_lava",   xp_cost=32,  gold_cost=10, label="   <span>Lava (<span color='#00bbe6'><i>32xp</i></span> <span color='#FFD700'><i>10g</i></span>)</span>   " }, },
+		},
+		
 	},
 	--###############################
 	-- GROUP 2 SKILLS
@@ -377,6 +391,16 @@ local skills_d = {
 			image       = "icons/disheal.png",
 			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> to TEST +8 heal radius 8.",
 			xp_cost=8,
+		},
+		-------------------------
+		-- WARD
+		-------------------------
+		[2] = {
+			id          = "skill_ward_d",
+			label       = label(_"Holy Ward"),
+			image       = "icons/ward.png",
+			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>10xp</i></span> to TEST place ward radius 4(?).",
+			xp_cost=10,
 		},
 	},
 	
