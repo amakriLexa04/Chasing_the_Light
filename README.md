@@ -7,15 +7,15 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 
 
 ## Developer
-[amakri](https://github.com/amakriLexa04)
+- [amakri](https://github.com/amakriLexa04)
 
 ## Playtester
-[ForestDragon](https://github.com/ForestDragon-wesnoth)
+- [ForestDragon](https://github.com/ForestDragon-wesnoth)
 
 ## Using the code from
-Dalas
-[ForestDragon](https://github.com/ForestDragon-wesnoth)
-Myrion
+- Dalas
+- [ForestDragon](https://github.com/ForestDragon-wesnoth)
+- Myrion
 
 ## Scenario structure
 - 01_The_Book✔                                                                                                                                      
