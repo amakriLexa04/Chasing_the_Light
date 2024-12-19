@@ -14,6 +14,7 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 
 ## Using the code from
 Dalas
+[ForestDragon](https://github.com/ForestDragon-wesnoth)
 Myrion
 
 ## Scenario structure
