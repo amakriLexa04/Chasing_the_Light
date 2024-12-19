@@ -12,6 +12,10 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 ## Playtester
 [ForestDragon](https://github.com/ForestDragon-wesnoth)
 
+## Using the code from
+Dalas
+Myrion
+
 ## Scenario structure
 - 01_The_Book✔                                                                                                                                      
 - 02_Invasion✔                                                                                                                                      
