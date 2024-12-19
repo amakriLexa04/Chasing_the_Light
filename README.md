@@ -12,10 +12,11 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 ## Playtester
 - [ForestDragon](https://github.com/ForestDragon-wesnoth)
 
-## Using the code from
+## Using resources from
 - Dalas
 - [ForestDragon](https://github.com/ForestDragon-wesnoth)
 - Myrion
+- inferno
 
 ## Scenario structure
 - 01_The_Book✔                                                                                                                                      
