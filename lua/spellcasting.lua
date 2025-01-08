@@ -406,12 +406,17 @@ local skills_d = {
 	
 }
 
-
-
-
-
-
-
+function deep_copy(original)
+    local copy = {}
+    for k, v in pairs(original) do
+        if type(v) == "table" then
+            copy[k] = deep_copy(v)
+        else
+            copy[k] = v
+        end
+    end
+    return copy
+end
 
 
 --###########################################################################################################################################################
@@ -421,6 +426,7 @@ function display_skills_dialog(selecting)
 	local result_table = {} -- table used to return selected skills
 	local haralin   = ( wesnoth.units.find_on_map({ id="haralin"      }) )[1]
 	local daeola   = ( wesnoth.units.find_on_map({ id="daeola"      }) )[1]
+	local skills_d_copy = deep_copy(skills_d)
 	
 	--###############################
 	-- CREATE DIALOG
@@ -469,6 +475,11 @@ function display_skills_dialog(selecting)
 			-- menu button for selecting skills
 			button = T.menu_button{  id="button"..i, use_markup=true  }
 			for j=1,#skills[i],1 do
+			    if not wml.variables["unlock_" .. string.sub(skills[i][j].id, 7, -1)] then
+                       skills[i][j] = locked
+                   else
+                       skills[i][j] = skills[i][j]
+                   end
 				table.insert( button[2], T.option{label=skills[i][j].label} )
 			end
 		else -- button for casting spells, or label for displaying skills
@@ -526,24 +537,25 @@ function display_skills_dialog(selecting)
 	elseif(selected_unit_id == 'daeola') then
 	
 	local skill_grid = T.grid{}
-	for i=0,#skills_d,1 do if (i>daeola.level + 2) then skills_d[i]=nil end end -- don't show skill groups if underleveled
-	for i=0,#skills_d,1 do
-		-- lock skills_d
-		for j=1,#skills_d[i],1 do
-			if (not wml.variables[ "unlock_"..string.sub(skills_d[i][j].id,7,-1) ]) then skills_d[i][j]=locked end
-		end
+	for i=0,#skills_d_copy,1 do if (i>daeola.level + 2) then skills_d_copy[i]=nil end end -- don't show skill groups if underleveled
+	for i=0,#skills_d_copy,1 do
 		
 		local button
 		local subskill_row
 		if (selecting) then
 			-- menu button for selecting skills_d
 			button = T.menu_button{  id="button"..i, use_markup=true  }
-			for j=1,#skills_d[i],1 do
-				table.insert( button[2], T.option{label=skills_d[i][j].label} )
+			for j=1,#skills_d_copy[i],1 do
+			       if not wml.variables["unlock_" .. string.sub(skills_d_copy[i][j].id, 7, -1)] then
+                       skills_d_copy[i][j] = locked
+                   else
+                       skills_d_copy[i][j] = skills_d[i][j]
+                   end
+                   table.insert( button[2], T.option{label=skills_d_copy[i][j].label} )
 			end
 		else -- button for casting spells, or label for displaying skills_d
-			for j=1,#skills_d[i],1 do
-				local skill = skills_d[i][j]
+			for j=1,#skills_d_copy[i],1 do
+				local skill = skills_d_copy[i][j]
 				if (wml.variables[skill.id]) then
 					if (not skill.xp_cost) then button=T.label{  id="button"..i, use_markup=true, label=skill.label }
 					else                        button=T.button{ id="button"..i, use_markup=true, label=skill.label } end
@@ -620,6 +632,11 @@ function display_skills_dialog(selecting)
 				-- default to whatever skill we had selected last time
 				for j,skill in pairs(skills[i]) do
 					if (wml.variables[skill.id]) then button.selected_index=j end
+					if not wml.variables["unlock_" .. string.sub(skill.id, 7, -1)] then
+                       skills[i][j] = locked
+                    else
+                        skills[i][j] = skill
+                    end
 				end
 				
 				-- whenever we refresh the menu, update the image and label
@@ -717,24 +734,24 @@ function display_skills_dialog(selecting)
 	
 	elseif (selected_unit_id == 'daeola') then
 	
-	for i,group in pairs(skills_d) do
+	for i,group in pairs(skills_d_copy) do
 			button = dialog["button"..i]
 			
 			-- menu callbacks for selecting skills_d
 			if (selecting) then
 				-- default to whatever skill we had selected last time
-				for j,skill in pairs(skills_d[i]) do
-					if (wml.variables[skill.id]) then button.selected_index=j end
+				for j,skill in pairs(skills_d_copy[i]) do
+                   if (wml.variables[skill.id]) then button.selected_index=j end
 				end
 				
 				-- whenever we refresh the menu, update the image and label
 				refresh = function(button)
-					if (not skills_d[i][1]) then return end
-					dialog["image"..i].label = skills_d[i][button.selected_index].image
-					dialog["label"..i].label = skills_d[i][button.selected_index].description
+					if (not skills_d_copy[i][1]) then return end
+					dialog["image"..i].label = skills_d_copy[i][button.selected_index].image
+					dialog["label"..i].label = skills_d_copy[i][button.selected_index].description
 					
 					-- also update variables
-					for j,skill in pairs(skills_d[i]) do
+					for j,skill in pairs(skills_d_copy[i]) do
 						result_table[skill.id] = (j==button.selected_index) and "yes" or "no"
 						if (skill.id=="skill_locked") then result_table[skill.id]="no" end
 					end
@@ -746,7 +763,7 @@ function display_skills_dialog(selecting)
 			
 			-- fixed labels for casting/displaying skills_d/spells
 			else dialog["button"..i].visible = false
-				for j,skill in pairs(skills_d[i]) do
+				for j,skill in pairs(skills_d_copy[i]) do
 					if (not wml.variables[skill.id]) then goto continue end
 					
 					-- if we know this skill, reveal and initialize the UI
