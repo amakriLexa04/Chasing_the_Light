@@ -33,18 +33,6 @@ function tprint (tbl, indent)
 	return toprint
 end
 
-function deep_copy(original)
-    local copy = {}
-    for g, v in pairs(original) do
-        if type(v) == "table" then
-            copy[g] = deep_copy(v)
-        else
-            copy[g] = v
-        end
-    end
-    return copy
-end
-
 
 
 
@@ -59,7 +47,7 @@ end
 --                                                                  DEFINE SKILLS
 --###########################################################################################################################################################
 function label(text)     return "<span size='1000'> \n</span><span size='large'>"..text.."</span><span size='8000'>\n </span>"  end
-local skills_haralin = {
+local skills = {
 	--###############################
 	-- GROUP 0 SKILLS
 	--###############################
@@ -347,7 +335,7 @@ local locked = {
 }
 
 
-local skills_daeola = {
+local skills_d = {
 
 	[0] = {
 		-------------------------
@@ -426,24 +414,32 @@ local casters = {
 		-------------------------
 		[0] = {
 			id          = "haralin",
-			title_select = _"Select Haralin’s Spells",
-			title_cast   = _"Cast Haralin’s Spells",
+			title_select = _"Select Haralin’s Spells"
+			title_cast   = _"Cast Haralin’s Spells"
 			description = _"<span size='2000'> \n</span><span size='small'><i>Haralin knows many useful spells, and will learn more as he levels-up automatically throughout the campaign. Haralin does not use XP to level-up.\nInstead, Haralin uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on Haralin to cast them</b>. You can only cast 1 spell per turn.</i></span>",
-		    groups_plus = 0,
-			spell_table = skills_haralin,
 		},
 		-------------------------
 		-- DAEOLA
 		-------------------------
 		[1] = {
 			id          = "daeola",
-			title_select = _"Select Daeola’s Spells",
-			title_cast   = _"Cast Daeola’s Spells",
+			title_select = _"Select Daeola’s Spells"
+			title_cast   = _"Cast Daeola’s Spells"
 			description = _"<span size='2000'> \n</span><span size='small'><i>Daeola knows many useful spells, and will learn more as she levels-up automatically throughout the campaign. Daeola does not use XP to level-up.\nInstead, Daeola uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on Daeola to cast them</b>. You can only cast 1 spell per turn.</i></span>",
-		    groups_plus = 2,
-			spell_table = skills_daeola,
 		},
 	}
+
+function deep_copy(original)
+    local copy = {}
+    for k, v in pairs(original) do
+        if type(v) == "table" then
+            copy[k] = deep_copy(v)
+        else
+            copy[k] = v
+        end
+    end
+    return copy
+end
 
 
 --###########################################################################################################################################################
@@ -451,6 +447,10 @@ local casters = {
 --###########################################################################################################################################################
 function display_skills_dialog(selecting)
 	local result_table = {} -- table used to return selected skills
+	local haralin   = ( wesnoth.units.find_on_map({ id="haralin"      }) )[1]
+	local daeola   = ( wesnoth.units.find_on_map({ id="daeola"      }) )[1]
+	local skills_d_copy = deep_copy(skills_d)
+	local skills_copy = deep_copy(skills)
 	
 	--###############################
 	-- CREATE DIALOG
@@ -461,36 +461,32 @@ function display_skills_dialog(selecting)
 		T.grid{} }
 	local grid = dialog[3]
 	
-	
-	for k=0,#casters,1 do
-	if (casters[k].id == selected_unit_id) then
-	
-		local caster   = ( wesnoth.units.find_on_map({ id=casters[k].id      }) )[1]
-		local skills_copy = deep_copy(casters[k].spell_table)
-	
 	-------------------------
 	-- HEADER
 	-------------------------
 	local spacer = "                                                                  "
-	local                title_text = selecting and casters[k].title_select       or casters[k].title_cast
-	
+	local                title_text = selecting and _"Select Haralin’s Spells"       or _"Cast Haralin’s Spells"
+	if(selected_unit_id == 'daeola')   then    title_text = selecting and _"Select Daeola’s Spells"       or _"Cast Daeola’s Spells" end
 	table.insert( grid[2], T.row{ T.column{ T.label{
 		definition="title",
 		horizontal_alignment="center",
 		label = spacer..title_text..spacer,
 	}}} )
-	local                help_text = casters[k].description
+	local                help_text = _"<span size='2000'> \n</span><span size='small'><i>Haralin knows many useful spells, and will learn more as he levels-up automatically throughout the campaign. Haralin does not use XP to level-up.\nInstead, Haralin uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on Haralin to cast them</b>. You can only cast 1 spell per turn.</i></span>"
+	if(selected_unit_id == 'daeola') then      help_text = _"<span size='2000'> \n</span><span size='small'><i>Daeola knows many useful spells, and will learn more as she levels-up automatically throughout the campaign. Daeola does not use XP to level-up.\nInstead, Daeola uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on Daeola to cast them</b>. You can only cast 1 spell per turn.</i></span>" end
 	table.insert( grid[2], T.row{ T.column{T.label{ use_markup=true, label=help_text }}} )
 	table.insert( grid[2], T.row{ T.column{T.label{label="  "}}} )
 	
 	-------------------------
-	-- SKILL GROUPS
+	-- SKILL GROUPS HARALIN
 	-------------------------
 	-- each button/image/label id ends with the index of the skill group it corresponds to
 	-- put all these in 1 big grid, so they can have their own table-layout
 	
+	if (selected_unit_id == 'haralin') then
+	
 	local skill_grid = T.grid{}
-	for i=0,#skills_copy,1 do if (i>(caster.level + casters[k].groups_plus)) then skills_copy[i]=nil end end -- don't show skill groups if underleveled
+	for i=0,#skills_copy,1 do if (i>haralin.level) then skills_copy[i]=nil end end -- don't show skill groups if underleveled
 	for i=0,#skills_copy,1 do
 		-- lock skills
 		for j=1,#skills_copy[i],1 do
@@ -506,7 +502,7 @@ function display_skills_dialog(selecting)
 			    if not wml.variables["unlock_" .. string.sub(skills_copy[i][j].id, 7, -1)] then
                        skills_copy[i][j] = locked
                    else
-                       skills_copy[i][j] = casters[k].spell_table[i][j] -- під питанням
+                       skills_copy[i][j] = skills[i][j]
                    end
 				table.insert( button[2], T.option{label=skills_copy[i][j].label} )
 			end
@@ -554,10 +550,79 @@ function display_skills_dialog(selecting)
 			T.column{T.label{}}, T.column{T.label{}}
 		} )
 		::continue::
-
-    end
+	end
 	table.insert( grid[2], T.row{T.column{ horizontal_alignment="left", skill_grid }} )
 	
+	
+	-------------------------
+	-- SKILL GROUPS DAEOLA
+	-------------------------
+	
+	elseif(selected_unit_id == 'daeola') then
+	
+	local skill_grid = T.grid{}
+	for i=0,#skills_d_copy,1 do if (i>daeola.level + 2) then skills_d_copy[i]=nil end end -- don't show skill groups if underleveled
+	for i=0,#skills_d_copy,1 do
+		
+		local button
+		local subskill_row
+		if (selecting) then
+			-- menu button for selecting skills_d
+			button = T.menu_button{  id="button"..i, use_markup=true  }
+			for j=1,#skills_d_copy[i],1 do
+			       if not wml.variables["unlock_" .. string.sub(skills_d_copy[i][j].id, 7, -1)] then
+                       skills_d_copy[i][j] = locked
+                   else
+                       skills_d_copy[i][j] = skills_d[i][j]
+                   end
+                   table.insert( button[2], T.option{label=skills_d_copy[i][j].label} )
+			end
+		else -- button for casting spells, or label for displaying skills_d
+			for j=1,#skills_d_copy[i],1 do
+				local skill = skills_d_copy[i][j]
+				if (wml.variables[skill.id]) then
+					if (not skill.xp_cost) then button=T.label{  id="button"..i, use_markup=true, label=skill.label }
+					else                        button=T.button{ id="button"..i, use_markup=true, label=skill.label } end
+					-- handle one skill with multiple buttons
+					if (skill.subskills) then
+						subskill_row = T.row{}
+						for k=1,#skill.subskills,1 do
+							local subskill = skill.subskills[k]
+							table.insert( subskill_row[2], T.column{T.button{id=subskill.id,use_markup=true,label=subskill.label}} );
+						end
+					end
+				end
+			end
+			if (not button) then button=T.label{id="button"..i} end -- dummy button
+		end
+		
+		-- skill row
+		table.insert( skill_grid[2], T.row{ 
+			T.column{button},
+			T.column{T.label{label="  "}},  T.column{  horizontal_alignment="left", T.image{id="image"..i                }  },
+			T.column{T.label{label="  "}},  T.column{  horizontal_alignment="left", T.label{id="label"..i,use_markup=true}  },
+		} )
+		
+		-- subskill row
+		if (subskill_row) then table.insert( skill_grid[2], T.row{ 
+			T.column{T.label{}}, T.column{T.label{}},
+			T.column{T.label{}}, T.column{T.label{}},
+			T.column{T.grid{subskill_row}},
+		} ) end
+		
+		-- spacer row
+		table.insert( skill_grid[2], T.row{ 
+			T.column{T.label{label="  "}},
+			T.column{T.label{}}, T.column{T.label{}},
+			T.column{T.label{}}, T.column{T.label{}}
+		} )
+		::continue::
+	end
+	table.insert( grid[2], T.row{T.column{ horizontal_alignment="left", skill_grid }} )
+	
+	
+	
+	end
 	-------------------------
 	-- CONFIRM BUTTON
 	-------------------------
@@ -566,6 +631,9 @@ function display_skills_dialog(selecting)
 		id="confirm_button", use_markup=true, return_value=1,
 		label=(selecting and _"Confirm Spells <small><i>(can be changed every scenario)</i></small>" or "Cancel"),
 	}}})
+	
+
+	
 	
 	
 	
@@ -578,6 +646,7 @@ function display_skills_dialog(selecting)
 	local function preshow(dialog)
 		-- for the button corresponding to each skill group
 		
+	if (selected_unit_id == 'haralin') then
 		
 		for i,group in pairs(skills_copy) do
 			button = dialog["button"..i]
@@ -620,8 +689,8 @@ function display_skills_dialog(selecting)
 					local function initialize_button( buttonid, skill, small )
 						if (dialog[buttonid].type=="button") then
 							-- cancel spell
-							local function caster_has_object(object_id) return wesnoth.units.find_on_map{ id=casters[k].id, T.filter_wml{T.modifications{T.object{id=object_id}}} }[1] end
-							if (caster_has_object(skill.id)) then
+							local function haralin_has_object(object_id) return wesnoth.units.find_on_map{ id='haralin', T.filter_wml{T.modifications{T.object{id=object_id}}} }[1] end
+							if (haralin_has_object(skill.id)) then
 								dialog[buttonid].label = small and "<span size='small'>Cancel</span>" or label('Cancel')
 								dialog[buttonid].on_button_click = function()
 									wml.variables['skill_id'] = skill.id.."_cancel"
@@ -631,36 +700,36 @@ function display_skills_dialog(selecting)
 							-- errors (extra spaces are to center the text)
 							elseif (not wml.variables[ "unlock_"..string.sub(skill.id,7,-1) ]) then
 								dialog[buttonid].enabled = false
-							elseif (wml.variables['spellcasted_this_turn_' .. string.sub(caster.id, 7, -1)]) then
+							elseif (wml.variables['spellcasted_this_turn']) then
 								dialog[buttonid].label = small and _"<span size='small'>1 spell/turn</span>" or _"<span> Can only cast\n1 spell per turn</span>"
 								dialog[buttonid].enabled = false
-							elseif (not (caster.race=='human')) then
+							elseif (not (haralin.race=='human')) then
 								dialog[buttonid].label = small and _"<span size='small'>Polymorphed</span>" or _"<span>  Blocked by\n  Polymorph</span>"
 								dialog[buttonid].enabled = false
-							elseif (wesnoth.units.find_on_map{ id=caster.id, T.filter_location{radius=3, T.filter{id='haralin_mirror3'}} }[1]) then   -- mirror haralin counterspell. Переробити, щоб працювало з усіма
+							elseif (wesnoth.units.find_on_map{ id='haralin', T.filter_location{radius=3, T.filter{id='haralin_mirror3'}} }[1]) then   -- mirror haralin counterspell
 								dialog[buttonid].label = small and _"<span size='small'>Counterspelled</span>" or _"<span>  Blocked by\n Counterspell</span>"
 								dialog[buttonid].enabled = false
-							elseif (wml.variables['counterspell_active']) then -- counterspell
+							elseif (wml.variables['counterspell_active']) then -- haralin counterspell
 								dialog[buttonid].label = small and _"<span size='small'>Counterspelled</span>" or _"<span>  Blocked by\n Counterspell</span>"
 								dialog[buttonid].enabled = false
-							elseif (skill.xp_cost and skill.xp_cost>caster.experience) then
+							elseif (skill.xp_cost and skill.xp_cost>haralin.experience) then
 								dialog[buttonid].label = small and _"<span size='small'>No XP</span>" or label('Insufficient XP')
 								dialog[buttonid].enabled = false
-					     	elseif (skill.gold_cost and skill.gold_cost>wesnoth.sides[caster.side].gold) then
+					     	elseif (skill.gold_cost and skill.gold_cost>wesnoth.sides[1].gold) then
 								dialog[buttonid].label = small and _"<span size='small'>No Gold</span>" or label('Insufficient Gold')
 								dialog[buttonid].enabled = false
-							elseif (skill.atk_cost and skill.atk_cost>caster.attacks_left) then
+							elseif (skill.atk_cost and skill.atk_cost>haralin.attacks_left) then
 								dialog[buttonid].label = small and _"<span size='small'>No Attack</span>" or label('No Attack')
 								dialog[buttonid].enabled = false
 							
 							-- cast spell
 							else
 								dialog[buttonid].on_button_click = function()
-									if (skill.xp_cost)  then caster.experience  =caster.experience  -skill.xp_cost  end
-									if (skill.gold_cost)  then wesnoth.sides[caster.side].gold =wesnoth.sides[caster.side].gold  -skill.gold_cost  end
-									if (skill.atk_cost) then haralin.attacks_left=caster.attacks_left-skill.atk_cost end
+									if (skill.xp_cost)  then haralin.experience  =haralin.experience  -skill.xp_cost  end
+									if (skill.gold_cost)  then wesnoth.sides[1].gold =wesnoth.sides[1].gold  -skill.gold_cost  end
+									if (skill.atk_cost) then haralin.attacks_left=haralin.attacks_left-skill.atk_cost end
 									wml.variables['skill_id'] = skill.id
-									wml.variables['spellcasted_this_turn_' .. string.sub(caster.id, 7, -1)] = skill.id
+									wml.variables['spellcasted_this_turn'] = skill.id
 									gui.widget.close(dialog)
 								end
 							end
@@ -680,13 +749,127 @@ function display_skills_dialog(selecting)
 			
 		end
 	
-    end
+	
+	
+	elseif (selected_unit_id == 'daeola') then
+	
+	for i,group in pairs(skills_d_copy) do
+			button = dialog["button"..i]
+			
+			-- menu callbacks for selecting skills_d
+			if (selecting) then
+				-- default to whatever skill we had selected last time
+				for j,skill in pairs(skills_d_copy[i]) do
+                   if (wml.variables[skill.id]) then button.selected_index=j end
+				end
+				
+				-- whenever we refresh the menu, update the image and label
+				refresh = function(button)
+					if (not skills_d_copy[i][1]) then return end
+					dialog["image"..i].label = skills_d_copy[i][button.selected_index].image
+					dialog["label"..i].label = skills_d_copy[i][button.selected_index].description
+					
+					-- also update variables
+					for j,skill in pairs(skills_d_copy[i]) do
+						result_table[skill.id] = (j==button.selected_index) and "yes" or "no"
+						if (skill.id=="skill_locked") then result_table[skill.id]="no" end
+					end
+				end
+				
+				-- refresh immediately, and after any change
+				refresh(button)
+				button.on_modified = refresh
+			
+			-- fixed labels for casting/displaying skills_d/spells
+			else dialog["button"..i].visible = false
+				for j,skill in pairs(skills_d_copy[i]) do
+					if (not wml.variables[skill.id]) then goto continue end
+					
+					-- if we know this skill, reveal and initialize the UI
+					dialog["button"..i].visible = true
+					dialog["image" ..i].label = skill.image
+					dialog["label" ..i].label = skill.description
+					
+					-- if the button is clickable (i.e. a castable spell), set on_button_click
+					local function initialize_button( buttonid, skill, small )
+						if (dialog[buttonid].type=="button") then
+							-- cancel spell
+							local function haralin_has_object(object_id) return wesnoth.units.find_on_map{ id='daeola', T.filter_wml{T.modifications{T.object{id=object_id}}} }[1] end
+							if (haralin_has_object(skill.id)) then
+								dialog[buttonid].label = small and "<span size='small'>Cancel</span>" or label('Cancel')
+								dialog[buttonid].on_button_click = function()
+									wml.variables['skill_id'] = skill.id.."_cancel"
+									gui.widget.close(dialog)
+								end
+							
+							-- errors (extra spaces are to center the text)
+							elseif (not wml.variables[ "unlock_"..string.sub(skill.id,7,-1) ]) then
+								dialog[buttonid].enabled = false
+							elseif (wml.variables['spellcasted_this_turn_d']) then
+								dialog[buttonid].label = small and _"<span size='small'>1 spell/turn</span>" or _"<span> Can only cast\n1 spell per turn</span>"
+								dialog[buttonid].enabled = false
+							elseif (not (daeola.race=='human')) then
+								dialog[buttonid].label = small and _"<span size='small'>Polymorphed</span>" or _"<span>  Blocked by\n  Polymorph</span>"
+								dialog[buttonid].enabled = false
+							elseif (wesnoth.units.find_on_map{ id='daeola', T.filter_location{radius=3, T.filter{id='haralin_mirror3'}} }[1]) then   -- mirror daeola counterspell
+								dialog[buttonid].label = small and _"<span size='small'>Counterspelled</span>" or _"<span>  Blocked by\n Counterspell</span>"
+								dialog[buttonid].enabled = false
+							elseif (wml.variables['counterspell_active']) then -- daeola counterspell
+								dialog[buttonid].label = small and _"<span size='small'>Counterspelled</span>" or _"<span>  Blocked by\n Counterspell</span>"
+								dialog[buttonid].enabled = false
+							elseif (skill.gold_cost and skill.gold_cost>wesnoth.sides[1].gold) then
+								dialog[buttonid].label = small and _"<span size='small'>No Gold</span>" or label('Insufficient Gold')
+								dialog[buttonid].enabled = false
+							elseif (skill.xp_cost and skill.xp_cost>daeola.experience) then
+								dialog[buttonid].label = small and _"<span size='small'>No XP</span>" or label('Insufficient XP')
+								dialog[buttonid].enabled = false
+							elseif (skill.atk_cost and skill.atk_cost>daeola.attacks_left) then
+								dialog[buttonid].label = small and _"<span size='small'>No Attack</span>" or label('No Attack')
+								dialog[buttonid].enabled = false
+							
+							-- cast spell
+							else
+								dialog[buttonid].on_button_click = function()
+									if (skill.xp_cost)  then daeola.experience  =daeola.experience  -skill.xp_cost  end
+									if (skill.gold_cost)  then wesnoth.sides[1].gold =wesnoth.sides[1].gold  -skill.gold_cost  end
+									if (skill.atk_cost) then daeola.attacks_left=daeola.attacks_left-skill.atk_cost end
+									wml.variables['skill_id'] = skill.id
+									wml.variables['spellcasted_this_turn_d'] = skill.id
+									gui.widget.close(dialog)
+								end
+							end
+						end
+					end
+					initialize_button("button"..i, skill);
+					
+					-- if this skill has subskills, initialize each button
+					if (skill.subskills) then
+						for k,subskill in pairs(skill.subskills) do
+							initialize_button(subskill.id, subskill, true);
+						end
+					end
+					::continue::
+				end
+			end
+			
+		end
+	
+	
+	end
+	
+	
+	
+	end
 	
 	
 	-------------------------
 	-- SHOW DIALOG
 	-------------------------
 	wml.variables['skill_id'] = nil
+	
+	 
+	if (selected_unit_id == 'daeola') then
+
 
 	wesnoth.interface.game_display.selected_unit = nil
 	 
@@ -696,11 +879,20 @@ function display_skills_dialog(selecting)
 	
     wesnoth.select_unit()
 	wesnoth.deselect_hex()
-    wesnoth.fire("redraw") -- deselect caster
+    wesnoth.fire("redraw") -- deselect haralin/daeola
+	
+	end
+	
+	if (selected_unit_id == 'haralin') then
+	
+    wesnoth.select_unit() -- deselect haralin/daeola
+	
+	end
+	
 
-
-	--вище все добре, мабуть
-
+	
+	if (selected_unit_id == 'haralin') then
+	
 	-- select spell, synced
 	if (selecting) then
 		dialog_result = wesnoth.sync.evaluate_single(function()
@@ -713,20 +905,42 @@ function display_skills_dialog(selecting)
 	else
 		dialog_result = wesnoth.sync.evaluate_single(function()
 			gui.show_dialog( dialog, preshow )
-			if (wml.variables['skill_id']) then wesnoth.game_events.fire('cast_skill_synced', caster.x, caster.y) end
+			if (wml.variables['skill_id']) then wesnoth.game_events.fire('cast_skill_synced', haralin.x, haralin.y) end
 			wml.variables['skill_id'] = nil
 		end)
 	end
+	
+	elseif (selected_unit_id == 'daeola') then
+	
+	if (selecting) then
+		dialog_result = wesnoth.sync.evaluate_single(function()
+			gui.show_dialog( dialog, preshow )
+			return result_table;
+		end)
+		for skill_id,skill_value in pairs(dialog_result) do wml.variables[skill_id]=skill_value end
+	
+	-- cast spells, synced
+	else
+		dialog_result = wesnoth.sync.evaluate_single(function()
+			gui.show_dialog( dialog, preshow )
+			if (wml.variables['skill_id']) then wesnoth.game_events.fire('cast_skill_synced_d', daeola.x, daeola.y) end
+			wml.variables['skill_id'] = nil
+		end)
+	end
+	
+	end
 
-return end
 
 
- end
 
 end
 
 
---кінець функції
+
+
+
+
+
 
 
 
@@ -754,10 +968,7 @@ end
 local last_click = os.clock()
 wesnoth.game_events.on_mouse_action = function(x,y)
 	local selected_unit = wesnoth.units.find_on_map{ x=x, y=y }
-	for k=0,#casters,1 do
-	
-	if (selected_unit[1].id == casters[k].id) then
-	
+	if (not selected_unit[1] or (selected_unit[1].id~='haralin' and selected_unit[1].id~='daeola')) then return end
 	if (wml.variables['is_during_attack']) then return end
 	if (wml.variables['not_player_turn'] ) then return end
 	
@@ -765,29 +976,24 @@ wesnoth.game_events.on_mouse_action = function(x,y)
 	
 	if (os.clock()-last_click<0.25) then
 		wesnoth.audio.play("miss-2.ogg")
-		
-		
-		for k=0,#casters,1 do
-		
-		if (selected_unit_id == casters[k].id) then
-		if (wml.variables["no_spellcasting_event_" .. string.sub(casters[k].id, 7, -1)]) then
-			wesnoth.game_events.fire(wml.variables["no_spellcasting_event_" .. string.sub(casters[k].id, 7, -1)], x, y)
+		if (selected_unit_id == 'haralin') then
+		if (wml.variables['no_spellcasting_event']) then
+			wesnoth.game_events.fire(wml.variables['no_spellcasting_event'], x, y)
+		else
+			display_skills_dialog()
+		end
+		elseif (selected_unit_id == 'daeola') then
+		if (wml.variables['no_spellcasting_event_d']) then
+			wesnoth.game_events.fire(wml.variables['no_spellcasting_event_d'], x, y)
 		else
 			display_skills_dialog()
 		end
 		
 		end
-		
-		end
-		
 		last_click = 0 -- prevent accidentally immediately re-opening the dialog
 	else
 		last_click = os.clock()
 	end
-	end
-	
-	end
-	
 end
 
 -------------------------

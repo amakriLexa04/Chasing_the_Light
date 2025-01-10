@@ -33,18 +33,6 @@ function tprint (tbl, indent)
 	return toprint
 end
 
-function deep_copy(original)
-    local copy = {}
-    for g, v in pairs(original) do
-        if type(v) == "table" then
-            copy[g] = deep_copy(v)
-        else
-            copy[g] = v
-        end
-    end
-    return copy
-end
-
 
 
 
@@ -445,6 +433,18 @@ local casters = {
 		},
 	}
 
+function deep_copy(original)
+    local copy = {}
+    for g, v in pairs(original) do
+        if type(v) == "table" then
+            copy[g] = deep_copy(v)
+        else
+            copy[g] = v
+        end
+    end
+    return copy
+end
+
 
 --###########################################################################################################################################################
 --                                                                  SKILL DIALOG
@@ -490,7 +490,7 @@ function display_skills_dialog(selecting)
 	-- put all these in 1 big grid, so they can have their own table-layout
 	
 	local skill_grid = T.grid{}
-	for i=0,#skills_copy,1 do if (i>(caster.level + casters[k].groups_plus)) then skills_copy[i]=nil end end -- don't show skill groups if underleveled
+	for i=0,#skills_copy,1 do if (i>caster.level + casters[k].groups_plus) then skills_copy[i]=nil end end -- don't show skill groups if underleveled
 	for i=0,#skills_copy,1 do
 		-- lock skills
 		for j=1,#skills_copy[i],1 do
@@ -558,6 +558,8 @@ function display_skills_dialog(selecting)
     end
 	table.insert( grid[2], T.row{T.column{ horizontal_alignment="left", skill_grid }} )
 	
+
+    end
 	-------------------------
 	-- CONFIRM BUTTON
 	-------------------------
@@ -680,7 +682,7 @@ function display_skills_dialog(selecting)
 			
 		end
 	
-    end
+
 	
 	
 	-------------------------
@@ -754,10 +756,7 @@ end
 local last_click = os.clock()
 wesnoth.game_events.on_mouse_action = function(x,y)
 	local selected_unit = wesnoth.units.find_on_map{ x=x, y=y }
-	for k=0,#casters,1 do
-	
-	if (selected_unit[1].id == casters[k].id) then
-	
+	if (not selected_unit[1] or (selected_unit[1].id~='haralin' and selected_unit[1].id~='daeola')) then return end
 	if (wml.variables['is_during_attack']) then return end
 	if (wml.variables['not_player_turn'] ) then return end
 	
@@ -784,10 +783,6 @@ wesnoth.game_events.on_mouse_action = function(x,y)
 	else
 		last_click = os.clock()
 	end
-	end
-	
-	end
-	
 end
 
 -------------------------
