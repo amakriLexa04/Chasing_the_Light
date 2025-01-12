@@ -355,18 +355,10 @@ wesnoth.game_events.on_mouse_action = function(x,y)
 	if (os.clock()-last_click<0.25) then
 		wesnoth.audio.play("miss-2.ogg")
 		
-		
-		for k=0,#casters,1 do
-		
-		if (selected_unit_id == casters[k].id) then
-		if (wml.variables["no_spellcasting_event_" .. string.sub(casters[k].id, 7, -1)]) then
-			wesnoth.game_events.fire(wml.variables["no_spellcasting_event_" .. string.sub(casters[k].id, 7, -1)], x, y)
+		if (wml.variables["no_spellcasting_event_" .. selected_unit_id]) then
+			wesnoth.game_events.fire(wml.variables["no_spellcasting_event_" .. selected_unit_id], x, y)
 		else
 			display_skills_dialog()
-		end
-		
-		end
-		
 		end
 		
 		last_click = 0 -- prevent accidentally immediately re-opening the dialog
