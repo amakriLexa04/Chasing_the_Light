@@ -17,6 +17,7 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 - [ForestDragon](https://github.com/ForestDragon-wesnoth)
 - Myrion
 - inferno
+- [WesTactics](https://github.com/wtactics)
 
 ## Scenario structure
 - 01_The_Book✔                                                                                                                                      
