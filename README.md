@@ -14,12 +14,15 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 
 ## Using resources from
 - Dalas
-- [ForestDragon](https://github.com/ForestDragon-wesnoth)
-- Myrion
 - inferno
 - IftU
 - Archaic_Resources
 - [WesTactics](https://github.com/wtactics)
+
+## With the help of
+- [ForestDragon](https://github.com/ForestDragon-wesnoth)
+- Myrion
+- Refumee
 
 ## Scenario structure
 - 01_The_Book✔                                                                                                                                      
@@ -32,8 +35,8 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 - 07_Scarhane🔁                                                                                                                                        
 - 08_Confrontation(назва може змінитися)                                                                                                                                      
 - 08x_Separation(назву буде змінено)                                                                                                                                      
-- 09_Way_of_Light                                                                                                                                     
-- 10_Hunt  
+- 09_Hunt                                                                                                                                       
+- 10_Way_of_Light  
 
 #### Haralin's branch 
 - 11h_Avenger 
