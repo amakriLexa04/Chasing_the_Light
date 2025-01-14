@@ -1,6 +1,6 @@
 local _ = wesnoth.textdomain "wesnoth-chasing_the_light"
 
-local caster_data = wesnoth.dofile("~add-ons/Chasing_the_Light/lua/casters.lua")
+local caster_data = wesnoth.dofile(wml.variables["path_to_casters"])
 local casters = caster_data.casters
 local locked = caster_data.locked
 
