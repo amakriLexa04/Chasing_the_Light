@@ -234,7 +234,7 @@ function display_skills_dialog(selecting)
 							-- errors (extra spaces are to center the text)
 							elseif (not wml.variables[ "unlock_"..string.sub(skill.id,7,-1) ]) then
 								dialog[buttonid].enabled = false
-							elseif (wml.variables['spellcasted_this_turn_' .. string.sub(caster.id, 7, -1)]) then
+							elseif (wml.variables['spellcasted_this_turn_' .. caster.id]) then
 								dialog[buttonid].label = small and _"<span size='small'>1 spell/turn</span>" or _"<span> Can only cast\n1 spell per turn</span>"
 								dialog[buttonid].enabled = false
 							elseif (not (caster.race=='human')) then
@@ -263,7 +263,7 @@ function display_skills_dialog(selecting)
 									if (skill.gold_cost)  then wesnoth.sides[caster.side].gold =wesnoth.sides[caster.side].gold  -skill.gold_cost  end
 									if (skill.atk_cost) then haralin.attacks_left=caster.attacks_left-skill.atk_cost end
 									wml.variables['skill_id'] = skill.id
-									wml.variables['spellcasted_this_turn_' .. string.sub(caster.id, 7, -1)] = skill.id
+									wml.variables['spellcasted_this_turn_' .. caster.id] = skill.id
 									gui.widget.close(dialog)
 								end
 							end
