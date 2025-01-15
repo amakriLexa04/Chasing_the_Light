@@ -27,7 +27,7 @@ local skills_haralin = {
 			image       = "icons/summon.png",
 			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Закличте духа природи до себе на допомогу, навіть знаходячись за межами цитаделі.\n            Для цього закляття використовується <span color='#FFD700'><i >золото</i></span> та <span color='#00bbe6'><i>досвід</i></span>.",
 			subskills   = {
-				[1]={ id="skill_summon_mud",     xp_cost=8, gold_cost=10,  label="  <span>Mud (<span color='#FFD700'><i >10g</i></span> <span color='#00bbe6'><i>8xp</i></span>)</span>   " },
+				[1]={ id="skill_summon_mud",     xp_cost=6, gold_cost=8,  label="  <span>Mud (<span color='#FFD700'><i >8g</i></span> <span color='#00bbe6'><i>6xp</i></span>)</span>   " },
 				[2]={ id="skill_summon_rock",    xp_cost=8, gold_cost=14,  label="   <span>Stone (<span  color='#FFD700'><i >14g</i></span> <span color='#00bbe6'><i>8xp</i></span>)</span>   " },
 				[3]={ id="skill_summon_water",   xp_cost=8, gold_cost=10,  label="   <span>Water (<span  color='#FFD700'><i>10g</i></span> <span color='#00bbe6'><i>8xp</i></span>)</span>   " },
 				[4]={ id="skill_summon_air",     xp_cost=8, gold_cost=10,  label="   <span>Air (<span   color='#FFD700'><i>10g</i></span> <span color='#00bbe6'><i>8xp</i></span>)</span>   " },
