@@ -13,8 +13,8 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 - [ForestDragon](https://github.com/ForestDragon-wesnoth)
 
 ## Using resources from
-- Dalas
-- inferno
+- [Dalas](https://github.com/Dalas121)
+- [inferno8](https://github.com/inferno8)
 - IftU
 - Archaic_Resources
 - [WesTactics](https://github.com/wtactics)
