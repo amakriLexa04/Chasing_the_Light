@@ -311,8 +311,8 @@ local skills_daeola = {
 			id          = "skill_disattack_d",
 			label       = label(_"Lightbeam"),
 			image       = "attacks/lightbeam.png",
-			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Використайте <span color='#00bbe6'><i>10xp</i></span>, щоб атакувати ворога дальньою містичною атакою <b>9x3</b>. \n<span color='#ad6a61'><i><b>Radius:</b></i></span> <i>7 клітинок.</i>",
-			xp_cost=10,
+			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Використайте <span color='#00bbe6'><i>8xp</i></span>, щоб атакувати ворога дальньою містичною атакою <b>9x3</b>. \n<span color='#ad6a61'><i><b>Radius:</b></i></span> <i>6 клітинок.</i>",
+			xp_cost=8,
 		},
 	},
 	[1] = {
@@ -346,8 +346,8 @@ local skills_daeola = {
 			id          = "skill_disheal_d",
 			label       = label(_"Distant Heal"),
 			image       = "icons/disheal.png",
-			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Використайте <span color='#00bbe6'><i>8xp</i></span>, щоб вилікувати себе або дружнього юніта на +8 ОЗ. \n<span color='#ad6a61'><i><b>Radius:</b></i></span> <i>8 клітинок.</i>",
-			xp_cost=8,
+			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Використайте <span color='#00bbe6'><i>6xp</i></span>, щоб вилікувати себе або дружнього юніта на +8 ОЗ. \n<span color='#ad6a61'><i><b>Radius:</b></i></span> <i>7 клітинок.</i>",
+			xp_cost=6,
 		},
 		-------------------------
 		-- WARD
