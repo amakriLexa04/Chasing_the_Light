@@ -1,4 +1,4 @@
--- #textdomain Chasing_the_Light
+-- #textdomain wesnoth-ctl
 
 local T = wml.tag
 local wml_actions = wesnoth.wml_actions

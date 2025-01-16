@@ -1,4 +1,4 @@
-local _ = wesnoth.textdomain "Chasing_the_Light"
+local _ = wesnoth.textdomain "wesnoth-ctl"
 
 local caster_data = wesnoth.dofile(wml.variables["path_to_casters"])
 local casters = caster_data.casters
