@@ -1,8 +1,8 @@
--- #textdomain wesnoth-chasing_the_light
+-- #textdomain Chasing_the_Light
 
 local T = wml.tag
 local wml_actions = wesnoth.wml_actions
-local _ = wesnoth.textdomain "wesnoth-chasing_the_light"
+local _ = wesnoth.textdomain "Chasing_the_Light"
 local utils = wesnoth.require "wml-utils"
 
 function wml_actions.caves_map(cfg)

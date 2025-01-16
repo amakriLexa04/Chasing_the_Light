@@ -1,4 +1,4 @@
-local _ = wesnoth.textdomain "wesnoth-chasing_the_light"
+local _ = wesnoth.textdomain "Chasing_the_Light"
 
 --###########################################################################################################################################################
 --                                                                  DEFINE SKILLS
