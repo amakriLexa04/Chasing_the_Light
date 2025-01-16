@@ -294,9 +294,9 @@ function display_skills_dialog(selecting)
 	wesnoth.interface.game_display.selected_unit = nil
 	wesnoth.interface.delay(300)
 	
-    wesnoth.select_unit()
-	wesnoth.deselect_hex()
-    wesnoth.fire("redraw") -- deselect caster
+    wesnoth.units.select()
+	wesnoth.interface.deselect_hex()
+    wml.fire("redraw") -- deselect caster
 
 	-- select spell, synced
 	if (selecting) then
