@@ -33,27 +33,27 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 - 05_Aftermath✔
 - 06_Miscreants✔                                                                                                                              
 - 07_Scarhane🔁                                                                                                                                        
-- 08_Confrontation(назва може змінитися)                                                                                                                                      
-- 08x_Separation(назву буде змінено)                                                                                                                                      
+- 08_Misjudged                                                                                                                                     
+- 08x_Divergence                                                                                                                                    
 - 09_Hunt                                                                                                                                       
-- 10_Way_of_Light  
+- 10_Way_of_Light(Duty?)  
 
 #### Haralin's branch 
 - 11h_Avenger 
 - 11hx_Funeral 
 - 12h_Massacre 
-- 13h_Southbay_Outskirts(назва може змінитися)
-- 14h_Caror(назва може змінитися)
-- 15h_Unnamed_Scenario(назву буде змінено)
-- 15hx_Exile(назва може змінитися)
-- 16h_Temple_in_the_Deep
+- 13h_Southbay_Outskirts
+- 14h_Caror
+- 15h_Unnamed_Scenario(Gambit?)
+- 15hx_Exile(Sins?)
+- 16h_Temple_in_the_Deep(Або розділити на 16h_Lenvan та 17h_Temple_in_the_Deep(одразу після потрапляння в країну мертвих))
 
 #### Daeola's branch
 - 11d_Sacrifice
 - 11dx_Funeral 
-- 11dxx_New_Dawn
-- 12d_Southbay_Outskirts(назва може змінитися) 
+- 11dxx_New_Dawn(Blitzkrieg?, мб взагалі вирізати)
+- 12d_Southbay_Outskirts 
 - 13d_Scarhane_Revisited
-- 14d_Cave_Rats
+- 14d_Cave_Rats(Gloom?)
 - 15d_Jevyans_Haven
 - 16d_Epilogue?
