@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2025-01-18 09:21 UTC\n"
+"POT-Creation-Date: 2025-01-18 23:11 UTC\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -246,163 +246,173 @@ msgstr ""
 msgid "Listen the entire conversation between Daeola and Sergeant Asa."
 msgstr ""
 
-#. [achievement]: id=ctl_protect_graves
+#. [achievement]: id=ctl_skull_escape
 #: Chasing_the_Light/achievements.cfg:133
+msgid "Scenario 7: Cowardly skull"
+msgstr ""
+
+#. [achievement]: id=ctl_skull_escape
+#: Chasing_the_Light/achievements.cfg:134
+msgid "Banish Familiar from the battlefield in Scarhane. It's easy, right?"
+msgstr ""
+
+#. [achievement]: id=ctl_protect_graves
+#: Chasing_the_Light/achievements.cfg:140
 msgid "Scenario 7: Advocate of the dead"
 msgstr ""
 
 #. [achievement]: id=ctl_protect_graves
-#: Chasing_the_Light/achievements.cfg:134
+#: Chasing_the_Light/achievements.cfg:141
 msgid "Protect the graves of Scarhane from Wesfolk."
 msgstr ""
 
 #. [achievement]: id=ctl_read_graves
-#: Chasing_the_Light/achievements.cfg:140
+#: Chasing_the_Light/achievements.cfg:147
 msgid "Scenario 7: Forgotten and not yet forgotten"
 msgstr ""
 
 #. [achievement]: id=ctl_read_graves
-#: Chasing_the_Light/achievements.cfg:141
+#: Chasing_the_Light/achievements.cfg:148
 msgid "Read all the inscriptions on the graves at Scarhane Cemetery."
 msgstr ""
 
 #. [achievement]: id=ctl_conversation_haralin
-#: Chasing_the_Light/achievements.cfg:148
+#: Chasing_the_Light/achievements.cfg:155
 msgid "Scenario 7: Teacher and Student"
 msgstr ""
 
 #. [achievement]: id=ctl_conversation_haralin
-#: Chasing_the_Light/achievements.cfg:149
+#: Chasing_the_Light/achievements.cfg:156
 msgid "Listen the entire conversation between Daeola and Haralin."
 msgstr ""
 
 #. [achievement]: id=ctl_first_blood
-#: Chasing_the_Light/achievements.cfg:155
+#: Chasing_the_Light/achievements.cfg:162
 msgid "Scenario 10: The first blood"
 msgstr ""
 
 #. [achievement]: id=ctl_first_blood
-#: Chasing_the_Light/achievements.cfg:157
+#: Chasing_the_Light/achievements.cfg:164
 msgid "Daeola became the first mage to die in this campaign."
 msgstr ""
 
 #. [achievement]: id=ctl_angel
-#: Chasing_the_Light/achievements.cfg:163
+#: Chasing_the_Light/achievements.cfg:170
 msgid "Scenario 10: Lonely Angel"
 msgstr ""
 
 #. [achievement]: id=ctl_angel
-#: Chasing_the_Light/achievements.cfg:164
+#: Chasing_the_Light/achievements.cfg:171
 msgid "You've saved lives, fought against enemies. And now everyone fell, but you are still standing."
 msgstr ""
 
 #. [achievement]: id=ctl_mercy
-#: Chasing_the_Light/achievements.cfg:170
+#: Chasing_the_Light/achievements.cfg:177
 msgid "Scenario 9: You have my mercy"
 msgstr ""
 
 #. [achievement]: id=ctl_mercy
-#: Chasing_the_Light/achievements.cfg:171
+#: Chasing_the_Light/achievements.cfg:178
 msgid "Haralin has his own sense of mercy for the Wesfolk, so that counts."
 msgstr ""
 
 #. [achievement]: id=ctl_asa
-#: Chasing_the_Light/achievements.cfg:177
+#: Chasing_the_Light/achievements.cfg:184
 msgid "Insurgent"
 msgstr ""
 
 #. [achievement]: id=ctl_asa
-#: Chasing_the_Light/achievements.cfg:178
+#: Chasing_the_Light/achievements.cfg:185
 msgid "Ignore all advices from Sergeant Asa."
 msgstr ""
 
 #. [achievement]: id=ctl_debtor_spirit
-#: Chasing_the_Light/achievements.cfg:186
+#: Chasing_the_Light/achievements.cfg:193
 msgid "Scenario 12h: I'm having a deja vu"
 msgstr ""
 
 #. [achievement]: id=ctl_debtor_spirit
-#: Chasing_the_Light/achievements.cfg:187
+#: Chasing_the_Light/achievements.cfg:194
 msgid "Spirit of Zeham exists long enough to see scenario 12."
 msgstr ""
 
 #. [achievement]: id=ctl_village
-#: Chasing_the_Light/achievements.cfg:193
+#: Chasing_the_Light/achievements.cfg:200
 msgid "Scenario 12h: Mage of Wesfolkcide"
 msgstr ""
 
 #. [achievement]: id=ctl_village
-#: Chasing_the_Light/achievements.cfg:194
+#: Chasing_the_Light/achievements.cfg:201
 msgid "DO IT. AND DO IT QUICKLY!"
 msgstr ""
 
 #. [achievement]: id=ctl_debtor2
-#: Chasing_the_Light/achievements.cfg:201
+#: Chasing_the_Light/achievements.cfg:208
 msgid "Scenario 15hx: I knew it!"
 msgstr ""
 
 #. [achievement]: id=ctl_debtor2
-#: Chasing_the_Light/achievements.cfg:202
+#: Chasing_the_Light/achievements.cfg:209
 msgid "Zeham lives long enough to see scenario 11x."
 msgstr ""
 
 #. [achievement]: id=ctl_caves_undead
-#: Chasing_the_Light/achievements.cfg:208
+#: Chasing_the_Light/achievements.cfg:215
 msgid "Scenario 13d: Final solution"
 msgstr ""
 
 #. [achievement]: id=ctl_caves_undead
-#: Chasing_the_Light/achievements.cfg:209
+#: Chasing_the_Light/achievements.cfg:216
 msgid "Cleanse caves from the cursed undead instead of sealing them."
 msgstr ""
 
 #. [achievement]: id=ctl_nttime
-#: Chasing_the_Light/achievements.cfg:215
+#: Chasing_the_Light/achievements.cfg:222
 msgid "Scenario 16h: Not this time"
 msgstr ""
 
 #. [achievement]: id=ctl_nttime
-#: Chasing_the_Light/achievements.cfg:216
+#: Chasing_the_Light/achievements.cfg:223
 msgid "Haralin finally learnt from his own mistakes."
 msgstr ""
 
 #. [achievement]: id=ctl_no_mage_recruit
-#: Chasing_the_Light/achievements.cfg:222
+#: Chasing_the_Light/achievements.cfg:229
 msgid "Hater of Mages"
 msgstr ""
 
 #. [achievement]: id=ctl_no_mage_recruit
-#: Chasing_the_Light/achievements.cfg:224
+#: Chasing_the_Light/achievements.cfg:231
 msgid "Complete the campaign on any difficulty without recruiting a single mage."
 msgstr ""
 
 #. [achievement]: id=ctl_happy_end
-#: Chasing_the_Light/achievements.cfg:230
+#: Chasing_the_Light/achievements.cfg:237
 msgid "Happy ending"
 msgstr ""
 
 #. [achievement]: id=ctl_happy_end
-#: Chasing_the_Light/achievements.cfg:231
+#: Chasing_the_Light/achievements.cfg:238
 msgid "Zeham, Juangh, Asa, Ywyn, Dolmannumbil and some Spirits live long enough to see The Epilogue of Daeola's branch."
 msgstr ""
 
 #. [achievement]: id=ctl_hard_d
-#: Chasing_the_Light/achievements.cfg:237
+#: Chasing_the_Light/achievements.cfg:244
 msgid "The Legend of the Green Isle"
 msgstr ""
 
 #. [achievement]: id=ctl_hard_d
-#: Chasing_the_Light/achievements.cfg:238
+#: Chasing_the_Light/achievements.cfg:245
 msgid "Complete Daeola's branch of the campaign on the Hard Difficulty."
 msgstr ""
 
 #. [achievement]: id=ctl_hard_h
-#: Chasing_the_Light/achievements.cfg:244
+#: Chasing_the_Light/achievements.cfg:251
 msgid "The First Mage of the Green Isle"
 msgstr ""
 
 #. [achievement]: id=ctl_hard_h
-#: Chasing_the_Light/achievements.cfg:245
+#: Chasing_the_Light/achievements.cfg:252
 msgid "Complete Haralin's branch of the campaign on the Hard Difficulty."
 msgstr ""
 
@@ -757,23 +767,23 @@ msgstr ""
 #: Chasing_the_Light/scenarios/04x_Southbay.cfg:541
 #: Chasing_the_Light/scenarios/05_Aftermath.cfg:780
 #: Chasing_the_Light/scenarios/05_Aftermath.cfg:643
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1611
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1617
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2170
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2237
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2240
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2247
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2249
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2319
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1573
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1657
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2003
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2254
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2275
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2287
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2293
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4261
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4263
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1555
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1561
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2114
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2181
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2184
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2191
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2193
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2263
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1533
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1617
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1963
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2214
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2235
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2247
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2253
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4240
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4242
 #: Chasing_the_Light/unused/code/05_Aftermath_original_final_cutscene.cfg:31
 #: Chasing_the_Light/unused/code/05_Aftermath_original_final_cutscene.cfg:37
 #: Chasing_the_Light/unused/code/05_Aftermath_original_final_cutscene.cfg:51
@@ -833,15 +843,15 @@ msgstr ""
 #: Chasing_the_Light/scenarios/03_Despair.cfg:752
 #: Chasing_the_Light/scenarios/03_Despair.cfg:869
 #: Chasing_the_Light/scenarios/05_Aftermath.cfg:214
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1679
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1623
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:987
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1885
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1916
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2038
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3019
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3138
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4299
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4330
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1845
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1876
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1998
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2979
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3098
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4278
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4309
 #: Chasing_the_Light/utils/macros.cfg:630
 msgid "Death of Haralin"
 msgstr ""
@@ -947,9 +957,9 @@ msgstr ""
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:963
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:968
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:973
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1609
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1681
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1765
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1569
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1641
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1725
 #: Chasing_the_Light/utils/macros.cfg:501
 msgid "false"
 msgstr ""
@@ -992,24 +1002,24 @@ msgstr ""
 #: Chasing_the_Light/scenarios/04_Daeola.cfg:3478
 #: Chasing_the_Light/scenarios/04x_Southbay.cfg:510
 #: Chasing_the_Light/scenarios/05_Aftermath.cfg:780
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1127
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2170
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1071
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2114
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:1041
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:1070
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:1110
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:1112
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:1375
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1573
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1657
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2194
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2287
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2318
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2997
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3314
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4263
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4623
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4624
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4625
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1533
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1617
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2154
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2247
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2278
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2957
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3274
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4242
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4602
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4603
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4604
 msgid "..."
 msgstr ""
 
@@ -1081,31 +1091,31 @@ msgstr ""
 #: Chasing_the_Light/scenarios/05_Aftermath.cfg:355
 #: Chasing_the_Light/scenarios/05_Aftermath.cfg:360
 #: Chasing_the_Light/scenarios/05_Aftermath.cfg:727
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:928
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:966
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1030
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1097
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1164
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1530
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1583
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2090
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:872
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:910
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:974
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1041
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1108
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1474
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1527
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2034
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:371
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:1090
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1578
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1602
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1662
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1674
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1734
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1758
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1823
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2326
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3039
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3350
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3594
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4197
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4664
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1007
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1119
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1538
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1562
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1622
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1634
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1694
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1718
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1783
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2286
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2999
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3310
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3554
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4176
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4643
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1033
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1145
 #: Chasing_the_Light/utils/macros.cfg:672
 #: Chasing_the_Light/utils/macros.cfg:945
 #: Chasing_the_Light/utils/macros.cfg:957
@@ -1651,7 +1661,7 @@ msgstr ""
 
 #. [then]
 #: Chasing_the_Light/scenarios/02_Invasion.cfg:936
-msgid "Переможіть цих весфольків та поверніться живими!"
+msgid "Переможіть цих західняків та поверніться живими!"
 msgstr ""
 
 #. [then]
@@ -1857,7 +1867,7 @@ msgstr ""
 
 #. [set_variable]
 #: Chasing_the_Light/scenarios/03_Despair.cfg:348
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2025
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1985
 msgid "(додатково) Дослідити загадкове місце сили"
 msgstr ""
 
@@ -2020,7 +2030,7 @@ msgstr ""
 
 #. [set_variable]
 #: Chasing_the_Light/scenarios/03_Despair.cfg:692
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1855
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1815
 msgid "<span strikethrough='true'>(додатково) Дослідити загадкове місце сили</span>"
 msgstr ""
 
@@ -2034,7 +2044,7 @@ msgstr ""
 #: Chasing_the_Light/scenarios/03_Despair.cfg:715
 #: Chasing_the_Light/scenarios/03_Despair.cfg:861
 #: Chasing_the_Light/scenarios/05_Aftermath.cfg:210
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1671
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1615
 #: Chasing_the_Light/utils/macros.cfg:622
 msgid "(альтернативно) Defeat all enemy leaders"
 msgstr ""
@@ -2409,7 +2419,7 @@ msgstr ""
 
 #. [part]
 #: Chasing_the_Light/scenarios/04_Daeola.cfg:39
-msgid "Минуло більше дев'ятнадцяти років з тої страхітливої битви на Чорнильних Болотах, де купка переляканих селян з останніх сил стримувала натиск викривлених весфолькських чудовиськ та мерців, що з жахливим виттям продовжували свій, здавалося б, нескінченний марш з Північних земель. Дуже небагатьом пощастило пережити ту ніч, не в останню чергу завдяки старанням Гараліна — людини, що невідомими нікому шляхами змогла заволодіти дивними силами, котрих ніколи ще не бачили на Зеленому Острові."
+msgid "Минуло більше дев'ятнадцяти років з тої страхітливої битви на Чорнильних Болотах, де купка переляканих селян з останніх сил стримувала натиск викривлених західняцьких чудовиськ та мерців, що з жахливим виттям продовжували свій, здавалося б, нескінченний марш з Північних земель. Дуже небагатьом пощастило пережити ту ніч, не в останню чергу завдяки старанням Гараліна — людини, що невідомими нікому шляхами змогла заволодіти дивними силами, котрих ніколи ще не бачили на Зеленому Острові."
 msgstr ""
 
 #. [part]
@@ -2419,7 +2429,7 @@ msgstr ""
 
 #. [part]
 #: Chasing_the_Light/scenarios/04_Daeola.cfg:49
-msgid "Сам же Гаралін не був занадто задоволений таким розвитком подій, тому що найбільше йому хотілося в бій, щоб ім'ям Світла мститися весфолькам за свого батька та усіх, хто загинув у тій різанині, проте таємничий голос переконав його відповісти його саме так. Там, на болотах, маг одразу подумав, що то було його власне рішення, його вибір, проте, як минав час, все більше він розумів, що це не так, хоча й внутрішнє чуття невпинно намагалося переконати його в протилежному. Однак відмовлятися від своїх слів вже було надто пізно, тому Гараліну не лишилося нічого іншого, окрім як підкоритися волі Принца та навчати людей своєму мистецтву, про яке він і сам майже нічого не знав."
+msgid "Сам же Гаралін не був занадто задоволений таким розвитком подій, тому що найбільше йому хотілося в бій, щоб ім'ям Світла мститися західнякам за свого батька та усіх, хто загинув у тій різанині, проте таємничий голос переконав його відповісти його саме так. Там, на болотах, маг одразу подумав, що то було його власне рішення, його вибір, проте, як минав час, все більше він розумів, що це не так, хоча й внутрішнє чуття невпинно намагалося переконати його в протилежному. Однак відмовлятися від своїх слів вже було надто пізно, тому Гараліну не лишилося нічого іншого, окрім як підкоритися волі Принца та навчати людей своєму мистецтву, про яке він і сам майже нічого не знав."
 msgstr ""
 
 #. [part]
@@ -2473,22 +2483,22 @@ msgstr ""
 #: Chasing_the_Light/scenarios/04_Daeola.cfg:1935
 #: Chasing_the_Light/scenarios/04_Daeola.cfg:2892
 #: Chasing_the_Light/scenarios/05_Aftermath.cfg:218
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1683
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1627
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:991
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1889
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1920
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2042
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3023
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3142
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4303
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4334
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1849
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1880
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2002
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2983
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3102
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4282
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4313
 #: Chasing_the_Light/utils/macros.cfg:634
 msgid "Death of Daeola"
 msgstr ""
 
 #. [unit]: id=wose, type=Wose Shaman, type=Wose, type=Wose
 #: Chasing_the_Light/scenarios/04_Daeola.cfg:307
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1320
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1264
 msgid "Dolmannumbil"
 msgstr ""
 
@@ -3919,7 +3929,7 @@ msgstr ""
 msgid "Раелес"
 msgstr ""
 
-#. [unit]: id=asa, type=Sergeant, gender=female
+#. [unit]: id=asa, type=Asa_Sergeant, gender=female
 #: Chasing_the_Light/scenarios/04x_Southbay.cfg:366
 msgid "Сержант Аса"
 msgstr ""
@@ -3976,7 +3986,7 @@ msgstr ""
 
 #. [event]
 #: Chasing_the_Light/scenarios/04x_Southbay.cfg:493
-msgid "То ж, слухай мене уважно, Гараліне. Улюблений брат мій Едвар, Принц Південної Бухти та Граф Чорнотопу, опинився у достатньо скрутному становищі — війська його було розбито та захоплено місто Чорнотоп нечестивими весфольками."
+msgid "То ж, слухай мене уважно, Гараліне. Улюблений брат мій Едвар, Принц Південної Бухти та Граф Чорнотопу, опинився у достатньо скрутному становищі — війська його було розбито та захоплено місто Чорнотоп нечестивими західняками."
 msgstr ""
 
 #. [event]
@@ -4187,22 +4197,22 @@ msgstr ""
 
 #. [objective]: condition=win
 #: Chasing_the_Light/scenarios/05_Aftermath.cfg:206
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1667
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1611
 #: Chasing_the_Light/utils/macros.cfg:618
 msgid "Гаралін, Даеола та Аса мають дістатися до копальні на півночі"
 msgstr ""
 
 #. [objective]: condition=lose
 #: Chasing_the_Light/scenarios/05_Aftermath.cfg:222
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1687
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1631
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:995
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1893
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1924
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2046
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3027
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3146
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4307
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4338
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1853
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1884
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2006
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2987
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3106
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4286
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4317
 #: Chasing_the_Light/utils/macros.cfg:638
 msgid "Death of Asa"
 msgstr ""
@@ -4446,634 +4456,634 @@ msgstr ""
 msgid "Хай помилує нас Світло, ми занадто довго затрималися на цьому болоті — Графа Чорнотопу, певно, вже не врятувати."
 msgstr ""
 
-#. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:867
+#. [scenario]: id=05_Aftermath
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:854
 msgid "Вітаємо у портовому місті Естен. Заїжджий двір знаходиться знаходиться поряд з доками."
 msgstr ""
 
-#. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:887
+#. [scenario]: id=05_Aftermath
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:855
 msgid "Копальні вельмишановного пана Аліна. Порушники та нероби будуть страчуватися!"
 msgstr ""
 
-#. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:907
+#. [scenario]: id=05_Aftermath
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:856
 msgid "Північний схід — до Древнього Лісу. Південний захід — до Естену."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:939
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:883
 msgid "Так, зізнаюсь-зізнаюсь — я покинув своїх товарищів і втік, будь-хто втік би, правда ж? Але <i>вони</i> наздогнали мене і розірвали на шматочки! Це... це було жахливо й страшно, я... Ні-ні, будь ласка, не чіпайте мене!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:945
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:889
 msgid "Справедлива кара за зраду."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:946
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:890
 msgid "Хоч це й тяжкий гріх, проте хай Світло упокоїть його скалічений дух, як і усі інші душі, що заточені в цьому камінні."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:977
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:921
 msgid "За що мене вбили, за що?! Я рибалив разом з сином, хтів роздобуть трохи їжи, а мене ось так... А що з сином, що з моїм сином?.."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:985
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:929
 msgid "Світ цей сповнений несправедливості, проте шлях Світла завжди вкаже вірний шлях. Тож хай вже упокоїться дух твій та твого сина з миром."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:993
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:937
 msgid "Не хвилюйся, привиде, з твоїм сином все добре, тому й тобі час спочити."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1002
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1069
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1136
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1203
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:946
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1013
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1080
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1147
 msgid "Двоногих справи не обходять нас, ізийди тож дух нечистий..."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1006
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1073
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1140
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1207
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:950
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1017
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1084
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1151
 msgid "Силами Світла наказую тобі полишити це каміння та відправитися на спочинок!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1041
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:985
 msgid "Я приєхал зі сваго глухого села продать тавару, як тут вискочил разбойнік какой-то і тапаром хрясь! Моє тіло потім встало і пашло, а я тут остался. Не слєдкує наш правітєль за містом чи шо, аткуда тут разбойнікі?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1049
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:993
 msgid "Клянуся Світлом, невже правитель Естену зовсім не попереджував людей з навколишніх сіл? Покійний Король Чорнотопу за багато років до нападу надавав нашому селу допомогу та поручав будувати укріплення, проте тут протилежна ситуація... Хай там як, хай помилує тебе Світло, спи спокійно."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1050
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:994
 msgid "Еге ж, а хтось байдикував і недобудував укріплення, тому дарма старання нашого Короля пропали. А тепер ми маємо справу і з клятими темними чаклунами, і з неупокоєними привидами, що ж це таке?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1058
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1002
 msgid "Жах, це і справді жахливо! Був би живий останній Король Чорнотопу, він би цього не допустив, його спадкоємець взагалі не думає про людей!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1059
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1003
 msgid "Ім'ям Світла, Даеоло, коли ти вже вивчиш мапу Зеленого Острову? Скільки разів мені варто повторити, щоб ти запам'ятала, що ми не в землях Чорнотопу?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1060
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1004
 msgid "Вибачте, Вчителю, я обов'язково її вивчу! Однак спочатку треба упокоїти цього бідолашного привида!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1108
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1052
 msgid "Мої очі не бачать з народження, тому я навіть не побачила що за потвора мене вбила."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1116
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1060
 msgid "Хай помилує тебе Світло та упокоїть твою невинну душу. Воістину ж у темні часи нам доводиться жити, що люди ладні кинути сліпця помирати, проте надія ще є — ми можемо знову осяяти наш Острів Світлом."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1117
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1061
 msgid "Ага, Свєтло це є добре. Кагда світло єсть, то грибочки файно ростуть..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1125
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1069
 msgid "Якби тільки ми дісталися сюди раніше, я б змогла тебе врятувати! Ми б вивели тебе звідси чи хоча б я зцілила твої очі..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1126
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1070
 msgid "Клянуся Світлом, Даеоло, якби ми дісталися сюди раніше, нас би напевно розчавили війська проклятих західняків. Хоч як би твоє серце не боліло за всіми цими загиблими, все ж то на краще, що нам не довелося тут бути під час штурму Естену."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1175
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1119
 msgid "Мої успішно люди тримали оборону хатини, поки якийсь зрадник не вирішив відкрити цим потворам прохід. Цей нелюд скористався цим і втік! Сподіваюся, його спіткала така ж доля!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1184
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1128
 msgid "Клянуся Світлом, нема нічого гіршого за зраду, коли найменше її очікуєш. Сподіваюся, нікому з нас не доведеться побачити щось подібне."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1185
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1129
 msgid "Цього не станеться, поки загоном командую я, чаклуне."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1193
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1137
 msgid "Жах, страшно уявити, що зрадники можуть бути серед людей Острову. Може, навіть серед нас?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1194
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1138
 msgid "Поки загоном командую я, зрадники не встигнуть нашкодити, чаклунко."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1232
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1176
 msgid "Лахміття та нутрощі — все, що лишилося від нещасних жертв темних чаклунів. Бачить Світло, рано чи пізно кара настигне усіх проклятих західняків, я зроблю усе можливе, щоб це сталося."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1240
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1184
 msgid "Фе, гидота, що це таке?.. Ох, це ж... Жах!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1249
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1193
 msgid "Деревам не тільки двоногі шкодять, вони не лиш їх рубають, свій також рід."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1258
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1202
 msgid "Жертвоприношення? Негайно рушаймо, чаклуне, як не хочемо побачити таке в Скархейні."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1267
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1211
 msgid "Розкидані кістки та нутрощі. Схоже, тут прокляті чаклуни проводили свої обряди. Що ж, Гараліне, хоча б 'маги Світла' таким не займаються."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1276
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1220
 msgid "Шо це такоє?.. А, я пойняв, т' є ритуальний кам'нь мєрців!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1280
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1224
 msgid "Нечестивий ритуальний камінь. Навіть жахливо подумати скільки жертв тут було принесено."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1362
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1306
 msgid "Відчуваємо мудрого двоногого ми, йти варто до нього тож, по шляху ми дерев розсіватимемо семена також."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1375
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1319
 msgid "Ім'ям Світла, будь обережнішою, Даеоло. Ми, маги, занадто слабкі тілом, щоб дозволити собі кидатися в бій лише з посохом, тому використовуй свої закляття та атакуй посохом лише за крайньої необхідності!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1376
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1320
 msgid "Як скажете, Вчителю, однак мені здалося, що зараз варто було зробити саме так!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1377
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1321
 msgid "Клянуся Світлом, Даеоло, не злічити скільки разів я чув та ще почую точно таке виправдання, проте кожного разу одне й те ж саме."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1389
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1333
 msgid "Наше сокрушить коріння двоногих нечествих, мудрий двоногий вас про бо ж казав."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1414
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1358
 msgid "Ще жива дерев'янка тут, що за радість. Гей, хлопці, рубайте його — сьодні в хаті буде тепло!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1417
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1435
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1361
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1379
 msgid "Це шо живе дерево? Що нам робити з цим, Пенелло?"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1418
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1362
 msgid "Та рубайте цю штуку — сьодні розведемо файне багаття та їжу посмажимо!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1421
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1365
 msgid "Вибір нерозумний, двоногі, зробили ви. Наше каратиме вас коріння."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1432
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1376
 msgid "Тут якась жива дерев'янка. Не чіпайте його поки, хлопці, походу воно з нашими 'друзями'."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1436
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1380
 msgid "Походу воно з нашими 'друзями', тому поки не чіпайте."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1462
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1406
 msgid "А ось і їжа сама прийшла до нас! Підходьте-підходьте, сьодні ми гарно повечеряємо!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1472
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1416
 #: Chasing_the_Light/utils/macros.cfg:1650
 msgid "Клянуся Світлом, тепер я не маю жодних сумнівів — жителі колись благородного міста Естен перетворилися на проклятих людожерів, яким, як і західнякам, не місце на Зеленому Острові!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1473
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1417
 msgid "Я теж це помітив, занадто дивною була поведінка посланця. Наші давні звичаї гласять, що подібні злочини має суворо каратися силами Короля. Тож, що скажеш, сержанте?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1474
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1418
 msgid "Вирок за людожерство — смерть."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1475
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1419
 msgid "Спробуйте, давайте, нападайте! Ми пережили жахіття Естенської бійні, тож переживьом і вас!"
 msgstr ""
 
 #. [modify_side]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1478
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1422
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:367
 msgid "Cannibals"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1484
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1428
 msgid "quietly^<i>У інших обличчя таке ж бліде, як і в їхнього посланця. Ще й цей дивний голод в очах... Тут коїться щось неймовірно дивне та підозріле, однак сподіваюся, що я помиляюся.</i>"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1524
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1468
 msgid "Ім'ям Світла, шановний Долманнумбіле, хіба лісовики не прив'язані до Древнього лісу, що ви тут робите?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1525
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1469
 msgid "Рушили у подорож ми, світ озеленити щоб, мудрий двоногий. Довкола зла бачено багато нами, приєднаємося до тебе, сяйва шляхом йдеш ж бо та дерев другом є."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1526
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1470
 msgid "Клянуся Світлом, я маю сумніви щодо правильності цього рішення, однак все ж добре, що ви вирішили приєднатися — нам не вистачає вашої сили."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1577
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1521
 msgid "Пане лісовику, що це ви робите так далеко від рідного лісу?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1578
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1522
 msgid "Ми як казали і, в подорож рушили, світ озеленити щоб, двоного. Мудрий двоногий сяйва шляхом йде поки, до нього ми приєднаємося тож."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1579
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1523
 msgid "Чудово, що ви на нашій стороні, пане! Разом з вами ми точно переможемо цих нечестивих некромантів!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1594
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1538
 msgid "Вчителю, чи не відчуваєте ви чогось зловісного та лихого на цьому болоті?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1598
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1542
 msgid "Багато лихих справ коїлося та коїться у цій місцині, однак клянуся Світлом, Даеоло, я теж відчуваю присутність..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1611
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1555
 msgid "Гараліне, на цих болотах є п'ять проклятих місць, що збирають навколо себе поневолені душі. Хоч ти продовжуєш свій супротив волі Світла, ти маєш знищити їх за будь-яку ціну."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1616
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1560
 msgid "<i>Ти знову натякаєш, що справа в тій проклятій книзі, однак я повністю переписав її, змінив кожне слово пітьми на слова світла, в чому тоді справа, скажи мені нарешті?</i>"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1617
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1561
 msgid "Ім'ям Світла, Гараліне, невже ти не відчуваєш, що ȵƪɮʑƔȡ ǂƛƔȡǽȵ ȵƪɮʑ?..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1631
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1575
 msgid "Вчителю, ви мене чуєте? Що саме ви відчуваєте?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1635
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1579
 msgid "Так, Даеоло... Я відчуваю п'ять зловісних монолітів, розкиданих по всьому болоту, і з кожною миттю вони набираються сили. Мені здається, що якщо ми не знищимо їх вчасно, з них вирвуться злі духи та заповнять усе болото."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1652
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1596
 msgid "Це жахливо, Вчителю, ми маємо спробувати зруйнувати всі оті моноліти! Однак хіба не всі духи такі, як наші, добрі та зроблені з самого сяйва?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1653
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1597
 msgid "Ім'ям Світла, Даеоло, ми маємо справу з темними чаклунами та некромантами, тому їхні духи є породженнями зла та темряви або ж нещасними поневоленими душами. Допоки мені не зустрічалося нічого подібного, "
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1653
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1597
 msgid "quietly^<i>якщо не рахувати дещо набагато гірше</i>"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1653
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1597
 msgid ", проте я чув достатньо, щоб розуміти їхню небезпеку."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1658
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1602
 msgid "Це жахливо, Вчителю, ми маємо спробувати зруйнувати всі оті моноліти!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1662
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1606
 msgid "Привиди надто небезпечні. Я накажу солдатам знищити камені, інакше матимемо проблеми при поверненні."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1663
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1607
 msgid "Клянуся Світлом, сержанте, добре чути, що тепер ти підтримуєш очищення цього проклятого болота, проте можу запевнити тебе — твої солдати будуть нездатні навіть торкнутися до тих монолітів. Я відчуваю, що лише ми, маги, з допомогою Світла здатні знищити їх."
 msgstr ""
 
 #. [objective]: condition=win
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1675
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1619
 msgid "(додатково) Знищити всі прокляті моноліти"
 msgstr ""
 
 #. [note]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1696
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1640
 msgid "Monoliths can be destroyed only by Mages and Spirits."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1708
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1652
 msgid "Ох, я вмираю... Хай мене воскресять!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1709
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1653
 msgid "Хвора істота..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1733
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1677
 msgid "Владико-Ліч, подаруй мені безсмертя!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1734
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1678
 msgid "Сумніваюся, що він почує твоє скиглення."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1759
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1703
 msgid "Помри, нечествий некроманте та зраднику!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1760
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1704
 msgid "Хоч ви й перемогли мене, ви не переможете ні моїх учнів, ні західняків. Я бачив силу Владики... Уркгх..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1781
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1725
 msgid "Хоч ми ще й не перемогли твоїх учнів, ми обов'язково це зробимо! І врешті-решт знищимо Владик-Лічей і звільнимо наш Зелений Острів!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1782
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1726
 msgid "Кх-кх, наївно дурепо... Ви... жалюгідні... ви... ніщо проти Владики Карора..."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1787
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1731
 msgid "Дякувати Світлу, твої прокляті учні вже покинули цей світ, тому з твоєю смертю в цьому нещасному місці настане мир та спокій."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1788
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1732
 msgid "Кх-кх, це болото?.. Вони прийдуть знову... ви... жалюгідні... ви... ніщо проти Владики Карора..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1792
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1736
 msgid "Щось ти надто живучий, годі вже з тебе!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1828
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1772
 msgid "Погляньте-но, у тій хатині ховається ще один темний чаклун!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1829
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1773
 msgid "Ні-ні, не чіпайте мене — я зрікаюся свого майстра та темного чаклунства, мене змушували цим займатися! І... я можу піти цим вашим шляхом Світла... к-клянуся, я зроблю все, але тільки не вбивайте мене!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1830
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1774
 msgid "Що скажете, Вчителю? Чи не доброю справою буде навернути загублену людину на шлях Світла?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1831
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1775
 msgid "Ім'ям Світла, Даеоло, запам'ятай, нема іншого шляху в тих, хто вже присвятив життя темному мистецтву та пізнав його таємниці. Розум таких людей спотворено і, хоч цей чаклун може більше не звертатися до Темряви, проте Темрява все одно звертатиметься до нього. Саме тому ми не можемо відпустити жодного з них!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1832
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1776
 msgid "Ага ж, будєм крушить його як і остальних!.."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1833
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1777
 msgid "Не треба, я ж вам нічого не зроблю! Все! Я... я тікаю звідси, просто залиште мене в спокої!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1874
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1818
 msgid "Схоже, темному чаклуну вдалося втекти. Бачить Світло, ми припустилися великої помилки, дозволивши це, проте зараз вже запізно щось з цим робити."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1888
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1832
 msgid "Чи не було це надто жорстоко, Вчителю? Він виглядав дуже наляканим..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1889
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1833
 msgid "Клянуся Світлом, ми зробили те, що мали зробити, Даеоло, і ніяк інакше. Ми лише виконуємо волю Світла, бо ж доля цього чаклуна була вирішена в ту мить, коли він наважився зрадити своїх людей, свій Острів та приєднатися до проклятих західняків."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1910
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1854
 msgid "Огидні кістяки таки до мєня дісталися... Уркгх..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1918
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1862
 msgid "Коли ж скінчиться це кляте жахіття? Люди нашого Острову помирають щодня, а оці західняки та їхні сили, здається, й не закінчуються!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1921
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1865
 msgid "Я помщуся за нашу Пенеллу, до бою!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1960
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1904
 msgid "Вчителю, ми не встигли вчасно знищити моноліти, я чую завивання привидів на болоті. Що ж нам робити?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1961
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:1905
 msgid "Бачить Світло, що не всю надію втрачено, Даеоло. Якщо дістанемося до монолітів та зруйнуємо їх, відчуваю, ми ще зможемо звільнити поневолені душі та навіки упокоїти їх."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2075
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2019
 msgid "А, ви вже й тут. А ну проходітє, проходітє всередину за мной, ми вас вже зачекалися."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2097
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2041
 msgid "Вчителю, в мене дуже погане передчуття щодо цих людей..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2098
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2042
 msgid "Ім'ям Світла, Даеоло, я відчуваю те ж саме, проте мені здається, що це лише відгуки зла, що оселилося в цьому болоті."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2112
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2056
 msgid "Я розвідаю ситуацію в копальні. Не відставай, чаклуне."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2135
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2079
 msgid "Як же не хочеться лізти в цю темну діру! Однак я зроблю це, щоб врятувати людей Скархейну!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2169
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2113
 msgid "<i>Бачить Світло, мені не вистачає сили зайти всередину, поки цього не зроблять Даеола та сержант. Проте чому, що це за відчуття?</i>"
 msgstr ""
 
 #. [then]
 #. [message]: speaker=haralin
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2198
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2142
 #: Chasing_the_Light/unused/code/05_Aftermath_original_final_cutscene.cfg:5
 msgid "Дякувати Світлу, Даеола та сержант вже всередині, тому час і мені спусти..."
 msgstr ""
 
 #. [then]
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2237
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2181
 #: Chasing_the_Light/unused/code/05_Aftermath_original_final_cutscene.cfg:31
 msgid "Ти добре прислужився Світлу, Гараліне, знищивши темних чаклунів Естену. Але зараз ти маєш зупинитися, інакше буде запізно!"
 msgstr ""
 
 #. [else]
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2240
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2184
 #: Chasing_the_Light/unused/code/05_Aftermath_original_final_cutscene.cfg:37
 msgid "Зупинися, Гараліне, ти маєш зупинитися, інакше буде запізно!"
 msgstr ""
 
 #. [then]
 #. [message]: speaker=haralin
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2246
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2190
 #: Chasing_the_Light/unused/code/05_Aftermath_original_final_cutscene.cfg:46
 msgid "<i>Ім'ям Світла, я зможу зупинитися лише тоді, коли мені буде зрозуміло, чому ти знову виступаєш проти доброї справи. Я не почув чіткої відповіді ні в святилищі, ні в Південній Бухті. Тож, може, поясниш мені нарешті?</i>"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2247
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2191
 msgid "Ти повільно втрачаєш те, що багато років захищало тебе та оточувало світлом, Гараліне. Ти мав це помітити, відчути, що поряд з цією дівчиною ти не чуєш порад, через що йдеш своїм нерозумним шляхом, не знаючи куди він приведе, бо ж це не шлях Світла."
 msgstr ""
 
 #. [then]
 #. [message]: speaker=haralin
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2248
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2192
 #: Chasing_the_Light/unused/code/05_Aftermath_original_final_cutscene.cfg:56
 msgid "<i>Даеола? Так, останнім часом саме вона витягала мене з твоїх пасток, в котрих ти намагаєшся нав'язати мені свою волю, змусити відмовитися від спасіння людей та повернутися до Древнього лісу. Бачить Світло, я бажаю, щоб зараз вона опинилася поруч.</i>"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2249
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2193
 msgid "Годі цього, Гараліне. Ти ж знаєш, що не існує ні моєї волі, ні моїх бажань, тому що існує лише шлях Світла, яким ти маєш йти, щоб принести користь людям та вберегтися від темряви, котру ти вивільнив, вперше відкривши ту темну книгу."
 msgstr ""
 
 #. [then]
 #. [message]: speaker=haralin
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2250
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2194
 #: Chasing_the_Light/unused/code/05_Aftermath_original_final_cutscene.cfg:66
 msgid "<i>Я вивільнив?.. Більше тридцяти років минуло з того часу, проте клянуся Світлом, я не забув ті чарівні слова, що тоді прозвучали у моїй голові — 'Подивися, ти маєш подивитися!'. Хіба я не дослухався до тебе, хіба не виконав твій наказ?</i>"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2251
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2195
 msgid "<i>Зараз же я чую, що мене переслідує невідчутне прокляття, хоча я змінив все, переписав все у тій книзі — не залишив там жодного темного слова. Ім'ям Світла, я вже зовсім не розумію тебе й до мене закрадається думка... що б сталося, якби я тебе не чув?</i>"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2266
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2210
 msgid "<i>Чи зміг би я врятувати свого батька, сім'ю Даеоли, Еніца, а також багатьох інших, кого вже не можу навіть пригадати? Чи був би я потужнішим магом, якби не витратив безліч років у святилищі? Може, я зміг би вчасно зупинити цю жахливу Естенську бійню?</i>"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2282
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2226
 msgid "<i>Чи зміг би я врятувати свого батька, сім'ю Даеоли, Джуанга, Еніца, а також багатьох інших, кого вже не можу навіть пригадати? Чи був би я потужнішим магом, якби не витратив безліч років у святилищі? Може, я зміг би вчасно зупинити цю жахливу Естенську бійню?</i>"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2298
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2242
 msgid "<i>Чи зміг би я врятувати свого батька, сім'ю Даеоли, Зегама, Еніца, а також багатьох інших, кого вже не можу навіть пригадати? Чи був би я потужнішим магом, якби не витратив безліч років у святилищі? Може, я зміг би вчасно зупинити цю жахливу Естенську бійню?</i>"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2316
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2260
 msgid "<i>Чи зміг би я врятувати свого батька, сім'ю Даеоли, Зегама, Джуанга, Еніца, а також багатьох інших, кого вже не можу навіть пригадати? Чи був би я потужнішим магом, якби не витратив безліч років у святилищі? Може, я зміг би вчасно зупинити цю жахливу Естенську бійню?</i>"
 msgstr ""
 
 #. [then]
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2319
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2263
 #: Chasing_the_Light/unused/code/05_Aftermath_original_final_cutscene.cfg:153
 msgid "Гараліне, отямся! Ти ж маєш розуміти, що без вказівок Світла, ти б не пережив навіть найпершої сутƔȡǂƛ!"
 msgstr ""
 
 #. [then]
 #. [message]: speaker=haralin
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2324
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2268
 #: Chasing_the_Light/unused/code/05_Aftermath_original_final_cutscene.cfg:161
 msgid "<i>Дякувати Світлу, схоже, мене знову рятують від розмови з тобою...</i>"
 msgstr ""
 
 #. [message]: speaker=narrator
 #. [message]: speaker=daeola
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2344
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2288
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:1198
 #: Chasing_the_Light/unused/code/05_Aftermath_original_final_cutscene.cfg:184
 msgid "Агов, Вчителю, ви мене чуєте? Нам дуже потрібна ваша допомога, у цій норі відбувалося щось дуже дивне!"
@@ -5081,25 +5091,25 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #. [message]: speaker=daeola
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2356
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2300
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:1226
 #: Chasing_the_Light/unused/code/05_Aftermath_original_final_cutscene.cfg:195
 msgid "Агов, Вчителю, ви мене чуєте? Люди у цій норі, вони якісь дивні та злі. Будь ласка, спускайтеся до нас!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2363
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2307
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:1237
 msgid "Агов, Вчителю, ви мене чуєте? Тут ще більше цих огидних людожерів, нам дуже потрібна ваша допомога!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2367
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2311
 msgid "Я вже йду, Даеоло, вже йду..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2367
+#: Chasing_the_Light/scenarios/05_Aftermath.cfg:2311
 msgid "quietly^<i>Я вже нічого не розумію — цей таємничий голос мій друг чи ворог?..</i>"
 msgstr ""
 
@@ -5407,28 +5417,28 @@ msgstr ""
 msgid "quietly^Як скажете, Вчителю."
 msgstr ""
 
-#. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1487
+#. [scenario]: id=06_Miscreants
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1474
 msgid ""
 "Наліво — Перша стоянка\n"
 "Направо — Ближні печери\n"
 "Прямо — Дальні печери"
 msgstr ""
 
-#. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1509
+#. [scenario]: id=06_Miscreants
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1477
 msgid ""
 "Направо — Друга Стоянка\n"
 "Наліво — Перша Стоянка"
 msgstr ""
 
-#. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1514
+#. [scenario]: id=06_Miscreants
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1478
 msgid "Не надто корисний вказівник — ці стоянки розділяє справжній лабіринт, як тут 'направо-наліво' допоможе??"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1543
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1503
 msgid ""
 "Гараліну невідомий жоден з символів на цій табличці, проте, лише подивившись на давнє письмо, він починає відчувати невідомий голос, схожий на далеке відлуння:\n"
 "\n"
@@ -5441,32 +5451,32 @@ msgid ""
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1560
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1520
 msgid "quietly^Як Островом підуть мерці... Ім'ям Світла, невже тут сказано про наш Зелений Острів?..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1561
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1521
 msgid "Вчителю, що там написано? Чи є щось цікаве?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1566
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1526
 msgid "Даеоло, тут..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1571
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1531
 msgid "Проте незважай, це просто якась дивна маячня, що просто співпала з дійсністю. Клянуся Світлом, передбачень не існує та існувати не може, тим паче наші пращури навряд володіли магією."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1572
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1532
 msgid "Наші предки не могли знати чаклунства, Гараліне? Це чудова новина, але ж звідки потім оця 'магія' взялася?.."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1641
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1601
 msgid ""
 "Гараліну невідомий жоден з символів на цій табличці, проте, лише подивившись на давнє письмо, він починає відчувати невідомий голос, схожий на далеке відлуння:\n"
 "\n"
@@ -5477,12 +5487,12 @@ msgid ""
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1656
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1616
 msgid "quietly^<i>Ім'ям Світла, я сподівався, що давні люди були хоч трохи мудріші. Як можна не відчувати зло та не повставати усім серцем проти нього?</i>"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1713
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1673
 msgid ""
 "Гараліну невідомий жоден з символів на цій табличці, проте, лише подивившись на давнє письмо, він починає відчувати невідомий голос, схожий на далеке відлуння:\n"
 "\n"
@@ -5493,449 +5503,449 @@ msgid ""
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1728
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1688
 msgid "Клянуся Світлом, це найнезрозуміліші слова, що мені доводилося чути за все моє життя! Хоча..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1728
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1688
 msgid "quietly^Одне лиш є — твоя мета. Чи хотіли <i>вони</i> сказати, якщо маєш добру мету, неважливо якими шляхами її досягнеш?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1729
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1689
 msgid "Ті люди давно мертві, чаклуне. Ми маємо спрямувати думки на порятунок Графа."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1831
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1791
 msgid "Бачить Світло, я почув багато дивних та страшних слів, але принаймні тепер кам'яні духи задоволені та погодилися підкоритись мені. Я відчуваю, що вони та подібні їм істоти дуже знадобляться в нашій подорожі..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1837
-msgid "Знову твої чаклунські трюки, Гараліне?.. Мені здається, що в нас є більш важливі речі, ніж розбиратися з живий камінням."
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1797
+msgid "Знову твої чаклунські трюки, Гараліне?.. Мені здається, що в нас є більш важливі речі, ніж розбиратися з живим камінням."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1838
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1798
 msgid "Не слухайте пана Зегама, Вчителю, це було неймовірно! Навчіть і мене, будь ласка, як це робити!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1841
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1801
 msgid "Вчителю, це неймовірно! Навчіть і мене, будь ласка, як це робити!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1843
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1803
 msgid "На все свій час, Даеоло. Можливо, колись і ти відчуєш поклик яких-небудь духів, проте зараз ми і справді повинні спрямувати наші думки та дії на пошук правильного шляху крізь ці печери."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1950
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1910
 msgid "Клянуся Світлом, я відчуваю як зростає незадоволення духів — я, певно, неправильно прочитав їхнє послання."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2003
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:1963
 msgid "Гараліне, на північ звідси є місце, що випромінює магію, навідайся туди."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2068
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2028
 msgid "Вам не перемогти, прокляті мерці — Естен стоятиме, поки живий хоч один його захисник! До мене, воїни, покажемо цим потворам чого варті люди Зеленого Острову!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2128
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2088
 msgid "quietly^<i>Пане Рурогіне, невже це... це ви... На жаль, і тут я не маю вибору...</i>"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2128
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2088
 msgid "Солдати, до бою, ми маємо знищити генерала та його варту!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2129
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2089
 msgid "Шкода, що цих бідолашних людей вже не можна врятувати. Якби ж я тільки знала таку магію, що могла б зцілити їхні душі та вирвати їх з-під впливу західняцьких чаклунів. Сподіваюся, коли я вивчу її та жоден ліч не посміє робити такого з нашими людьми!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2130
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2090
 msgid "Це даремна надія, чаклунко..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2130
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2090
 msgid "quietly^але сподіваюся, колись це стане дійсністю."
 msgstr ""
 
 #. [message]: speaker=$unit.id
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2151
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2111
 msgid "Стій на місці! Хто сміє наближатися до твердині останніх захисників Естену?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2155
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2115
 msgid "Ім'ям Світла, невже хтось зміг врятуватися в тій бійні? Воїне, я Гаралін — слуга Світла та посланець Короля Півде-..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2156
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2116
 msgid "Ми свої, свої, ми люди Зеленого Острову! Нас прислав Король Пів-..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2157
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2117
 msgid "Я сержант Королівського війська Південної Бухти! Доповідай, яка..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2158
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2118
 msgid "Радісно бачити, що хоробрі воїни Естену стояли проти проклятих чаклу-..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2159
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2119
 msgid "Ґа, а шо я?! Ми тут з Гаралінам па пріказу Кароля нач'бто!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2160
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2120
 msgid "Мандруємо з людьми ми, що з вами роду одного є, не ворогими ми то..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2161
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2121
 msgid "Ми маємо завдання від Короля Південної Бухти. Ви маєте пропустити на-..."
 msgstr ""
 
 #. [message]: speaker=$unit.id
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2180
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2140
 msgid "Ось воно що, чергова купка проклятих західняків посміла випробувати нашу міць. Не сподівайтеся на перемогу — ми вже знищили багато таких як ви! Солдати, до бою!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2184
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2144
 msgid ""
 "Почекай-те, ми ж не західня... ...!\n"
 "Що з в-вами усіма..? Щ-що з вашими обличчями..? Вчителю, п-погляньте, з цими людьми трапилося щось д-дуже страшне!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2197
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2157
 msgid ""
 "...!\n"
 "Хай помилує нас Світло, що це взагалі таке?! Їхні обличчя спотворено фіалковими венами, а їхні очі... Що з їхніми очима?!..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2202
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2162
 msgid "Ег-ге ж, Гараліне, лячне видовище, н-надто лячне... Я гадаю, у цьому винне якесь чаклунство, бо ці люди не мертві, вони не мерці — я це добре бачу."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2206
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2166
 msgid "Чаклуне! Зроби щось з ними своєю магією! Ти ж можеш їх зцілити чи хоча б знешкодити!?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2254
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2214
 msgid "Гараліне, ти ж відчуваєш — це страх, твій страх та твоїх супутників. У цій нерозважливій подорожі тобі зустрілося вже багато жахіть та потвор, проте це зовсім інше, чи не так?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2265
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2225
 msgid "<i>Ти маєш рацію, це вперше... Вперше, коли проти нас виступають не безликі потвори, а наші живі люди, яких, як я бачу та відчуваю, було спотворено та підкорено якимось жахливим прокляттям.</i>"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2268
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2228
 msgid "<i>Ти маєш рацію, хоч і не вперше... Не вперше, коли проти нас виступають не безликі потвори, а наші живі люди, проте тепер я бачу та відчуваю, що цих бідолах було спотворено та підкорено якимось жахливим прокляттям.</i>"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2274
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2234
 msgid "<i>(тяжко зітхає) Я не знаю, не знаю як мені бути — чи можу я врятувати їх, чи мені доведеться проливати кров свого ж народу? Принеси ж користь бодай зараз, порадь, що я маю обрати!</i>"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2275
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2235
 msgid "Гараліне, повертайся додому, до святилища — це все, що тобі можна порадити. Цих людей вже не врятувати, і продовжуючи цю 'пригоду' ти лише наражаєшся на все більшу небезпеку, бо ж далі будуть ще більші жахіття та сильніші вороги..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2279
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2239
 msgid "<i>...</i>"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2283
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2243
 msgid "<i>Ні.</i>"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2291
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2251
 msgid "<i>Мій дім там, де й був — в моєму селі, що було спалено проклятими західняками багато років тому. І бачить Світло, я не збираюся сидіти в безпечному лісі, якщо я маю силу, силу змінити хід цієї жорстокої війни та врятувати майбутнє наших людей.</i>"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2292
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2252
 msgid "<i>Так, я злякався, мене, як і усіх, злякало те, що <b>Прокляття</b> зробило з цими бідолашними захисниками Естену, проте я подолаю свій страх та обов'язково знайду рішення!</i>"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2293
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2253
 msgid "Гаралȵƪɮ, ȵƪ ʨƪʨȣƢȣ Ɣȡǂƛ ƢƛƔȡʨƪ!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2307
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2267
 msgid "Вчителю!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2314
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2274
 msgid "Мені здається, цих бідолах ще можна врятувати! Я спробую вилікувати одного з них своїм закляттям, може, в нього проясниться в голові та він зможе переконати інших?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2315
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2275
 msgid "Підтримую, нам знадобляться солдати."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2316
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2276
 msgid "Клянуся Світлом, я маю великі сумніви, що це спрацює, тому що я бачу, що вражено було не лише їхнє тіло, а й саму душу було викривлено до невпізнанності. На жаль, ми нічого не зможемо тут зробити... Проте хоч ми й маємо просто прийняти умови гри, яку нам нав'язав один з цих 'Владик-Лічів', бийтеся з естенцями лише за необхідності, не варто зайвий раз проливати людську кров."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2317
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2277
 msgid "Вчителю, невже ж...? ... О ні, тепер і я це відчуваю — навіть всередині, вони вже не є людьми... Пробачте, естенці, мені шкода, що я дала марну надію..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2398
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2358
 msgid "Що в цій забутій Світлом печері робить цей молот? У нашому селі таких ніхто не бачив, проте я чув, що ними часто користуються містяни."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2399
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2359
 msgid "Дивіться, тут молоток лежить! Цікаво, чи живий ще той, хто його залишив?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2400
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2360
 msgid "Зношений молоток, певно, шахтарський."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2401
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2361
 msgid "Судячи з клейма на держаку, цей молот з Естену. Певно, належав якому-небудь шахтарю, допоки його не вбили прокляті чаклуни..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2402
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2362
 msgid "Усе, що тут відбулося та відбувається, воістину є справою чаклунів, проте чаклунів темних та злих, проти яких всі ми, слуги Світла, ведемо запеклу боротьбу."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2403
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2363
 msgid "Гой, т' є файна стукалка!.. Я йего сєбє візьму — буду в ворагів кидати!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2404
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2364
 msgid "Людську ми річ бачимо, знаємо дерев не для знаряддя це ж бо."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2405
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2365
 msgid "Хтось загубив тут невеликий молот. Чи міг це бути якийсь шахтар?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2419
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2379
 msgid "Гой, т' є файна стукалка!.. Чи могу я йего сєбє взять, буду ворогів трощити!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2422
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2382
 msgid "Хай Світло вкаже тобі шлях, Джуангу — можеш взяти цю річ собі."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2423
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2383
 msgid "Файно чути, я сю штуку кидать б'ду, здалеку... Д'вай-но його сюди, Гараліне."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2424
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2384
 msgid "Ви впевнені, пане? Чи не забагато вам буде зброї в такому віці?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2425
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2385
 msgid "Да, я сю штуку кидать б'ду, здалеку... Тож д'вай сюди, дівко, тєбє воно точно не треба."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2426
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2386
 msgid "Використовуй його з користю."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2427
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2387
 msgid "Коресть буде, я сю штуку кидать б'ду, здалеку... Тож д'вай сюди, командір."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2428
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2388
 msgid "Маю сумніви, що це гарна зброя, але хай — маємо бити проклятих західняків всім, чим можемо."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2430
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2390
 msgid "Двоногий річ як хоче двоного, нас не обходить то це."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2431
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2391
 msgid "Д'рев'яний мужик дєло каже... Як нє разумєєш, то й не лізь. А я шо, я цєй штукай буду в ворагів кидати!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2432
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2392
 msgid "Тримай, чоловіче, зараз нам знадобиться будь-яка зброя."
 msgstr ""
 
 #. [object]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2445
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2405
 msgid "Старий молоток"
 msgstr ""
 
 #. [object]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2447
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2407
 msgid "Пан Джуанг отримує дальньобійну атаку 10х1 до кінця кампанії."
 msgstr ""
 
 #. [effect]: type=impact
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2451
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2411
 msgid "hammer"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2484
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2444
 msgid "Прокляті павуки затащили в своє павутиння навіть якусь бочку. Схоже, західняцьке прокляття сильно спотворило їхній розум..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2485
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2445
 msgid "Бочка? Цікаво, нащо павуки її вкрали? Її ж навіть з'їсти не можна!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2486
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2446
 msgid "Тут нема нічого корисного, рухаємося далі."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2487
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2447
 msgid "Ці кляті павуки зовсім подуріли — приволокли в своє лігво звичайнісіньку бочку."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2488
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2448
 msgid "Ґа, шо то таке?! ... А, ну то якась бочка і шо мені з того?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2489
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2449
 msgid "З роду деревного руками зроблено двоногих це, відчуваємо тому жаль ми..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2490
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2450
 msgid "Ха, схоже, павуки спіймали в свої сіті бочку з вугіллям. Оце вони дурні!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2509
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2469
 msgid "Схоже, тут загинув бідолашний шахтар. Хай помилує його душу Світло."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2511
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2471
 msgid "Моє чуття підказує, що шахтарі, що загинули тут, не були людожерами. Хоч яким жахливим не був їхній кінець, принаймні вони залишилися людьми."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2514
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2474
 msgid "Жах, тут людський скелет!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2520
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2480
 msgid "Тут нема на що дивитися. Веди далі, чаклуне."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2522
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2482
 msgid "Черговий людожер знайшов свою смерть."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2525
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2485
 msgid "Схоже, проклятих західняків і справді ще не було в цих печерах, інакше цей кістяк на нас би напав."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2526
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2486
 msgid "Кості це всьо, шо лишилось від людини... 'т кляті павуки!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2527
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2487
 msgid "Двоногий не зрушить цей нікуди вже, багатоногі вбили ж його бо."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2528
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2488
 msgid "Схоже, це залишки нещасного шахтаря. Чи знайдемо ми ще щось в цьому павутинні?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2544
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2626
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2724
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2916
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3220
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3379
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2504
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2586
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2684
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2876
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3180
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3339
 msgid "Я читать не вмію, тож воно мені не треба. Хто хоче — читайте."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2545
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2627
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2725
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2917
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3221
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2505
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2587
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2685
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2877
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3181
 msgid "Гараліне, прачитай шо тут!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2546
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2628
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2726
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2918
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3381
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2506
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2588
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2686
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2878
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3341
 msgid "Мудрий двоногий глянути має, свиток на підлозі бо лежить."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2552
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2512
 msgid ""
 "<span font-family='Akademie Alte' font-size='24000' color='white'>З журналу Аравіта,\n"
 "наглядача Західних Дальніх печер.\n"
@@ -5944,74 +5954,74 @@ msgid ""
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2578
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2538
 msgid "Без сумнівів, тут мова йде про місцевих духів, присутність яких я відчув, як тільки зайшов до копалень. Хвала Світлу, що ми вже знайшли їхнє джерело!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2579
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2539
 msgid "Злі духи? Гадаю, той, хто написав записку, сильно помилився — він побачив духів природи!"
 msgstr ""
 
 #. [then]
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2580
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2594
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2540
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2554
 msgid "Ми маємо рятувати Графа Чорнотопу, не читати вигадки про духів."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2581
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2541
 msgid "Здається, ми вже зустрічали щось подібне — оживлене чаклунством каміння."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2582
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2542
 msgid "Ґа, ета ж про камєнь, що рухався. Он воно што!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2583
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2543
 msgid "Камінь живий йде про мова, зустрічали такий ми бо."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2584
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2544
 msgid "Певно, він бачив тих кам'яних духів, що ми зустріли неподалік звідси."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2592
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2552
 msgid "Ім'ям Світла, певно, мова йде про місцевих духів, присутність яких я відчуваю в цих печерах. Я повинен відшукати шлях до них."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2593
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2553
 msgid "Злі духи? Я спробую прогнати їх своєю магією, якщо побачу!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2595
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2555
 msgid "Ось що там написано... Певно, у цього чоловіка в темряві з'їхав дах. Як в цій темряві взагалі можливо щось роздивитися?"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2596
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2556
 msgid "О! Статуї... Алє ми ж не зустрічалі нікаких статуй... Нє зустрічалі!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2597
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2557
 msgid "Невідомий слів цих нам сенс. Статуї таке що та роблять не під Сонцем що?"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2598
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2558
 msgid "Дивина якась, може, це були якісь витівки проклятих західняків?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2632
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2592
 msgid ""
 "<span font-family='Akademie Alte' font-size='24000' color='white'>З записок безіменного шахтаря.\n"
 "		\n"
@@ -6019,89 +6029,89 @@ msgid ""
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2656
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2616
 msgid "Ім'ям Світла, це черговий доказ злочинів тих нелюдів-людожерів. Хай спочивають душі їхніх невинних жертв з миром."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2657
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2617
 msgid "Який же жах коївся у цих печерах... Цікаво, чи змогли б маги не допустити всього цього, якби були в Естені..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2664
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2624
 msgid "Тобто вони мертві. Рухаємося далі."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2667
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2627
 msgid "Карор? Чаклуне, тут був Карор?"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2668
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2628
 msgid "Ім'ям Світла, сержанте, не прислуховуйтеся до людських пліток. Хоч про цього проклятого ліча й багато хто згадує, проте він ніяк не міг опинитися в Естені."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2670
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2630
 msgid "Гадаю, усі ми розуміємо, що їм це не вдалося. Що ж, прийнаймні вони спробували."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2671
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2631
 msgid "Ґа! Я поняв... Етіх людей цих павукі сажралі!"
 msgstr ""
 
 #. [then]
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2672
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2694
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2632
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2654
 msgid "Двоногий коли двоного жере, бути так не має, світ увесь каже так бо."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2673
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2633
 msgid "Ось воно що, тобто не усі шахтарі були людожерами, хтось-таки намагався втекти від них."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2679
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2639
 msgid "Фе, гидота! Який же жах коївся у цих печерах... Вчителю, що за нечестиві слова тут взагалі написані!?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2687
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2647
 msgid "Тобто вони мертві. Рухаємося да-... Зачекайте, вони 'жралі людєй'?..."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2690
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2650
 msgid "Карор? Чаклуне, тут був Каро-... Зачекайте, вони 'жралі людєй'?..."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2692
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2652
 msgid "Гадаю, усі ми розуміємо, що їм це не вдалося. Але мене хвилює інше в цьому листі, схоже, мої підозри виправдалися..."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2693
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2653
 msgid "Ґа! Я поняв... Нє... не пойняв... Ані шо людєй їли, шахтьори еті?"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2695
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2655
 msgid "Ось воно що, тобто... Прокляття, що це взагалі таке?! Що означає 'людєй жрать почалі'?!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2730
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2690
 msgid "Ей, забєри руки від мого щоденника, не читай його!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2732
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2692
 msgid ""
 "<span font-family='Akademie Alte' font-size='24000' color='white'>З щоденника Пенелли, дружини пана Аліна.\n"
 "\n"
@@ -6111,67 +6121,67 @@ msgid ""
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2760
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2720
 msgid "Знаєте, Вчителю, хоч це і огидна людожерка, після прочитання цього листа, мені навіть якось стало її шкода..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2761
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2721
 msgid "Ім'ям Світла, твоє добре серце підводить тебе, Даеоло. У цих рядках я бачу лише зверхність та бажання вижити понад усе, навіть якщо для цього доведеться відкинути усю свою людяність."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2762
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2722
 msgid "Вірно, чаклуне. Краще померти з честю, ніж стати нелюдом."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2765
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2725
 msgid "Вчителю, після прочитання цього листа в мене виникли сумніви — а чи добрим людям ми допомогли?.."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2766
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2726
 msgid "Бачить Світло, я теж відчуваю щось подібне — якщо вірити цій жінці, шахтарі вбили її чоловіка... Також що може означати перше речення? Невже..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2793
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2753
 msgid "Ім'ям Світла, я відчуваю якою жахливою смертю помер цей чоловік — від голоду, не здатний ні пройти далі, ні повернутися назад. Схоже, його мертва рука досі тримає щось, якусь записку."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2794
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2754
 msgid "Схоже, цей бідолаха помер, тікаючи від павуків. О, тут в нього ще й записка є, цікаво, що він у ній написав?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2795
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2755
 msgid "Далі шляху немає. Кістяк тримає якусь записку."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2796
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2756
 msgid "Черговий мертвий шахтар, хай будуть прокляті всі ті темні чаклуни! У нього є записка, прочитайте хто-небудь, бо я не вмію."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2797
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2757
 msgid "Отсе тут якийсь челов'яга помєр, зємля пухом й'му... Ей! Прочитайтє запіску, у нєво в рукє вона!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2798
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2758
 msgid "Мертвий черговий тут двоногий лежить. Мудрий двоногий глянути має, того свиток в руках бо."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2799
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2759
 msgid "Далі лише провалля, схоже, ми дарма сюди йшли. Хоча у кістяка, що тут лежить, є якийсь шматок паперу. Може, там щось цікаве?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2802
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2762
 msgid ""
 "<span font-family='Akademie Alte' font-size='24000' color='white'>З записок Еддека, шахтаря.\n"
 "		\n"
@@ -6181,72 +6191,72 @@ msgid ""
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2828
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2788
 msgid "Цього шахтаря покинули зрадники та боягузи."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2829
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2789
 msgid "Але ж хіба вони могли чимось зарадити? Ті огидні павуки були здоровезними!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2830
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2790
 msgid "Не кидати свого та померти з честю."
 msgstr ""
 
 #. [modify_unit]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2855
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2815
 msgid "Рхавос"
 msgstr ""
 
 #. [message]: type=Walking Corpse, Soulless
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2860
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2820
 msgid "Раааґах! Уууу-мргх-иии!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2864
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2824
 msgid "Бачить Світло, недарма ти виповз зі свого сховку — я поверну тебе до землі та упокою твою стражденну душу."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2865
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2825
 msgid "Жах, у цій халупі ховався живий мрець! Я прожену його силою Світла!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2866
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2826
 msgid "Дарма ти виліз — помреш знову."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2867
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2827
 msgid "Ух... Мене налякала ця потвора. Схоже, кляті чаклуни підіймали мертвих навіть так глибоко в печері."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2868
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2828
 msgid "Ага, еще адин мертвяк! Ану йди с'да!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2869
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2829
 msgid "Двоногих нечестивих і в землі тут повно, осквернена бо ж земля була певно."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2870
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2830
 msgid "Аааа, тут один з цих ходячих мерців! Мені здавалося, що хоч в печерах цих жахіть не має бути."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2896
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2856
 msgid "Дивіться, поміж праху того нещасного мерця видніються якісь записки!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2922
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2882
 msgid ""
 "<span font-family='Akademie Alte' font-size='24000' color='white'>З записок безіменного шахтаря(1/2).\n"
 "		\n"
@@ -6254,7 +6264,7 @@ msgid ""
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2946
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2906
 msgid ""
 "<span font-family='Akademie Alte' font-size='24000' color='white'>З записок безіменного шахтаря(2/2).\n"
 "		\n"
@@ -6262,152 +6272,152 @@ msgid ""
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2977
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2937
 msgid "Воістину, це сумна історія, що показує наскільки людям Зеленого Острову потрібне Світло. Якби магів було більше, ми б ніколи не допустили подібних жахіть."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2978
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2938
 msgid "Однак його в кінці врятували інші естенці, схоже, ця історія має щасливий кінець, хоч і не для всіх..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2979
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2939
 msgid "Це жахливо... Все, що приносять ці західняки, це жах та страждання. Сподіваюся, колись я покладу цьому кінець!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2980
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2940
 msgid "Розповідь чергового зрадника."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2981
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2941
 msgid "Ім'ям Світла, сержанте, я розділяю твоє бажання стояти за своїх... захищати людей <i>нашого</i> Острову, проте цей шахтар, я відчуваю, що він не мав жодної іншої долі, окрім смерті."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2982
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2942
 msgid "Втечею він осоромив свій рід, ми дізналися про це. Це гірше смерті."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2983
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2943
 msgid "Схоже, в кінці бідолаха з'їхав з ґлузду та йому почало щось ввижатися... чи то були чаклунські витівки? Добре, що нам вдалося упокоїти чергову жертву проклятих чаклунів."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2984
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2944
 msgid "Ґа?! Я нічьо з цього не пойняв... Але мужика шк'да!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2985
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2945
 msgid "Темною людей Острову цього доля є, вас 'західняки' ці звані так зрубали багато..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2986
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2946
 msgid "У мене змішані відчуття щодо цього чоловіка. З одного боку його, звісно ж, шкода, але чому він покинув Івін?!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2989
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2949
 msgid "А як щодо мапи, ми будемо шукати те, що заховав цей шахтар?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2990
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2950
 msgid "Раджу не витрачати на це час, чаклунко. Не забувай про мету."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2996
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2956
 msgid "Гой! Дівки, клад то файно... ми майм' цей... Найті єго!"
 msgstr ""
 
 #. [set_variable]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3002
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:2962
 msgid "(додатково) Знайдіть скарб загиблого шахтаря"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3072
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3032
 msgid "Хай помилує Світло душу того чоловіка. Невже він і справді гадав, що зможе прорватися до виходу, маючи лише кайло та кілька монет?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3074
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3034
 msgid "Кайло та менше десяти монет. Це було варто пошуків?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3075
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3035
 msgid "Шахтарське знаряддя, а також трохи грошей. Сумніваюся, що це б допомогло тому чолов'язі вибратися звідси."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3076
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3036
 msgid "Гой, тут... файниє стукалки для шахтарів... А шче тут... Ґа?.. Н'многа монєт!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3077
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3037
 msgid "Бачимо людьське знаряддя ми бо, каміння трохи золотого також є."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3078
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3038
 msgid "Схоже, той шахтар намагався забрати своє кайло, а ще кілька монет. Що ж, тепер вони наші."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3097
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3057
 msgid "Як так! Це ж зовсім не схоже на скарб, тут майже нічого нема! Як можна було нас так обманювати?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3098
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3058
 msgid "Ім'ям Світла, Даеоло! Шахтарі це бідні люди, для яких навіть {ON_DIFFICULTY 10 5 5} це купа грошей, а в нас, селян, навіть монети не було. Тому не кажи більше таких речей!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3099
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3059
 msgid "Вибачте, Вчителю..."
 msgstr ""
 
 #. [set_variable]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3111
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3071
 msgid "found"
 msgstr ""
 
 #. [set_variable]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3121
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3081
 msgid "<span strikethrough='true'>(додатково) Знайдіть скарб загиблого шахтаря</span>"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3187
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3147
 msgid "Аргх, прокляті західняки дісталися до мене... Воїни, продовжуйте боротьбу!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3190
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3150
 msgid "Аргх, прокляті західняки дісталися до мене... Кгх, схоже... Естен пав..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3202
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3162
 msgid "quietly^Спочивайте з миром, генерале. Клянуся родом, я завжди пам'ятатиму пра вас..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3222
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3182
 msgid "Мудрий двоногий глянути має, сувій на підлозі бо лежить."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3226
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3186
 msgid ""
 "<span font-family='Akademie Alte' font-size='24000' color='white'>З записок Генерала Рурогіна,\n"
 "Командувача війська Чистих Вод(1/3)\n"
@@ -6418,7 +6428,7 @@ msgid ""
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3252
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3212
 msgid ""
 "<span font-family='Akademie Alte' font-size='24000' color='white'>З записок Генерала Рурогіна,\n"
 "Командувача війська Чистих Вод(2/3)\n"
@@ -6429,7 +6439,7 @@ msgid ""
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3280
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3240
 msgid ""
 "<span font-family='Akademie Alte' font-size='24000' color='white'>З записок Генерала Рурогіна,\n"
 "Командувача війська Чистих Вод(3/3)\n"
@@ -6442,92 +6452,92 @@ msgid ""
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3309
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3269
 msgid "quietly^<i>Ось як воно скінчилося...</i>"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3309
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3269
 msgid "Чаклуни, ви знаєте, що саме тут сталося?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3310
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3270
 msgid "Вчителю, це ж черговий доказ, що той Карор-таки був тут! Це вже не селянські балачки, а записи самого генерала!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3318
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3278
 msgid "Ім'ям Світла, я теж схиляюся до того, що це був саме мерзенний Карор, проте як щод-..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3320
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3280
 msgid "Чаклуне, це вагомий доказ. Пан Рурогін був людиною честі, він не казав неправди."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3327
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3287
 msgid "Пан Рурогін? Сержанте, хіба ж це не твій..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3328
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3288
 msgid "Зараз це неважливо. Що скажеш, чаклуне?"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3331
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3291
 msgid "Невже ти знала цього чоловіка, сержанте? Мені здавалося, що ти з Південної Бухти."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3332
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3292
 msgid "Так, знала... Неважливо. Що скажеш, чаклуне?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3334
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3294
 msgid "Клянуся Світлом, тепер я змушений... змушений визнати, що я помилився — загадковий артефакт тепер точно не в того мерця Карора, а в невідомого нам 'Владики-Ліча', певно, набагато потужнішого за нього..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3340
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3300
 msgid "Що ж ти так причепився до того 'артєфакта', Гараліне?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3341
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3301
 msgid "Зегаме, тому що від нього залежить все — ця війна та існування нашого народу. Я відчуваю, що той, хто оволодіє його силою, буде здатен на все."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3343
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3303
 msgid "Однак, Вчителю, чому ж той, хто відібрав в Карора ту річ, ще не знищив увесь наш Зелений Острів, якщо він тепер має таку силу?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3344
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3304
 msgid "Не знаю, Даеоло, проте можу припустити, що дев'ятнадцять років тому між Карором та невідомим лічом відбулася сутичка через той артефакт, Карор програв і втратив більшість своєї сили, тому був змушений відійти та зупинити свій переможний наступ на Чорнотоп. Чуття підказує мені, що саме через це він не атакує нас напряму велетенськими арміями мерців, а, як казали селяни, 'з'являється нізвідки' завдяки своїй чорній магії."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3345
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3305
 msgid "Має сенс, що з іншим 'лічом'?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3346
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3306
 msgid "Певно, той артефакт потребує майстерності чи якихось знань, через що він не зміг одразу ним скористатися. І, бачить Світло, якщо прокляті західняки знову почали свій наступ не лише біля Чорнотопу, а й на інших напрямках, той мерзотник щось-таки вивчив чи дізнався... Проте зараз в нас нема часу на роздуми, бо ж ми маємо рятувати Графа, але потому я матиму одне прохання до Короля..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3380
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3340
 msgid "Гараліне, прачитай мнє шо тут!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3385
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3345
 msgid ""
 "<span font-family='Akademie Alte' font-size='24000' color='white'>З журналу Тозарія,\n"
 "наглядача Східних Дальніх печер.\n"
@@ -6541,854 +6551,854 @@ msgstr ""
 
 #. [then]
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3422
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3444
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3382
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3404
 msgid "Ім'ям Світла, невже тут і справді були захисники Естену? Якщо так, ми мусимо спробувати їх знайти, можливо, вони приєднаються до нашого завдання або хоча б прикриють спину."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3423
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3383
 msgid "Яка ж і справді жахлива трагедія тут сталася... І тут навіть згадується про тих нещасних людей, захисників Естену. Схоже, коли відступали до печер, вони ще володіли собою."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3424
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3384
 msgid "Шахтарі мертві, воїнів було проклято. Рухаємося далі."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3425
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3385
 msgid "Ми бачили їх, оборонців Естену. Прокляті темні чаклуни щось зробили з ними, прокляли чи що?..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3426
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3386
 msgid "Аґа... значит, отє здурєвшіє салдати з Естена тут проходіли..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3427
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3387
 msgid "В глибини далі землі тікати нерозумний є то вибір. Бачимо ми, було і справді помилкою це тепер."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3434
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3394
 msgid "У цій записці згадується про проклятих воїнів, яких ми зустріли в одному з проходів. Цікаво, чи справді Карор зробив з ними це?"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3437
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3397
 msgid "У цій записці згадується про проклятих воїнів, яких ми зустріли в одному з проходів. І цей проклятий Карор, виходить, і справді переслідував їх аж туди..."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3445
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3405
 msgid "Яка ж і справді жахлива трагедія тут сталася... Ого! Вчителю, тут написано, що в залишки воїнів Естену відступили до якихось Західних Дальніх печер. Ми маємо допомогти їм — я впевнена, в них багато поранених."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3446
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3406
 msgid "Вони мертві, що шахтарі, що солдати. Рухаємося далі."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3447
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3407
 msgid "Після всього, що ми тут побачили, я сумніваюся, що хоча б хтось з них вижив. Хоча, можливо, варто їх пошукати..."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3448
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3408
 msgid "Аґа... значит, шче Естена люди живиє є?.."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3449
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3409
 msgid "В глибини далі землі тікати нерозумний є то вибір."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3450
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3410
 msgid "Захисники Естену вирішили відступити до печер? Дивний вибір — звідси нікуди туди."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3493
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3453
 msgid "Ім'ям Світла, хіба це не частина з тих припасів, які ми віддали тим людям? Схоже, це наша винагорода за доброту — ці залишки допоможуть нам в тяжкій подорожі печерами."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3495
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3455
 msgid "Ім'ям Світла, хіба це не частина з тих припасів, які ми необачно віддали проклятим людожерам? Добре, що ці мерзотники не з'їли все — залишки допоможуть нам в тяжкій подорожі цими печерами."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3503
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3463
 msgid "Дивіться у цій скрині щось є! Схоже, це частина припасів, що ми віддали тим тим нещасним людям!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3505
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3465
 msgid "Дивіться у цій скрині щось є! Схоже, це частина припасів, що ми віддали тим мерзенним людожерам!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3508
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3468
 msgid "Тут частина наших припасів."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3509
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3469
 msgid "Що ж, схоже, це скриня, в яку вони поклали наші харчі. Добре, що частина ще вціліла."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3510
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3470
 msgid "Ґа!? Та тут ч'стина нашой єди... Отсе нам пощастила!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3511
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3471
 msgid "Харчів тут ваших частина є, але й виріб цей малий ліса був частиною живою, двоногими жорстокими умертвлений був з топорами."
 msgstr ""
 
 #. [then]
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3512
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3546
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3472
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3506
 msgid "Пане лісовику, більшість наших хатин та речей зроблено саме з дерева. Тоді ви, певно, вважаєте всіх людей жорстокими?"
 msgstr ""
 
 #. [then]
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3513
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3547
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3473
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3507
 msgid "Перейняла від мудрого двоногого мудрості ти частину, бачимо ж бо ми. Праліс ріс зелений по Острову усьому, його від того назва й, з гострим металом не лишили люди ваші нічого майже проте..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3514
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3474
 msgid "Тут частина наших припасів! Вони нам ще знадобляться в цій печері!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3536
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3496
 msgid "Схоже, у них і справді не було жодних припасів, тож, бачить Світло, я шкодую, що ми не позичили їм хоч дещицю."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3538
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3498
 msgid "Схоже, у них і справді не було жодних припасів, проте, бачить Світло, я анітрохи не шкодую, що ми не допомогли цим людожерам!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3541
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3501
 msgid "Дивіть, а ось тут у нас..! Чекайте-но, тут нічого нема!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3542
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3502
 msgid "Гадаю, це усі їхні 'припаси.'"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3543
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3503
 msgid "Що ж, принаймні зараз нам відомо, що вони не брехали про відсутність харчів. В будь-якому випадку, зараз вони вже були б їм непотрібні."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3544
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3504
 msgid "Ґа?.... Д'рев'яна коробка? І це всьо шо у вас є?!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3545
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3505
 msgid "Виріб цей малий ліса був частиною живою, двоногими жорстокими умертвлений був з топорами."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3548
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3508
 msgid "Ця скриня порожня, але мені здається, в ній раніше зберігали якісь харчі."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3583
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3543
 msgid "Клянуся Світлом, я відчуваю, що нам треба ще глибше зануритися в печери, проте це точно не той шлях. Ми маємо продовжувати шукати правильний прохід в глибини землі."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3584
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3544
 msgid "Вчителю! Ви колись бачили щось подібне!? Це ж справжня вогняна вода!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3585
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3545
 msgid "Клянуся родом, це небезпечно. Чаклуни, не підходьте сюди!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3586
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3546
 msgid "Я чув розповіді шахтарів про це, але побачити це вживу... Це зовсім інше..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3587
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3547
 msgid "Озєро вогню! От б' отаке на західняків вилити!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3588
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3548
 msgid "Дихання відчуваємо ми вогню, маємо тому відійти, не згоріти щоб бо."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3589
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3549
 msgid "Що це там сяє вдалині?.. Нам точно сюди не треба, тримаймося подалі від вогняного озера!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3629
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3589
 msgid "Гей, хлопці, як вам наше свіже м'ясо? ... Шо... Чому вони ще живиє?!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3630
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3590
 msgid "Вчителю, це та сама людожерка, що охороняла вхід в цю нору. Схоже, тепер ми оточені з усіх сторін!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3631
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3591
 msgid "Нас оберігає саме Світло, Даеоло, тому ми впораємося і з цим випробуванням. Що ж щодо вас, нелюди — моя магія зітре вас у прах!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3638
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3598
 msgid "Тсе ми ще побачимо, старий. Наша зброя та жага до жизні сильніша за будь-які чаклунскіє трюкі!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3641
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3601
 msgid "Не кажи того, шо ще не знаєш, старий. Моя жага до жизні сильніша за будь-які чаклунські трюкі!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3704
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3664
 msgid "Прокляті мерці з боліт нарешті наздогнали нас, проте не впадайте в відчай — Світло захистить нас від цих потвор!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3705
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3665
 msgid "Вчителю! Ті огидні мерці з Естену вже в печері, що нам робити?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3706
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3666
 msgid "Даеоло, сержанте, усі інші, тримайтеся поруч зі мною, і Світло вкаже нам шлях та захистить від цих потвор!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3707
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3667
 msgid "Чаклуне, мерці з боліт тут."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3708
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3668
 msgid "Незважай на них, сержанте, ми маємо рухатися в глибини цієї печери. Якщо мерці продовжать гонитву, клянуся Світлом — я спопелю їх усіх до єдиного!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3709
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3669
 msgid "Що ж, ми тепер точно в пастці! Позаду мерці, попереду невідомі потвори, а провадить нас лише чуття чаклуна!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3710
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3670
 msgid "Зегаме, клянуся Світлом, з того часу як ми покинули святилище, ти зовсім занепав духом. Нас-бо ж веде не лише моє чуття, а й саме Світло, без сили якого ми, і ти, і я, давно б загинули!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3711
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3671
 msgid "О! Чєргові чєрєпушкі прішлі! Гараліне, я м'гу іх побити?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3712
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3672
 msgid "Незважай на них, пане, ми маємо рухатися в глибини цієї печери. Але, якщо мерці продовжать гонитву, клянуся Світлом — твоя булава знадобиться!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3713
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3673
 msgid "Двоногих бачимо нечистих ми, мудрий двоногих робитимеш ж що ти?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3714
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3674
 msgid "Ми маємо рухатися в глибини цієї печери, шановний Долманнумбіле. Але, якщо мерці продовжать гонитву, клянуся Світлом — ми потрощимо їх на крихти!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3715
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3675
 msgid "Пане Гараліне, кляті мерці з Естенських боліт наздоганяють нас!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3716
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3676
 msgid "Не впадайте в відчай — Світло захистить нас від цих потвор! Рухаємося далі, ми маємо дістатися до найвіддаленіших глибин цієї печери!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3781
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3760
 msgid "Бачить Світло, ми припустилися великої помилки, не знищивши ті моноліти, і тепер ми маємо наслідки — прокляття посилилося, і невпокоєні духи лізуть у печери."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3782
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3761
 msgid "Схоже, ті прокляті духи з болота вирішили переслідувати нас! Дарма ми не знищили всі ті моноліти!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3783
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3762
 msgid "Чаклуне, привиди в печері. Ваша магія повинна їх знищити."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3784
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3763
 msgid "Кляті привиди тепер не лише на болоті, а й в цій печері. Гараліне, зроби щось корисне своїм чаклунстом, знищи їх!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3785
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3764
 msgid "Гой, т' не єсть файно... Чєргові прімари моя булава не бєрьот... То магія ета треба!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3786
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3765
 msgid "Двоногих бачимо ми прозорих повітрі у що літають. Мудрий двоногий, їх ти укорінити маєш певно."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3787
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3766
 msgid "Прокляття! Схоже, ті примарні мерці з монолітів дісталися до цих печер! Ми маємо поспішати!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3820
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3799
 msgid "Вчителю, дивіться, тут печерні тварини, однак вони... якісь дивні?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3821
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3800
 msgid "Печерні потвори. Солдати, знищуйте їх, якщо вони є загрозою."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3822
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3801
 msgid "Жодна з шахтарських історій не розповідає про подібних потвор. Закладаюся, це справа рук проклятих чаклунів!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3823
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3802
 msgid "Ґа?! Тсе якісь новиє тварюки... Ал' мая дубинка іх теж битиме!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3824
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3803
 msgid "Бачимо істот ми підземних, бути вони не мають тут проте."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3825
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3804
 msgid "Що... Що це за огидні потвори?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3828
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3807
 msgid "Ім'ям Світла, подібних істот не має бути ні в печерах, ні деінде на Зеленому Острові. Певно, на ці землі і справді впало страшне прокляття, гідне сили одного з цих мерзенних 'Владик-Лічів'!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3833
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3812
 msgid "Що це за потвора?!.. Ім'ям Світла, подібних істот не має бути ні в печерах, ні деінде на Зеленому Острові! Певно, на ці землі і справді впало страшне прокляття, гідне сили одного з цих мерзенних 'Владик-Лічей'!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3837
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3816
 msgid "Чи може це свідчити про те, що Естен прокляв саме той Карор, Вчителю? Недарма ж усі місцеві лише про нього згадують!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3838
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3817
 msgid "Занадто багато речей вказує саме на нього, проте я не можу позбутися думки, що тоді, в нашому селі, я відчув присутність його могутнього артефакту. Зараз же я відчуваю його далеко на півночі, ген на краю нашого Острову. Можливо, хтось більш сильний відібрав ту річ у клятого Карора, але ми не можемо знати напевне..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3839
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3818
 msgid "Щось ти надто захоплений тим 'артефактом', Гараліне? Яка різниця, хто його має десь далеко, коли ми маємо справу з тим, що поряд?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3840
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3819
 msgid "Годі, не забувайте про мету — дістатися до Скархейну."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3853
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3832
 msgid "Ім'ям Світла, будьте обережнішними! Судячи з навколишніх химерних статуй та мого чуття, ті дві потвори, що схожі на півнів, здатні скам'яняти своїх жертв. Ми маємо знищити їх достатньо швидко, щоб вони не встигли використати свою здібність!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3854
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3833
 msgid "Вчителю, а що ми робитимемо, якщо ці півні скам'янять когось? Чи можна буде їх врятувати?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3861
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3840
 msgid "Гадаю, за допомогою підкорених мені духів каміння я зможу їх звільнити, проте на це знадобиться час, бачить Світло, дуже багато часу."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3862
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3841
 msgid "...якого в нас немає."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3865
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3844
 msgid "Гадаю, якби я підкорив місцевих духів, вони могли б допомогти їх звільнити, проте, бачить Світло, невідомо скільки на це знадобиться часу."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3866
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3845
 msgid "Тобто, якщо щось станеться, порятунку можна не чекати. Дякую, Гараліне, ти вмієш заспокоювати."
 msgstr ""
 
 #. [message]: speaker=haralin
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3897
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3950
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3876
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3929
 msgid "Ім'ям Світла, помр- *хрусь*"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3905
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3958
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3884
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3937
 msgid "О ні, Вчителю, тільки не ви..! Він був єдиний, хто зміг би врятувати людей з каміння. Без нього все втрачено!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3908
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3961
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3887
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3940
 msgid "О ні, Вчителю, тільки не ви..! І тепер, на нажаль, все втрачено, наше завдання тепер приречене..."
 msgstr ""
 
 #. [message]: speaker=daeola
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3916
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3969
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3895
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3948
 msgid "Вчителю, це чудовисько вони див- *хрусь*"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3918
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3971
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3897
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3950
 msgid "Хай помилує нас Світло! Даеоло, тільки не ти!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3922
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3975
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3901
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3954
 msgid "Продовжуйте борот-... *хрусь*"
 msgstr ""
 
 #. [then]
 #. [message]: speaker=haralin
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3923
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3976
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3902
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3955
 #: Chasing_the_Light/utils/herodeaths.cfg:68
 msgid "Хай помилує нас Світло! Без примусу сержанта інші солдати не підкорятимуться нам, завдання Короля провалене!"
 msgstr ""
 
 #. [message]: speaker=peasant_hater
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3931
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3984
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3910
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3963
 msgid "Це все це кляте чаклу-... *хрусь*"
 msgstr ""
 
 #. [message]: speaker=hunter
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3936
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3989
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3915
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3968
 msgid "Ґа, нє сматрі на-... *хрусь*"
 msgstr ""
 
 #. [message]: speaker=hunter
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3941
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3994
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3920
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3973
 msgid "Корінн-... *хрусь*"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4017
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3996
 msgid "Хссссс!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4020
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:3999
 msgid "Хай помилує нас Світло, схоже, ми й справді натрапили на лігво велетенських павуків."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4021
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4000
 msgid "Жах, хіба не було іншого шляху? Тепер нам ще з цими потворами битися!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4022
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4001
 msgid "Великі павуки. Солдати, знищуйте їх."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4023
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4002
 msgid "Чудово, а тепер ми залізли у лігво до великих павуків. Гараліне, ти точно знаєш, куди нас ведеш?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4024
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4003
 msgid "Ґа?! Тсе якісь большіє павукі... В м'єй хаті такого нє було..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4025
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4004
 msgid "Бачимо істот ми багатоногих, на двоногих не схожі вони."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4026
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4005
 msgid "Пане Гараліне, тут здоровезні павуки. Спаліть їх своєю магією!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4046
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4025
 msgid "Ім'ям Світла, я маю великі сумніви, що це велике павутиння завжди тут було! Гадаю, у цьому винне прокляття, що нависло над Естеном."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4047
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4026
 msgid "Фе, он там справжня бридота! Прохід загороджує багато павутиння!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4048
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4027
 msgid "За цим павутинням будуть великі павуки."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4049
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4028
 msgid "Прокляття, навіть мене лякає розмір того павутиння. Що ж за потвора його звила?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4050
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4029
 msgid "Гой, я т'ди не пайду! Там паукі здаровиє точна! Что ж ще могло таке зробити?!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4051
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4030
 msgid "Гілки ми бачимо білі, між собою переплетені вони. Не дерево це однак."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4052
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4031
 msgid "Нічогеньки собі, уявляю розміри павука, що звив це павутиння!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4091
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4070
 msgid "Ім'ям Світла, навіщо у копальнях було збудовано в'язницю? Я відчуваю, що вона дуже давня, тому не пов'язана з теперішніми подіями."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4092
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4071
 msgid "Нічогеньки собі, у цих людей навіть в'язниця є! Сподіваюся, скелети, що в ній, були злочинцями, бо мені якось не по собі від цього..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4093
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4072
 msgid "Власник копалень був жорстокою людиною."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4094
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4073
 msgid "Іржа на ґратах вказує, що цю тюрму збудували дуже давно. Певно, власник копалень карав своїх підлеглих таким чином."
 msgstr ""
 
 #. [then]
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4095
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4106
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4074
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4085
 msgid "Гой, я бач'в такі умови в тюрьмє Чорнотопу!"
 msgstr ""
 
 #. [then]
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4096
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4107
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4075
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4086
 msgid "Не розуміємо призначення ми цієї кімнати, тримали паростків тут гнилих хіба що."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4097
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4076
 msgid "У цій старій в'язниці є кілька кістяків. Цікаво, кому вони належали та як тут опинилися?"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4102
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4081
 msgid "Ім'ям Світла, навіщо у копальнях було збудовано в'язницю? Я відчуваю, що вона дуже давня, проте й була у користуванні проклятих людожерів. Неможливо уявити, скількох людей вони погубили."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4103
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4082
 msgid "Це жахливо, у цих клятих людожерів навіть в'язниця є... Усім серцем сподіваюся, що вони змогли зловити та з'їсти якнайменше людей!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4104
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4083
 msgid "Власник копалень був жорстокою людиною, його наступники ще гірші."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4105
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4084
 msgid "Іржа на ґратах вказує, що цю тюрму збудували дуже давно, але все одно шкода, що нею змогли скоритстатися ці прокляті людожнри."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4108
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4087
 msgid "У цій старій в'язниці є кілька кістяків. Мабуть, це все нещасні жертви тих людожерів."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4145
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4124
 msgid "Вчителю, я бачу кам'яні фігури, схожі на людей! Вони не рухаються, але я відчуваю, що їх переповнює магія, наче вони дуже схожі на манекенів в нашому святилищі."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4146
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4125
 msgid "Чаклуне, поглянь на це. У цій печері стоять кам'яні люди."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4147
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4126
 msgid "Що це, чергова витівка проклятих чаклунів? Хоча навряд, це просто нерухомі шматки каміння..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4148
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4127
 msgid "Ага... Камєнь, камєнь в формі людини. ... І шо тут такого?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4149
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4128
 msgid "Нерохумими здаються істоти ці, живі проте вони. Мудрий двоногий, чому ти знати маєш."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4150
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4129
 msgid "Подивіться, у цій печері розкидані кам'яні статуї. Схоже, вони дуже давні."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4153
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4132
 msgid "Ім'ям Світла, це чергові стихійні духи, схожі на тих, що були біля нашого села, але тепер кам'яні та покриті давніми знаками. Будьте обережними, хоч вони й зараз сплять, проте їх доволі легко пробудити. Гадаю, я зможу зрозуміти сутність цих каменів та підкорити їх, якщо знайду доберуся до їхнього місця сили."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4158
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4137
 msgid "Ім'ям Світла, погляньте туди, це чергові стихійні духи! Вони схожі на тих, що були біля нашого села, але тепер кам'яні та покриті давніми знаками. Будьте обережними, хоч вони й зараз сплять, проте їх доволі легко пробудити. Гадаю, я зможу зрозуміти сутність цих каменів та підкорити їх, якщо знайду доберуся до їхнього місця сили."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4176
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4155
 msgid "Погляньте, тут живий камінь! Гадаю, їх оживила магія, я відчуваю, що вони дуже схожі на манекенів у святилищі."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4177
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4156
 msgid "Чаклуне, поглянь на це. Статуя рухається."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4178
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4157
 msgid "Що це, чергова витівка проклятих чаклунів? Гараліне, ти маєш щось про це знати."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4179
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4158
 msgid "Ага... Камєнь, камєнь рухається. ... Як такоє можливо?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4180
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4159
 msgid "Неживими ці є істоти, рухаються проте вони. Мудрий двоногий, чому ти знати маєш."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4181
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4160
 msgid "Подивіться, кам'яні статуї рухаються! Схоже, вони небезпечні..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4184
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4163
 msgid "Ім'ям Світла, це чергові стихійні духи, схожі на тих, що були біля нашого села, але тепер кам'яні та покриті давніми знаками. Будьте обережними, вони є доволі небезпечними, проте, гадаю, я зможу зрозуміти сутність цих живих каменів та підкорити їх, якщо знайду доберуся до їхнього місця сили."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4189
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4168
 msgid "Ім'ям Світла, погляньте туди, це чергові стихійні духи! Вони схожі на тих, що були біля нашого села, але тепер кам'яні та покриті давніми знаками. Будьте обережними, вони є доволі небезпечними, проте, гадаю, я зможу зрозуміти сутність цих живих каменів та підкорити їх, якщо знайду доберуся до їхнього місця сили."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4241
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4220
 msgid "Це Світло вказало мені шлях, я ж-бо відчуваю, що попереду мене знаходиться правильна путь, що приведе нас до самого Скархейну. Даеоло, сержанте та інші, нумо, за мною!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4247
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4226
 msgid "Вчителю, я бачу якийсь прохід, чи це не те, що ми шукаємо?"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4248
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4227
 msgid "Печера не закінчується. Нам туди?"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4249
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4228
 msgid "Що ж, Гараліне, що каже твоя 'магія'? Попереду нас вузький прохід, по-твоєму, нам туди?"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4250
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4229
 msgid "Ага... Камєнь слєва, камєнь зправа... Це прохід чи шо?..."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4251
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4230
 msgid "Мудрий двоногий, шлях відчуваємо правильний ми далі."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4252
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4231
 msgid "Подивіться, за табором естенців печера продовжується. Цікаво, чи туди нам?"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4257
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4236
 msgid "Так... Нема сумнівів, це саме Світло вказало нам шлях, я ж-бо відчуваю, що попереду знаходиться правильна путь, що приведе нас до самого Скархейну. Даеоло, сержанте та інші, нумо, за мною!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4261
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4240
 msgid "Саме так, Гараліне, хоч ти йдеш проти волі Світла, все ж тобі було вказано, куди саме прямувати, щоб ти не лишився в цих печерах навіки. Але для тебе вже немає шляху назад..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4262
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4241
 msgid "<i>Знову я чую твою оманливі слова, проте, бачить Світло, вже ніщо нездатне зупинити мене на шляху до Скархейну. До того ж в мене складається враження, наче ти не зовсім посланець Світла, за якого себе видаєш; у тебе інша мета...</i>"
 msgstr ""
 
 #. [set_variable]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4267
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4246
 msgid "Перемістіть Гараліна до кінця тунелю"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4363
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4342
 msgid "Дякувати Світлу, моє чуття не мовчить, тому я не маю жодних сумнівів у правильності цього шляху. Добре, що нам не довелося ще більше затримуватися в цьому проклятому місці."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4364
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4343
 msgid "Тож ми продовжуємо цю дивну подорож в невідоме? Сподіваюся, ти й справді знаєш, куди нас ведеш, Гараліне..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4365
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4344
 msgid "Ґа?! Ми покідаєм ці шахти? Ну і добрє, тут пагано якось... Наче місце отсе проклятоє..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4371
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4579
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4350
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4558
 msgid "Далі все й далі світла від йдемо ми, коріння відчувати наше слабкість почало тож."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4372
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4351
 msgid "Ім'ям Світла, шановний Долманнумбіле, не варто вам було покидати Древній ліс, проте якщо ви вже тут, ми маємо рухатися далі та сподіватися, що підземні потвори не переслідуватимуть нас."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4374
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4353
 msgid "Це чудова нагода випробувати моє нове закляття — я поставлю в цьому вузькому проході оберіг, щоб освітити місцевість та прокляті істоти побоялися переслідувати до нас. Сподіваюся, це спрацює!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4377
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4356
 msgid "Наступного сценарію Даеола знатиме закляття 'Holy Ward', яке допоможе захиститися від мерців та іншої проклятої нечисті."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4436
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4415
 msgid "Чаклуне, півнів знищено. Збираймося у стоянки."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4554
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4533
 msgid "Дякувати Світло, нам вдалося перемогти тих мерзенних тварюк та захопити цю шахтарську стоянку."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4555
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4534
 msgid "Також я розставила навколо стоянки оберіги, щоб освітити місцевість та прокляті істоти боялися підійти до нас. Але що ми робитимемо тепер, Вчителю? Я навіть не уявляю куди нам йти — печера розгалуджується на безліч тунелів!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4572
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4551
 msgid "На жаль, зараз моє чуття продовжує своє гнітюче мовчання, тому я не маю відповідей на це питання, проте я впевнений, що незабаром Світло обов'язково вкаже нам правильний шлях."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4573
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4552
 msgid "В нас мало часу, чаклуне, хай твоє чуття поспішить. Я виставлю сторожу."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4580
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4559
 msgid "Ім'ям Світла, шановний Долманнумбіле, не варто вам було покидати Древній ліс, проте якщо ви вже тут, ми лише маємо продовжувати нашу подорож далі та сподіватися, що підземні потвори не переслідуватимуть нас."
 msgstr ""
 
 #. [scenario]: id=06_Miscreants
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4622
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4601
 msgid "Сержанте, ти ж родом з Південної Бухти?"
 msgstr ""
 
 #. [scenario]: id=06_Miscreants
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4626
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4605
 msgid "Невже ти й справді мовчатимеш всю дорогу? Я вже помітила, що ти мовчазна, але ж не можна так!"
 msgstr ""
 
 #. [scenario]: id=06_Miscreants
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4627
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4606
 msgid "То що, сержанте? Чи не з'явилось в тебе бажання поговорити?"
 msgstr ""
 
 #. [scenario]: id=06_Miscreants
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4628
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4607
 msgid "Це допоможе виконанню завданню?"
 msgstr ""
 
 #. [scenario]: id=06_Miscreants
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4629
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4608
 msgid "Гадаю, що... Точно, що допоможе! Якщо я дізнаюся більше про тебе, певно, зможу зрозуміти як краще взаємодіяти з солдатами і тоді ми будемо непереможні!"
 msgstr ""
 
 #. [scenario]: id=06_Miscreants
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4630
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4609
 msgid ""
 "Невже?\n"
 "...\n"
@@ -7396,87 +7406,87 @@ msgid ""
 msgstr ""
 
 #. [scenario]: id=06_Miscreants
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4633
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4612
 msgid "Тож, сержанте, чому і як ти стала воїном? З того, що сказав Король Південної Бухти, твій вчинок це велика рідкість, чи не так?"
 msgstr ""
 
 #. [scenario]: id=06_Miscreants
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4634
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4613
 msgid "Нащо ти вивчила 'магію', чаклунко?"
 msgstr ""
 
 #. [scenario]: id=06_Miscreants
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4635
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4614
 msgid "Я усім серцем бажала й бажаю досі допомогти нашим людям, захистити їх від проклятих західняків. Вони спалили моє село, вбили... багатьох..."
 msgstr ""
 
 #. [scenario]: id=06_Miscreants
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4636
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4615
 msgid "Якби не Вчитель, мене б тут не було, нікого з нашого села... Я була забов'язана йому своїм життям, тому захотіла посвятити своє життя тому ж, що й він — Світлу та загадковій, однак прекрасній магії... Вчитель також відчув, що в мене є хист до цього діла, тому навчив майже всьому, що знає сам."
 msgstr ""
 
 #. [scenario]: id=06_Miscreants
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4637
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4616
 msgid "У нас спільна мета. Причини різні."
 msgstr ""
 
 #. [scenario]: id=06_Miscreants
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4638
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4617
 msgid "Чаклунко, в тобі розчаровувалися?"
 msgstr ""
 
 #. [scenario]: id=06_Miscreants
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4639
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4618
 msgid "Розчарування? Гадаю, що ні. Хіба що Вчитель часто мене сердито повчає як я роблю щось не так, однак я відчуваю, що він робить лише для того, щоб я стала кращою."
 msgstr ""
 
 #. [scenario]: id=06_Miscreants
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4640
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4619
 msgid "У тебе мудрий вчитель, чаклунко. Колись у мене теж, був."
 msgstr ""
 
 #. [scenario]: id=06_Miscreants
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4641
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4620
 msgid "Був? А що, з ним щось сталося?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4647
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4626
 msgid "Він мав обороняти Естен, тому загинув з честю."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4648
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4627
 msgid "Ох, сержанте, це жахливо, однак не можна втрачати надії — може, він ще живий!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4649
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4628
 msgid "Даеоло, це війна, тут нема надії. Пан Рурогін... я в війську лише завдяки йому, тому клянуся — помщуся за нього."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4652
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4631
 msgid "Генерал Рурогін, він був хоробрим воїном. Ми упокоїли його."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4653
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4632
 msgid "Ох, сержанте, це жахливо — виходить, ми вбили твого вчителя? Чому ж ти не сказала, може, ще була надія, може, ми змогли б щось зробити?"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4654
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4633
 msgid "Даеоло, це війна, тут нема надії. Ви, чаклуни, сказали, що вони не люди. Я чула його слова, його голос, але це вже був не мій наставник."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4656
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4635
 msgid "Я в війську лише завдяки йому, тому клянуся — помщуся за нього."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4672
+#: Chasing_the_Light/scenarios/06_Miscreants.cfg:4651
 msgid "Це кінець, ми занадто довго затрималися в цій проклятій печері — Графа Чорнотопу, певно, вже не врятувати!"
 msgstr ""
 
@@ -7669,19 +7679,51 @@ msgstr ""
 msgid "<i>Солдат гарнізону, загинув у бою з бандитами на північній заставі. Його дружина та троє дітей пам'ятатимуть його до кінця днів.</i>"
 msgstr ""
 
-#. [then]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:734
-msgid "Тест"
+#. [scenario]: id=07_Scarhane
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:684
+msgid ""
+"Громадські копальні Скархейну.\n"
+"Будь-хто з обома руками матиме можливість заробити тут собі на хліб."
+msgstr ""
+
+#. [scenario]: id=07_Scarhane
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:686
+msgid "Будь-яким ворогам Чорнотопу буде дано рішучу відсіч, як ти з таких — повертай негайно заради ж свого блага."
+msgstr ""
+
+#. [scenario]: id=07_Scarhane
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:687
+msgid "Схід сонця приведе до воріт славетного Скархейну, захід вже вкаже до поселень поблизу витоку Старотічної ріки."
+msgstr ""
+
+#. [scenario]: id=07_Scarhane
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:688
+msgid "Далі по цій дорозі лежать землі Вудлендору. Будь-який люд Чорнотопу, що перейде цю межу, вважатиметься загарбниками та ворогами."
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:794
+msgid "Певно, чергові підкріплення отримав проклятий тисячу разів ворог, раз чуємо ми тяжкий поклик сурми... Однак не страшіться, воїни — хай що стане зі Скархейном, нас їм ніколи не подолати!"
 msgstr ""
 
 #. [message]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1002
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1028
 msgid "Наступного сценарію Гаралін знатиме ще одне додаткове закляття — Polymorph."
 msgstr ""
 
 #. [message]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1114
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1140
 msgid "Наступного сценарію Гаралін знатиме ще одне додаткове закляття — Polymorph, включаючи унікальну техніку перетворення на невідому броньовану істоту."
+msgstr ""
+
+#. [scenario]: id=07_Scarhane
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1472
+msgid "*клац-клац!*"
+msgstr ""
+
+#. [scenario]: id=07_Scarhane
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1482
+msgid "quietly^<i>так, тікай до свого жалюгідного владики, боягузлива істото; у тебе був шанс нарешті померти, проте знову ти його втратив...</i>"
 msgstr ""
 
 #. [scenario]: id=99_Playground
@@ -8476,6 +8518,11 @@ msgstr ""
 #. [trait]
 #: Chasing_the_Light/utils/characters.cfg:19
 msgid "Zero upkeep."
+msgstr ""
+
+#. [trait]
+#: Chasing_the_Light/utils/characters.cfg:55
+msgid "Через свій обмежений життєвий досвід може вірити речам, які інші не вважатимуть нічим більшим за маячню."
 msgstr ""
 
 #. [message]: speaker=father
