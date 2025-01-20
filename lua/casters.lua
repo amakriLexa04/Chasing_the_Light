@@ -112,11 +112,12 @@ local skills_haralin = {
 			id          = "skill_bend",
 			label       = label(_"Bend Nature"),
 			image       = "icons/landmass.png",
-			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Керуйте самою природою, створюючи та направляючи її елементи — землю, воду та лаву — туди, куди вам заманеться.\n            Для цього закляття використовується <span color='#00bbe6'><i>досвід</i></span> та <span color='#FFD700'><i >золото</i></span>.",
+			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Керуйте самою природою, створюючи та направляючи її елементи — землю, воду, лаву та повітря.\n            Для цього закляття використовується <span color='#00bbe6'><i>досвід</i></span> та <span color='#FFD700'><i >золото</i></span>.",
 			subskills   = {
-				[1]={ id="skill_bend_earth",     xp_cost=16, gold_cost=10,  label="  <span>Earth (<span color='#00bbe6'><i>16xp</i></span> <span color='#FFD700'><i>10g</i></span>)</span>   " },
+				[1]={ id="skill_bend_earth",     xp_cost=0, gold_cost=0,  label="  <span>Earth (<span color='#00bbe6'><i>16xp</i></span> <span color='#FFD700'><i>10g</i></span>)</span>   " },
 				[2]={ id="skill_bend_water",    xp_cost=8,  gold_cost=10, label="   <span>Water (<span color='#00bbe6'><i>8xp</i></span> <span color='#FFD700'><i>10g</i></span>)</span>   " },
-				[3]={ id="skill_bend_lava",   xp_cost=32,  gold_cost=10, label="   <span>Lava (<span color='#00bbe6'><i>32xp</i></span> <span color='#FFD700'><i>10g</i></span>)</span>   " }, },
+				[3]={ id="skill_bend_lava",   xp_cost=32,  gold_cost=10, label="   <span>Lava (<span color='#00bbe6'><i>32xp</i></span> <span color='#FFD700'><i>10g</i></span>)</span>   " },
+                [4]={ id="skill_bend_air",   xp_cost=8,  gold_cost=10, label="   <span>Air (<span color='#00bbe6'><i>8xp</i></span> <span color='#FFD700'><i>10g</i></span>)</span>   " },				},
 		},
 		
 	},
