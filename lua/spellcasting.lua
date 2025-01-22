@@ -221,6 +221,18 @@ function display_skills_dialog(selecting)
 					
 					-- if the button is clickable (i.e. a castable spell), set on_button_click
 					local function initialize_button( buttonid, skill, small )
+					
+					
+					    local function is_race_in_list(race_list, race)
+                            if not race_list then return false end
+                            for _, r in ipairs(race_list) do
+                                if r == race then
+                                    return true
+                                end
+                            end
+                            return false
+                        end
+					
 						if (dialog[buttonid].type=="button") then
 							-- cancel spell
 							local function caster_has_object(object_id) return wesnoth.units.find_on_map{ id=casters[k].id, T.filter_wml{T.modifications{T.object{id=object_id}}} }[1] end
@@ -237,7 +249,7 @@ function display_skills_dialog(selecting)
 							elseif (wml.variables['spellcasted_this_turn_' .. caster.id]) then
 								dialog[buttonid].label = small and _"<span size='small'>1 spell/turn</span>" or _"<span> Can only cast\n1 spell per turn</span>"
 								dialog[buttonid].enabled = false
-							elseif (not (caster.race=='human')) then
+							elseif (not is_race_in_list(casters[k].race, caster.race)) then
 								dialog[buttonid].label = small and _"<span size='small'>Polymorphed</span>" or _"<span>  Blocked by\n  Polymorph</span>"
 								dialog[buttonid].enabled = false
 							elseif (wesnoth.units.find_on_map{ id=caster.id, T.filter_location{radius=3, T.filter{id='haralin_mirror3'}} }[1]) then   -- mirror haralin counterspell. Переробити, щоб працювало з усіма
@@ -330,12 +342,10 @@ end
 -------------------------
 -- DEFINE WML TAGS
 -------------------------
-for k=0,#casters,1 do
-	wml_actions["select_" .. casters[k].id .. "_skills"] = function(cfg)
-        selected_unit_id = casters[k].id
+	wml_actions["select_caster_skills"] = function(cfg)
+        selected_unit_id = cfg.id
         display_skills_dialog(true)
     end
-end
 
 -------------------------
 -- DETECT DOUBLECLICKS

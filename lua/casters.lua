@@ -372,6 +372,7 @@ local casters = {
 		-------------------------
 		[0] = {
 			id          = "haralin",
+			race         =  { "human", "undead", "lizard" },
 			title_select = _"Select Haralin’s Spells",
 			title_cast   = _"Cast Haralin’s Spells",
 			description = _"<span size='2000'> \n</span><span size='small'><i>Haralin knows many useful spells, and will learn more as he levels-up automatically throughout the campaign. Haralin does not use XP to level-up.\nInstead, Haralin uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on Haralin to cast them</b>. You can only cast 1 spell per turn.</i></span>",
@@ -382,12 +383,13 @@ local casters = {
 		-- DAEOLA
 		-------------------------
 		[1] = {
-			id          = "daeola",
+			id           = "daeola",
+			race         = { "human" },
 			title_select = _"Select Daeola’s Spells",
 			title_cast   = _"Cast Daeola’s Spells",
-			description = _"<span size='2000'> \n</span><span size='small'><i>Daeola knows many useful spells, and will learn more as she levels-up automatically throughout the campaign. Daeola does not use XP to level-up.\nInstead, Daeola uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on Daeola to cast them</b>. You can only cast 1 spell per turn.</i></span>",
-		    groups_plus = 2,
-			spell_table = skills_daeola,  --can't be reused for others
+			description  = _"<span size='2000'> \n</span><span size='small'><i>Daeola knows many useful spells, and will learn more as she levels-up automatically throughout the campaign. Daeola does not use XP to level-up.\nInstead, Daeola uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on Daeola to cast them</b>. You can only cast 1 spell per turn.</i></span>",
+		    groups_plus  = 2,
+			spell_table  = skills_daeola,  --can't be reused for others
 		},
 	}
 	
