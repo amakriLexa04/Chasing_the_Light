@@ -372,7 +372,7 @@ local casters = {
 		-------------------------
 		[0] = {
 			id          = "haralin",
-			race         =  { "human", "undead", "lizard" },
+			race         =  { "human", "undead" },
 			title_select = _"Select Haralin’s Spells",
 			title_cast   = _"Cast Haralin’s Spells",
 			description = _"<span size='2000'> \n</span><span size='small'><i>Haralin knows many useful spells, and will learn more as he levels-up automatically throughout the campaign. Haralin does not use XP to level-up.\nInstead, Haralin uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on Haralin to cast them</b>. You can only cast 1 spell per turn.</i></span>",
