@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2025-01-18 23:11 UTC\n"
-"PO-Revision-Date: 2025-01-19 01:25+0200\n"
+"PO-Revision-Date: 2025-01-24 23:27+0200\n"
 "Last-Translator: Oleksii Okhrimenko(lexa04) <e-mail: ohrimale@gmail.com "
 "discord: amakri>\n"
 "Language-Team: \n"
@@ -24,7 +24,7 @@ msgstr ""
 #: Chasing_the_Light/_main.cfg:50 Chasing_the_Light/_main.cfg:59
 #: Chasing_the_Light/achievements.cfg:4
 msgid "Chasing the Light"
-msgstr ""
+msgstr "В гонитві за Світлом"
 
 #. [campaign]: id=Chasing_the_Light
 #: Chasing_the_Light/_main.cfg:60
