@@ -21,8 +21,8 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 
 ## With the help of
 - [ForestDragon](https://github.com/ForestDragon-wesnoth)
+- [Refumee](https://github.com/Refumee)
 - Myrion
-- Refumee
 - Durzi
 
 ## Scenario structure
