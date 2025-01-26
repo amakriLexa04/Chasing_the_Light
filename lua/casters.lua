@@ -25,7 +25,8 @@ local skills_haralin = {
 			id          = "skill_summon",
 			label       = label(_"Summon"),
 			image       = "icons/summon.png",
-			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Закличте духа природи до себе на допомогу, навіть знаходячись за межами цитаделі.\n            Для цього закляття використовується <span color='#FFD700'><i >золото</i></span> та <span color='#00bbe6'><i>досвід</i></span>.",
+			-- #po: Закличте духа природи до себе на допомогу, навіть знаходячись за межами цитаделі.    Для цього закляття використовується <span color='#FFD700'><i >золото</i></span> та <span color='#00bbe6'><i>досвід</i></span>
+			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Summon the spirit of nature to your aid, even when outside the keep.\n           This spell uses <span color='#FFD700'><i>gold</i></span> and <span color='#00bbe6'><i>experience</i></span>.",
 			subskills   = {
 				[1]={ id="skill_summon_mud",     xp_cost=6, gold_cost=8,  label="  <span>Mud (<span color='#FFD700'><i >8g</i></span> <span color='#00bbe6'><i>6xp</i></span>)</span>   " },
 				[2]={ id="skill_summon_rock",    xp_cost=8, gold_cost=14,  label="   <span>Stone (<span  color='#FFD700'><i >14g</i></span> <span color='#00bbe6'><i>8xp</i></span>)</span>   " },
@@ -112,7 +113,8 @@ local skills_haralin = {
 			id          = "skill_bend",
 			label       = label(_"Bend Nature"),
 			image       = "icons/landmass.png",
-			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Керуйте самою природою, створюючи та направляючи її елементи — землю, воду, лаву та повітря.\n            Для цього закляття використовується <span color='#00bbe6'><i>досвід</i></span> та <span color='#FFD700'><i >золото</i></span>.",
+			-- #po: Керуйте самою природою, створюючи та направляючи її елементи — землю, воду, лаву та повітря.      Для цього закляття використовується <span color='#00bbe6'><i>досвід</i></span> та <span color='#FFD700'><i >золото</i></span>
+			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Control nature itself by creating and bending its elements — earth, water, lava, and air.\n           This spell uses <span color='#FFD700'><i>gold</i></span> and <span color='#00bbe6'><i>experience</i></span>.",
 			subskills   = {
 				[1]={ id="skill_bend_earth",     xp_cost=8, gold_cost=0,  label="  <span>Earth (<span color='#00bbe6'><i>8xp</i></span> <span color='#FFD700'><i>10g</i></span>)</span>   " },
 				[2]={ id="skill_bend_water",    xp_cost=6,  gold_cost=0, label="   <span>Water (<span color='#00bbe6'><i>6xp</i></span> <span color='#FFD700'><i>10g</i></span>)</span>   " },
@@ -312,7 +314,8 @@ local skills_daeola = {
 			id          = "skill_disattack_d",
 			label       = label(_"Lightbeam"),
 			image       = "attacks/lightbeam.png",
-			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Використайте <span color='#00bbe6'><i>8xp</i></span>, щоб атакувати ворога дальньою містичною атакою <b>9x3</b>. \n<span color='#ad6a61'><i><b>Radius:</b></i></span> <i>6 клітинок.</i>",
+			-- #po: <span color='#6ca364'><i><b>Spell:</b></i></span> Використайте <span color='#00bbe6'><i>8xp</i></span>, щоб атакувати ворога дальньою містичною атакою <b>9x3</b>. \n<span color='#ad6a61'><i><b>Radius:</b></i></span> <i>6 клітинок.</i>
+			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> to attack the enemy with a <b>9x3</b> ranged arcane attack. \n<span color='#ad6a61'><i><b>Radius:</b></i></span> <i>6 hexes.</i>",
 			xp_cost=8,
 		},
 	},
@@ -324,7 +327,8 @@ local skills_daeola = {
 			id          = "skill_swap_d",
 			label       = label(_"Swap"),
 			image       = "icons/swap.png",
-			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Використайте <span color='#00bbe6'><i>8xp</i></span>, щоб миттєво обмінятися місцями з будь-яким юнітом. \n<span color='#ad6a61'><i><b>Radius:</b></i></span> <i>4 клітинки.</i>",
+			-- #po: "<span color='#6ca364'><i><b>Spell:</b></i></span> Використайте <span color='#00bbe6'><i>8xp</i></span>, щоб миттєво обмінятися місцями з будь-яким юнітом. \n<span color='#ad6a61'><i><b>Radius:</b></i></span> <i>4 клітинок.</i>",
+			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>8xp</i></span> to instantly swap places with any unit. \n<span color='#ad6a61'><i><b>Radius:</b></i></span> <i>4 hexes.</i>",
 			xp_cost=8,
 		},
 		-------------------------
@@ -347,7 +351,8 @@ local skills_daeola = {
 			id          = "skill_disheal_d",
 			label       = label(_"Distant Heal"),
 			image       = "icons/disheal.png",
-			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Використайте <span color='#00bbe6'><i>6xp</i></span>, щоб вилікувати себе або дружнього юніта на +8 ОЗ. \n<span color='#ad6a61'><i><b>Radius:</b></i></span> <i>7 клітинок.</i>",
+			-- #po: <span color='#6ca364'><i><b>Spell:</b></i></span> Використайте <span color='#00bbe6'><i>6xp</i></span>, щоб вилікувати себе або дружнього юніта на +8 ОЗ. \n<span color='#ad6a61'><i><b>Radius:</b></i></span> <i>7 клітинок.</i>",
+			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>6xp</i></span> to heal yourself or a friendly unit for +8 HP. \n<span color='#ad6a61'><i><b>Radius:</b></i></span> <i>7 hexes.</i>",
 			xp_cost=6,
 		},
 		-------------------------
@@ -357,7 +362,8 @@ local skills_daeola = {
 			id          = "skill_ward_d",
 			label       = label(_"Holy Ward"),
 			image       = "icons/ward.png",
-			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Використайте <span color='#00bbe6'><i>10xp</i></span>, щоб на кілька ходів розмістити на мапі <i>Оберіг</i>.\n          Кожного ходу він завдаватиме навколишнім мерцям <b>10</b> містичної шкоди. \n<span color='#ad6a61'><i><b>Radius:</b></i></span> <i>2 клітинки.</i>",
+			-- #po: "<span color='#6ca364'><i><b>Spell:</b></i></span> Використайте <span color='#00bbe6'><i>10xp</i></span>, щоб на кілька ходів розмістити на мапі <i>Оберіг</i>.\n          Кожного ходу він завдаватиме навколишнім мерцям <b>10</b> містичної шкоди. \n<span color='#ad6a61'><i><b>Radius:</b></i></span> <i>2 клітинки.</i>",
+			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Spend <span color='#00bbe6'><i>10xp</i></span> to place <i>Ward</i> on the map for a few turns.\n           Each turn, it will deal <b>20</b> arcane damage to the surrounding undead. \n<span color='#ad6a61'><i><b>Radius:</b></i></span> <i>2 hexes.</i>",
 			xp_cost=10,
 		},
 	},
