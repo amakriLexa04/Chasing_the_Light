@@ -2979,7 +2979,7 @@ msgstr ""
 msgid "Dolmannumbil"
 msgstr ""
 
-#. [unit]: id=mage_9, type=Mage, gender=male
+#. [unit]: id=haenys, type=Mage, gender=male
 #: Chasing_the_Light/scenarios/04_Daeola.cfg:455
 msgid "Гаеніс"
 msgstr ""
