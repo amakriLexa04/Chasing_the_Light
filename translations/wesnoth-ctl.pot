@@ -1414,7 +1414,7 @@ msgstr ""
 #. [part]
 #. Що ж, минуло тринадцять років після тої сутички з 'західняками' і одного вечора Гаралін, як і завжди, вибрався вночі з хати, щоб спробувати попрактикувати ту магію, яку він майже безуспішно намагався вивчити вже більше десятиліття.
 #: Chasing_the_Light/scenarios/02_Invasion.cfg:69
-msgid "So, thirteen years passed after that encounter with the 'Wesfolk' and one night, as usual, Garalin sneaked out of his hut at night to try to practice the magic he had been trying to learn for more than a decade, almost without success."
+msgid "So, thirteen years passed after that encounter with the 'Wesfolk' and one night, as usual, Haralin sneaked out of his hut at night to try to practice the magic he had been trying to learn for more than a decade, almost without success."
 msgstr ""
 
 #. [side]
@@ -2917,7 +2917,7 @@ msgstr ""
 #. [then]
 #. Ім'ям Світла, не перебивай мене, Даеоло. Моє чуття підказує, що тобі конче необхідно прослухати все це ще раз.
 #: Chasing_the_Light/scenarios/04_Daeola.cfg:738
-msgid "In the name of Light, do not interrupt me, Daela. My inner sense is telling me that you really need to listen to this again."
+msgid "In the name of Light, do not interrupt me, Daeola. My inner sense is telling me that you really need to listen to this again."
 msgstr ""
 
 #. [then]
@@ -2929,7 +2929,7 @@ msgstr ""
 #. [then]
 #. Тож почнімо, бо це надзвичайно важливо. Як ти вже, мабуть, знаєш, Даеоло, ми можемо чаклувати і без паличок, та й взагалі можемо обійтися без них, тому що магія скрізь — я ледве це відчуваю, але мені здається, що все, що нас оточує, було створено та існує завдяки ній.
 #: Chasing_the_Light/scenarios/04_Daeola.cfg:742
-msgid "So let's get started, because this is extremely important. As you probably already know, Daela, we can cast spells without wands, and we can do without them at all, because magic is everywhere — I can barely feel it, but it seems to me that everything around us was created and exists because of it."
+msgid "So let's get started, because this is extremely important. As you probably already know, Daeola, we can cast spells without wands, and we can do without them at all, because magic is everywhere — I can barely feel it, but it seems to me that everything around us was created and exists because of it."
 msgstr ""
 
 #. [then]
@@ -4237,7 +4237,7 @@ msgstr ""
 #. [event]
 #. Клянуся Світлом, твої думки напрямлені в потрібну сторону, Даеоло, проте тобі ще досі не вистачає досвіду та мудрості. У такому разі я вважаю, що тобі конче необхідно ще раз прослухати про важливість пошуку Світла у нашому житті, тож слухай...
 #: Chasing_the_Light/scenarios/04_Daeola.cfg:3484
-msgid "I swear by the Light that your thoughts are in the right direction, Daela, but you still lack experience and wisdom. In that case, I believe it is imperative that you listen again to the importance of Chasing the Light in our lives, so listen..."
+msgid "I swear by the Light that your thoughts are in the right direction, Daeola, but you still lack experience and wisdom. In that case, I believe it is imperative that you listen again to the importance of Chasing the Light in our lives, so listen..."
 msgstr ""
 
 #. [event]
@@ -4436,7 +4436,7 @@ msgstr ""
 #. [event]
 #. Саме так, Даеоло. Як ти певно, що знаєш, ми разом з паном Гаенісом, користуючись направляннями самого Світла, створили штучний кристал для мого посоху. Тому, коли я повернуся з Південної Бухти, допоможу тобі створити щось схоже, але більше підлаштоване під твої закляття. І тоді, якщо на те буде воля Світла, ти зможеш загоїти свою рану.
 #: Chasing_the_Light/scenarios/04_Daeola.cfg:3720
-msgid "That is right, Daela. As I'm sure you know, sir Haenys and I, using the guidance of the Light itself, created an artificial crystal for my staff. So, when I return from the Southbay, I will help you create something similar, but more adapted to your spells. And then, if it is the will of the Light, you will be able to heal your scar."
+msgid "That is right, Daeola. As I'm sure you know, sir Haenys and I, using the guidance of the Light itself, created an artificial crystal for my staff. So, when I return from the Southbay, I will help you create something similar, but more adapted to your spells. And then, if it is the will of the Light, you will be able to heal your scar."
 msgstr ""
 
 #. [event]
@@ -4448,13 +4448,13 @@ msgstr ""
 #. [then]
 #. Клянуся Світлом, Даеоло, після сьогоднішньої твоєї витівки під час Першого випробування я ще раз переконався, що тебе аж ніяк не можна залишати без мого нагляду.
 #: Chasing_the_Light/scenarios/04_Daeola.cfg:3731
-msgid "By the Light, Daela, after your behavior today during the First Trial, I have once again become convinced that you must never be left without my supervision."
+msgid "By the Light, Daeola, after your behavior today during the First Trial, I have once again become convinced that you must never be left without my supervision."
 msgstr ""
 
 #. [else]
 #. Клянуся Світлом, Даеоло, що хоч сьогодні ти дивуєш мене своєю поведінкою, однак усіх твоїх попередніх витівок було достатньо, щоб переконати мене, що тебе аж ніяк не можна залишати без мого нагляду.
 #: Chasing_the_Light/scenarios/04_Daeola.cfg:3735
-msgid "By the Light, Daela, although your behavior today has surprised me, all your previous actions have been enough to convince me that you must never be left without my supervision."
+msgid "By the Light, Daeola, although your behavior today has surprised me, all your previous actions have been enough to convince me that you must never be left without my supervision."
 msgstr ""
 
 #. [event]
@@ -4525,13 +4525,13 @@ msgstr ""
 #. [part]
 #. Ось так Гаралін, Даеола, а також усі, хто захотіли до них приєднатися, покинули підземний храм та рушили мандрувати землями Зеленого Острову. Даеола звісно ж раділа цій подорожі, а ось Гараліна безперестанку непокоїло невідоме погане передчуття, а також те, що віддаляючись від центру Острову, він припинив відчувати присутність могутнього артефакту Владики-ліча Карора — речі, котра, на думку мага, була здатна поставити остаточну крапку у цій війні.
 #: Chasing_the_Light/scenarios/04x_Southbay.cfg:21
-msgid "Thus, Haralin, Daeola, and all those who wanted to join them left the underground temple and began to travel across the lands of the Green Isle. Daela, of course, was excited about this journey, but Haralin was constantly worried about an unknown bad feeling, as well as the fact that as they moved away from the center of the island, he no longer felt the presence of the Lord-Lich Caror's powerful artifact, a thing that, in the mage's opinion, was capable of turning the tide of this war."
+msgid "Thus, Haralin, Daeola, and all those who wanted to join them left the underground temple and began to travel across the lands of the Green Isle. Daeola, of course, was excited about this journey, but Haralin was constantly worried about an unknown bad feeling, as well as the fact that as they moved away from the center of the island, he no longer felt the presence of the Lord-Lich Caror's powerful artifact, a thing that, in the mage's opinion, was capable of turning the tide of this war."
 msgstr ""
 
 #. [part]
 #. У Серединних Землях їм зустрілася безліч біженців, що тікали якнайдалі від портового міста Естен та його околиць, бо ж там, за чутками, коїлася велика битва між проклятими західняками та об'єднаними силами кількох Королівств. За тими ж чутками, командував армією мерців сам мерзенний Карор, однак Гаралін сумнівався, що це було правдою.
 #: Chasing_the_Light/scenarios/04x_Southbay.cfg:27
-msgid "In the Midlands, they met many refugees fleeing as far as possible from the port city of Esten and its outskirts, for there, according to rumors, a great battle was taking place between the damned Wesfolk and the combined forces of several Kingdoms. The same rumors claimed that the vile Caror himself commanded the army of the undead, but Garalin doubted that this was true."
+msgid "In the Midlands, they met many refugees fleeing as far as possible from the port city of Esten and its outskirts, for there, according to rumors, a great battle was taking place between the damned Wesfolk and the combined forces of several Kingdoms. The same rumors claimed that the vile Caror himself commanded the army of the undead, but Haralin doubted that this was true."
 msgstr ""
 
 #. [part]
