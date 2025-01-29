@@ -41,7 +41,7 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 
 #### Haralin's branch 
 - 11h_Avenger 
-- 11hx_Funeral 
+- 11hx_Funeral(Farewell?)
 - 12h_Massacre 
 - 13h_Southbay_Outskirts
 - 14h_Caror
@@ -51,7 +51,7 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 
 #### Daeola's branch
 - 11d_Sacrifice
-- 11dx_Funeral 
+- 11dx_Funeral(Farewell?)
 - 11dxx_New_Dawn(Blitzkrieg?, мб взагалі вирізати)
 - 12d_Southbay_Outskirts 
 - 13d_Scarhane_Revisited
