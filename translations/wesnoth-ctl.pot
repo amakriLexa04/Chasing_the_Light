@@ -1643,7 +1643,7 @@ msgstr ""
 msgid "Shut up, old fool! And die!"
 msgstr ""
 
-#. [unit]: id=peasant_hater, type=Peasant
+#. [unit]: id=zeham, type=Peasant
 #. Зегам
 #: Chasing_the_Light/scenarios/02_Invasion.cfg:649
 msgid "Zeham"
@@ -2166,7 +2166,7 @@ msgstr ""
 msgid "Yes, may the Light protect us... HEY, IS ANYBODY THERE??? HELLO?"
 msgstr ""
 
-#. [unit]: id=hunter, type=Bandit
+#. [unit]: id=juangh, type=Bandit
 #: Chasing_the_Light/scenarios/03_Despair.cfg:424
 msgid "Джуанг"
 msgstr ""
@@ -4867,12 +4867,12 @@ msgstr ""
 msgid "Wesfolk Cultists"
 msgstr ""
 
-#. [side]: id=esten_bandit, type=Fugitive, gender=female
+#. [side]: id=penella, type=Fugitive, gender=female
 #: Chasing_the_Light/scenarios/05_Aftermath.cfg:170
 msgid "Penella"
 msgstr ""
 
-#. [side]: id=esten_bandit, type=Fugitive, gender=female
+#. [side]: id=penella, type=Fugitive, gender=female
 #. [modify_side]
 #. Біженці
 #. Біженці
@@ -7902,19 +7902,19 @@ msgstr ""
 msgid "Хай помилує нас Світло! Без примусу сержанта інші солдати не підкорятимуться нам, завдання Короля провалене!"
 msgstr ""
 
-#. [message]: speaker=peasant_hater
+#. [message]: speaker=zeham
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:4301
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:4364
 msgid "Це все це кляте чаклу-... *хрусь*"
 msgstr ""
 
-#. [message]: speaker=hunter
+#. [message]: speaker=juangh
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:4307
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:4370
 msgid "Ґа, нє сматрі на-... *хрусь*"
 msgstr ""
 
-#. [message]: speaker=hunter
+#. [message]: speaker=juangh
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:4313
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:4376
 msgid "Корінн-... *хрусь*"
@@ -9477,12 +9477,12 @@ msgstr ""
 msgid "Ні! Батьку, не покидай нас!"
 msgstr ""
 
-#. [message]: speaker=peasant_hater
+#. [message]: speaker=zeham
 #: Chasing_the_Light/utils/herodeaths.cfg:34
 msgid "Це все це кляте чаклунство винне... Ургх..."
 msgstr ""
 
-#. [message]: speaker=hunter
+#. [message]: speaker=juangh
 #: Chasing_the_Light/utils/herodeaths.cfg:52
 msgid "Як ж ц' розуміти... Я вмєраю... Аргх..."
 msgstr ""

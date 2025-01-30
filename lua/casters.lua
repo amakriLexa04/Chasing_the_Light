@@ -183,10 +183,12 @@ local skills_haralin = {
 			image       = "icons/polymorph.png",
 			description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Transform into a stoat (<span color='#00bbe6'><i>1xp</i></span>), bear (<span color='#00bbe6'><i>8xp</i></span>), crab (<span color='#00bbe6'><i>16xp</i></span>), or roc (<span color='#00bbe6'><i>32xp</i></span>). Lasts until cancelled.\n            Replaces Haralin’s attacks, spells, and passives, but does not affect hitpoints.",
 			subskills   = {
-				[1]={ id="skill_polymorph_stoat",  xp_cost=1,  label="   <span>Stoat (<span color='#00bbe6'><i >1xp</i></span>)</span>   " },
+				[1]={ id="skill_polymorph_lizard",  xp_cost=1,  label="   <span>Stoat (<span color='#00bbe6'><i >1xp</i></span>)</span>   " },
 				[2]={ id="skill_polymorph_bear",   xp_cost=8,  label="   <span>Bear (<span  color='#00bbe6'><i >8xp</i></span>)</span>   " },
-				[3]={ id="skill_polymorph_crab",   xp_cost=16, label="   <span>Crab (<span  color='#00bbe6'><i>16xp</i></span>)</span>   " },
-				[4]={ id="skill_polymorph_roc",    xp_cost=32, label="   <span>Roc (<span   color='#00bbe6'><i>32xp</i></span>)</span>   " }, },
+				[3]={ id="skill_polymorph_yeti",   xp_cost=16, label="   <span>Crab (<span  color='#00bbe6'><i>16xp</i></span>)</span>   " },
+				[4]={ id="skill_polymorph_orc",    xp_cost=32, label="   <span><span color='#a308b8'>Orcish Warlord</span> (<span   color='#00bbe6'><i>32xp</i></span>)</span>   " }, },
+				
+				
 		},
 	},
 	--###############################
