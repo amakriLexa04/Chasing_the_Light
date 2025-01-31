@@ -33,8 +33,8 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 - 04x_Southbay✔                                                                                                                                      
 - 05_Aftermath✔
 - 06_Miscreants✔                                                                                                                              
-- 07_Scarhane🔁                                                                                                                                        
-- 08_Misjudged                                                                                                                                     
+- 07_Scarhane⏸️                                                                                                                                        
+- 08_Quiescence🔁                                                                                                                                     
 - 08x_Divergence                                                                                                                                    
 - 09_Hunt                                                                                                                                       
 - 10_Way_of_Light(Duty?)  
