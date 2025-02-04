@@ -9,8 +9,9 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 ## Developer
 - [amakri](https://github.com/amakriLexa04)
 
-## Playtester
+## Playtesters
 - [ForestDragon](https://github.com/ForestDragon-wesnoth)
+- [Refumee](https://github.com/Refumee)
 
 ## Using resources from
 - [Dalas](https://github.com/Dalas121)
