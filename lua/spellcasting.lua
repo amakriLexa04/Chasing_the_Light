@@ -69,24 +69,34 @@ function display_skills_dialog(selecting)
 	
 	
 	for k=0,#casters,1 do
-	if (casters[k].id == selected_unit_id) then
+	if wml.variables["caster_" .. selected_unit_id] then
 	
-		local caster   = ( wesnoth.units.find_on_map({ id=casters[k].id      }) )[1]
-		local skills_copy = deep_copy(casters[k].spell_table)
+		local caster   = ( wesnoth.units.find_on_map({ id=wml.variables["caster_" .. selected_unit_id .. ".id"]      }) )[1]
+
+		local skills_copy = {}
+        for i = 1, 10 do
+		    if wml.variables["caster_" .. selected_unit_id .. ".spell_group_" .. i] then
+            skills_copy[i] = {}
+			for spell in wml.variables["caster_" .. selected_unit_id .. ".spell_group_" .. i]:gmatch("[^,]+") do
+                table.insert(skills_copy[i], spell)
+            end
+			end
+        end
+
 		local skills_actual_copy = deep_copy(skill_set)
 	
 	-------------------------
 	-- HEADER
 	-------------------------
 	local spacer = "                                                                  "
-	local                title_text = selecting and casters[k].title_select       or casters[k].title_cast
+	local                title_text = selecting and wml.variables["caster_" .. selected_unit_id .. ".u_title_select"]  or wml.variables["caster_" .. selected_unit_id .. ".u_title_cast"]
 	
 	table.insert( grid[2], T.row{ T.column{ T.label{
 		definition="title",
 		horizontal_alignment="center",
 		label = spacer..title_text..spacer,
 	}}} )
-	local                help_text = casters[k].description
+	local                help_text = wml.variables["caster_" .. selected_unit_id .. ".u_description"]
 	table.insert( grid[2], T.row{ T.column{T.label{ use_markup=true, label=help_text }}} )
 	table.insert( grid[2], T.row{ T.column{T.label{label="  "}}} )
 	
@@ -98,15 +108,21 @@ function display_skills_dialog(selecting)
 	
 	local skill_grid = T.grid{}
 	
+	    local already_unlocked_list = {}
+		for spell in wml.variables["caster_" .. selected_unit_id .. ".spell_unlocked"]:gmatch("[^,]+") do
+            wml.variables["unlock_" .. string.sub(spell, 7, -1)] = "yes"
+			table.insert(already_unlocked_list, wml.variables["unlock_" .. string.sub(spell, 7, -1)])
+        end
+	
 	for _, spell_list in pairs(skills_copy) do
     for i, skill_id in ipairs(spell_list) do
         for _, skill in ipairs(skills_actual_copy) do
             if skill_id == skill.id then
-				if not wml.variables["unlock_" .. string.sub(skill.id, 7, -1)] then
-                        spell_list[i] = locked
-                    else
-                        spell_list[i] = skill
-                    end
+			    if not wml.variables["unlock_" .. string.sub(skill.id, 7, -1)] then
+                    spell_list[i] = locked
+                else
+                    spell_list[i] = skill
+                end
                 break
             end
         end
@@ -127,6 +143,14 @@ function display_skills_dialog(selecting)
 	    table.remove(skills_copy, i)  -- Видаляємо цей список
     end
 end
+
+    --spell_equiped
+	local skills_equiped = {}
+	for spell in wml.variables["caster_" .. selected_unit_id .. ".spell_equipped"]:gmatch("[^,]+") do
+        wml.variables[spell] = "yes"
+		table.insert(skills_equiped, wml.variables[spell])
+    end
+
 
 	for i=1,#skills_copy,1 do
 		
@@ -213,7 +237,7 @@ end
 			if (selecting) then
 				-- default to whatever skill we had selected last time
 				for j,skill in pairs(skills_copy[i]) do
-					if (wml.variables[skill.id]) then button.selected_index=j end
+				    if (wml.variables[skill.id]) then button.selected_index=j end
 				end
 				
 				-- whenever we refresh the menu, update the image and label
@@ -248,7 +272,7 @@ end
 					
 						if (dialog[buttonid].type=="button") then
 							-- cancel spell
-							local function caster_has_object(object_id) return wesnoth.units.find_on_map{ id=casters[k].id, T.filter_wml{T.modifications{T.object{id=object_id}}} }[1] end
+							local function caster_has_object(object_id) return wesnoth.units.find_on_map{ id=caster.id, T.filter_wml{T.modifications{T.object{id=object_id}}} }[1] end
 							if (caster_has_object(skill.id)) then
 								dialog[buttonid].label = small and "<span size='small'>Cancel</span>" or label('Cancel')
 								dialog[buttonid].on_button_click = function()
@@ -307,6 +331,18 @@ end
 			end
 			
 		end
+		
+		
+		for spell in wml.variables["caster_" .. selected_unit_id .. ".spell_unlocked"]:gmatch("[^,]+") do
+            wml.variables["unlock_" .. string.sub(spell, 7, -1)] = nil
+        end
+		already_unlocked_list = nil
+		
+		
+	    for spell in wml.variables["caster_" .. selected_unit_id .. ".spell_equipped"]:gmatch("[^,]+") do
+            wml.variables[spell] = nil
+        end
+	    skills_equiped = nil
 	
     end
 	
@@ -366,7 +402,7 @@ end
     end
 	
 	wml_actions["assign_caster"] = function(cfg)
-		local filter = wml.get_child(cfg, "filter") or cfg.id
+		local filter = wml.get_child(cfg, "filter") --or cfg.id
 		local units = wesnoth.units.find(filter)
 		local basic_description
 
@@ -386,6 +422,7 @@ end
             u_title_cast = cfg.title_cast or ("Cast " .. u.name .. "’s Spells"),
             u_description = cfg.description or basic_description,
 			spell_unlocked = cfg.unlocked_spells or "",
+			spell_equipped = cfg.equipped_spells or "",
             spell_group_1 = cfg.spell_group_1,
 			spell_group_2 = cfg.spell_group_2,
 			spell_group_3 = cfg.spell_group_3,
@@ -411,7 +448,7 @@ end
 	
 	wml_actions["unlock_spell"] = function(cfg)
         local spell_to_modify = {}
-		local filter = wml.get_child(cfg, "filter") or cfg.id
+		local filter = wml.get_child(cfg, "filter") --or cfg.id
 		local units = wesnoth.units.find(filter)
         for spell in cfg.spell_id:gmatch("[^,]+") do
             table.insert(spell_to_modify, spell)
@@ -446,7 +483,7 @@ end
 	
 	wml_actions["lock_spell"] = function(cfg)
         local spell_to_modify = {}
-		local filter = wml.get_child(cfg, "filter") or cfg.id
+		local filter = wml.get_child(cfg, "filter") --or cfg.id
 		local units = wesnoth.units.find(filter)
         for spell in cfg.spell_id:gmatch("[^,]+") do
             table.insert(spell_to_modify, spell)
