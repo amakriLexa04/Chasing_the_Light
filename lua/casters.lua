@@ -15,7 +15,7 @@ local locked = {
 	description = "<span color='grey'>This option is not available yet.</span>",
 }
 
-local skills_test = {
+local skill_set = {
 	-------------------------
 	-- MAGIC BLAST
 	-------------------------
@@ -373,5 +373,5 @@ local casters = {
 	return {
     casters = casters,
 	locked = locked,
-	skills_test = skills_test,
+	skill_set = skill_set,
 }

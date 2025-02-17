@@ -1,9 +1,10 @@
 local _ = wesnoth.textdomain "wesnoth-ctl"
+local utils = wesnoth.require "wml-utils"
 
 local caster_data = wesnoth.dofile(wml.variables["path_to_casters"])
 local casters = caster_data.casters
 local locked = caster_data.locked
-local skills_test = caster_data.skills_test
+local skill_set = caster_data.skill_set
 
 local selected_unit_id
 -- to make code shorter
@@ -72,7 +73,7 @@ function display_skills_dialog(selecting)
 	
 		local caster   = ( wesnoth.units.find_on_map({ id=casters[k].id      }) )[1]
 		local skills_copy = deep_copy(casters[k].spell_table)
-		local skills_actual_copy = deep_copy(skills_test)
+		local skills_actual_copy = deep_copy(skill_set)
 	
 	-------------------------
 	-- HEADER
@@ -364,91 +365,117 @@ end
 		wesnoth.game_events.fire(("refresh_" .. cfg.id .. "_skills"))
     end
 	
-	--old lock/unlock
-	--wml_actions["modify_spell"] = function(cfg)
-    --    local spell_to_modify = {}
-    --    for spell in cfg.spell_id:gmatch("[^,]+") do
-    --        table.insert(spell_to_modify, spell)
-    --    end
-	--
-    --    for k=0,#casters,1 do
-	--	    if casters[k].id == cfg.id then
-    --            if cfg.unlock == true then
-	--	        	for _, spell in ipairs(spell_to_modify) do
-    --                    local already_unlocked = false
-    --                    for _, unlocked_spell in ipairs(casters[k].unlocked_spells) do
-    --                        if spell == unlocked_spell then
-    --                            already_unlocked = true
-    --                            break
-    --                        end
-    --                    end
-    --                    if not already_unlocked then
-    --                        table.insert(casters[k].unlocked_spells, spell)
-	--	            		wesnoth.interface.add_chat_message("Unlocked spell", spell)
-	--	        			wml.variables["unlock_" .. spell] = "yes"
-    --                    end
-    --                end
-	--	        elseif 	cfg.unlock == false then 
-	--	        	for i = #casters[k].unlocked_spells, 1, -1 do
-    --                    for _, spell in ipairs(spell_to_modify) do
-    --                        if casters[k].unlocked_spells[i] == spell then
-    --                            table.remove(casters[k].unlocked_spells, i)
-    --                            wesnoth.interface.add_chat_message("Locked spell", spell)
-	--							wml.variables["unlock_" .. spell] = nil
-    --                        end
-    --                    end
-    --                end
-	--	        end
-	--	    end
-	--	end
-    --end
+	wml_actions["assign_caster"] = function(cfg)
+		local filter = wml.get_child(cfg, "filter") or cfg.id
+		local units = wesnoth.units.find(filter)
+		local basic_description
+
+        for i,u in ipairs(units) do
+		
+		local writer = utils.vwriter.init(cfg, ("caster_" .. u.id ))
+		
+		if u.gender == "male" then
+		    basic_description = _"<span size='2000'> \n</span><span size='small'><i>" .. u.name .. " knows many useful spells, and will learn more as he levels-up automatically throughout the campaign. " .. u.name .. " does not use XP to level-up.\nInstead, " .. u.name .. " uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on " .. u.name .. " to cast them</b>. You can only cast 1 spell per turn.</i></span>"
+		else
+		    basic_description = _"<span size='2000'> \n</span><span size='small'><i>" .. u.name .. " knows many useful spells, and will learn more as she levels-up automatically throughout the campaign. " .. u.name .. " does not use XP to level-up.\nInstead, " .. u.name .. " uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on " .. u.name .. " to cast them</b>. You can only cast 1 spell per turn.</i></span>"
+		end
+
+        local caster_data_temp = {
+            id = u.id,
+            u_title_select = cfg.title_select or ("Select " .. u.name .. "’s Spells"),
+            u_title_cast = cfg.title_cast or ("Cast " .. u.name .. "’s Spells"),
+            u_description = cfg.description or basic_description,
+			spell_unlocked = cfg.unlocked_spells or "",
+            spell_group_1 = cfg.spell_group_1,
+			spell_group_2 = cfg.spell_group_2,
+			spell_group_3 = cfg.spell_group_3,
+			spell_group_4 = cfg.spell_group_4,
+			spell_group_5 = cfg.spell_group_5,
+			spell_group_6 = cfg.spell_group_6,
+			spell_group_7 = cfg.spell_group_7,
+			spell_group_8 = cfg.spell_group_8,
+			spell_group_9 = cfg.spell_group_9,
+			spell_group_10 =cfg.spell_group_10,
+			utils_spellcasted_this_turn = "",
+			utils_no_spellcasting_event = "",
+			utils_not_casters_turn = "",
+        }
+		
+		utils.vwriter.write(writer, caster_data_temp)
+		
+		caster_data_temp, writer = nil
+		
+		end
+    end
+	
 	
 	wml_actions["unlock_spell"] = function(cfg)
         local spell_to_modify = {}
+		local filter = wml.get_child(cfg, "filter") or cfg.id
+		local units = wesnoth.units.find(filter)
         for spell in cfg.spell_id:gmatch("[^,]+") do
             table.insert(spell_to_modify, spell)
         end
 
-        for k=0,#casters,1 do
-		    if casters[k].id == cfg.id then
+        for i,u in ipairs(units) do
+
+		    if wml.variables["caster_" .. u.id] then
+			
+			    local already_unlocked_list = {}
+			    for spell in wml.variables["caster_" .. u.id .. ".spell_unlocked"]:gmatch("[^,]+") do
+                    table.insert(already_unlocked_list, spell)
+                end
+						
 		        for _, spell in ipairs(spell_to_modify) do
                     local already_unlocked = false
-                    for _, unlocked_spell in ipairs(casters[k].unlocked_spells) do
+                    for _, unlocked_spell in ipairs(already_unlocked_list) do
                         if spell == unlocked_spell then
                             already_unlocked = true
                             break
                         end
                     end
                     if not already_unlocked then
-                        table.insert(casters[k].unlocked_spells, spell)
-		        		wesnoth.interface.add_chat_message("Unlocked spell", spell)
 		        		wml.variables["unlock_" .. spell] = "yes"
+						wml.variables["caster_" .. u.id .. ".spell_unlocked"] = wml.variables["caster_" .. u.id .. ".spell_unlocked"] .. "," .. spell
                     end
                 end
 		    end
+
 		end
     end
 	
 	wml_actions["lock_spell"] = function(cfg)
         local spell_to_modify = {}
+		local filter = wml.get_child(cfg, "filter") or cfg.id
+		local units = wesnoth.units.find(filter)
         for spell in cfg.spell_id:gmatch("[^,]+") do
             table.insert(spell_to_modify, spell)
         end
 	
-        for k=0,#casters,1 do
-		    if casters[k].id == cfg.id then
-		        for i = #casters[k].unlocked_spells, 1, -1 do
-                    for _, spell in ipairs(spell_to_modify) do
-                        if casters[k].unlocked_spells[i] == spell then
-                            table.remove(casters[k].unlocked_spells, i)
-                            wesnoth.interface.add_chat_message("Locked spell", spell)
-							wml.variables["unlock_" .. spell] = nil
-                        end
+	    for i,u in ipairs(units) do
+		    if wml.variables["caster_" .. u.id] then
+		        local already_unlocked_list = {}
+		        for spell in wml.variables["caster_" .. u.id .. ".spell_unlocked"]:gmatch("[^,]+") do
+                    table.insert(already_unlocked_list, spell)
+                end
+		        
+                for _, spell in ipairs(spell_to_modify) do
+                for i = #already_unlocked_list, 1, -1 do -- Видаляємо заклинання зі списку
+                    if already_unlocked_list[i] == spell then
+                        table.remove(already_unlocked_list, i)
+                        wesnoth.interface.add_chat_message("Locked spell", spell)
+                        wml.variables["unlock_" .. spell] = nil
                     end
                 end
+            end
+            
+            -- Оновлюємо змінну в WML, збираючи рядок назад
+            wml.variables["caster_" .. u.id .. ".spell_unlocked"] = table.concat(already_unlocked_list, ",")
 		    end
 		end
     end
+	
+	
 	
 	
 	
@@ -461,9 +488,8 @@ local last_click = os.clock()
 wesnoth.game_events.on_mouse_action = function(x,y)
 	local selected_unit = wesnoth.units.find_on_map{ x=x, y=y }
 	
-	for k=0,#casters,1 do
 	if (not selected_unit[1]) then return end
-	if (selected_unit[1].id == casters[k].id) then
+	if wml.variables["caster_" .. selected_unit[1].id] then
 	
 	if (wml.variables['is_during_attack']) then return end
 	if (wml.variables["not_" .. selected_unit[1].id .. "_turn"] ) then return end
@@ -477,14 +503,11 @@ wesnoth.game_events.on_mouse_action = function(x,y)
 			wesnoth.game_events.fire(wml.variables["no_spellcasting_event_" .. selected_unit_id], x, y)
 		else
 			display_skills_dialog()
-			break
 		end
 		
 		last_click = 0 -- prevent accidentally immediately re-opening the dialog
 	else
 		last_click = os.clock()
-	end
-	
 	end
 	
 	end
