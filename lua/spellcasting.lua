@@ -2,7 +2,6 @@ local _ = wesnoth.textdomain "wesnoth-ctl"
 local utils = wesnoth.require "wml-utils"
 
 local caster_data = wesnoth.dofile(wml.variables["path_to_casters"])
-local casters = caster_data.casters
 local locked = caster_data.locked
 local skill_set = caster_data.skill_set
 
@@ -68,7 +67,6 @@ function display_skills_dialog(selecting)
 	local grid = dialog[3]
 	
 	
-	for k=0,#casters,1 do
 	if wml.variables["caster_" .. selected_unit_id] then
 	
 		local caster   = ( wesnoth.units.find_on_map({ id=wml.variables["caster_" .. selected_unit_id .. ".id"]      }) )[1]
@@ -145,10 +143,10 @@ function display_skills_dialog(selecting)
 end
 
     --spell_equiped
-	local skills_equiped = {}
+	local skills_equipped = {}
 	for spell in wml.variables["caster_" .. selected_unit_id .. ".spell_equipped"]:gmatch("[^,]+") do
         wml.variables[spell] = "yes"
-		table.insert(skills_equiped, wml.variables[spell])
+		table.insert(skills_equipped, spell)
     end
 
 
@@ -247,10 +245,12 @@ end
 					dialog["label"..i].label = skills_copy[i][button.selected_index].description
 					
 					-- also update variables
-					for j,skill in pairs(skills_copy[i]) do
-						result_table[skill.id] = (j==button.selected_index) and "yes" or "no"
-						if (skill.id=="skill_locked") then result_table[skill.id]="no" end
-					end
+					for j, skill in pairs(skills_copy[i]) do
+                        result_table[skill.id] = (j == button.selected_index) and "yes" or "no"
+                        if skill.id == "skill_locked" then 
+                            result_table[skill.id] = "no"
+                        end
+                    end
 				end
 				
 				-- refresh immediately, and after any change
@@ -332,18 +332,6 @@ end
 			
 		end
 		
-		
-		for spell in wml.variables["caster_" .. selected_unit_id .. ".spell_unlocked"]:gmatch("[^,]+") do
-            wml.variables["unlock_" .. string.sub(spell, 7, -1)] = nil
-        end
-		already_unlocked_list = nil
-		
-		
-	    for spell in wml.variables["caster_" .. selected_unit_id .. ".spell_equipped"]:gmatch("[^,]+") do
-            wml.variables[spell] = nil
-        end
-	    skills_equiped = nil
-	
     end
 	
 	
@@ -365,7 +353,14 @@ end
 			gui.show_dialog( dialog, preshow )
 			return result_table;
 		end)
-		for skill_id,skill_value in pairs(dialog_result) do wml.variables[skill_id]=skill_value end
+		skills_equipped = {}
+		for skill_id,skill_value in pairs(dialog_result) do
+		wml.variables[skill_id]=skill_value
+		    if skill_value == true then
+			    table.insert(skills_equipped, skill_id)
+			end
+		end
+		wml.variables["caster_" .. caster.id .. ".spell_equipped"] = table.concat(skills_equipped, ",")
 	
 	-- cast spells, synced
 	else
@@ -376,10 +371,15 @@ end
 			wml.variables['skill_id'] = nil
 		end)
 	end
-
+	
+	for spell in wml.variables["caster_" .. caster.id .. ".spell_unlocked"]:gmatch("[^,]+") do
+        wml.variables["unlock_" .. string.sub(spell, 7, -1)] = nil
+		wml.variables[spell] = nil
+    end
+    already_unlocked_list = nil
+	skills_equipped = nil
+	
 return end
-
- end
 
 end
 

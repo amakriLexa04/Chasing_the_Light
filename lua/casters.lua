@@ -332,46 +332,8 @@ local skill_set = {
 		xp_cost=10,
 	},
 }
-
-
-local casters = {
-
-		-------------------------
-		-- HARALIN
-		-------------------------
-		[0] = {
-			id          = "haralin",
-			title_select = _"Select Haralin’s Spells",
-			title_cast   = _"Cast Haralin’s Spells",
-			description = _"<span size='2000'> \n</span><span size='small'><i>Haralin knows many useful spells, and will learn more as he levels-up automatically throughout the campaign. Haralin does not use XP to level-up.\nInstead, Haralin uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on Haralin to cast them</b>. You can only cast 1 spell per turn.</i></span>",
-			spell_table = {
-			[1]={ "skill_magic_blast", "skill_summon", "skill_shield", "skill_shield", "skill_panacea" },
-			[2]={ "skill_chill_touch", "skill_levitate", "skill_mnemonic", "skill_find_familiar", "skill_bend" },
-			[3]={ "skill_fireball2", "skill_glamour", "skill_enervate", "skill_blizzard", "skill_counterspell", "skill_polymorph" },
-			[4]={ "skill_fireball3", "skill_dancing_daggers", "skill_illusion", "skill_animate_fire", "skill_contingency" },
-            [5]={ "skill_fireball4", "skill_lightning", "skill_time_dilation", "skill_cataclysm" }, },
-			unlocked_spells = { },
-		},
-		-------------------------
-		-- DAEOLA
-		-------------------------
-		[1] = {
-			id           = "daeola",
-			title_select = _"Select Daeola’s Spells",
-			title_cast   = _"Cast Daeola’s Spells",
-			description  = _"<span size='2000'> \n</span><span size='small'><i>Daeola knows many useful spells, and will learn more as she levels-up automatically throughout the campaign. Daeola does not use XP to level-up.\nInstead, Daeola uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on Daeola to cast them</b>. You can only cast 1 spell per turn.</i></span>",
-			spell_table = {
-			[1]={ "skill_magic_missile_d", "skill_disattack" },
-			[2]={ "skill_swap", "skill_levitate_d" },
-			[3]={ "skill_disheal", "skill_ward" },
-			[4]={ },
-            [5]={ }, },
-			unlocked_spells = { },
-		},
-	}
 	
 	return {
-    casters = casters,
 	locked = locked,
 	skill_set = skill_set,
 }
