@@ -109,15 +109,15 @@ function display_skills_dialog(selecting)
 	
 	    local already_unlocked_list = {}
 		for spell in wml.variables["caster_" .. selected_unit_id .. ".spell_unlocked"]:gmatch("[^,]+") do
-            wml.variables["unlock_" .. string.sub(spell, 7, -1)] = "yes"
-			table.insert(already_unlocked_list, wml.variables["unlock_" .. string.sub(spell, 7, -1)])
+            wml.variables["unlock_" .. spell] = "yes"
+			table.insert(already_unlocked_list, wml.variables["unlock_" .. spell])
         end
 	
 	for _, spell_list in pairs(skills_copy) do
     for i, skill_id in ipairs(spell_list) do
         for _, skill in ipairs(skills_actual_copy) do
             if skill_id == skill.id then
-			    if not wml.variables["unlock_" .. string.sub(skill.id, 7, -1)] then
+			    if not wml.variables["unlock_" .. skill.id] then
                     spell_list[i] = locked
                 else
                     spell_list[i] = skill
@@ -126,6 +126,15 @@ function display_skills_dialog(selecting)
             end
         end
     end
+	end
+	
+	for i = #skills_copy, 1, -1 do  -- Ідемо від останнього до нульового індексу
+	    for j = 1, #skills_copy[i] do
+	        if not skills_copy[i][j].id then
+	            skills_copy[i][j] = nil
+	    	    break
+	        end
+	    end
 	end
 	
 	for i = #skills_copy, 1, -1 do  -- Ідемо від останнього до нульового індексу
@@ -145,10 +154,13 @@ end
 
     --spell_equiped
 	local skills_equipped = {}
+	if wml.variables["caster_" .. selected_unit_id .. ".spell_equipped"] then
 	for spell in wml.variables["caster_" .. selected_unit_id .. ".spell_equipped"]:gmatch("[^,]+") do
         wml.variables[spell] = "yes"
 		table.insert(skills_equipped, spell)
     end
+	end
+	
 
 
 	for i=1,#skills_copy,1 do
@@ -172,7 +184,7 @@ end
 						subskill_row = T.row{}
 						for k=1,#skill.subskills,1 do
 							local subskill = skill.subskills[k]
-							if (not wml.variables[ "unlock_"..string.sub(skill.subskills[k].id,7,-1) ]) then
+							if (not wml.variables[ "unlock_".. skill.subskills[k].id]) then
 							table.insert( subskill_row[2], T.column{T.button{id=subskill.id,use_markup=true,enabled=false,label=_"<span>Locked</span>"}} );
 							else
 							table.insert( subskill_row[2], T.column{T.button{id=subskill.id,use_markup=true,label=subskill.label}} );
@@ -282,7 +294,7 @@ end
 								end
 							
 							-- errors (extra spaces are to center the text)
-							elseif (not wml.variables[ "unlock_"..string.sub(skill.id,7,-1) ]) then
+							elseif (not wml.variables[ "unlock_".. skill.id]) then
 								dialog[buttonid].enabled = false
 							elseif (wml.variables["caster_" .. caster.id .. ".spellcasted_this_turn"]) then
 								dialog[buttonid].label = small and _"<span size='small'>1 spell/turn</span>" or _"<span> Can only cast\n1 spell per turn</span>"
@@ -374,7 +386,7 @@ end
 	end
 	
 	for spell in wml.variables["caster_" .. wml.variables['current_caster'] .. ".spell_unlocked"]:gmatch("[^,]+") do
-        wml.variables["unlock_" .. string.sub(spell, 7, -1)] = nil
+        wml.variables["unlock_" .. spell] = nil
 		wml.variables[spell] = nil
     end
     already_unlocked_list = nil
@@ -393,13 +405,9 @@ end
 -------------------------
 -- DEFINE WML TAGS
 -------------------------
-	wml_actions["select_caster_skills"] = function(cfg)
-        selected_unit_id = cfg.id
-        display_skills_dialog(true)
-    end
-	
 	wml_actions["refresh_skills"] = function(cfg)
 	    local skills_equipped = {}
+		if wml.variables["caster_" .. cfg.id .. ".spell_equipped"] then
 	    for spell in wml.variables["caster_" .. cfg.id .. ".spell_equipped"]:gmatch("[^,]+") do
             wml.variables[spell] = "yes"
 	     	table.insert(skills_equipped, spell)
@@ -411,10 +419,29 @@ end
 	    	wml.variables[spell] = nil
         end
 		skills_equipped = nil
+		end
+    end
+	
+	wml_actions["select_caster_skills"] = function(cfg)
+		local filter = wml.get_child(cfg, "filter") or
+        wml.error "[select_caster_skills] missing required [filter] tag"
+		local units = wesnoth.units.find(filter)
+		
+		for i,u in ipairs(units) do
+        selected_unit_id = u.id
+		wml.variables ["current_caster"] = u.id
+		--wesnoth.interface.delay(50)
+		
+        display_skills_dialog(true)
+		
+		wml.variables["caster_" .. u.id .. ".spellcasted_this_turn"] = nil
+		wml.fire("refresh_skills", ({id = u.id}))
+		end
     end
 	
 	wml_actions["assign_caster"] = function(cfg)
-		local filter = wml.get_child(cfg, "filter") --or cfg.id
+		local filter = wml.get_child(cfg, "filter") or
+        wml.error "[assign_caster] missing required [filter] tag"
 		local units = wesnoth.units.find(filter)
 		local basic_description
 
@@ -446,8 +473,8 @@ end
 			spell_group_9 = cfg.spell_group_9,
 			spell_group_10 =cfg.spell_group_10,
 			utils_spellcasted_this_turn = cfg.spellcasted_this_turn or nil,
-			utils_spellcasting_allowed = cfg.spellcasting_allowed or "yes",
-			utils_not_casters_turn = "",
+			utils_spellcasting_allowed = cfg.spellcasting_allowed or true,
+			utils_not_casters_turn = cfg.utils_not_casters_turn,
         }
 		
 		utils.vwriter.write(writer, caster_data_temp)
@@ -460,74 +487,116 @@ end
     end
 	
 	
-	wml_actions["unlock_spell"] = function(cfg)
-        local spell_to_modify = {}
-		local filter = wml.get_child(cfg, "filter")
+	wml_actions["modify_caster"] = function(cfg)
+		local filter = wml.get_child(cfg, "filter") or
+        wml.error "[modify_caster] missing required [filter] tag"
 		local units = wesnoth.units.find(filter)
-        for spell in cfg.spell_id:gmatch("[^,]+") do
-            table.insert(spell_to_modify, spell)
-        end
+		local basic_description
 
         for i,u in ipairs(units) do
-
 		    if wml.variables["caster_" .. u.id] then
-			
-			    local already_unlocked_list = {}
-			    for spell in wml.variables["caster_" .. u.id .. ".spell_unlocked"]:gmatch("[^,]+") do
-                    table.insert(already_unlocked_list, spell)
-                end
-						
-		        for _, spell in ipairs(spell_to_modify) do
-                    local already_unlocked = false
-                    for _, unlocked_spell in ipairs(already_unlocked_list) do
-                        if spell == unlocked_spell then
-                            already_unlocked = true
-                            break
+		        wml.variables["caster_" .. u.id .. ".u_title_select"] = cfg.title_select or wml.variables["caster_" .. u.id .. ".u_title_select"]
+		    	wml.variables["caster_" .. u.id .. ".u_title_cast"] = cfg.title_cast or wml.variables["caster_" .. u.id .. ".u_title_cast"]
+		    	wml.variables["caster_" .. u.id .. ".u_description"] = cfg.description or wml.variables["caster_" .. u.id .. ".u_description"]
+		    	wml.variables["caster_" .. u.id .. ".spell_unlocked"] = cfg.unlocked_spells or wml.variables["caster_" .. u.id .. ".spell_unlocked"]
+		    	wml.variables["caster_" .. u.id .. ".spell_equipped"] = cfg.equipped_spells or wml.variables["caster_" .. u.id .. ".spell_equipped"]
+		    	wml.variables["caster_" .. u.id .. ".spell_group_1"] = cfg.spell_group_1 or wml.variables["caster_" .. u.id .. ".spell_group_1"]
+		    	wml.variables["caster_" .. u.id .. ".spell_group_2"] = cfg.spell_group_2 or wml.variables["caster_" .. u.id .. ".spell_group_2"]
+		    	wml.variables["caster_" .. u.id .. ".spell_group_3"] = cfg.spell_group_3 or wml.variables["caster_" .. u.id .. ".spell_group_3"]
+		    	wml.variables["caster_" .. u.id .. ".spell_group_4"] = cfg.spell_group_4 or wml.variables["caster_" .. u.id .. ".spell_group_4"]
+		    	wml.variables["caster_" .. u.id .. ".spell_group_5"] = cfg.spell_group_5 or wml.variables["caster_" .. u.id .. ".spell_group_5"]
+		    	wml.variables["caster_" .. u.id .. ".spell_group_6"] = cfg.spell_group_6 or wml.variables["caster_" .. u.id .. ".spell_group_6"]
+		    	wml.variables["caster_" .. u.id .. ".spell_group_7"] = cfg.spell_group_7 or wml.variables["caster_" .. u.id .. ".spell_group_7"]
+		    	wml.variables["caster_" .. u.id .. ".spell_group_8"] = cfg.spell_group_8 or wml.variables["caster_" .. u.id .. ".spell_group_8"]
+		    	wml.variables["caster_" .. u.id .. ".spell_group_9"] = cfg.spell_group_9 or wml.variables["caster_" .. u.id .. ".spell_group_9"]
+		    	wml.variables["caster_" .. u.id .. ".spell_group_10"] = cfg.spell_group_10 or wml.variables["caster_" .. u.id .. ".spell_group_10"]
+		    	wml.variables["caster_" .. u.id .. ".utils_spellcasted_this_turn"] = cfg.spellcasted_this_turn or wml.variables["caster_" .. u.id .. ".utils_spellcasted_this_turn"]
+		    	wml.variables["caster_" .. u.id .. ".utils_spellcasting_allowed"] = cfg.spellcasting_allowed or wml.variables["caster_" .. u.id .. ".utils_spellcasting_allowed"]
+		    	wml.variables["caster_" .. u.id .. ".utils_not_casters_turn"] = cfg.utils_not_casters_turn or wml.variables["caster_" .. u.id .. ".utils_not_casters_turn"]
+		    	
+		        wml.fire("refresh_skills", ({id = u.id}))
+		    else
+		        wml.fire("assign_caster", cfg)
+		    end
+		end
+    end
+	
+	
+	wml_actions["unlock_spell"] = function(cfg)
+	    if cfg.spell_id then
+            local spell_to_modify = {}
+		    local filter = wml.get_child(cfg, "filter") or
+            wml.error "[unlocked_spell] missing required [filter] tag"
+		    local units = wesnoth.units.find(filter)
+            for spell in cfg.spell_id:gmatch("[^,]+") do
+                table.insert(spell_to_modify, spell)
+            end
+		    
+            for i,u in ipairs(units) do
+		    
+		        if wml.variables["caster_" .. u.id] then
+		    	
+		    	    local already_unlocked_list = {}
+		    	    for spell in wml.variables["caster_" .. u.id .. ".spell_unlocked"]:gmatch("[^,]+") do
+                        table.insert(already_unlocked_list, spell)
+                    end
+		    				
+		            for _, spell in ipairs(spell_to_modify) do
+                        local already_unlocked = false
+                        for _, unlocked_spell in ipairs(already_unlocked_list) do
+                            if spell == unlocked_spell then
+                                already_unlocked = true
+                                break
+                            end
+                        end
+                        if not already_unlocked then
+		            		wml.variables["unlock_" .. spell] = "yes"
+		    				wml.variables["caster_" .. u.id .. ".spell_unlocked"] = wml.variables["caster_" .. u.id .. ".spell_unlocked"] .. "," .. spell
                         end
                     end
-                    if not already_unlocked then
-		        		wml.variables["unlock_" .. spell] = "yes"
-						wml.variables["caster_" .. u.id .. ".spell_unlocked"] = wml.variables["caster_" .. u.id .. ".spell_unlocked"] .. "," .. spell
-                    end
-                end
+		        end
+		    
 		    end
-
 		end
     end
 	
 	wml_actions["lock_spell"] = function(cfg)
-        local spell_to_modify = {}
-		local filter = wml.get_child(cfg, "filter")
-		local units = wesnoth.units.find(filter)
-        for spell in cfg.spell_id:gmatch("[^,]+") do
-            table.insert(spell_to_modify, spell)
-        end
-	
-	    for i,u in ipairs(units) do
-		    if wml.variables["caster_" .. u.id] then
-		        local already_unlocked_list = {}
-		        for spell in wml.variables["caster_" .. u.id .. ".spell_unlocked"]:gmatch("[^,]+") do
-                    table.insert(already_unlocked_list, spell)
-                end
-		        
-                for _, spell in ipairs(spell_to_modify) do
-                for i = #already_unlocked_list, 1, -1 do -- Видаляємо заклинання зі списку
-                    if already_unlocked_list[i] == spell then
-                        table.remove(already_unlocked_list, i)
-                        wesnoth.interface.add_chat_message("Locked spell", spell)
-                        wml.variables["unlock_" .. spell] = nil
+	    if cfg.spell_id then
+            local spell_to_modify = {}
+		    local filter = wml.get_child(cfg, "filter") or
+            wml.error "[lock_spell] missing required [filter] tag"
+		    local units = wesnoth.units.find(filter)
+            for spell in cfg.spell_id:gmatch("[^,]+") do
+                table.insert(spell_to_modify, spell)
+            end
+		    
+	        for i,u in ipairs(units) do
+		        if wml.variables["caster_" .. u.id] then
+		            local already_unlocked_list = {}
+		            for spell in wml.variables["caster_" .. u.id .. ".spell_unlocked"]:gmatch("[^,]+") do
+                        table.insert(already_unlocked_list, spell)
+                    end
+		            
+                    for _, spell in ipairs(spell_to_modify) do
+                    for i = #already_unlocked_list, 1, -1 do -- Видаляємо заклинання зі списку
+                        if already_unlocked_list[i] == spell then
+                            table.remove(already_unlocked_list, i)
+                            wesnoth.interface.add_chat_message("Locked spell", spell)
+                            wml.variables["unlock_" .. spell] = nil
+                        end
                     end
                 end
-            end
-            
-            -- Оновлюємо змінну в WML, збираючи рядок назад
-            wml.variables["caster_" .. u.id .. ".spell_unlocked"] = table.concat(already_unlocked_list, ",")
+                
+                -- Оновлюємо змінну в WML, збираючи рядок назад
+                wml.variables["caster_" .. u.id .. ".spell_unlocked"] = table.concat(already_unlocked_list, ",")
+		        end
 		    end
 		end
     end
 	
 	wml_actions["caster_status"] = function(cfg)
-		local filter = wml.get_child(cfg, "filter")
+		local filter = wml.get_child(cfg, "filter") or
+        wml.error "[caster_status] missing required [filter] tag"
 		local units = wesnoth.units.find(filter)
 	
 	    for i,u in ipairs(units) do
@@ -541,8 +610,24 @@ end
 		end
     end
 	
+	wml_actions["equip_spell"] = function(cfg)
+	    if cfg.spell_id then
+		    local filter = wml.get_child(cfg, "filter") or
+            wml.error "[equip_spell] missing required [filter] tag"
+		    local units = wesnoth.units.find(filter)
+		    
+	        for i,u in ipairs(units) do
+		        if wml.variables["caster_" .. u.id] then
+		        	wml.variables["caster_" .. u.id .. ".spell_equipped"] = cfg.spell_id or wml.variables["caster_" .. u.id .. ".spell_equipped"]
+		            wml.fire("refresh_skills", ({id = u.id}))
+                end
+		    end
+		end
+    end
+	
 	wml_actions["remove_caster"] = function(cfg)
-		local filter = wml.get_child(cfg, "filter")
+		local filter = wml.get_child(cfg, "filter") or
+        wml.error "[remove_caster] missing required [filter] tag"
 		local units = wesnoth.units.find(filter)
 	
 	    for i,u in ipairs(units) do
@@ -569,7 +654,7 @@ wesnoth.game_events.on_mouse_action = function(x,y)
 	if wml.variables["caster_" .. selected_unit[1].id] then
 	
 	if (wml.variables['is_during_attack']) then return end
-	if (wml.variables["caster_" .. selected_unit[1].id .. ".not_caster_turn"] ) then return end
+	if (wml.variables["caster_" .. selected_unit[1].id .. ".utils_not_casters_turn"] ) then return end
 	
 	selected_unit_id = selected_unit[1].id
 	
