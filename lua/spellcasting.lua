@@ -399,7 +399,18 @@ end
     end
 	
 	wml_actions["refresh_skills"] = function(cfg)
+	    local skills_equipped = {}
+	    for spell in wml.variables["caster_" .. cfg.id .. ".spell_equipped"]:gmatch("[^,]+") do
+            wml.variables[spell] = "yes"
+	     	table.insert(skills_equipped, spell)
+        end
+	 
 		wesnoth.game_events.fire(("refresh_" .. cfg.id .. "_skills"))
+		
+		for spell in wml.variables["caster_" .. cfg.id .. ".spell_unlocked"]:gmatch("[^,]+") do
+	    	wml.variables[spell] = nil
+        end
+		skills_equipped = nil
     end
 	
 	wml_actions["assign_caster"] = function(cfg)
@@ -440,6 +451,8 @@ end
         }
 		
 		utils.vwriter.write(writer, caster_data_temp)
+		
+		wml.fire("refresh_skills", ({id = u.id}))
 		
 		caster_data_temp, writer = nil
 		
