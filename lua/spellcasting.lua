@@ -1,3 +1,4 @@
+-- Dalas' Magic System Rework 2.0 by amakri
 local _ = wesnoth.textdomain "wesnoth-ctl"
 local utils = wesnoth.require "wml-utils"
 
@@ -283,10 +284,10 @@ end
 							-- errors (extra spaces are to center the text)
 							elseif (not wml.variables[ "unlock_"..string.sub(skill.id,7,-1) ]) then
 								dialog[buttonid].enabled = false
-							elseif (wml.variables['spellcasted_this_turn_' .. caster.id]) then
+							elseif (wml.variables["caster_" .. caster.id .. ".spellcasted_this_turn"]) then
 								dialog[buttonid].label = small and _"<span size='small'>1 spell/turn</span>" or _"<span> Can only cast\n1 spell per turn</span>"
 								dialog[buttonid].enabled = false
-							elseif (wml.variables['polymorphed_' .. caster.id]) then
+							elseif (wml.variables["caster_" .. caster.id .. ".polymorphed"]) then
 								dialog[buttonid].label = small and _"<span size='small'>Polymorphed</span>" or _"<span>  Blocked by\n  Polymorph</span>"
 								dialog[buttonid].enabled = false
 							elseif (wesnoth.units.find_on_map{ id=caster.id, T.filter_location{radius=3, T.filter{id='haralin_mirror3'}} }[1]) then   -- mirror haralin counterspell. Переробити, щоб працювало з усіма
@@ -312,7 +313,7 @@ end
 									if (skill.gold_cost)  then wesnoth.sides[caster.side].gold =wesnoth.sides[caster.side].gold  -skill.gold_cost  end
 									if (skill.atk_cost) then haralin.attacks_left=caster.attacks_left-skill.atk_cost end
 									wml.variables['skill_id'] = skill.id
-									wml.variables['spellcasted_this_turn_' .. caster.id] = skill.id
+									wml.variables["caster_" .. caster.id .. ".spellcasted_this_turn"] = skill.id
 									gui.widget.close(dialog)
 								end
 							end
@@ -372,7 +373,7 @@ end
 		end)
 	end
 	
-	for spell in wml.variables["caster_" .. caster.id .. ".spell_unlocked"]:gmatch("[^,]+") do
+	for spell in wml.variables["caster_" .. wml.variables['current_caster'] .. ".spell_unlocked"]:gmatch("[^,]+") do
         wml.variables["unlock_" .. string.sub(spell, 7, -1)] = nil
 		wml.variables[spell] = nil
     end
@@ -433,8 +434,8 @@ end
 			spell_group_8 = cfg.spell_group_8,
 			spell_group_9 = cfg.spell_group_9,
 			spell_group_10 =cfg.spell_group_10,
-			utils_spellcasted_this_turn = "",
-			utils_no_spellcasting_event = "",
+			utils_spellcasted_this_turn = cfg.spellcasted_this_turn or nil,
+			utils_spellcasting_allowed = cfg.spellcasting_allowed or "yes",
 			utils_not_casters_turn = "",
         }
 		
@@ -448,7 +449,7 @@ end
 	
 	wml_actions["unlock_spell"] = function(cfg)
         local spell_to_modify = {}
-		local filter = wml.get_child(cfg, "filter") --or cfg.id
+		local filter = wml.get_child(cfg, "filter")
 		local units = wesnoth.units.find(filter)
         for spell in cfg.spell_id:gmatch("[^,]+") do
             table.insert(spell_to_modify, spell)
@@ -483,7 +484,7 @@ end
 	
 	wml_actions["lock_spell"] = function(cfg)
         local spell_to_modify = {}
-		local filter = wml.get_child(cfg, "filter") --or cfg.id
+		local filter = wml.get_child(cfg, "filter")
 		local units = wesnoth.units.find(filter)
         for spell in cfg.spell_id:gmatch("[^,]+") do
             table.insert(spell_to_modify, spell)
@@ -512,6 +513,32 @@ end
 		end
     end
 	
+	wml_actions["caster_status"] = function(cfg)
+		local filter = wml.get_child(cfg, "filter")
+		local units = wesnoth.units.find(filter)
+	
+	    for i,u in ipairs(units) do
+		    if wml.variables["caster_" .. u.id] then
+			    if cfg.spellcasting_allowed == true then
+				    wml.variables["caster_" .. u.id .. ".utils_spellcasting_allowed"] = true
+				elseif cfg.spellcasting_allowed == false then
+				    wml.variables["caster_" .. u.id .. ".utils_spellcasting_allowed"] = false
+				end 
+            end
+		end
+    end
+	
+	wml_actions["remove_caster"] = function(cfg)
+		local filter = wml.get_child(cfg, "filter")
+		local units = wesnoth.units.find(filter)
+	
+	    for i,u in ipairs(units) do
+		    if wml.variables["caster_" .. u.id] then
+			    wml.variables["caster_" .. u.id] = nil
+            end
+		end
+    end
+	
 	
 	
 	
@@ -535,10 +562,8 @@ wesnoth.game_events.on_mouse_action = function(x,y)
 	
 	if (os.clock()-last_click<0.25) then
 		wesnoth.audio.play("miss-2.ogg")
-		
-		if (wml.variables["no_spellcasting_event_" .. selected_unit_id]) then
-			wesnoth.game_events.fire(wml.variables["no_spellcasting_event_" .. selected_unit_id], x, y)
-		else
+
+		if wml.variables["caster_" .. selected_unit_id .. ".utils_spellcasting_allowed"] == true then
 			display_skills_dialog()
 		end
 		
