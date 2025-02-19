@@ -2,9 +2,9 @@
 local _ = wesnoth.textdomain "wesnoth-ctl"
 local utils = wesnoth.require "wml-utils"
 
-local caster_data = wesnoth.dofile(wml.variables["path_to_casters"])
-local locked = caster_data.locked
-local skill_set = caster_data.skill_set
+local spell_data = wesnoth.dofile('~add-ons/Chasing_the_Light/lua/spell_set.lua')
+local locked = spell_data.locked
+local skill_set = spell_data.skill_set
 
 local selected_unit_id
 -- to make code shorter
@@ -556,7 +556,7 @@ wesnoth.game_events.on_mouse_action = function(x,y)
 	if wml.variables["caster_" .. selected_unit[1].id] then
 	
 	if (wml.variables['is_during_attack']) then return end
-	if (wml.variables["not_" .. selected_unit[1].id .. "_turn"] ) then return end
+	if (wml.variables["caster_" .. selected_unit[1].id .. ".not_caster_turn"] ) then return end
 	
 	selected_unit_id = selected_unit[1].id
 	
