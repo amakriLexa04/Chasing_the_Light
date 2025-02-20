@@ -1,4 +1,4 @@
--- Dalas' Magic System Rework 2.0 by amakri
+-- Magic System Rework 2.0 by amakri, original Magic System by Dalas	
 local _ = wesnoth.textdomain "wesnoth-ctl"
 
 --###########################################################################################################################################################

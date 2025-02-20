@@ -1,4 +1,4 @@
--- Dalas' Magic System Rework 2.0 by amakri
+-- Magic System Rework 2.0 by amakri, original Magic System by Dalas
 local _ = wesnoth.textdomain "wesnoth-ctl"
 local utils = wesnoth.require "wml-utils"
 
@@ -473,7 +473,7 @@ end
 			spell_group_9 = cfg.spell_group_9,
 			spell_group_10 =cfg.spell_group_10,
 			utils_spellcasted_this_turn = cfg.spellcasted_this_turn or nil,
-			utils_spellcasting_allowed = cfg.spellcasting_allowed or true,
+			utils_spellcasting_allowed = tostring(cfg.spellcasting_allowed) or true,
 			utils_not_casters_turn = cfg.utils_not_casters_turn,
         }
 		
@@ -550,7 +550,7 @@ end
                             end
                         end
                         if not already_unlocked then
-		            		wml.variables["unlock_" .. spell] = "yes"
+		            		wml.variables["unlock_" .. spell] = "yes"  -- чи треба?
 		    				wml.variables["caster_" .. u.id .. ".spell_unlocked"] = wml.variables["caster_" .. u.id .. ".spell_unlocked"] .. "," .. spell
                         end
                     end
@@ -582,7 +582,7 @@ end
                         if already_unlocked_list[i] == spell then
                             table.remove(already_unlocked_list, i)
                             wesnoth.interface.add_chat_message("Locked spell", spell)
-                            wml.variables["unlock_" .. spell] = nil
+                            wml.variables["unlock_" .. spell] = nil -- чи треба?
                         end
                     end
                 end
