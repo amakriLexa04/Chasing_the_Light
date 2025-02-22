@@ -60,6 +60,7 @@ function display_skills_dialog(selecting)
 	-- CREATE DIALOG
 	--###############################
 	local dialog = {
+	    definition="menu",
 		T.helptip{ id="tooltip_large" }, -- mandatory field
 		T.tooltip{ id="tooltip_large" }, -- mandatory field
 		T.grid{} }
@@ -75,7 +76,9 @@ function display_skills_dialog(selecting)
 	-------------------------
 	-- HEADER
 	-------------------------
+	table.insert( grid[2], T.row{ T.column{ border="bottom", border_size=15, T.image{  label="icons/banner1.png"  }}} )
 	local spacer = "                                                                  "
+<<<<<<< Updated upstream
 	local                title_text = selecting and casters[k].title_select       or casters[k].title_cast
 	
 	table.insert( grid[2], T.row{ T.column{ T.label{
@@ -86,6 +89,19 @@ function display_skills_dialog(selecting)
 	local                help_text = casters[k].description
 	table.insert( grid[2], T.row{ T.column{T.label{ use_markup=true, label=help_text }}} )
 	table.insert( grid[2], T.row{ T.column{T.label{label="  "}}} )
+=======
+	local                title_text = selecting and wml.variables["caster_" .. selected_unit_id .. ".u_title_select"]  or wml.variables["caster_" .. selected_unit_id .. ".u_title_cast"]
+	table.insert( grid[2], T.row{ T.column{ T.label{
+        definition="title",
+        horizontal_alignment="center",
+        label = spacer..title_text..spacer,
+    }}} )
+	local                help_text = wml.variables["caster_" .. selected_unit_id .. ".u_description"]
+	--table.insert( grid[2], T.row{ T.column{T.label{ use_markup=true, label=help_text }}} )
+	--table.insert( grid[2], T.row{ T.column{T.label{label="  "}}} )
+	table.insert( grid[2], T.row{ T.column{ border="top", border_size=15, T.label{ use_markup=true, label=help_text }}} )
+	table.insert( grid[2], T.row{ T.column{ border="top", border_size=15, T.image{  label="icons/banner2.png"  }}} )
+>>>>>>> Stashed changes
 	
 	-------------------------
 	-- SKILL GROUPS
@@ -139,9 +155,12 @@ function display_skills_dialog(selecting)
 		
 		-- skill row
 		table.insert( skill_grid[2], T.row{ 
-			T.column{button},
-			T.column{T.label{label="  "}},  T.column{  horizontal_alignment="left", T.image{id="image"..i                }  },
-			T.column{T.label{label="  "}},  T.column{  horizontal_alignment="left", T.label{id="label"..i,use_markup=true}  },
+			--T.column{button},
+			--T.column{T.label{label="  "}},  T.column{  horizontal_alignment="left", T.image{id="image"..i                }  },
+			--T.column{T.label{label="  "}},  T.column{  horizontal_alignment="left", T.label{id="label"..i,use_markup=true}  },
+			T.column{ border="left",  border_size=15, button},
+            T.column{                                 T.label{label="  "}},  T.column{  horizontal_alignment="left", T.image{id="image"..i                }  },
+            T.column{ border="right", border_size=15, T.label{label="  "}},  T.column{  horizontal_alignment="left", T.label{id="label"..i,use_markup=true}  },
 		} )
 		
 		-- subskill row
@@ -165,11 +184,29 @@ function display_skills_dialog(selecting)
 	-------------------------
 	-- CONFIRM BUTTON
 	-------------------------
-	table.insert( grid[2], T.row{ T.column{T.label{label="  "}}} )
-	table.insert( grid[2], T.row{  T.column{  T.button{
-		id="confirm_button", use_markup=true, return_value=1,
-		label=(selecting and _"Confirm Spells <small><i>(can be changed every scenario)</i></small>" or "Cancel"),
-	}}})
+	table.insert( grid[2], T.row{ T.column{T.image{  label="icons/banner2.png"  }}} )
+	--table.insert( grid[2], T.row{ T.column{T.label{label="  "}}} )
+	--table.insert( grid[2], T.row{  T.column{  T.button{
+	--	id="confirm_button", use_markup=true, return_value=1,
+	--	label=(selecting and _"Confirm Spells <small><i>(can be changed every scenario)</i></small>" or "Cancel"),
+	--}}})
+	
+	if (selecting) then
+        table.insert( grid[2], T.row{ T.column{ T.grid{ T.row{ T.column{
+            border="top,right", border_size=10,
+            T.button{  id="confirm_button", use_markup=true, return_value=1, label=_"Confirm Spells <small><i>(can be changed every scenario)</i></small>"  }
+        }, T.column{
+            border="top,left",  border_size=10,
+            T.button{  id="wait_button",    use_markup=true, return_value=2, label=_"Choose Later"  }
+        }}}}})
+    else
+        table.insert( grid[2], T.row{ T.column{
+            border="top", border_size=10,
+            T.button{  id="confirm_button", use_markup=true, return_value=1, label="Cancel"  }
+        }})
+    end
+	
+	table.insert( grid[2], T.row{ T.column{ border="top", border_size=15,  T.image{  label="icons/banner4.png"  }}} )
 	
 	
 	
@@ -313,10 +350,27 @@ function display_skills_dialog(selecting)
 	-- select spell, synced
 	if (selecting) then
 		dialog_result = wesnoth.sync.evaluate_single(function()
+<<<<<<< Updated upstream
 			gui.show_dialog( dialog, preshow )
 			return result_table;
 		end)
 		for skill_id,skill_value in pairs(dialog_result) do wml.variables[skill_id]=skill_value end
+=======
+            retval = gui.show_dialog( dialog, preshow )
+            result_table.wait_to_select_spells = retval==2 and 'yes' or 'no' --not nil, or else the key appears blank
+            return result_table;
+        end)
+        wml.variables["wait_to_select_spells_" .. caster.id] = result_table.wait_to_select_spells; --set wait_to_select_spells manually, since it often gets overwritten to 'no' above
+		
+		skills_equipped = {}
+		for skill_id,skill_value in pairs(dialog_result) do
+		wml.variables[skill_id]=skill_value
+		    if skill_value == true then
+			    table.insert(skills_equipped, skill_id)
+			end
+		end
+		wml.variables["caster_" .. caster.id .. ".spell_equipped"] = table.concat(skills_equipped, ",")
+>>>>>>> Stashed changes
 	
 	-- cast spells, synced
 	else
@@ -346,6 +400,258 @@ end
         selected_unit_id = cfg.id
         display_skills_dialog(true)
     end
+<<<<<<< Updated upstream
+=======
+	
+	wml_actions["assign_caster"] = function(cfg)
+		local filter = wml.get_child(cfg, "filter") or
+        wml.error "[assign_caster] missing required [filter] tag"
+		local units = wesnoth.units.find(filter)
+		local basic_description
+
+        for i,u in ipairs(units) do
+		
+		local writer = utils.vwriter.init(cfg, ("caster_" .. u.id ))
+		
+		if u.gender == "male" then
+		    basic_description = _"<span size='2000'> \n</span><span size='small'><i>" .. u.name .. " knows many useful spells, and will learn more as he levels-up automatically throughout the campaign. " .. u.name .. " does not use XP to level-up.\nInstead, " .. u.name .. " uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on " .. u.name .. " to cast them</b>. You can only cast 1 spell per turn.</i></span>"
+		else
+		    basic_description = _"<span size='2000'> \n</span><span size='small'><i>" .. u.name .. " knows many useful spells, and will learn more as she levels-up automatically throughout the campaign. " .. u.name .. " does not use XP to level-up.\nInstead, " .. u.name .. " uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on " .. u.name .. " to cast them</b>. You can only cast 1 spell per turn.</i></span>"
+		end
+
+        local caster_data_temp = {
+            id = u.id,
+            u_title_select = cfg.title_select or ("Select " .. u.name .. "’s Spells"),
+            u_title_cast = cfg.title_cast or ("Cast " .. u.name .. "’s Spells"),
+            u_description = cfg.description or basic_description,
+			spell_unlocked = cfg.unlocked_spells or "",
+			spell_equipped = cfg.equipped_spells or "",
+            spell_group_1 = cfg.spell_group_1,
+			spell_group_2 = cfg.spell_group_2,
+			spell_group_3 = cfg.spell_group_3,
+			spell_group_4 = cfg.spell_group_4,
+			spell_group_5 = cfg.spell_group_5,
+			spell_group_6 = cfg.spell_group_6,
+			spell_group_7 = cfg.spell_group_7,
+			spell_group_8 = cfg.spell_group_8,
+			spell_group_9 = cfg.spell_group_9,
+			spell_group_10 =cfg.spell_group_10,
+			utils_spellcasted_this_turn = cfg.spellcasted_this_turn or nil,
+			utils_spellcasting_allowed = tostring(cfg.spellcasting_allowed) or true,
+			utils_not_casters_turn = cfg.utils_not_casters_turn,
+        }
+		
+		utils.vwriter.write(writer, caster_data_temp)
+		
+		wml.fire("refresh_skills", ({id = u.id}))
+		
+		caster_data_temp, writer = nil
+		
+		end
+    end
+	
+	
+	wml_actions["modify_caster"] = function(cfg)
+		local filter = wml.get_child(cfg, "filter") or
+        wml.error "[modify_caster] missing required [filter] tag"
+		local units = wesnoth.units.find(filter)
+		local basic_description
+
+        for i,u in ipairs(units) do
+		    if wml.variables["caster_" .. u.id] then
+		        wml.variables["caster_" .. u.id .. ".u_title_select"] = cfg.title_select or wml.variables["caster_" .. u.id .. ".u_title_select"]
+		    	wml.variables["caster_" .. u.id .. ".u_title_cast"] = cfg.title_cast or wml.variables["caster_" .. u.id .. ".u_title_cast"]
+		    	wml.variables["caster_" .. u.id .. ".u_description"] = cfg.description or wml.variables["caster_" .. u.id .. ".u_description"]
+		    	wml.variables["caster_" .. u.id .. ".spell_unlocked"] = cfg.unlocked_spells or wml.variables["caster_" .. u.id .. ".spell_unlocked"]
+		    	wml.variables["caster_" .. u.id .. ".spell_equipped"] = cfg.equipped_spells or wml.variables["caster_" .. u.id .. ".spell_equipped"]
+		    	wml.variables["caster_" .. u.id .. ".spell_group_1"] = cfg.spell_group_1 or wml.variables["caster_" .. u.id .. ".spell_group_1"]
+		    	wml.variables["caster_" .. u.id .. ".spell_group_2"] = cfg.spell_group_2 or wml.variables["caster_" .. u.id .. ".spell_group_2"]
+		    	wml.variables["caster_" .. u.id .. ".spell_group_3"] = cfg.spell_group_3 or wml.variables["caster_" .. u.id .. ".spell_group_3"]
+		    	wml.variables["caster_" .. u.id .. ".spell_group_4"] = cfg.spell_group_4 or wml.variables["caster_" .. u.id .. ".spell_group_4"]
+		    	wml.variables["caster_" .. u.id .. ".spell_group_5"] = cfg.spell_group_5 or wml.variables["caster_" .. u.id .. ".spell_group_5"]
+		    	wml.variables["caster_" .. u.id .. ".spell_group_6"] = cfg.spell_group_6 or wml.variables["caster_" .. u.id .. ".spell_group_6"]
+		    	wml.variables["caster_" .. u.id .. ".spell_group_7"] = cfg.spell_group_7 or wml.variables["caster_" .. u.id .. ".spell_group_7"]
+		    	wml.variables["caster_" .. u.id .. ".spell_group_8"] = cfg.spell_group_8 or wml.variables["caster_" .. u.id .. ".spell_group_8"]
+		    	wml.variables["caster_" .. u.id .. ".spell_group_9"] = cfg.spell_group_9 or wml.variables["caster_" .. u.id .. ".spell_group_9"]
+		    	wml.variables["caster_" .. u.id .. ".spell_group_10"] = cfg.spell_group_10 or wml.variables["caster_" .. u.id .. ".spell_group_10"]
+		    	wml.variables["caster_" .. u.id .. ".utils_spellcasted_this_turn"] = cfg.spellcasted_this_turn or wml.variables["caster_" .. u.id .. ".utils_spellcasted_this_turn"]
+		    	wml.variables["caster_" .. u.id .. ".utils_spellcasting_allowed"] = cfg.spellcasting_allowed or wml.variables["caster_" .. u.id .. ".utils_spellcasting_allowed"]
+		    	wml.variables["caster_" .. u.id .. ".utils_not_casters_turn"] = cfg.utils_not_casters_turn or wml.variables["caster_" .. u.id .. ".utils_not_casters_turn"]
+		    	
+		        wml.fire("refresh_skills", ({id = u.id}))
+		    else
+		        wml.fire("assign_caster", cfg)
+		    end
+		end
+    end
+	
+	
+	wml_actions["unlock_spell"] = function(cfg)
+	    if cfg.spell_id then
+            local spell_to_modify = {}
+		    local filter = wml.get_child(cfg, "filter") or
+            wml.error "[unlocked_spell] missing required [filter] tag"
+		    local units = wesnoth.units.find(filter)
+            for spell in cfg.spell_id:gmatch("[^,]+") do
+                table.insert(spell_to_modify, spell)
+            end
+		    
+            for i,u in ipairs(units) do
+		    
+		        if wml.variables["caster_" .. u.id] then
+		    	
+		    	    local already_unlocked_list = {}
+		    	    for spell in wml.variables["caster_" .. u.id .. ".spell_unlocked"]:gmatch("[^,]+") do
+                        table.insert(already_unlocked_list, spell)
+                    end
+		    				
+		            for _, spell in ipairs(spell_to_modify) do
+                        local already_unlocked = false
+                        for _, unlocked_spell in ipairs(already_unlocked_list) do
+                            if spell == unlocked_spell then
+                                already_unlocked = true
+                                break
+                            end
+                        end
+                        if not already_unlocked then
+		            		wml.variables["unlock_" .. spell] = "yes"  -- чи треба?
+		    				wml.variables["caster_" .. u.id .. ".spell_unlocked"] = wml.variables["caster_" .. u.id .. ".spell_unlocked"] .. "," .. spell
+                        end
+                    end
+		        end
+		    
+		    end
+		end
+    end
+	
+	wml_actions["lock_spell"] = function(cfg)
+	    if cfg.spell_id then
+            local spell_to_modify = {}
+		    local filter = wml.get_child(cfg, "filter") or
+            wml.error "[lock_spell] missing required [filter] tag"
+		    local units = wesnoth.units.find(filter)
+            for spell in cfg.spell_id:gmatch("[^,]+") do
+                table.insert(spell_to_modify, spell)
+            end
+		    
+	        for i,u in ipairs(units) do
+		        if wml.variables["caster_" .. u.id] then
+		            local already_unlocked_list = {}
+		            for spell in wml.variables["caster_" .. u.id .. ".spell_unlocked"]:gmatch("[^,]+") do
+                        table.insert(already_unlocked_list, spell)
+                    end
+		            
+                    for _, spell in ipairs(spell_to_modify) do
+                    for i = #already_unlocked_list, 1, -1 do -- Видаляємо заклинання зі списку
+                        if already_unlocked_list[i] == spell then
+                            table.remove(already_unlocked_list, i)
+                            wesnoth.interface.add_chat_message("Locked spell", spell)
+                            wml.variables["unlock_" .. spell] = nil -- чи треба?
+                        end
+                    end
+                end
+                
+                -- Оновлюємо змінну в WML, збираючи рядок назад
+                wml.variables["caster_" .. u.id .. ".spell_unlocked"] = table.concat(already_unlocked_list, ",")
+		        end
+		    end
+		end
+    end
+	
+	wml_actions["caster_status"] = function(cfg)
+		local filter = wml.get_child(cfg, "filter") or
+        wml.error "[caster_status] missing required [filter] tag"
+		local units = wesnoth.units.find(filter)
+	
+	    for i,u in ipairs(units) do
+		    if wml.variables["caster_" .. u.id] then
+			    if cfg.spellcasting_allowed == true then
+				    wml.variables["caster_" .. u.id .. ".utils_spellcasting_allowed"] = true
+				elseif cfg.spellcasting_allowed == false then
+				    wml.variables["caster_" .. u.id .. ".utils_spellcasting_allowed"] = false
+				end 
+            end
+		end
+    end
+	
+wml_actions["equip_spell"] = function(cfg)
+    if not cfg.spell_id then return end
+    
+    local filter = wml.get_child(cfg, "filter") or wml.error "[equip_spell] missing required [filter] tag"
+    local units = wesnoth.units.find(filter)
+    local spell_to_modify = {}
+    
+    for spell in cfg.spell_id:gmatch("[^,]+") do
+        table.insert(spell_to_modify, spell)
+    end
+    
+    for _, u in ipairs(units) do
+        local spell_to_equip = {}
+        local equipped_var = wml.variables["caster_" .. u.id .. ".spell_equipped"] or ""
+        
+        for spell in equipped_var:gmatch("[^,]+") do
+            table.insert(spell_to_equip, spell)
+        end
+        
+        for i = 1, 10 do
+            local group_var = wml.variables["caster_" .. u.id .. ".spell_group_" .. i]
+            if group_var then
+                local spell_to_compare = {}
+                
+                for spell in group_var:gmatch("[^,]+") do
+                    table.insert(spell_to_compare, spell)
+                end
+                
+                for _, spell in ipairs(spell_to_modify) do
+                    local found = false
+                    for _, s in ipairs(spell_to_compare) do
+                        if s == spell then
+                            found = true
+                            break
+                        end
+                    end
+                    if found then
+                        for j = #spell_to_equip, 1, -1 do
+                            local remove_spell = false
+                            for _, s in ipairs(spell_to_compare) do
+                                if s == spell_to_equip[j] then
+                                    remove_spell = true
+                                    break
+                                end
+                            end
+                            if remove_spell then
+                                table.remove(spell_to_equip, j)
+                            end
+                        end
+                        table.insert(spell_to_equip, spell)
+                    end
+                end
+            end
+        end
+        
+        wml.variables["caster_" .. u.id .. ".spell_equipped"] = table.concat(spell_to_equip, ",")
+        wml.fire("refresh_skills", { id = u.id })
+    end
+end
+	
+	wml_actions["remove_caster"] = function(cfg)
+		local filter = wml.get_child(cfg, "filter") or
+        wml.error "[remove_caster] missing required [filter] tag"
+		local units = wesnoth.units.find(filter)
+	
+	    for i,u in ipairs(units) do
+		    if wml.variables["caster_" .. u.id] then
+			    wml.variables["caster_" .. u.id] = nil
+            end
+		end
+    end
+	
+	
+	
+	
+	
+	
+>>>>>>> Stashed changes
 
 -------------------------
 -- DETECT DOUBLECLICKS
@@ -364,11 +670,21 @@ wesnoth.game_events.on_mouse_action = function(x,y)
 	
 	if (os.clock()-last_click<0.25) then
 		wesnoth.audio.play("miss-2.ogg")
+<<<<<<< Updated upstream
 		
 		if (wml.variables["no_spellcasting_event_" .. selected_unit_id]) then
 			wesnoth.game_events.fire(wml.variables["no_spellcasting_event_" .. selected_unit_id], x, y)
 		else
 			display_skills_dialog()
+=======
+
+		if wml.variables["caster_" .. selected_unit_id .. ".utils_spellcasting_allowed"] == true then
+		    if (wml.variables["wait_to_select_spells_" .. selected_unit_id]) then
+                display_skills_dialog(true)
+            else
+                display_skills_dialog()
+            end
+>>>>>>> Stashed changes
 		end
 		
 		last_click = 0 -- prevent accidentally immediately re-opening the dialog
