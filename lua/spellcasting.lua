@@ -62,6 +62,7 @@ function display_skills_dialog(selecting)
 	-- CREATE DIALOG
 	--###############################
 	local dialog = {
+	    definition="menu",
 		T.helptip{ id="tooltip_large" }, -- mandatory field
 		T.tooltip{ id="tooltip_large" }, -- mandatory field
 		T.grid{} }
@@ -87,17 +88,19 @@ function display_skills_dialog(selecting)
 	-------------------------
 	-- HEADER
 	-------------------------
+	table.insert( grid[2], T.row{ T.column{ border="bottom", border_size=15, T.image{  label="icons/banner1.png"  }}} )
 	local spacer = "                                                                  "
 	local                title_text = selecting and wml.variables["caster_" .. selected_unit_id .. ".u_title_select"]  or wml.variables["caster_" .. selected_unit_id .. ".u_title_cast"]
-	
 	table.insert( grid[2], T.row{ T.column{ T.label{
-		definition="title",
-		horizontal_alignment="center",
-		label = spacer..title_text..spacer,
-	}}} )
+        definition="title",
+        horizontal_alignment="center",
+        label = spacer..title_text..spacer,
+    }}} )
 	local                help_text = wml.variables["caster_" .. selected_unit_id .. ".u_description"]
-	table.insert( grid[2], T.row{ T.column{T.label{ use_markup=true, label=help_text }}} )
-	table.insert( grid[2], T.row{ T.column{T.label{label="  "}}} )
+	--table.insert( grid[2], T.row{ T.column{T.label{ use_markup=true, label=help_text }}} )
+	--table.insert( grid[2], T.row{ T.column{T.label{label="  "}}} )
+	table.insert( grid[2], T.row{ T.column{ border="top", border_size=15, T.label{ use_markup=true, label=help_text }}} )
+	table.insert( grid[2], T.row{ T.column{ border="top", border_size=15, T.image{  label="icons/banner2.png"  }}} )
 	
 	-------------------------
 	-- SKILL GROUPS
@@ -198,9 +201,12 @@ end
 		
 		-- skill row
 		table.insert( skill_grid[2], T.row{ 
-			T.column{button},
-			T.column{T.label{label="  "}},  T.column{  horizontal_alignment="left", T.image{id="image"..i                }  },
-			T.column{T.label{label="  "}},  T.column{  horizontal_alignment="left", T.label{id="label"..i,use_markup=true}  },
+			--T.column{button},
+			--T.column{T.label{label="  "}},  T.column{  horizontal_alignment="left", T.image{id="image"..i                }  },
+			--T.column{T.label{label="  "}},  T.column{  horizontal_alignment="left", T.label{id="label"..i,use_markup=true}  },
+			T.column{ border="left",  border_size=15, button},
+            T.column{                                 T.label{label="  "}},  T.column{  horizontal_alignment="left", T.image{id="image"..i                }  },
+            T.column{ border="right", border_size=15, T.label{label="  "}},  T.column{  horizontal_alignment="left", T.label{id="label"..i,use_markup=true}  },
 		} )
 		
 		-- subskill row
@@ -224,11 +230,29 @@ end
 	-------------------------
 	-- CONFIRM BUTTON
 	-------------------------
-	table.insert( grid[2], T.row{ T.column{T.label{label="  "}}} )
-	table.insert( grid[2], T.row{  T.column{  T.button{
-		id="confirm_button", use_markup=true, return_value=1,
-		label=(selecting and _"Confirm Spells <small><i>(can be changed every scenario)</i></small>" or "Cancel"),
-	}}})
+	table.insert( grid[2], T.row{ T.column{T.image{  label="icons/banner2.png"  }}} )
+	--table.insert( grid[2], T.row{ T.column{T.label{label="  "}}} )
+	--table.insert( grid[2], T.row{  T.column{  T.button{
+	--	id="confirm_button", use_markup=true, return_value=1,
+	--	label=(selecting and _"Confirm Spells <small><i>(can be changed every scenario)</i></small>" or "Cancel"),
+	--}}})
+	
+	if (selecting) then
+        table.insert( grid[2], T.row{ T.column{ T.grid{ T.row{ T.column{
+            border="top,right", border_size=10,
+            T.button{  id="confirm_button", use_markup=true, return_value=1, label=_"Confirm Spells <small><i>(can be changed every scenario)</i></small>"  }
+        }, T.column{
+            border="top,left",  border_size=10,
+            T.button{  id="wait_button",    use_markup=true, return_value=2, label=_"Choose Later"  }
+        }}}}})
+    else
+        table.insert( grid[2], T.row{ T.column{
+            border="top", border_size=10,
+            T.button{  id="confirm_button", use_markup=true, return_value=1, label="Cancel"  }
+        }})
+    end
+	
+	table.insert( grid[2], T.row{ T.column{ border="top", border_size=15,  T.image{  label="icons/banner4.png"  }}} )
 	
 	
 	
@@ -363,9 +387,12 @@ end
 	-- select spell, synced
 	if (selecting) then
 		dialog_result = wesnoth.sync.evaluate_single(function()
-			gui.show_dialog( dialog, preshow )
-			return result_table;
-		end)
+            retval = gui.show_dialog( dialog, preshow )
+            result_table.wait_to_select_spells = retval==2 and 'yes' or 'no' --not nil, or else the key appears blank
+            return result_table;
+        end)
+        wml.variables["wait_to_select_spells_" .. caster.id] = result_table.wait_to_select_spells; --set wait_to_select_spells manually, since it often gets overwritten to 'no' above
+		
 		skills_equipped = {}
 		for skill_id,skill_value in pairs(dialog_result) do
 		wml.variables[skill_id]=skill_value
@@ -610,20 +637,65 @@ end
 		end
     end
 	
-	wml_actions["equip_spell"] = function(cfg)
-	    if cfg.spell_id then
-		    local filter = wml.get_child(cfg, "filter") or
-            wml.error "[equip_spell] missing required [filter] tag"
-		    local units = wesnoth.units.find(filter)
-		    
-	        for i,u in ipairs(units) do
-		        if wml.variables["caster_" .. u.id] then
-		        	wml.variables["caster_" .. u.id .. ".spell_equipped"] = cfg.spell_id or wml.variables["caster_" .. u.id .. ".spell_equipped"]
-		            wml.fire("refresh_skills", ({id = u.id}))
-                end
-		    end
-		end
+wml_actions["equip_spell"] = function(cfg)
+    if not cfg.spell_id then return end
+    
+    local filter = wml.get_child(cfg, "filter") or wml.error "[equip_spell] missing required [filter] tag"
+    local units = wesnoth.units.find(filter)
+    local spell_to_modify = {}
+    
+    for spell in cfg.spell_id:gmatch("[^,]+") do
+        table.insert(spell_to_modify, spell)
     end
+    
+    for _, u in ipairs(units) do
+        local spell_to_equip = {}
+        local equipped_var = wml.variables["caster_" .. u.id .. ".spell_equipped"] or ""
+        
+        for spell in equipped_var:gmatch("[^,]+") do
+            table.insert(spell_to_equip, spell)
+        end
+        
+        for i = 1, 10 do
+            local group_var = wml.variables["caster_" .. u.id .. ".spell_group_" .. i]
+            if group_var then
+                local spell_to_compare = {}
+                
+                for spell in group_var:gmatch("[^,]+") do
+                    table.insert(spell_to_compare, spell)
+                end
+                
+                for _, spell in ipairs(spell_to_modify) do
+                    local found = false
+                    for _, s in ipairs(spell_to_compare) do
+                        if s == spell then
+                            found = true
+                            break
+                        end
+                    end
+                    if found then
+                        for j = #spell_to_equip, 1, -1 do
+                            local remove_spell = false
+                            for _, s in ipairs(spell_to_compare) do
+                                if s == spell_to_equip[j] then
+                                    remove_spell = true
+                                    break
+                                end
+                            end
+                            if remove_spell then
+                                table.remove(spell_to_equip, j)
+                            end
+                        end
+                        table.insert(spell_to_equip, spell)
+                    end
+                end
+            end
+        end
+        
+        wml.variables["caster_" .. u.id .. ".spell_equipped"] = table.concat(spell_to_equip, ",")
+        wml.fire("refresh_skills", { id = u.id })
+    end
+end
 	
 	wml_actions["remove_caster"] = function(cfg)
 		local filter = wml.get_child(cfg, "filter") or
@@ -662,7 +734,11 @@ wesnoth.game_events.on_mouse_action = function(x,y)
 		wesnoth.audio.play("miss-2.ogg")
 
 		if wml.variables["caster_" .. selected_unit_id .. ".utils_spellcasting_allowed"] == true then
-			display_skills_dialog()
+		    if (wml.variables["wait_to_select_spells_" .. selected_unit_id]) then
+                display_skills_dialog(true)
+            else
+                display_skills_dialog()
+            end
 		end
 		
 		last_click = 0 -- prevent accidentally immediately re-opening the dialog
