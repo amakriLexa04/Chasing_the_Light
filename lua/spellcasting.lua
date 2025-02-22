@@ -91,12 +91,11 @@ function display_skills_dialog(selecting)
 	table.insert( grid[2], T.row{ T.column{ border="bottom", border_size=15, T.image{  label="icons/banner1.png"  }}} )
 	local spacer = "                                                                  "
 	local                title_text = selecting and wml.variables["caster_" .. selected_unit_id .. ".u_title_select"]  or wml.variables["caster_" .. selected_unit_id .. ".u_title_cast"]
-	
 	table.insert( grid[2], T.row{ T.column{ T.label{
-		definition="title",
-		horizontal_alignment="center",
-		label = spacer..title_text..spacer,
-	}}} )
+        definition="title",
+        horizontal_alignment="center",
+        label = spacer..title_text..spacer,
+    }}} )
 	local                help_text = wml.variables["caster_" .. selected_unit_id .. ".u_description"]
 	--table.insert( grid[2], T.row{ T.column{T.label{ use_markup=true, label=help_text }}} )
 	--table.insert( grid[2], T.row{ T.column{T.label{label="  "}}} )
@@ -388,9 +387,12 @@ end
 	-- select spell, synced
 	if (selecting) then
 		dialog_result = wesnoth.sync.evaluate_single(function()
-			gui.show_dialog( dialog, preshow )
-			return result_table;
-		end)
+            retval = gui.show_dialog( dialog, preshow )
+            result_table.wait_to_select_spells = retval==2 and 'yes' or 'no' --not nil, or else the key appears blank
+            return result_table;
+        end)
+        wml.variables["wait_to_select_spells_" .. caster.id] = result_table.wait_to_select_spells; --set wait_to_select_spells manually, since it often gets overwritten to 'no' above
+		
 		skills_equipped = {}
 		for skill_id,skill_value in pairs(dialog_result) do
 		wml.variables[skill_id]=skill_value
@@ -732,7 +734,11 @@ wesnoth.game_events.on_mouse_action = function(x,y)
 		wesnoth.audio.play("miss-2.ogg")
 
 		if wml.variables["caster_" .. selected_unit_id .. ".utils_spellcasting_allowed"] == true then
-			display_skills_dialog()
+		    if (wml.variables["wait_to_select_spells_" .. selected_unit_id]) then
+                display_skills_dialog(true)
+            else
+                display_skills_dialog()
+            end
 		end
 		
 		last_click = 0 -- prevent accidentally immediately re-opening the dialog
