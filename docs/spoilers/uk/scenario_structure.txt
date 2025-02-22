@@ -1,0 +1,41 @@
+Scenario structure
+
+    01_The_Book✔
+    02_Invasion✔
+    03_Despair✔
+    04_Daeola✔
+    04x_Southbay✔
+    05_Aftermath✔
+    06_Miscreants✔
+    07_Scarhane⏸️
+    08_Quiescence🔁
+    08x_Divergence
+    09_Hunt
+    10_Way_of_Light(Duty?)
+
+Haralin's branch
+
+    11h_Avenger
+    11hx_Farewell
+    12h_Massacre
+    13h_Southbay_Outskirts
+    14h_Caror
+    15h_Unnamed_Scenario(Gambit?)
+    15hx_Exile(Sins?)
+    16h_Lenvan
+    17h_Temple_in_the_Deep
+
+Daeola's branch
+
+    11d_Sacrifice
+    11dx_Farewell
+    11dxx_New_Dawn(Blitzkrieg?, мб взагалі вирізати)
+    12d_Southbay_Outskirts
+    13d_Scarhane_Revisited
+    14d_Cave_Rats(Gloom?)
+    15d_Jevyans_Haven
+    16d_Epilogue?
+
+Faisim's branch
+
+    TBD
