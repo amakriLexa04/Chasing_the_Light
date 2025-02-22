@@ -13,32 +13,6 @@ local wml_actions = wesnoth.wml_actions
 -- metatable for GUI tags
 local T = wml.tag
 
--- helpful debug function for printing a table
-function tprint (tbl, indent)
-	if not indent then indent = 0 end
-	local toprint = string.rep(" ", indent) .. "{\r\n"
-	indent = indent + 2 
-	for k, v in pairs(tbl) do
-		toprint = toprint .. string.rep(" ", indent)
-		if (type(k) == "number") then
-			toprint = toprint .. "[" .. k .. "] = "
-		elseif (type(k) == "string") then
-			toprint = toprint  .. k ..  "= "   
-		end
-		if (type(v) == "number") then
-			toprint = toprint .. v .. ",\r\n"
-		elseif (type(v) == "string") then
-			toprint = toprint .. "\"" .. v .. "\",\r\n"
-		elseif (type(v) == "table") then
-			toprint = toprint .. tprint(v, indent + 2) .. ",\r\n"
-		else
-			toprint = toprint .. "\"" .. tostring(v) .. "\",\r\n"
-		end
-	end
-	toprint = toprint .. string.rep(" ", indent-2) .. "}"
-	return toprint
-end
-
 function deep_copy(original)
     local copy = {}
     for g, v in pairs(original) do
@@ -89,16 +63,13 @@ function display_skills_dialog(selecting)
 	-- HEADER
 	-------------------------
 	table.insert( grid[2], T.row{ T.column{ border="bottom", border_size=15, T.image{  label="icons/banner1.png"  }}} )
-	local spacer = "                                                                  "
 	local                title_text = selecting and wml.variables["caster_" .. selected_unit_id .. ".u_title_select"]  or wml.variables["caster_" .. selected_unit_id .. ".u_title_cast"]
 	table.insert( grid[2], T.row{ T.column{ T.label{
         definition="title",
         horizontal_alignment="center",
-        label = spacer..title_text..spacer,
+        label = title_text,
     }}} )
-	local                help_text = wml.variables["caster_" .. selected_unit_id .. ".u_description"]
-	--table.insert( grid[2], T.row{ T.column{T.label{ use_markup=true, label=help_text }}} )
-	--table.insert( grid[2], T.row{ T.column{T.label{label="  "}}} )
+	local                help_text = "<span size='small'><i>" .. wml.variables["caster_" .. selected_unit_id .. ".u_description"] .. "</i></span>"
 	table.insert( grid[2], T.row{ T.column{ border="top", border_size=15, T.label{ use_markup=true, label=help_text }}} )
 	table.insert( grid[2], T.row{ T.column{ border="top", border_size=15, T.image{  label="icons/banner2.png"  }}} )
 	
@@ -131,7 +102,7 @@ function display_skills_dialog(selecting)
     end
 	end
 	
-	for i = #skills_copy, 1, -1 do  -- Ідемо від останнього до нульового індексу
+	for i = #skills_copy, 1, -1 do
 	    for j = 1, #skills_copy[i] do
 	        if not skills_copy[i][j].id then
 	            skills_copy[i][j] = nil
@@ -140,18 +111,18 @@ function display_skills_dialog(selecting)
 	    end
 	end
 	
-	for i = #skills_copy, 1, -1 do  -- Ідемо від останнього до нульового індексу
-    local all_locked = true  -- Припускаємо, що всі елементи "locked"
+	for i = #skills_copy, 1, -1 do
+    local all_locked = true
     
     for j = 1, #skills_copy[i] do
         if skills_copy[i][j] ~= locked then
-            all_locked = false  -- Знайдено хоча б один елемент, що не "locked"
+            all_locked = false
             break
         end
     end
 
     if all_locked then
-	    table.remove(skills_copy, i)  -- Видаляємо цей список
+	    table.remove(skills_copy, i)
     end
 end
 
@@ -201,9 +172,6 @@ end
 		
 		-- skill row
 		table.insert( skill_grid[2], T.row{ 
-			--T.column{button},
-			--T.column{T.label{label="  "}},  T.column{  horizontal_alignment="left", T.image{id="image"..i                }  },
-			--T.column{T.label{label="  "}},  T.column{  horizontal_alignment="left", T.label{id="label"..i,use_markup=true}  },
 			T.column{ border="left",  border_size=15, button},
             T.column{                                 T.label{label="  "}},  T.column{  horizontal_alignment="left", T.image{id="image"..i                }  },
             T.column{ border="right", border_size=15, T.label{label="  "}},  T.column{  horizontal_alignment="left", T.label{id="label"..i,use_markup=true}  },
@@ -222,8 +190,6 @@ end
 			T.column{T.label{}}, T.column{T.label{}},
 			T.column{T.label{}}, T.column{T.label{}}
 		} )
-		::continue::
-
     end
 	table.insert( grid[2], T.row{T.column{ horizontal_alignment="left", skill_grid }} )
 	
@@ -231,12 +197,6 @@ end
 	-- CONFIRM BUTTON
 	-------------------------
 	table.insert( grid[2], T.row{ T.column{T.image{  label="icons/banner2.png"  }}} )
-	--table.insert( grid[2], T.row{ T.column{T.label{label="  "}}} )
-	--table.insert( grid[2], T.row{  T.column{  T.button{
-	--	id="confirm_button", use_markup=true, return_value=1,
-	--	label=(selecting and _"Confirm Spells <small><i>(can be changed every scenario)</i></small>" or "Cancel"),
-	--}}})
-	
 	if (selecting) then
         table.insert( grid[2], T.row{ T.column{ T.grid{ T.row{ T.column{
             border="top,right", border_size=10,
@@ -477,9 +437,9 @@ end
 		local writer = utils.vwriter.init(cfg, ("caster_" .. u.id ))
 		
 		if u.gender == "male" then
-		    basic_description = _"<span size='2000'> \n</span><span size='small'><i>" .. u.name .. " knows many useful spells, and will learn more as he levels-up automatically throughout the campaign. " .. u.name .. " does not use XP to level-up.\nInstead, " .. u.name .. " uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on " .. u.name .. " to cast them</b>. You can only cast 1 spell per turn.</i></span>"
+		    basic_description = u.name .. " knows many useful spells, and will learn more as he levels-up automatically throughout the campaign. " .. u.name .. " does not use XP to level-up. Instead,\nhe uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on " .. u.name .. " to cast them</b>. You can only cast 1 spell per turn."
 		else
-		    basic_description = _"<span size='2000'> \n</span><span size='small'><i>" .. u.name .. " knows many useful spells, and will learn more as she levels-up automatically throughout the campaign. " .. u.name .. " does not use XP to level-up.\nInstead, " .. u.name .. " uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on " .. u.name .. " to cast them</b>. You can only cast 1 spell per turn.</i></span>"
+		    basic_description = u.name .. " knows many useful spells, and will learn more as she levels-up automatically throughout the campaign. " .. u.name .. " does not use XP to level-up. Instead,\nshe uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on " .. u.name .. " to cast them</b>. You can only cast 1 spell per turn."
 		end
 
         local caster_data_temp = {
@@ -577,7 +537,6 @@ end
                             end
                         end
                         if not already_unlocked then
-		            		wml.variables["unlock_" .. spell] = "yes"  -- чи треба?
 		    				wml.variables["caster_" .. u.id .. ".spell_unlocked"] = wml.variables["caster_" .. u.id .. ".spell_unlocked"] .. "," .. spell
                         end
                     end
@@ -605,16 +564,14 @@ end
                     end
 		            
                     for _, spell in ipairs(spell_to_modify) do
-                    for i = #already_unlocked_list, 1, -1 do -- Видаляємо заклинання зі списку
+                    for i = #already_unlocked_list, 1, -1 do
                         if already_unlocked_list[i] == spell then
                             table.remove(already_unlocked_list, i)
                             wesnoth.interface.add_chat_message("Locked spell", spell)
-                            wml.variables["unlock_" .. spell] = nil -- чи треба?
                         end
                     end
                 end
                 
-                -- Оновлюємо змінну в WML, збираючи рядок назад
                 wml.variables["caster_" .. u.id .. ".spell_unlocked"] = table.concat(already_unlocked_list, ",")
 		        end
 		    end
