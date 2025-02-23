@@ -5,8 +5,8 @@ local utils = wesnoth.require "wml-utils"
 local spell_data = wesnoth.dofile('~add-ons/Chasing_the_Light/lua/spell_set.lua')
 local locked = spell_data.locked
 local skill_set = spell_data.skill_set
-
 local selected_unit_id
+
 -- to make code shorter
 local wml_actions = wesnoth.wml_actions
 
@@ -698,6 +698,29 @@ end
             wml.variables["caster_" .. u.id .. ".spell_equipped"] = table.concat(spell_to_equip, ",")
             wml.fire("refresh_skills", { id = u.id })
         end
+    end
+	
+	wml_actions["find_equipped_spell"] = function(cfg)
+        if not cfg.spell_id then
+		wml.variables["equipped_spell_found"] = false
+		return
+		end
+        
+        local filter = wml.get_child(cfg, "filter") or wml.error "[find_equipped_spell] missing required [filter] tag"
+        local units = wesnoth.units.find(filter)
+        
+        for _, u in ipairs(units) do
+            local equipped_var = wml.variables["caster_" .. u.id .. ".spell_equipped"] or ""
+            
+            for spell in equipped_var:gmatch("[^,]+") do
+                if spell == cfg.spell_id then
+                    wml.variables["equipped_spell_found"] = true
+                    return
+                end
+            end
+        end
+        
+        wml.variables["equipped_spell_found"] = false
     end
 	
 	wml_actions["remove_caster"] = function(cfg)
