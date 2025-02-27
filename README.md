@@ -37,8 +37,8 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 - 07_Scarhane⏸️                                                                                                                                        
 - 08_Quiescence🔁                                                                                                                                     
 - 08x_Divergence                                                                                                                                    
-- 09_Hunt                                                                                                                                       
-- 10_Way_of_Light(Duty?)  
+- 09_Faisim                                                                                                                                    
+- 10_Duty
 
 #### Haralin's branch 
 - 11h_Avenger 
@@ -57,6 +57,6 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 - 11dxx_New_Dawn(Blitzkrieg?, мб взагалі вирізати)
 - 12d_Southbay_Outskirts 
 - 13d_Scarhane_Revisited
-- 14d_Cave_Rats(Gloom?)
+- 14d_Gloom
 - 15d_Jevyans_Haven
 - 16d_Epilogue?
