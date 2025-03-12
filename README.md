@@ -37,26 +37,26 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 - 07_Scarhane⏸️                                                                                                                                        
 - 08_Quiescence🔁                                                                                                                                     
 - 08x_Divergence                                                                                                                                    
-- 09_Faisim                                                                                                                                    
-- 10_Duty
+- 09_Faisim
+- 10_Trap                                                                                                                                  
+- 11_Duty
 
 #### Haralin's branch 
-- 11h_Avenger 
-- 11hx_Farewell
-- 12h_Massacre 
-- 13h_Southbay_Outskirts
-- 14h_Caror
-- 15h_Unnamed_Scenario(Gambit?)
-- 15hx_Exile(Sins?)
-- 16h_Lenvan
-- 17h_Temple_in_the_Deep
+- 12h_Avenger 
+- 12hx_Farewell
+- 13h_Massacre 
+- 14h_Southbay_Outskirts
+- 15h_Caror
+- 16h_Unnamed_Scenario(Gambit?)
+- 16hx_Exile(Sins?)
+- 17h_Lenvan
+- 18h_Temple_in_the_Deep
 
 #### Daeola's branch
-- 11d_Sacrifice
-- 11dx_Farewell
-- 11dxx_New_Dawn(Blitzkrieg?, мб взагалі вирізати)
-- 12d_Southbay_Outskirts 
-- 13d_Scarhane_Revisited
-- 14d_Gloom
-- 15d_Jevyans_Haven
-- 16d_Epilogue?
+- 12d_Sacrifice
+- 12dx_Farewell
+- 13d_Southbay_Outskirts 
+- 14d_Scarhane_Revisited
+- 15d_Gloom
+- 16d_Jevyans_Haven
+- 17d_Epilogue?
