@@ -38,7 +38,7 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 - 08_Quiescence🔁                                                                                                                                     
 - 08x_Divergence                                                                                                                                    
 - 09_Faisim
-- 10_Trap                                                                                                                                  
+- 10_Negligence                                                                                                                                 
 - 11_Duty
 
 #### Haralin's branch 
@@ -47,8 +47,8 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 - 13h_Massacre 
 - 14h_Southbay_Outskirts
 - 15h_Caror
-- 16h_Unnamed_Scenario(Gambit?)
-- 16hx_Exile(Sins?)
+- 16h_Gambit
+- 16hx_Sins
 - 17h_Lenvan
 - 18h_Temple_in_the_Deep
 
