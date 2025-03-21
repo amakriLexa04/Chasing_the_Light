@@ -6,16 +6,6 @@ local _ = wesnoth.textdomain "wesnoth-ctl"
 --###########################################################################################################################################################
 function label(text)     return "<span size='1000'> \n</span><span size='large'>"..text.."</span><span size='8000'>\n </span>"  end
 
---###############################
--- LOCKED INDICATOR
---###############################
-local locked = {
-	id          = "skill_locked",
-	label       = label("<span color='grey'>Locked</span>"),
-	image       = "icons/locked.png", 
-	description = "<span color='grey'>This option is not available yet.</span>",
-}
-
 local skill_set = {
 	-------------------------
 	-- MAGIC BLAST
@@ -333,8 +323,26 @@ local skill_set = {
 		xp_cost=10,
 	},
 }
+
+--###############################
+-- LOCKED INDICATOR
+--###############################
+local locked = {
+	id          = "skill_locked",
+	label       = label("<span color='grey'>Locked</span>"),
+	image       = "icons/locked.png", 
+	description = "<span color='grey'>This option is not available yet.</span>",
+}
 	
-	return {
-	locked = locked,
+return {
+	--###############################
+    -- LOCKED INDICATOR
+    --###############################
+	locked = {
+	id          = "skill_locked",
+	label       = label("<span color='grey'>Locked</span>"),
+	image       = "icons/locked.png", 
+	description = "<span color='grey'>This option is not available yet.</span>",
+    },
 	skill_set = skill_set,
 }

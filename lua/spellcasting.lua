@@ -1,10 +1,7 @@
 -- Magic System Rework 2.0 by amakri, original Magic System by Dalas
 local _ = wesnoth.textdomain "wesnoth-ctl"
 local utils = wesnoth.require "wml-utils"
-
-local spell_data = wesnoth.dofile('~add-ons/Chasing_the_Light/lua/spell_set.lua')
-local locked = spell_data.locked
-local skill_set = spell_data.skill_set
+local spell_data = wesnoth.dofile('~add-ons/Chasing_the_Light/lua/skill_set.lua')
 local selected_unit_id
 
 -- to make code shorter
@@ -57,7 +54,7 @@ function display_skills_dialog(selecting)
 			end
         end
 
-		local skills_actual_copy = deep_copy(skill_set)
+		local skills_actual_copy = deep_copy(spell_data.skill_set)
 	
 	-------------------------
 	-- HEADER
@@ -92,7 +89,7 @@ function display_skills_dialog(selecting)
         for _, skill in ipairs(skills_actual_copy) do
             if skill_id == skill.id then
 			    if not wml.variables["unlock_" .. skill.id] then
-                    spell_list[i] = locked
+                    spell_list[i] = spell_data.locked
                 else
                     spell_list[i] = skill
                 end
@@ -115,7 +112,7 @@ function display_skills_dialog(selecting)
     local all_locked = true
     
     for j = 1, #skills_copy[i] do
-        if skills_copy[i][j] ~= locked then
+        if skills_copy[i][j] ~= spell_data.locked then
             all_locked = false
             break
         end
@@ -151,7 +148,7 @@ end
 			for j=1,#skills_copy[i],1 do
 				local skill = skills_copy[i][j]
 				if (wml.variables[skill.id]) then
-					if (not skill.xp_cost) then button=T.label{  id="button"..i, use_markup=true, label=skill.label }
+					if (not (skill.xp_cost or skill.gold_cost)) then button=T.label{  id="button"..i, use_markup=true, label=skill.label }
 					else                        button=T.button{ id="button"..i, use_markup=true, label=skill.label } end
 					-- handle one skill with multiple buttons
 					if (skill.subskills) then
