@@ -126,15 +126,10 @@ function display_skills_dialog(selecting)
 	    local skills_equipped = {}
 	    if wml.variables["caster_" .. caster.id .. ".spell_equipped"] then
 	        for spell in wml.variables["caster_" .. caster.id .. ".spell_equipped"]:gmatch("[^,]+") do
-                wml.variables[spell] = "yes"
 	        	table.insert(skills_equipped, spell) --список, що є аналогом wml.variables[spell]
             end
 	    end
-		
-		--for _, equipped_skill in ipairs(skills_equipped) do
-		--
-		--end
-	    
+
 	    for i=1,#skills_copy,1 do
 	    	local button
 	    	local subskill_row
@@ -302,6 +297,7 @@ function display_skills_dialog(selecting)
 	    						if (caster_has_object(skill.id)) then
 	    							dialog[buttonid].label = small and "<span size='small'>Cancel</span>" or label('Cancel')
 	    							dialog[buttonid].on_button_click = function()
+									    wml.variables['skill_id'] = skill.id.."_cancel"
 	    								gui.widget.close(dialog)
 	    							end
 	    						-- errors (extra spaces are to center the text)
@@ -418,7 +414,6 @@ end
 	    local skills_equipped = {}
 		if wml.variables["caster_" .. cfg.id .. ".spell_equipped"] then
 	    for spell in wml.variables["caster_" .. cfg.id .. ".spell_equipped"]:gmatch("[^,]+") do
-            wml.variables[spell] = "yes"
 	     	table.insert(skills_equipped, spell)
         end
 	 
@@ -435,7 +430,6 @@ end
 		for i,u in ipairs(units) do
         selected_unit_id = u.id
 		wml.variables ["current_caster"] = u.id
-		--wesnoth.interface.delay(50)
 		
         display_skills_dialog(true)
 		
@@ -458,8 +452,8 @@ end
             selected_unit_id = u.id
 		    wml.variables ["current_caster"] = u.id
 		    
-            if wml.variables["caster_" .. selected_unit_id .. ".utils_spellcasting_allowed"] == true then
-		        if (wml.variables["caster_" .. selected_unit_id .. ".wait_to_select_spells"]) then
+            if wml.variables["caster_" .. u.id .. ".utils_spellcasting_allowed"] == true then
+		        if (wml.variables["caster_" .. u.id .. ".wait_to_select_spells"]) then
                     display_skills_dialog(true)
 		    		wml.fire("refresh_skills", ({id = u.id}))
 		    		wml.variables["caster_" .. u.id .. ".spellcasted_this_turn"] = nil
