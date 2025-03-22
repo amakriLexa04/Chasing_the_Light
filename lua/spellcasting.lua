@@ -44,6 +44,7 @@ function display_skills_dialog(selecting)
 	
 		local caster   = ( wesnoth.units.find_on_map({ id=wml.variables["caster_" .. selected_unit_id .. ".id"]      }) )[1]
 
+        --список усіх доступних заклять
 		local skills_copy = {}
         for i = 1, 10 do
 		    if wml.variables["caster_" .. selected_unit_id .. ".spell_group_" .. i] then
@@ -78,23 +79,26 @@ function display_skills_dialog(selecting)
 	
 	local skill_grid = T.grid{}
 	
+	    --список розблокованих заклять
 	    local already_unlocked_list = {}
 		for spell in wml.variables["caster_" .. selected_unit_id .. ".spell_unlocked"]:gmatch("[^,]+") do
-            wml.variables["unlock_" .. spell] = "yes"
-			table.insert(already_unlocked_list, wml.variables["unlock_" .. spell])
+            table.insert(already_unlocked_list, spell)
         end
 	
 	for _, spell_list in pairs(skills_copy) do
     for i, skill_id in ipairs(spell_list) do
         for _, skill in ipairs(skills_actual_copy) do
-            if skill_id == skill.id then
-			    if not wml.variables["unlock_" .. skill.id] then
-                    spell_list[i] = spell_data.locked
-                else
-                    spell_list[i] = skill
+		    if skill_id == skill.id then
+				for _, unlocked_skill in ipairs(already_unlocked_list) do
+			        if not (unlocked_skill == skill.id) then
+                        spell_list[i] = spell_data.locked
+                    else
+                        spell_list[i] = skill
+						break
+                    end
                 end
-                break
-            end
+				break
+			end
         end
     end
 	end
@@ -155,11 +159,18 @@ end
 						subskill_row = T.row{}
 						for k=1,#skill.subskills,1 do
 							local subskill = skill.subskills[k]
-							if (not wml.variables[ "unlock_".. skill.subskills[k].id]) then
-							table.insert( subskill_row[2], T.column{T.button{id=subskill.id,use_markup=true,enabled=false,label=_"<span>Locked</span>"}} );
-							else
-							table.insert( subskill_row[2], T.column{T.button{id=subskill.id,use_markup=true,label=subskill.label}} );
+							local subskill_is_unlocked
+							for _, unlocked_skill in ipairs(already_unlocked_list) do
+							    if (unlocked_skill == skill.subskills[k].id) then
+							        table.insert( subskill_row[2], T.column{T.button{id=subskill.id,use_markup=true,label=subskill.label}} );
+									subskill_is_unlocked = true
+									break
+							    end
 							end
+							if not subskill_is_unlocked then
+								table.insert( subskill_row[2], T.column{T.button{id=subskill.id,use_markup=true,enabled=false,label=_"<span>Locked</span>"}} );
+							end
+							subskill_is_unlocked = nil
 						end
 					end
 				end
@@ -265,18 +276,26 @@ end
 					local function initialize_button( buttonid, skill, small )
 					
 						if (dialog[buttonid].type=="button") then
+						    --check if locked
+							for _, unlocked_skill in ipairs(already_unlocked_list) do
+							    if (unlocked_skill == skill.id) then
+								    dialog[buttonid].enabled = true
+								    break
+							    else
+								    dialog[buttonid].enabled = false
+								end
+							end
+						
+						
 							-- cancel spell
 							local function caster_has_object(object_id) return wesnoth.units.find_on_map{ id=caster.id, T.filter_wml{T.modifications{T.object{id=object_id}}} }[1] end
 							if (caster_has_object(skill.id)) then
 								dialog[buttonid].label = small and "<span size='small'>Cancel</span>" or label('Cancel')
 								dialog[buttonid].on_button_click = function()
-									wml.variables['skill_id'] = skill.id.."_cancel"
 									gui.widget.close(dialog)
 								end
 							
 							-- errors (extra spaces are to center the text)
-							elseif (not wml.variables[ "unlock_".. skill.id]) then
-								dialog[buttonid].enabled = false
 							elseif (wml.variables["caster_" .. caster.id .. ".spellcasted_this_turn"]) then
 								dialog[buttonid].label = small and _"<span size='small'>1 spell/turn</span>" or _"<span> Can only cast\n1 spell per turn</span>"
 								dialog[buttonid].enabled = false
@@ -370,7 +389,6 @@ end
 	end
 	
 	for spell in wml.variables["caster_" .. wml.variables['current_caster'] .. ".spell_unlocked"]:gmatch("[^,]+") do
-        wml.variables["unlock_" .. spell] = nil
 		wml.variables[spell] = nil
     end
     already_unlocked_list = nil
@@ -747,27 +765,26 @@ wesnoth.game_events.on_mouse_action = function(x,y)
 	
 	if (not selected_unit[1]) then return end
 	if wml.variables["caster_" .. selected_unit[1].id] then
-	
-	if (wml.variables['is_during_attack']) then return end
-	if (wml.variables["caster_" .. selected_unit[1].id .. ".utils_not_casters_turn"] ) then return end
-	
-	selected_unit_id = selected_unit[1].id
-	
-	if (os.clock()-last_click<0.25) then
-		wesnoth.audio.play("miss-2.ogg")
-
-		if wml.variables["caster_" .. selected_unit_id .. ".utils_spellcasting_allowed"] == true then
-		    if (wml.variables["wait_to_select_spells_" .. selected_unit_id]) then
-                display_skills_dialog(true)
-            else
-                display_skills_dialog()
-            end
-		end
-		
-		last_click = 0 -- prevent accidentally immediately re-opening the dialog
-	else
-		last_click = os.clock()
-	end
+	    if (wml.variables['is_during_attack']) then return end
+	    if (wml.variables["caster_" .. selected_unit[1].id .. ".utils_not_casters_turn"] ) then return end
+	    
+	    selected_unit_id = selected_unit[1].id
+	    
+	    if (os.clock()-last_click<0.25) then
+	    	wesnoth.audio.play("miss-2.ogg")
+	    
+	    	if wml.variables["caster_" .. selected_unit_id .. ".utils_spellcasting_allowed"] == true then
+	    	    if (wml.variables["wait_to_select_spells_" .. selected_unit_id]) then
+                    display_skills_dialog(true)
+                else
+                    display_skills_dialog()
+                end
+	    	end
+	    	
+	    	last_click = 0 -- prevent accidentally immediately re-opening the dialog
+	    else
+	    	last_click = os.clock()
+	    end
 	
 	end
 	
