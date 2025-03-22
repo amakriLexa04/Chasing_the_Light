@@ -704,6 +704,37 @@ end
         end
     end
 	
+	wml_actions["unequip_spell"] = function(cfg)
+        if not cfg.spell_id then return end
+		
+        local filter = wml.get_child(cfg, "filter") or wml.error "[unequip_spell] missing required [filter] tag"
+        local units = wesnoth.units.find(filter)
+        local spell_to_remove = {}
+		
+        for spell in cfg.spell_id:gmatch("[^,]+") do
+            table.insert(spell_to_remove, spell)
+        end
+
+        for _, u in ipairs(units) do
+            local spell_to_equip = {}
+            local equipped_var = wml.variables["caster_" .. u.id .. ".spell_equipped"] or ""
+ 
+            for spell in equipped_var:gmatch("[^,]+") do
+                table.insert(spell_to_equip, spell)
+            end
+ 
+            for _, spell in ipairs(spell_to_remove) do
+                for i = #spell_to_equip, 1, -1 do
+                    if spell_to_equip[i] == spell then
+                        table.remove(spell_to_equip, i)
+                    end
+                end
+            end
+            wml.variables["caster_" .. u.id .. ".spell_equipped"] = table.concat(spell_to_equip, ",")
+            wml.fire("refresh_skills", { id = u.id })
+        end
+    end
+	
 	wml_actions["find_equipped_spell"] = function(cfg)
         if not cfg.spell_id then
 		wml.variables["equipped_spell_found"] = false
