@@ -47,9 +47,9 @@ function display_skills_dialog(selecting)
         --список усіх доступних заклять
 		local skills_copy = {}
         for i = 1, 10 do
-		    if wml.variables["caster_" .. selected_unit_id .. ".spell_group_" .. i] then
+		    if wml.variables["caster_" .. caster.id .. ".spell_group_" .. i] then
             skills_copy[i] = {}
-			for spell in wml.variables["caster_" .. selected_unit_id .. ".spell_group_" .. i]:gmatch("[^,]+") do
+			for spell in wml.variables["caster_" .. caster.id .. ".spell_group_" .. i]:gmatch("[^,]+") do
                 table.insert(skills_copy[i], spell)
             end
 			end
@@ -61,13 +61,13 @@ function display_skills_dialog(selecting)
 	-- HEADER
 	-------------------------
 	table.insert( grid[2], T.row{ T.column{ border="bottom", border_size=15, T.image{  label="icons/banner1.png"  }}} )
-	local                title_text = selecting and wml.variables["caster_" .. selected_unit_id .. ".u_title_select"]  or wml.variables["caster_" .. selected_unit_id .. ".u_title_cast"]
+	local                title_text = selecting and wml.variables["caster_" .. caster.id .. ".u_title_select"]  or wml.variables["caster_" .. caster.id .. ".u_title_cast"]
 	table.insert( grid[2], T.row{ T.column{ T.label{
         definition="title",
         horizontal_alignment="center",
         label = title_text,
     }}} )
-	local                help_text = "<span size='small'><i>" .. wml.variables["caster_" .. selected_unit_id .. ".u_description"] .. "</i></span>"
+	local                help_text = "<span size='small'><i>" .. wml.variables["caster_" .. caster.id .. ".u_description"] .. "</i></span>"
 	table.insert( grid[2], T.row{ T.column{ border="top", border_size=15, T.label{ use_markup=true, label=help_text }}} )
 	table.insert( grid[2], T.row{ T.column{ border="top", border_size=15, T.image{  label="icons/banner2.png"  }}} )
 	
@@ -81,7 +81,7 @@ function display_skills_dialog(selecting)
 	
 	    --список розблокованих заклять
 	    local already_unlocked_list = {}
-		for spell in wml.variables["caster_" .. selected_unit_id .. ".spell_unlocked"]:gmatch("[^,]+") do
+		for spell in wml.variables["caster_" .. caster.id .. ".spell_unlocked"]:gmatch("[^,]+") do
             table.insert(already_unlocked_list, spell)
         end
 	
@@ -129,8 +129,8 @@ end
 
     --spell_equiped
 	local skills_equipped = {}
-	if wml.variables["caster_" .. selected_unit_id .. ".spell_equipped"] then
-	for spell in wml.variables["caster_" .. selected_unit_id .. ".spell_equipped"]:gmatch("[^,]+") do
+	if wml.variables["caster_" .. caster.id .. ".spell_equipped"] then
+	for spell in wml.variables["caster_" .. caster.id .. ".spell_equipped"]:gmatch("[^,]+") do
         wml.variables[spell] = "yes"
 		table.insert(skills_equipped, spell)
     end
@@ -152,7 +152,7 @@ end
 			for j=1,#skills_copy[i],1 do
 				local skill = skills_copy[i][j]
 				if (wml.variables[skill.id]) then
-					if (not (skill.xp_cost or skill.gold_cost)) then button=T.label{  id="button"..i, use_markup=true, label=skill.label }
+					if (not (skill.xp_cost or skill.gold_cost or skill.hp_cost)) then button=T.label{  id="button"..i, use_markup=true, label=skill.label }
 					else                        button=T.button{ id="button"..i, use_markup=true, label=skill.label } end
 					-- handle one skill with multiple buttons
 					if (skill.subskills) then
@@ -277,12 +277,11 @@ end
 					
 						if (dialog[buttonid].type=="button") then
 						    --check if locked
+							local skill_is_unlocked
 							for _, unlocked_skill in ipairs(already_unlocked_list) do
 							    if (unlocked_skill == skill.id) then
-								    dialog[buttonid].enabled = true
+									skill_is_unlocked = true
 								    break
-							    else
-								    dialog[buttonid].enabled = false
 								end
 							end
 						
@@ -296,6 +295,9 @@ end
 								end
 							
 							-- errors (extra spaces are to center the text)
+							elseif (not skill_is_unlocked) then
+								dialog[buttonid].enabled = false
+								skill_is_unlocked = nil
 							elseif (wml.variables["caster_" .. caster.id .. ".spellcasted_this_turn"]) then
 								dialog[buttonid].label = small and _"<span size='small'>1 spell/turn</span>" or _"<span> Can only cast\n1 spell per turn</span>"
 								dialog[buttonid].enabled = false
@@ -311,6 +313,9 @@ end
 							elseif (skill.xp_cost and skill.xp_cost>caster.experience) then
 								dialog[buttonid].label = small and _"<span size='small'>No XP</span>" or label('Insufficient XP')
 								dialog[buttonid].enabled = false
+							elseif (skill.hp_cost and skill.hp_cost>=caster.hitpoints) then
+								dialog[buttonid].label = small and _"<span size='small'>No HP</span>" or label('Insufficient HP')
+								dialog[buttonid].enabled = false
 					     	elseif (skill.gold_cost and skill.gold_cost>wesnoth.sides[caster.side].gold) then
 								dialog[buttonid].label = small and _"<span size='small'>No Gold</span>" or label('Insufficient Gold')
 								dialog[buttonid].enabled = false
@@ -322,6 +327,7 @@ end
 							else
 								dialog[buttonid].on_button_click = function()
 									if (skill.xp_cost)  then caster.experience  =caster.experience  -skill.xp_cost  end
+									if (skill.hp_cost)  then caster.experience  =caster.hitpoints  -skill.hp_cost  end
 									if (skill.gold_cost)  then wesnoth.sides[caster.side].gold =wesnoth.sides[caster.side].gold  -skill.gold_cost  end
 									if (skill.atk_cost) then haralin.attacks_left=caster.attacks_left-skill.atk_cost end
 									wml.variables['skill_id'] = skill.id
@@ -364,10 +370,9 @@ end
 	if (selecting) then
 		dialog_result = wesnoth.sync.evaluate_single(function()
             retval = gui.show_dialog( dialog, preshow )
-            result_table.wait_to_select_spells = retval==2 and 'yes' or 'no' --not nil, or else the key appears blank
+            wml.variables["caster_" .. caster.id .. ".wait_to_select_spells"] = retval==2 and 'yes' or 'no' --not nil, or else the key appears blank
             return result_table;
         end)
-        wml.variables["wait_to_select_spells_" .. caster.id] = result_table.wait_to_select_spells; --set wait_to_select_spells manually, since it often gets overwritten to 'no' above
 		
 		skills_equipped = {}
 		for skill_id,skill_value in pairs(dialog_result) do
@@ -458,7 +463,7 @@ end
 		    wml.variables ["current_caster"] = u.id
 		    
             if wml.variables["caster_" .. selected_unit_id .. ".utils_spellcasting_allowed"] == true then
-		        if (wml.variables["wait_to_select_spells_" .. selected_unit_id]) then
+		        if (wml.variables["caster_" .. selected_unit_id .. ".wait_to_select_spells"]) then
                     display_skills_dialog(true)
 		    		wml.fire("refresh_skills", ({id = u.id}))
 		    		wml.variables["caster_" .. u.id .. ".spellcasted_this_turn"] = nil
@@ -774,7 +779,7 @@ wesnoth.game_events.on_mouse_action = function(x,y)
 	    	wesnoth.audio.play("miss-2.ogg")
 	    
 	    	if wml.variables["caster_" .. selected_unit_id .. ".utils_spellcasting_allowed"] == true then
-	    	    if (wml.variables["wait_to_select_spells_" .. selected_unit_id]) then
+	    	    if (wml.variables["caster_" .. selected_unit_id .. ".wait_to_select_spells"]) then
                     display_skills_dialog(true)
                 else
                     display_skills_dialog()
