@@ -36,7 +36,7 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 - 06_Miscreants✔                                                                                                                              
 - 07_Scarhane⏸️                                                                                                                                        
 - 08_Quiescence🔁                                                                                                                                     
-- 08x_Divergence                                                                                                                                    
+- 08x_Divergence — Cancelled❌                                                                                                                                
 - 09_Faisim
 - 10_Negligence                                                                                                                                 
 - 11_Duty
