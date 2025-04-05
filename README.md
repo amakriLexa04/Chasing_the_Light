@@ -37,27 +37,27 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 - 07_Scarhane🔁️                                                                                                                                        
 - 08_Quiescence🔁                                                                                                                                     
 - 08x_Divergence — Cancelled❌ 
-- ??_Unknown                                                                                                                               
-- 09_Faisim
-- 10_Negligence                                                                                                                                 
-- 11_Duty
+- 09_New_Journey                                                                                                                              
+- 10_Faisim
+- 11_Negligence                                                                                                                                 
+- 12_Duty
 
 #### Haralin's branch 
-- 12h_Avenger 
-- 12hx_Farewell
-- 13h_Massacre 
-- 14h_Southbay_Outskirts
-- 15h_Caror
-- 16h_Gambit
-- 16hx_Sins
-- 17h_Lenvan
-- 18h_Temple_in_the_Deep
+- 13h_Avenger 
+- 13hx_Farewell
+- 14h_Massacre 
+- 15h_Southbay_Outskirts
+- 16h_Caror
+- 17h_Gambit
+- 17hx_Sins
+- 18h_Lenvan
+- 19h_Temple_in_the_Deep
 
 #### Daeola's branch
-- 12d_Sacrifice
-- 12dx_Farewell
-- 13d_Southbay_Outskirts 
-- 14d_Scarhane_Revisited
-- 15d_Gloom
-- 16d_Jevyans_Haven
-- 17d_Epilogue?
+- 13d_Sacrifice
+- 13dx_Farewell
+- 14d_Southbay_Outskirts 
+- 15d_Scarhane_Revisited
+- 16d_Gloom
+- 17d_Jevyans_Haven
+- 18d_Epilogue?
