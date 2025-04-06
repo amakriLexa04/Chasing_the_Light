@@ -297,7 +297,7 @@ function display_skills_dialog(selecting)
 	    						if (caster_has_object(skill.id)) then
 	    							dialog[buttonid].label = small and "<span size='small'>Cancel</span>" or label('Cancel')
 	    							dialog[buttonid].on_button_click = function()
-									    wml.variables['skill_id'] = skill.id.."_cancel"
+									    wml.variables["caster_" .. caster.id .. ".spell_to_cast"] = skill.id.."_cancel"
 	    								gui.widget.close(dialog)
 	    							end
 	    						-- errors (extra spaces are to center the text)
@@ -336,7 +336,7 @@ function display_skills_dialog(selecting)
 	    								if (skill.hp_cost)  then caster.experience  =caster.hitpoints  -skill.hp_cost  end
 	    								if (skill.gold_cost)  then wesnoth.sides[caster.side].gold =wesnoth.sides[caster.side].gold  -skill.gold_cost  end
 	    								if (skill.atk_cost) then haralin.attacks_left=caster.attacks_left-skill.atk_cost end
-	    								wml.variables['skill_id'] = skill.id
+	    								wml.variables["caster_" .. caster.id .. ".spell_to_cast"] = skill.id
 	    								wml.variables["caster_" .. caster.id .. ".spellcasted_this_turn"] = skill.id
 	    								gui.widget.close(dialog)
 	    							end
@@ -361,8 +361,6 @@ function display_skills_dialog(selecting)
 	    -------------------------
 	    -- SHOW DIALOG
 	    -------------------------
-	    wml.variables['skill_id'] = nil
-	    
 	    wesnoth.interface.game_display.selected_unit = nil
 	    wesnoth.interface.delay(300)
 	    
@@ -388,10 +386,17 @@ function display_skills_dialog(selecting)
 	    
 	    -- cast spells, synced
 	    else
-	        wml.variables['current_caster'] = caster.id
 	    	dialog_result = wesnoth.sync.evaluate_single(function()
 	    		gui.show_dialog( dialog, preshow )
-	    		if (wml.variables['skill_id']) then wesnoth.game_events.fire('cast_skill_synced', caster.x, caster.y) end
+	    		if (wml.variables["caster_" .. caster.id .. ".spell_to_cast"]) then
+				    wml.variables['current_caster'] = caster.id
+				    wml.fire.do_command({
+                        wml.tag.fire_event {
+                            raise = wml.variables["caster_" .. caster.id .. ".spell_to_cast"]
+                        }
+                    })
+				    wml.variables["caster_" .. caster.id .. ".spell_to_cast"] = nil
+				end
 	    	end)
 	    end
 
@@ -469,6 +474,7 @@ end
         wml.error "[assign_caster] missing required [filter] tag"
 		local units = wesnoth.units.find(filter)
 		local basic_description
+		local spellcasting_allowed
 
         for i,u in ipairs(units) do
 		
@@ -479,6 +485,9 @@ end
 		else
 		    basic_description = u.name .. " knows many useful spells, and will learn more as she levels-up automatically throughout the campaign. " .. u.name .. " does not use XP to level-up. Instead,\nshe uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on " .. u.name .. " to cast them</b>. You can only cast 1 spell per turn."
 		end
+		
+		if cfg.spellcasting_allowed then spellcasting_allowed = tostring(cfg.spellcasting_allowed)
+        else spellcasting_allowed = true end
 
         local caster_data_temp = {
             id = u.id,
@@ -498,7 +507,7 @@ end
 			spell_group_9 = cfg.spell_group_9,
 			spell_group_10 =cfg.spell_group_10,
 			utils_spellcasted_this_turn = cfg.spellcasted_this_turn or nil,
-			utils_spellcasting_allowed = tostring(cfg.spellcasting_allowed) or true,
+			utils_spellcasting_allowed = spellcasting_allowed,
 			utils_not_casters_turn = cfg.utils_not_casters_turn,
         }
 		
