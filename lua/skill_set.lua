@@ -109,7 +109,7 @@ local skill_set = {
 		-- #po: Керуйте самою природою, створюючи та направляючи її елементи — землю, воду, лаву та повітря.      Для цього закляття використовується <span color='#00bbe6'><i>досвід</i></span> та <span color='#FFD700'><i >золото</i></span>
 		description = _"<span color='#6ca364'><i><b>Spell:</b></i></span> Control nature itself by creating and bending its elements — earth, water, lava, and air.\n           This spell uses <span color='#00bbe6'><i>experience</i></span>.",
 		subskills   = {
-			[1]={ id="skill_bend_earth",     xp_cost=12,  label="  <span>Earth (<span color='#00bbe6'><i>8xp</i></span>)</span>   " },
+			[1]={ id="skill_bend_earth",     xp_cost=12,  label="  <span>Earth (<span color='#00bbe6'><i>12xp</i></span>)</span>   " },
 			[2]={ id="skill_bend_water",    xp_cost=8, label="   <span>Water (<span color='#00bbe6'><i>6xp</i></span>)</span>   " },
 			[3]={ id="skill_bend_lava",   xp_cost=32, label="   <span>Lava (<span color='#00bbe6'><i>32xp</i></span>)</span>   " },
             [4]={ id="skill_bend_air",   xp_cost=8, label="   <span>Air (<span color='#00bbe6'><i>8xp</i></span>)</span>   " },				},
