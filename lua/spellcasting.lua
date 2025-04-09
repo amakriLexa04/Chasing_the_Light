@@ -469,6 +469,40 @@ end
 		end
     end
 	
+	wml_actions["caster_set_menu"] = function(cfg)
+	    local units = wesnoth.units.find_on_map()
+        
+        for i,u in ipairs(units) do
+            if  wml.variables["caster_" .. u.id] then
+        	    wml.fire("clear_menu_item", {
+                    id = "spellcasting_object_" .. u.id
+        		})
+        		
+                wml.fire("set_menu_item", {
+                    id = "spellcasting_object_" .. u.id,
+                    description = _"Cast Spells",
+                    synced = false,
+                    wml.tag.filter_location {
+                        wml.tag.filter { id = u.id }
+                    },
+                    wml.tag.command {
+                        wml.tag.show_caster_skills {
+                            wml.tag.filter { id = u.id }
+                        }
+                    },
+        			wml.tag.show_if {
+        			    wml.tag.variable {
+        				    name = "caster_" .. u.id .. ".utils_spellcasting_allowed",
+        					equals = true
+        				}
+        			}
+                })
+            end
+        end
+        
+        units = nil
+	end
+	
 	wml_actions["assign_caster"] = function(cfg)
 		local filter = wml.get_child(cfg, "filter") or
         wml.error "[assign_caster] missing required [filter] tag"
@@ -513,19 +547,7 @@ end
 		
 		utils.vwriter.write(writer, caster_data_temp)
 			
-		wml.fire("set_menu_item", {
-            id = "spellcasting_object" .. u.id,
-            description = _"Cast Spells",
-            synced = false,
-            T.filter_location {
-                T.filter { id = u.id }
-            },
-            T.command {
-                T.show_caster_skills {
-                    T.filter { id = u.id }
-                }
-            }
-        })
+		wml.fire.caster_set_menu()
 		
 		wml.fire("refresh_skills", ({id = u.id}))
 		
