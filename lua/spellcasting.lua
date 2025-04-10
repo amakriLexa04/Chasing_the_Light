@@ -478,25 +478,27 @@ end
                     id = "spellcasting_object_" .. u.id
         		})
         		
-                wml.fire("set_menu_item", {
-                    id = "spellcasting_object_" .. u.id,
-                    description = _"Cast Spells",
-                    synced = false,
-                    wml.tag.filter_location {
-                        wml.tag.filter { id = u.id }
-                    },
-                    wml.tag.command {
-                        wml.tag.show_caster_skills {
+				if wml.variables["turn_number"] == u.side then
+                    wml.fire("set_menu_item", {
+                        id = "spellcasting_object_" .. u.id,
+                        description = _"Cast Spells",
+                        synced = false,
+                        wml.tag.filter_location {
                             wml.tag.filter { id = u.id }
-                        }
-                    },
-        			wml.tag.show_if {
-        			    wml.tag.variable {
-        				    name = "caster_" .. u.id .. ".utils_spellcasting_allowed",
-        					equals = true
-        				}
-        			}
-                })
+                        },
+                        wml.tag.command {
+                            wml.tag.show_caster_skills {
+                                wml.tag.filter { id = u.id }
+                            }
+                        },
+        		    	wml.tag.show_if {
+        		    	    wml.tag.variable {
+        		    		    name = "caster_" .. u.id .. ".utils_spellcasting_allowed",
+        		    			equals = true
+        		    		}
+        		    	}
+                    })
+				end
             end
         end
         
@@ -797,6 +799,10 @@ end
 	    for i,u in ipairs(units) do
 		    if wml.variables["caster_" .. u.id] then
 			    wml.variables["caster_" .. u.id] = nil
+				
+				wml.fire("clear_menu_item", {
+                    id = "spellcasting_object_" .. u.id
+        		})
             end
 		end
     end
