@@ -457,7 +457,7 @@ end
             selected_unit_id = u.id
 		    wml.variables ["current_caster"] = u.id
 		    
-            if wml.variables["caster_" .. u.id .. ".utils_spellcasting_allowed"] == true then
+            if not wml.variables["caster_" .. u.id .. ".utils_spellcasting_allowed"] then
 		        if (wml.variables["caster_" .. u.id .. ".wait_to_select_spells"]) then
                     display_skills_dialog(true)
 		    		wml.fire("refresh_skills", ({id = u.id}))
@@ -478,7 +478,7 @@ end
                     id = "spellcasting_object_" .. u.id
         		})
         		
-				if wml.variables["turn_number"] == u.side then
+				if wml.variables["side_number"] == u.side then
                     wml.fire("set_menu_item", {
                         id = "spellcasting_object_" .. u.id,
                         description = _"Cast Spells",
@@ -494,7 +494,7 @@ end
         		    	wml.tag.show_if {
         		    	    wml.tag.variable {
         		    		    name = "caster_" .. u.id .. ".utils_spellcasting_allowed",
-        		    			equals = true
+        		    			not_equals = "disabled"
         		    		}
         		    	}
                     })
@@ -509,8 +509,7 @@ end
 		local filter = wml.get_child(cfg, "filter") or
         wml.error "[assign_caster] missing required [filter] tag"
 		local units = wesnoth.units.find(filter)
-		local basic_description
-		local spellcasting_allowed
+		local basic_description, spellcasting_allowed
 
         for i,u in ipairs(units) do
 		
@@ -522,8 +521,11 @@ end
 		    basic_description = u.name .. " knows many useful spells, and will learn more as she levels-up automatically throughout the campaign. " .. u.name .. " does not use XP to level-up. Instead,\nshe uses XP to cast certain spells. If you select spells that cost XP, <b>double-click on " .. u.name .. " to cast them</b>. You can only cast 1 spell per turn."
 		end
 		
-		if cfg.spellcasting_allowed then spellcasting_allowed = tostring(cfg.spellcasting_allowed)
-        else spellcasting_allowed = true end
+		if cfg.spellcasting_allowed == false then
+		    spellcasting_allowed = "disabled"
+		else 
+		    spellcasting_allowed = cfg.spellcasting_allowed
+		end
 
         local caster_data_temp = {
             id = u.id,
@@ -543,13 +545,13 @@ end
 			spell_group_9 = cfg.spell_group_9,
 			spell_group_10 =cfg.spell_group_10,
 			utils_spellcasted_this_turn = cfg.spellcasted_this_turn or nil,
-			utils_spellcasting_allowed = spellcasting_allowed,
+			utils_spellcasting_allowed = spellcasting_allowed or nil,
 			utils_not_casters_turn = cfg.utils_not_casters_turn,
         }
 		
 		utils.vwriter.write(writer, caster_data_temp)
 			
-		wml.fire.caster_set_menu()
+		wml.fire("caster_set_menu")
 		
 		wml.fire("refresh_skills", ({id = u.id}))
 		
@@ -669,12 +671,16 @@ end
 	    for i,u in ipairs(units) do
 		    if wml.variables["caster_" .. u.id] then
 			    if cfg.spellcasting_allowed == true then
-				    wml.variables["caster_" .. u.id .. ".utils_spellcasting_allowed"] = true
-				elseif cfg.spellcasting_allowed == false then
-				    wml.variables["caster_" .. u.id .. ".utils_spellcasting_allowed"] = false
+				    wml.variables["caster_" .. u.id .. ".utils_spellcasting_allowed"] = nil
+				else
+				    wml.variables["caster_" .. u.id .. ".utils_spellcasting_allowed"] = "disabled"
 				end 
             end
 		end
+		
+		units = nil
+		
+		wml.fire("caster_set_menu")
     end
 	
     wml_actions["equip_spell"] = function(cfg)
@@ -827,7 +833,7 @@ wesnoth.game_events.on_mouse_action = function(x,y)
 	    if (os.clock()-last_click<0.25) then
 	    	wesnoth.audio.play("miss-2.ogg")
 	    
-	    	if wml.variables["caster_" .. selected_unit_id .. ".utils_spellcasting_allowed"] == true then
+	    	if not wml.variables["caster_" .. selected_unit_id .. ".utils_spellcasting_allowed"] then
 	    	    if (wml.variables["caster_" .. selected_unit_id .. ".wait_to_select_spells"]) then
                     display_skills_dialog(true)
                 else
