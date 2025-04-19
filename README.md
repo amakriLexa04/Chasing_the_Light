@@ -19,12 +19,14 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 - IftU
 - Archaic_Resources
 - [WesTactics](https://github.com/wtactics)
+- Maksiu
 
 ## With the help of
 - [ForestDragon](https://github.com/ForestDragon-wesnoth)
 - [Refumee](https://github.com/Refumee)
 - Myrion
 - Durzi
+- Emperor/ZombieKnight
 
 ## Scenario structure
 - 01_The_Book✔                                                                                                                                      
