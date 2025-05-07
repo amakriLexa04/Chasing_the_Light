@@ -27,7 +27,7 @@ end
 --                                                                  SKILL DIALOG
 --###########################################################################################################################################################
 function display_skills_dialog(selecting)
-	local result_table = {} -- table used to return selected skills
+    local result_table = {} -- table used to return selected skills
 	
 	--###############################
 	-- CREATE DIALOG
@@ -39,371 +39,370 @@ function display_skills_dialog(selecting)
 		T.grid{} }
 	local grid = dialog[3]
 	
+	local caster = ( wesnoth.units.find_on_map({ id=selected_unit_id }) )[1]
 	
-	if wml.variables["caster_" .. selected_unit_id] then
-	
-		local caster = ( wesnoth.units.find_on_map({ id=selected_unit_id }) )[1]
+	local caster_side = wesnoth.get_sides({ side = caster.side })
+    if not (caster_side[1].controller == "human" and caster_side[1].is_local and wml.variables["side_number"] == caster_side[1].side) then return end
 
-        --список усіх доступних заклять
-		local skills_copy = {}
-        for i = 1, 10 do
-		    if wml.variables["caster_" .. caster.id .. ".spell_group_" .. i] then
-            skills_copy[i] = {}
-			for spell in wml.variables["caster_" .. caster.id .. ".spell_group_" .. i]:gmatch("[^,]+") do
-                table.insert(skills_copy[i], spell)
-            end
-			end
+    --список усіх доступних заклять
+	local skills_copy = {}
+    for i = 1, 10 do
+	    if wml.variables["caster_" .. caster.id .. ".spell_group_" .. i] then
+        skills_copy[i] = {}
+		for spell in wml.variables["caster_" .. caster.id .. ".spell_group_" .. i]:gmatch("[^,]+") do
+            table.insert(skills_copy[i], spell)
         end
+		end
+    end
 
-		local skills_actual_copy = deep_copy(spell_data.skill_set)
+	local skills_actual_copy = deep_copy(spell_data.skill_set)
 	
-	    -------------------------
-	    -- HEADER
-	    -------------------------
-	    table.insert( grid[2], T.row{ T.column{ border="bottom", border_size=15, T.image{  label="icons/banner1.png"  }}} )
-	    local                title_text = selecting and wml.variables["caster_" .. caster.id .. ".u_title_select"]  or wml.variables["caster_" .. caster.id .. ".u_title_cast"]
-	    table.insert( grid[2], T.row{ T.column{ T.label{
-            definition="title",
-            horizontal_alignment="center",
-            label = title_text,
-        }}} )
-	    local                help_text = "<span size='small'><i>" .. wml.variables["caster_" .. caster.id .. ".u_description"] .. "</i></span>"
-	    table.insert( grid[2], T.row{ T.column{ border="top", border_size=15, T.label{ use_markup=true, label=help_text }}} )
-	    table.insert( grid[2], T.row{ T.column{ border="top", border_size=15, T.image{  label="icons/banner2.png"  }}} )
-	    
-	    -------------------------
-	    -- SKILL GROUPS
-	    -------------------------
-	    -- each button/image/label id ends with the index of the skill group it corresponds to
-	    -- put all these in 1 big grid, so they can have their own table-layout
-	    
-	    local skill_grid = T.grid{}
-	    
-	    --список розблокованих заклять
-	    local already_unlocked_list = {}
-	    for spell in wml.variables["caster_" .. caster.id .. ".spell_unlocked"]:gmatch("[^,]+") do
-            table.insert(already_unlocked_list, spell)
-        end
-	    
-	    for _, spell_list in pairs(skills_copy) do
-            for i, skill_id in ipairs(spell_list) do
-                for _, skill in ipairs(skills_actual_copy) do
-	        	    if skill_id == skill.id then
-	        			for _, unlocked_skill in ipairs(already_unlocked_list) do
-	        		        if not (unlocked_skill == skill.id) then
-                                spell_list[i] = spell_data.locked
-                            else
-                                spell_list[i] = skill
-	        					break
-                            end
+	-------------------------
+	-- HEADER
+	-------------------------
+	table.insert( grid[2], T.row{ T.column{ border="bottom", border_size=15, T.image{  label="icons/banner1.png"  }}} )
+	local                title_text = selecting and wml.variables["caster_" .. caster.id .. ".u_title_select"]  or wml.variables["caster_" .. caster.id .. ".u_title_cast"]
+	table.insert( grid[2], T.row{ T.column{ T.label{
+        definition="title",
+        horizontal_alignment="center",
+        label = title_text,
+    }}} )
+	local                help_text = "<span size='small'><i>" .. wml.variables["caster_" .. caster.id .. ".u_description"] .. "</i></span>"
+	table.insert( grid[2], T.row{ T.column{ border="top", border_size=15, T.label{ use_markup=true, label=help_text }}} )
+	table.insert( grid[2], T.row{ T.column{ border="top", border_size=15, T.image{  label="icons/banner2.png"  }}} )
+	
+	-------------------------
+	-- SKILL GROUPS
+	-------------------------
+	-- each button/image/label id ends with the index of the skill group it corresponds to
+	-- put all these in 1 big grid, so they can have their own table-layout
+	
+	local skill_grid = T.grid{}
+	
+	--список розблокованих заклять
+	local already_unlocked_list = {}
+	for spell in wml.variables["caster_" .. caster.id .. ".spell_unlocked"]:gmatch("[^,]+") do
+        table.insert(already_unlocked_list, spell)
+    end
+	
+	for _, spell_list in pairs(skills_copy) do
+        for i, skill_id in ipairs(spell_list) do
+            for _, skill in ipairs(skills_actual_copy) do
+	    	    if skill_id == skill.id then
+	    			for _, unlocked_skill in ipairs(already_unlocked_list) do
+	    		        if not (unlocked_skill == skill.id) then
+                            spell_list[i] = spell_data.locked
+                        else
+                            spell_list[i] = skill
+	    					break
                         end
-	        			break
-	        		end
-                end
-            end
-	    end
-	    
-		--не показувати групи, які недоступні або заблоковані
-	    for i = #skills_copy, 1, -1 do
-            local all_locked = true
-            
-            for j = #skills_copy[i], 1, -1 do
-                if not skills_copy[i][j].id then
-                    skills_copy[i][j] = nil
-                else
-                    if skills_copy[i][j] ~= spell_data.locked then
-                        all_locked = false
                     end
+	    			break
+	    		end
+            end
+        end
+	end
+	
+	--не показувати групи, які недоступні або заблоковані
+	for i = #skills_copy, 1, -1 do
+        local all_locked = true
+        
+        for j = #skills_copy[i], 1, -1 do
+            if not skills_copy[i][j].id then
+                skills_copy[i][j] = nil
+            else
+                if skills_copy[i][j] ~= spell_data.locked then
+                    all_locked = false
                 end
             end
-        
-            if all_locked then
-                table.remove(skills_copy, i)
-            end
         end
-	    
-        --spell_equiped
-	    local skills_equipped = {}
-	    if wml.variables["caster_" .. caster.id .. ".spell_equipped"] then
-	        for spell in wml.variables["caster_" .. caster.id .. ".spell_equipped"]:gmatch("[^,]+") do
-	        	table.insert(skills_equipped, spell) --список, що є аналогом wml.variables[spell]
-            end
-	    end
-
-	    for i=1,#skills_copy,1 do
-	    	local button
-	    	local subskill_row
-	    	if (selecting) then
-	    		-- menu button for selecting skills
-	    		button = T.menu_button{  id="button"..i, use_markup=true  }
-	    		for j=1,#skills_copy[i],1 do
-	    			table.insert( button[2], T.option{label=skills_copy[i][j].label} )
-	    		end
-	    	else -- button for casting spells, or label for displaying skills
-	    		for j=1,#skills_copy[i],1 do
-	    			local skill = skills_copy[i][j]
-					for o, equipped_skill in ipairs(skills_equipped) do
-	    			    if (equipped_skill == skill.id) then
-	    			    	if (not (skill.xp_cost or skill.gold_cost or skill.hp_cost)) then button=T.label{  id="button"..i, use_markup=true, label=skill.label }
-	    			    	else                        button=T.button{ id="button"..i, use_markup=true, label=skill.label } end
-	    			    	-- handle one skill with multiple buttons
-	    			    	if (skill.subskills) then
-	    			    		subskill_row = T.row{}
-	    			    		for k=1,#skill.subskills,1 do
-	    			    			local subskill = skill.subskills[k]
-	    			    			local subskill_is_unlocked
-	    			    			for p, unlocked_skill in ipairs(already_unlocked_list) do
-	    			    			    if (unlocked_skill == skill.subskills[k].id) then
-	    			    			        table.insert( subskill_row[2], T.column{T.button{id=subskill.id,use_markup=true,label=subskill.label}} );
-	    			    					subskill_is_unlocked = true
-	    			    					break
-	    			    			    end
-	    			    			end
-	    			    			if not subskill_is_unlocked then
-	    			    				table.insert( subskill_row[2], T.column{T.button{id=subskill.id,use_markup=true,enabled=false,label=_"<span>Locked</span>"}} );
-	    			    			end
-	    			    			subskill_is_unlocked = nil
-	    			    		end
-	    			    	end
-							break
-	    			    end
-					end
-	    		end
-	    		if (not button) then button=T.label{id="button"..i} end -- dummy button
-	    	end
-	    	
-	    	-- skill row
-	    	table.insert( skill_grid[2], T.row{ 
-	    		T.column{ border="left",  border_size=15, button},
-                T.column{                                 T.label{label="  "}},  T.column{  horizontal_alignment="left", T.image{id="image"..i                }  },
-                T.column{ border="right", border_size=15, T.label{label="  "}},  T.column{  horizontal_alignment="left", T.label{id="label"..i,use_markup=true}  },
-	    	} )
-	    	
-	    	-- subskill row
-	    	if (subskill_row) then table.insert( skill_grid[2], T.row{ 
-	    		T.column{T.label{}}, T.column{T.label{}},
-	    		T.column{T.label{}}, T.column{T.label{}},
-	    		T.column{T.grid{subskill_row}},
-	    	} ) end
-	    	
-	    	-- spacer row
-	    	table.insert( skill_grid[2], T.row{ 
-	    		T.column{T.label{label="  "}},
-	    		T.column{T.label{}}, T.column{T.label{}},
-	    		T.column{T.label{}}, T.column{T.label{}}
-	    	} )
+    
+        if all_locked then
+            table.remove(skills_copy, i)
         end
-	    table.insert( grid[2], T.row{T.column{ horizontal_alignment="left", skill_grid }} )
-	    
-	    -------------------------
-	    -- CONFIRM BUTTON
-	    -------------------------
-	    table.insert( grid[2], T.row{ T.column{T.image{  label="icons/banner2.png"  }}} )
-	    if (selecting) then
-            table.insert( grid[2], T.row{ T.column{ T.grid{ T.row{ T.column{
-                border="top,right", border_size=10,
-                T.button{  id="confirm_button", use_markup=true, return_value=1, label=_"Confirm Spells <small><i>(can be changed every scenario)</i></small>"  }
-            }, T.column{
-                border="top,left",  border_size=10,
-                T.button{  id="wait_button",    use_markup=true, return_value=2, label=_"Choose Later"  }
-            }}}}})
-        else
-            table.insert( grid[2], T.row{ T.column{
-                border="top", border_size=10,
-                T.button{  id="confirm_button", use_markup=true, return_value=1, label="Cancel"  }
-            }})
+    end
+	
+    --spell_equiped
+	local skills_equipped = {}
+	if wml.variables["caster_" .. caster.id .. ".spell_equipped"] then
+	    for spell in wml.variables["caster_" .. caster.id .. ".spell_equipped"]:gmatch("[^,]+") do
+	    	table.insert(skills_equipped, spell) --список, що є аналогом wml.variables[spell]
         end
-	    
-	    table.insert( grid[2], T.row{ T.column{ border="top", border_size=15,  T.image{  label="icons/banner4.png"  }}} )
-	    
-	    
-	    
-	    --###############################
-	    -- POPULATE DIALOG
-	    --###############################
-	    -------------------------
-	    -- PRESHOW
-	    -------------------------
-	    local function preshow(dialog)
-	    	-- for the button corresponding to each skill group
-	    	
-	    	for i,group in pairs(skills_copy) do
-	    		button = dialog["button"..i]
-	    		
-	    		-- menu callbacks for selecting skills
-	    		if (selecting) then
-	    			-- default to whatever skill we had selected last time
-	    			for j,skill in pairs(skills_copy[i]) do
-					    for _, equipped_skill in ipairs(skills_equipped) do
-	    			        if (equipped_skill == skill.id) then
-							    button.selected_index=j
-								break
-							end
-						end
-	    			end
-	    			
-	    			-- whenever we refresh the menu, update the image and label
-	    			refresh = function(button)
-	    				if (not skills_copy[i][1]) then return end
-	    				dialog["image"..i].label = skills_copy[i][button.selected_index].image
-	    				dialog["label"..i].label = skills_copy[i][button.selected_index].description
-	    				
-	    				-- also update variables
-	    				for j, skill in pairs(skills_copy[i]) do
-                            result_table[skill.id] = (j == button.selected_index) and "yes" or "no"
-                            if skill.id == "skill_locked" then 
-                                result_table[skill.id] = "no"
-                            end
-                        end
-	    			end
-	    			
-	    			-- refresh immediately, and after any change
-	    			refresh(button)
-	    			button.on_modified = refresh
-	    		
-	    		-- fixed labels for casting/displaying skills/spells
-	    		else dialog["button"..i].visible = false
-	    			for j,skill in pairs(skills_copy[i]) do
-					    for _, equipped_skill in ipairs(skills_equipped) do
-						    if equipped_skill == skill.id then
-							    goto continue_equipped
-							end
-						end
-						
-						goto continue_unequipped
-						
-						::continue_equipped::
-	    				
-	    				-- if we know this skill, reveal and initialize the UI
-	    				dialog["button"..i].visible = true
-	    				dialog["image" ..i].label = skill.image
-	    				dialog["label" ..i].label = skill.description
-	    				
-	    				-- if the button is clickable (i.e. a castable spell), set on_button_click
-	    				local function initialize_button( buttonid, skill, small )
-
-	    					if (dialog[buttonid].type=="button") then
-	    					    --check if locked
-	    						local skill_is_unlocked
-	    						for _, unlocked_skill in ipairs(already_unlocked_list) do
-	    						    if (unlocked_skill == skill.id) then
-	    								skill_is_unlocked = true
-	    							    break
-	    							end
-	    						end
-
-	    						-- cancel spell
-	    						local function caster_has_object(object_id) return wesnoth.units.find_on_map{ id=caster.id, T.filter_wml{T.modifications{T.object{id=object_id}}} }[1] end
-	    						if (caster_has_object(skill.id)) then
-	    							dialog[buttonid].label = small and "<span size='small'>Cancel</span>" or label('Cancel')
-	    							dialog[buttonid].on_button_click = function()
-									    wml.variables["caster_" .. caster.id .. ".spell_to_cast"] = skill.id.."_cancel"
-	    								gui.widget.close(dialog)
-	    							end
-	    						-- errors (extra spaces are to center the text)
-	    						elseif (not skill_is_unlocked) then
-	    							dialog[buttonid].enabled = false
-	    							skill_is_unlocked = nil
-	    						elseif (wml.variables["caster_" .. caster.id .. ".spellcasted_this_turn"]) then
-	    							dialog[buttonid].label = small and _"<span size='small'>1 spell/turn</span>" or _"<span> Can only cast\n1 spell per turn</span>"
-	    							dialog[buttonid].enabled = false
-	    						elseif (wml.variables["caster_" .. caster.id .. ".polymorphed"]) then
-	    							dialog[buttonid].label = small and _"<span size='small'>Polymorphed</span>" or _"<span>  Blocked by\n  Polymorph</span>"
-	    							dialog[buttonid].enabled = false
-	    						elseif (wesnoth.units.find_on_map{ id=caster.id, T.filter_location{radius=3, T.filter{id='haralin_mirror3'}} }[1]) then   -- mirror haralin counterspell. Переробити, щоб працювало з усіма
-	    							dialog[buttonid].label = small and _"<span size='small'>Counterspelled</span>" or _"<span>  Blocked by\n Counterspell</span>"
-	    							dialog[buttonid].enabled = false
-	    						elseif (wml.variables['counterspell_active']) then -- counterspell
-	    							dialog[buttonid].label = small and _"<span size='small'>Counterspelled</span>" or _"<span>  Blocked by\n Counterspell</span>"
-	    							dialog[buttonid].enabled = false
-	    						elseif (skill.xp_cost and skill.xp_cost>caster.experience) then
-	    							dialog[buttonid].label = small and _"<span size='small'>No XP</span>" or label('Insufficient XP')
-	    							dialog[buttonid].enabled = false
-	    						elseif (skill.hp_cost and skill.hp_cost>=caster.hitpoints) then
-	    							dialog[buttonid].label = small and _"<span size='small'>No HP</span>" or label('Insufficient HP')
-	    							dialog[buttonid].enabled = false
-	    				     	elseif (skill.gold_cost and skill.gold_cost>wesnoth.sides[caster.side].gold) then
-	    							dialog[buttonid].label = small and _"<span size='small'>No Gold</span>" or label('Insufficient Gold')
-	    							dialog[buttonid].enabled = false
-	    						elseif (skill.atk_cost and skill.atk_cost>caster.attacks_left) then
-	    							dialog[buttonid].label = small and _"<span size='small'>No Attack</span>" or label('No Attack')
-	    							dialog[buttonid].enabled = false
-	    						
-	    						-- cast spell
-	    						else
-	    							dialog[buttonid].on_button_click = function()
-	    								if (skill.xp_cost)  then caster.experience  =caster.experience  -skill.xp_cost  end
-	    								if (skill.hp_cost)  then caster.experience  =caster.hitpoints  -skill.hp_cost  end
-	    								if (skill.gold_cost)  then wesnoth.sides[caster.side].gold =wesnoth.sides[caster.side].gold  -skill.gold_cost  end
-	    								if (skill.atk_cost) then haralin.attacks_left=caster.attacks_left-skill.atk_cost end
-	    								wml.variables["caster_" .. caster.id .. ".spell_to_cast"] = skill.id
-	    								wml.variables["caster_" .. caster.id .. ".spellcasted_this_turn"] = skill.id
-	    								gui.widget.close(dialog)
-	    							end
-	    						end
-	    					end
-	    				end
-	    				initialize_button("button"..i, skill);
-	    				
-	    				-- if this skill has subskills, initialize each button
-	    				if (skill.subskills) then
-	    					for k,subskill in pairs(skill.subskills) do
-	    						initialize_button(subskill.id, subskill, true);
-	    					end
-	    				end
-	    				::continue_unequipped::
-	    			end
-	    		end
-	    	end
-        end
-	    
-	    
-	    -------------------------
-	    -- SHOW DIALOG
-	    -------------------------
-	    wesnoth.interface.game_display.selected_unit = nil
-	    wesnoth.interface.delay(300)
-	    
-        wesnoth.units.select()
-	    wesnoth.interface.deselect_hex()
-        wml.fire("redraw") -- deselect caster
-	    
-	    -- select spell, synced
-	    if (selecting) then
-	    	dialog_result = wesnoth.sync.evaluate_single(function()
-                retval = gui.show_dialog( dialog, preshow )
-                wml.variables["caster_" .. caster.id .. ".wait_to_select_spells"] = retval==2 and 'yes' or 'no' --not nil, or else the key appears blank
-                return result_table;
-            end)
-	    	
-	    	skills_equipped = {}
-	    	for skill_id,skill_value in pairs(dialog_result) do
-	    	    if skill_value == true then
-	    		    table.insert(skills_equipped, skill_id)
-	    		end
-	    	end
-	    	wml.variables["caster_" .. caster.id .. ".spell_equipped"] = table.concat(skills_equipped, ",")
-	    
-	    -- cast spells, synced
-	    else
-	    	dialog_result = wesnoth.sync.evaluate_single(function()
-	    		gui.show_dialog( dialog, preshow )
-	    		if (wml.variables["caster_" .. caster.id .. ".spell_to_cast"]) then
-				    wml.variables['current_caster'] = caster.id
-				    wml.fire.do_command({
-                        wml.tag.fire_event {
-                            raise = wml.variables["caster_" .. caster.id .. ".spell_to_cast"]
-                        }
-                    })
-				    wml.variables["caster_" .. caster.id .. ".spell_to_cast"] = nil
-				end
-	    	end)
-	    end
-
-        already_unlocked_list = nil
-	    skills_equipped = nil
-        return
 	end
+
+	for i=1,#skills_copy,1 do
+		local button
+		local subskill_row
+		if (selecting) then
+			-- menu button for selecting skills
+			button = T.menu_button{  id="button"..i, use_markup=true  }
+			for j=1,#skills_copy[i],1 do
+				table.insert( button[2], T.option{label=skills_copy[i][j].label} )
+			end
+		else -- button for casting spells, or label for displaying skills
+			for j=1,#skills_copy[i],1 do
+				local skill = skills_copy[i][j]
+				for o, equipped_skill in ipairs(skills_equipped) do
+				    if (equipped_skill == skill.id) then
+				    	if (not (skill.xp_cost or skill.gold_cost or skill.hp_cost)) then button=T.label{  id="button"..i, use_markup=true, label=skill.label }
+				    	else                        button=T.button{ id="button"..i, use_markup=true, label=skill.label } end
+				    	-- handle one skill with multiple buttons
+				    	if (skill.subskills) then
+				    		subskill_row = T.row{}
+				    		for k=1,#skill.subskills,1 do
+				    			local subskill = skill.subskills[k]
+				    			local subskill_is_unlocked
+				    			for p, unlocked_skill in ipairs(already_unlocked_list) do
+				    			    if (unlocked_skill == skill.subskills[k].id) then
+				    			        table.insert( subskill_row[2], T.column{T.button{id=subskill.id,use_markup=true,label=subskill.label}} );
+				    					subskill_is_unlocked = true
+				    					break
+				    			    end
+				    			end
+				    			if not subskill_is_unlocked then
+				    				table.insert( subskill_row[2], T.column{T.button{id=subskill.id,use_markup=true,enabled=false,label=_"<span>Locked</span>"}} );
+				    			end
+				    			subskill_is_unlocked = nil
+				    		end
+				    	end
+						break
+				    end
+				end
+			end
+			if (not button) then button=T.label{id="button"..i} end -- dummy button
+		end
+		
+		-- skill row
+		table.insert( skill_grid[2], T.row{ 
+			T.column{ border="left",  border_size=15, button},
+            T.column{                                 T.label{label="  "}},  T.column{  horizontal_alignment="left", T.image{id="image"..i                }  },
+            T.column{ border="right", border_size=15, T.label{label="  "}},  T.column{  horizontal_alignment="left", T.label{id="label"..i,use_markup=true}  },
+		} )
+		
+		-- subskill row
+		if (subskill_row) then table.insert( skill_grid[2], T.row{ 
+			T.column{T.label{}}, T.column{T.label{}},
+			T.column{T.label{}}, T.column{T.label{}},
+			T.column{T.grid{subskill_row}},
+		} ) end
+		
+		-- spacer row
+		table.insert( skill_grid[2], T.row{ 
+			T.column{T.label{label="  "}},
+			T.column{T.label{}}, T.column{T.label{}},
+			T.column{T.label{}}, T.column{T.label{}}
+		} )
+    end
+	table.insert( grid[2], T.row{T.column{ horizontal_alignment="left", skill_grid }} )
+	
+	-------------------------
+	-- CONFIRM BUTTON
+	-------------------------
+	table.insert( grid[2], T.row{ T.column{T.image{  label="icons/banner2.png"  }}} )
+	if (selecting) then
+        table.insert( grid[2], T.row{ T.column{ T.grid{ T.row{ T.column{
+            border="top,right", border_size=10,
+            T.button{  id="confirm_button", use_markup=true, return_value=1, label=_"Confirm Spells <small><i>(can be changed every scenario)</i></small>"  }
+        }, T.column{
+            border="top,left",  border_size=10,
+            T.button{  id="wait_button",    use_markup=true, return_value=2, label=_"Choose Later"  }
+        }}}}})
+    else
+        table.insert( grid[2], T.row{ T.column{
+            border="top", border_size=10,
+            T.button{  id="confirm_button", use_markup=true, return_value=1, label="Cancel"  }
+        }})
+    end
+	
+	table.insert( grid[2], T.row{ T.column{ border="top", border_size=15,  T.image{  label="icons/banner4.png"  }}} )
+	
+	
+	
+	--###############################
+	-- POPULATE DIALOG
+	--###############################
+	-------------------------
+	-- PRESHOW
+	-------------------------
+	local function preshow(dialog)
+		-- for the button corresponding to each skill group
+		
+		for i,group in pairs(skills_copy) do
+			button = dialog["button"..i]
+			
+			-- menu callbacks for selecting skills
+			if (selecting) then
+				-- default to whatever skill we had selected last time
+				for j,skill in pairs(skills_copy[i]) do
+				    for _, equipped_skill in ipairs(skills_equipped) do
+				        if (equipped_skill == skill.id) then
+						    button.selected_index=j
+							break
+						end
+					end
+				end
+				
+				-- whenever we refresh the menu, update the image and label
+				refresh = function(button)
+					if (not skills_copy[i][1]) then return end
+					dialog["image"..i].label = skills_copy[i][button.selected_index].image
+					dialog["label"..i].label = skills_copy[i][button.selected_index].description
+					
+					-- also update variables
+					for j, skill in pairs(skills_copy[i]) do
+                        result_table[skill.id] = (j == button.selected_index) and "yes" or "no"
+                        if skill.id == "skill_locked" then 
+                            result_table[skill.id] = "no"
+                        end
+                    end
+				end
+				
+				-- refresh immediately, and after any change
+				refresh(button)
+				button.on_modified = refresh
+			
+			-- fixed labels for casting/displaying skills/spells
+			else dialog["button"..i].visible = false
+				for j,skill in pairs(skills_copy[i]) do
+				    for _, equipped_skill in ipairs(skills_equipped) do
+					    if equipped_skill == skill.id then
+						    goto continue_equipped
+						end
+					end
+					
+					goto continue_unequipped
+					
+					::continue_equipped::
+					
+					-- if we know this skill, reveal and initialize the UI
+					dialog["button"..i].visible = true
+					dialog["image" ..i].label = skill.image
+					dialog["label" ..i].label = skill.description
+					
+					-- if the button is clickable (i.e. a castable spell), set on_button_click
+					local function initialize_button( buttonid, skill, small )
+
+						if (dialog[buttonid].type=="button") then
+						    --check if locked
+							local skill_is_unlocked
+							for _, unlocked_skill in ipairs(already_unlocked_list) do
+							    if (unlocked_skill == skill.id) then
+									skill_is_unlocked = true
+								    break
+								end
+							end
+
+							-- cancel spell
+							local function caster_has_object(object_id) return wesnoth.units.find_on_map{ id=caster.id, T.filter_wml{T.modifications{T.object{id=object_id}}} }[1] end
+							if (caster_has_object(skill.id)) then
+								dialog[buttonid].label = small and "<span size='small'>Cancel</span>" or label('Cancel')
+								dialog[buttonid].on_button_click = function()
+								    wml.variables["caster_" .. caster.id .. ".spell_to_cast"] = skill.id.."_cancel"
+									gui.widget.close(dialog)
+								end
+							-- errors (extra spaces are to center the text)
+							elseif (not skill_is_unlocked) then
+								dialog[buttonid].enabled = false
+								skill_is_unlocked = nil
+							elseif (wml.variables["caster_" .. caster.id .. ".spellcasted_this_turn"]) then
+								dialog[buttonid].label = small and _"<span size='small'>1 spell/turn</span>" or _"<span> Can only cast\n1 spell per turn</span>"
+								dialog[buttonid].enabled = false
+							elseif (wml.variables["caster_" .. caster.id .. ".polymorphed"]) then
+								dialog[buttonid].label = small and _"<span size='small'>Polymorphed</span>" or _"<span>  Blocked by\n  Polymorph</span>"
+								dialog[buttonid].enabled = false
+							elseif (wesnoth.units.find_on_map{ id=caster.id, T.filter_location{radius=3, T.filter{id='haralin_mirror3'}} }[1]) then   -- mirror haralin counterspell. Переробити, щоб працювало з усіма
+								dialog[buttonid].label = small and _"<span size='small'>Counterspelled</span>" or _"<span>  Blocked by\n Counterspell</span>"
+								dialog[buttonid].enabled = false
+							elseif (wml.variables['counterspell_active']) then -- counterspell
+								dialog[buttonid].label = small and _"<span size='small'>Counterspelled</span>" or _"<span>  Blocked by\n Counterspell</span>"
+								dialog[buttonid].enabled = false
+							elseif (skill.xp_cost and skill.xp_cost>caster.experience) then
+								dialog[buttonid].label = small and _"<span size='small'>No XP</span>" or label('Insufficient XP')
+								dialog[buttonid].enabled = false
+							elseif (skill.hp_cost and skill.hp_cost>=caster.hitpoints) then
+								dialog[buttonid].label = small and _"<span size='small'>No HP</span>" or label('Insufficient HP')
+								dialog[buttonid].enabled = false
+					     	elseif (skill.gold_cost and skill.gold_cost>wesnoth.sides[caster.side].gold) then
+								dialog[buttonid].label = small and _"<span size='small'>No Gold</span>" or label('Insufficient Gold')
+								dialog[buttonid].enabled = false
+							elseif (skill.atk_cost and skill.atk_cost>caster.attacks_left) then
+								dialog[buttonid].label = small and _"<span size='small'>No Attack</span>" or label('No Attack')
+								dialog[buttonid].enabled = false
+							
+							-- cast spell
+							else
+								dialog[buttonid].on_button_click = function()
+									if (skill.xp_cost)  then caster.experience  =caster.experience  -skill.xp_cost  end
+									if (skill.hp_cost)  then caster.experience  =caster.hitpoints  -skill.hp_cost  end
+									if (skill.gold_cost)  then wesnoth.sides[caster.side].gold =wesnoth.sides[caster.side].gold  -skill.gold_cost  end
+									if (skill.atk_cost) then haralin.attacks_left=caster.attacks_left-skill.atk_cost end
+									wml.variables["caster_" .. caster.id .. ".spell_to_cast"] = skill.id
+									wml.variables["caster_" .. caster.id .. ".spellcasted_this_turn"] = skill.id
+									gui.widget.close(dialog)
+								end
+							end
+						end
+					end
+					initialize_button("button"..i, skill);
+					
+					-- if this skill has subskills, initialize each button
+					if (skill.subskills) then
+						for k,subskill in pairs(skill.subskills) do
+							initialize_button(subskill.id, subskill, true);
+						end
+					end
+					::continue_unequipped::
+				end
+			end
+		end
+    end
+	
+	
+	-------------------------
+	-- SHOW DIALOG
+	-------------------------
+	wesnoth.interface.game_display.selected_unit = nil
+	wesnoth.interface.delay(300)
+	
+    wesnoth.units.select()
+	wesnoth.interface.deselect_hex()
+    wml.fire("redraw") -- deselect caster
+	
+	-- select spell, synced
+	if (selecting) then
+		dialog_result = wesnoth.sync.evaluate_single(function()
+            retval = gui.show_dialog( dialog, preshow )
+            wml.variables["caster_" .. caster.id .. ".wait_to_select_spells"] = retval==2 and 'yes' or 'no' --not nil, or else the key appears blank
+            return result_table;
+        end)
+		
+		skills_equipped = {}
+		for skill_id,skill_value in pairs(dialog_result) do
+		    if skill_value == true then
+			    table.insert(skills_equipped, skill_id)
+			end
+		end
+		wml.variables["caster_" .. caster.id .. ".spell_equipped"] = table.concat(skills_equipped, ",")
+	
+	-- cast spells, synced
+	else
+		dialog_result = wesnoth.sync.evaluate_single(function()
+			gui.show_dialog( dialog, preshow )
+			if (wml.variables["caster_" .. caster.id .. ".spell_to_cast"]) then
+			    wml.variables['current_caster'] = caster.id
+			    wml.fire.do_command({
+                    wml.tag.fire_event {
+                        raise = wml.variables["caster_" .. caster.id .. ".spell_to_cast"]
+                    }
+                })
+			    wml.variables["caster_" .. caster.id .. ".spell_to_cast"] = nil
+			end
+		end)
+	end
+
+    already_unlocked_list = nil
+	skills_equipped = nil
+    return
 end
 
 
@@ -453,7 +452,6 @@ end
 		
 		for i,u in ipairs(units) do
 		    if (wml.variables['is_during_attack']) then return end
-	        if (wml.variables["caster_" .. u.id .. ".utils_not_casters_turn"] ) then return end
             selected_unit_id = u.id
 		    wml.variables ["current_caster"] = u.id
 		    
@@ -484,7 +482,7 @@ end
                         description = _"Cast Spells",
                         synced = false,
                         wml.tag.filter_location {
-                            wml.tag.filter { id = u.id }
+                            wml.tag.filter { id = u.id, side = wml.variables["side_number"] }
                         },
                         wml.tag.command {
                             wml.tag.show_caster_skills {
@@ -546,7 +544,6 @@ end
 			spell_group_10 =cfg.spell_group_10,
 			utils_spellcasted_this_turn = cfg.spellcasted_this_turn or nil,
 			utils_spellcasting_allowed = spellcasting_allowed or nil,
-			utils_not_casters_turn = cfg.utils_not_casters_turn,
         }
 		
 		utils.vwriter.write(writer, caster_data_temp)
@@ -585,7 +582,6 @@ end
 		    	wml.variables["caster_" .. u.id .. ".spell_group_10"] = cfg.spell_group_10 or wml.variables["caster_" .. u.id .. ".spell_group_10"]
 		    	wml.variables["caster_" .. u.id .. ".utils_spellcasted_this_turn"] = cfg.spellcasted_this_turn or wml.variables["caster_" .. u.id .. ".utils_spellcasted_this_turn"]
 		    	wml.variables["caster_" .. u.id .. ".utils_spellcasting_allowed"] = cfg.spellcasting_allowed or wml.variables["caster_" .. u.id .. ".utils_spellcasting_allowed"]
-		    	wml.variables["caster_" .. u.id .. ".utils_not_casters_turn"] = cfg.utils_not_casters_turn or wml.variables["caster_" .. u.id .. ".utils_not_casters_turn"]
 		    	
 		        wml.fire("refresh_skills", ({id = u.id}))
 		    else
@@ -826,9 +822,8 @@ wesnoth.game_events.on_mouse_action = function(x,y)
 	if (not selected_unit[1]) then return end
 	if wml.variables["caster_" .. selected_unit[1].id] then
 	    if (wml.variables['is_during_attack']) then return end
-	    if (wml.variables["caster_" .. selected_unit[1].id .. ".utils_not_casters_turn"] ) then return end
 	    
-	    selected_unit_id = selected_unit[1].id
+		selected_unit_id = selected_unit[1].id
 	    
 	    if (os.clock()-last_click<0.25) then
 	    	wesnoth.audio.play("miss-2.ogg")
