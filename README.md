@@ -23,10 +23,11 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 ## Using resources from
 - [Dalas](https://github.com/Dalas121)
 - [inferno8](https://github.com/inferno8)
+- Maksiu
 - IftU
 - Archaic_Resources
 - [WesTactics](https://github.com/wtactics)
-- Maksiu
+
 
 ## Scenario structure
 - 01_The_Book✔                                                                                                                                      
