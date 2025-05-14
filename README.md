@@ -13,6 +13,13 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 - [ForestDragon](https://github.com/ForestDragon-wesnoth)
 - [Refumee](https://github.com/Refumee)
 
+## With the help of
+- [ForestDragon](https://github.com/ForestDragon-wesnoth)
+- [Refumee](https://github.com/Refumee)
+- Myrion
+- Durzi
+- Emperor/ZombieKnight
+
 ## Using resources from
 - [Dalas](https://github.com/Dalas121)
 - [inferno8](https://github.com/inferno8)
@@ -20,13 +27,6 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 - Archaic_Resources
 - [WesTactics](https://github.com/wtactics)
 - Maksiu
-
-## With the help of
-- [ForestDragon](https://github.com/ForestDragon-wesnoth)
-- [Refumee](https://github.com/Refumee)
-- Myrion
-- Durzi
-- Emperor/ZombieKnight
 
 ## Scenario structure
 - 01_The_Book✔                                                                                                                                      
