@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2025-04-01 18:57 UTC\n"
+"POT-Creation-Date: 2025-05-06 09:11 UTC\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,13 +16,10 @@ msgid "any"
 msgstr ""
 
 #. [editor_group]: id=ctl
-#: Chasing_the_Light/_main.cfg:51
-msgid "Chasing the Light: Chapter1&2"
-msgstr ""
-
 #. [campaign]: id=Chasing_the_Light
 #. [achievement_group]
 #. В гонитві за Світлом | Женучись за Світлом
+#: Chasing_the_Light/_main.cfg:51
 #: Chasing_the_Light/_main.cfg:61
 #: Chasing_the_Light/achievements.cfg:4
 msgid "Chasing the Light"
@@ -43,8 +40,8 @@ msgid ""
 msgstr ""
 
 #. [campaign]: id=Chasing_the_Light
-#. [unit_type]: id=daeola_1, race=human, gender=female
-#. [unit_type]: id=daeola_1_unarmed, race=human, gender=female
+#. [unit_type]: id=Daeola_L0_Apprentice, race=human, gender=female
+#. [unit_type]: id=Daeola_L0_Apprentice_Unarmed, race=human, gender=female
 #. [unit_type]: id=apprentice, race=human
 #: Chasing_the_Light/_main.cfg:74
 #: Chasing_the_Light/units/Daeola/Daeola_L1.cfg:8
@@ -89,7 +86,7 @@ msgid ""
 "<span color='#fff7a4' size='larger'>Chasing the Light</span>\n"
 "<i>Peaceful life of the Green Isle's inhabitants turned into a nightmare in an instant when legions of living dead invaded their land from the far West. Play as Haralin, a young peasant from a small village near Blackmore, who one day began to hear a mysterious voice calling itself messenger of the Light. Can you discover previously unknown powers, turn the tide of war and save your homeland from the hideous Wesfolk?</i>\n"
 "\n"
-"<span color='#fff7a4'>(Hard level, 17 scenarios.)</span>"
+"<span color='#fff7a4'>(Hard level, at least 18 scenarios.)</span>"
 msgstr ""
 
 #. [about]
@@ -153,352 +150,352 @@ msgid "Сollect all the books with Wesfolk spells."
 msgstr ""
 
 #. [achievement]: id=ctl_avatar
-#: Chasing_the_Light/achievements.cfg:16
+#: Chasing_the_Light/achievements.cfg:17
 msgid "Avatar"
 msgstr ""
 
 #. [achievement]: id=ctl_avatar
-#: Chasing_the_Light/achievements.cfg:17
+#: Chasing_the_Light/achievements.cfg:18
 msgid "Master all 5 elements of nature."
 msgstr ""
 
 #. [achievement]: id=ctl_traveler
-#: Chasing_the_Light/achievements.cfg:24
+#: Chasing_the_Light/achievements.cfg:25
 msgid "Traveler"
 msgstr ""
 
 #. [achievement]: id=ctl_traveler
-#: Chasing_the_Light/achievements.cfg:25
+#: Chasing_the_Light/achievements.cfg:26
 msgid "Visit all the signposts that Haralin will encounter throughout the main branch of the campaign."
 msgstr ""
 
 #. [achievement]: id=ctl_father
-#: Chasing_the_Light/achievements.cfg:32
+#: Chasing_the_Light/achievements.cfg:33
 msgid "Scenario 1: Not time to retire yet"
 msgstr ""
 
 #. [achievement]: id=ctl_father
-#: Chasing_the_Light/achievements.cfg:33
+#: Chasing_the_Light/achievements.cfg:34
 msgid "Advance Andrin to the next level. Are you sure it was worth it?"
 msgstr ""
 
 #. [achievement]: id=ctl_kamikaze
-#: Chasing_the_Light/achievements.cfg:40
+#: Chasing_the_Light/achievements.cfg:41
 msgid "Scenario 2: Get out of my village!"
 msgstr ""
 
 #. [achievement]: id=ctl_kamikaze
-#: Chasing_the_Light/achievements.cfg:41
+#: Chasing_the_Light/achievements.cfg:42
 msgid "Zeham furiously attacks Dark Sorceress on the first turn."
 msgstr ""
 
 #. [achievement]: id=ctl_all_spirits
-#: Chasing_the_Light/achievements.cfg:47
+#: Chasing_the_Light/achievements.cfg:48
 msgid "Scenario 3: Profitable exchange"
 msgstr ""
 
 #. [achievement]: id=ctl_all_spirits
-#: Chasing_the_Light/achievements.cfg:48
+#: Chasing_the_Light/achievements.cfg:49
 msgid "Convert all Haralin's peasants into the spirits."
 msgstr ""
 
 #. [achievement]: id=ctl_debtor
-#: Chasing_the_Light/achievements.cfg:54
+#: Chasing_the_Light/achievements.cfg:55
 msgid "Scenario 3: Debtor of the Light"
 msgstr ""
 
 #. [achievement]: id=ctl_debtor
-#: Chasing_the_Light/achievements.cfg:55
+#: Chasing_the_Light/achievements.cfg:56
 msgid "Save a disgruntled peasant. You know who this is about."
 msgstr ""
 
 #. [achievement]: id=ctl_ornate
-#: Chasing_the_Light/achievements.cfg:61
+#: Chasing_the_Light/achievements.cfg:62
 msgid "Scenario 4: Strange ornate"
 msgstr ""
 
 #. [achievement]: id=ctl_ornate
-#: Chasing_the_Light/achievements.cfg:62
+#: Chasing_the_Light/achievements.cfg:63
 msgid "Daeola looks where she shouldn't."
 msgstr ""
 
 #. [achievement]: id=ctl_swap_exam
-#: Chasing_the_Light/achievements.cfg:68
+#: Chasing_the_Light/achievements.cfg:69
 msgid "Scenario 4: You're menace!"
 msgstr ""
 
 #. [achievement]: id=ctl_swap_exam
-#: Chasing_the_Light/achievements.cfg:69
+#: Chasing_the_Light/achievements.cfg:70
 msgid "Daeola somehow fails the First Trial."
 msgstr ""
 
 #. [achievement]: id=ctl_selfheal
-#: Chasing_the_Light/achievements.cfg:75
+#: Chasing_the_Light/achievements.cfg:76
 msgid "Scenario 4: I'm not ready yet"
 msgstr ""
 
 #. [achievement]: id=ctl_selfheal
-#: Chasing_the_Light/achievements.cfg:76
+#: Chasing_the_Light/achievements.cfg:77
 msgid "Try to heal Daeola with her remote healing spell."
 msgstr ""
 
+#. [achievement]: id=ctl_esten_inn
+#: Chasing_the_Light/achievements.cfg:83
+msgid "Scenario 5: Mysterious basement"
+msgstr ""
+
+#. [achievement]: id=ctl_esten_inn
+#: Chasing_the_Light/achievements.cfg:84
+msgid "You know you fell into an obvious trap and it wasn't worth it, right?"
+msgstr ""
+
 #. [achievement]: id=ctl_swamp_ghost
-#: Chasing_the_Light/achievements.cfg:82
+#: Chasing_the_Light/achievements.cfg:90
 msgid "Scenario 5: No more evil swamp"
 msgstr ""
 
 #. [achievement]: id=ctl_swamp_ghost
-#: Chasing_the_Light/achievements.cfg:83
+#: Chasing_the_Light/achievements.cfg:91
 msgid "Destroy all Wesfolk monoliths to exorcise enslaved spirits."
 msgstr ""
 
 #. [achievement]: id=ctl_save_esten
-#: Chasing_the_Light/achievements.cfg:90
+#: Chasing_the_Light/achievements.cfg:98
 msgid "Scenario 5: Phantom menace"
 msgstr ""
 
 #. [achievement]: id=ctl_save_esten
-#: Chasing_the_Light/achievements.cfg:91
+#: Chasing_the_Light/achievements.cfg:99
 msgid "Penella and her people leave the Swamp of Esten."
 msgstr ""
 
 #. [achievement]: id=ctl_stealth
-#: Chasing_the_Light/achievements.cfg:97
+#: Chasing_the_Light/achievements.cfg:105
 msgid "Scenario 6: Stealth mission"
 msgstr ""
 
 #. [achievement]: id=ctl_stealth
-#: Chasing_the_Light/achievements.cfg:98
+#: Chasing_the_Light/achievements.cfg:106
 msgid "Subdue rock elementals without disturbing them."
 msgstr ""
 
 #. [achievement]: id=ctl_cursed_islefolk
-#: Chasing_the_Light/achievements.cfg:104
+#: Chasing_the_Light/achievements.cfg:112
 msgid "Scenario 6: Civil war"
 msgstr ""
 
 #. [achievement]: id=ctl_cursed_islefolk
-#: Chasing_the_Light/achievements.cfg:105
+#: Chasing_the_Light/achievements.cfg:113
 msgid "Leave not a single cursed Islefolk warrior alive."
 msgstr ""
 
 #. [achievement]: id=ctl_caves_treasure
-#: Chasing_the_Light/achievements.cfg:111
+#: Chasing_the_Light/achievements.cfg:119
 msgid "Scenario 6: Forgotten treasure"
 msgstr ""
 
 #. [achievement]: id=ctl_caves_treasure
-#: Chasing_the_Light/achievements.cfg:112
+#: Chasing_the_Light/achievements.cfg:120
 msgid "Find very valuable cache of the dead miner."
 msgstr ""
 
 #. [achievement]: id=ctl_all_notes
-#: Chasing_the_Light/achievements.cfg:118
+#: Chasing_the_Light/achievements.cfg:126
 msgid "Scenario 6: Complete picture"
 msgstr ""
 
 #. [achievement]: id=ctl_all_notes
-#: Chasing_the_Light/achievements.cfg:119
+#: Chasing_the_Light/achievements.cfg:127
 msgid "Find all the notes of those who have remained in the caves forever."
 msgstr ""
 
 #. [achievement]: id=ctl_caves_blind
-#: Chasing_the_Light/achievements.cfg:126
+#: Chasing_the_Light/achievements.cfg:134
 msgid "Scenario 6: Blind company"
 msgstr ""
 
 #. [achievement]: id=ctl_caves_blind
-#: Chasing_the_Light/achievements.cfg:128
+#: Chasing_the_Light/achievements.cfg:136
 msgid "Don't learn the refugees' secret. Are you serious?"
 msgstr ""
 
 #. [achievement]: id=ctl_conversation_asa
-#: Chasing_the_Light/achievements.cfg:134
+#: Chasing_the_Light/achievements.cfg:142
 msgid "Scenario 6: Similarities and differences"
 msgstr ""
 
 #. [achievement]: id=ctl_conversation_asa
-#: Chasing_the_Light/achievements.cfg:135
+#: Chasing_the_Light/achievements.cfg:143
 msgid "Listen the entire conversation between Daeola and Sergeant Asa."
 msgstr ""
 
 #. [achievement]: id=ctl_skull_escape
-#: Chasing_the_Light/achievements.cfg:141
+#: Chasing_the_Light/achievements.cfg:149
 msgid "Scenario 7: Cowardly skull"
 msgstr ""
 
 #. [achievement]: id=ctl_skull_escape
-#: Chasing_the_Light/achievements.cfg:142
+#: Chasing_the_Light/achievements.cfg:150
 msgid "Banish Familiar from the battlefield in Scarhane. It's easy, right?"
 msgstr ""
 
 #. [achievement]: id=ctl_read_graves
-#: Chasing_the_Light/achievements.cfg:155
+#: Chasing_the_Light/achievements.cfg:156
 msgid "Scenario 7: Forgotten and not yet forgotten"
 msgstr ""
 
 #. [achievement]: id=ctl_read_graves
-#: Chasing_the_Light/achievements.cfg:156
+#: Chasing_the_Light/achievements.cfg:157
 msgid "Read all the inscriptions on the graves at Scarhane Cemetery."
 msgstr ""
 
-#. [achievement]: id=ctl_conversation_daecount
+#. [achievement]: id=ctl_save_s7_peasant
 #: Chasing_the_Light/achievements.cfg:164
+msgid "Scenario 7: Desperate Fighter"
+msgstr ""
+
+#. [achievement]: id=ctl_save_s7_peasant
+#: Chasing_the_Light/achievements.cfg:165
+msgid "Відчайдушний селянин-новобранець успішно відходить до копальні."
+msgstr ""
+
+#. [achievement]: id=ctl_orc_poly
+#: Chasing_the_Light/achievements.cfg:172
+msgid "Scenario 7: Tame The Beast"
+msgstr ""
+
+#. [achievement]: id=ctl_orc_poly
+#: Chasing_the_Light/achievements.cfg:173
+msgid "Заберіть у ворожої чаклунки книгу з унікальним різновидом закляття 'Поліморф'."
+msgstr ""
+
+#. [achievement]: id=ctl_conversation_daecount
+#: Chasing_the_Light/achievements.cfg:179
 msgid "Scenario 7: Mage and Warrior"
 msgstr ""
 
 #. [achievement]: id=ctl_conversation_daecount
-#: Chasing_the_Light/achievements.cfg:165
+#: Chasing_the_Light/achievements.cfg:180
 msgid "Listen the entire conversation between Daeola and Count Edvar."
 msgstr ""
 
 #. [achievement]: id=ctl_voice_bend
-#: Chasing_the_Light/achievements.cfg:171
+#: Chasing_the_Light/achievements.cfg:186
 msgid "Scenario 8: Expected Failure"
 msgstr ""
 
 #. [achievement]: id=ctl_voice_bend
-#: Chasing_the_Light/achievements.cfg:173
+#: Chasing_the_Light/achievements.cfg:188
 msgid "Try to cast the 'Bend Nature' spell on the Second Soul"
 msgstr ""
 
 #. [achievement]: id=ctl_first_blood
-#: Chasing_the_Light/achievements.cfg:179
-msgid "Scenario 10: The first blood"
+#: Chasing_the_Light/achievements.cfg:194
+msgid "Scenario 11: The first blood"
 msgstr ""
 
 #. [achievement]: id=ctl_first_blood
-#: Chasing_the_Light/achievements.cfg:181
+#: Chasing_the_Light/achievements.cfg:196
 msgid "Daeola became the first mage to die in this campaign."
 msgstr ""
 
 #. [achievement]: id=ctl_angel
-#: Chasing_the_Light/achievements.cfg:187
+#: Chasing_the_Light/achievements.cfg:202
 msgid "Scenario 10: Lonely Angel"
 msgstr ""
 
 #. [achievement]: id=ctl_angel
-#: Chasing_the_Light/achievements.cfg:188
+#: Chasing_the_Light/achievements.cfg:203
 msgid "You've saved lives, fought against enemies. And now everyone fell, but you are still standing."
 msgstr ""
 
-#. [achievement]: id=ctl_mercy
-#: Chasing_the_Light/achievements.cfg:194
-msgid "Scenario 9: You have my mercy"
-msgstr ""
-
-#. [achievement]: id=ctl_mercy
-#: Chasing_the_Light/achievements.cfg:195
-msgid "Haralin has his own sense of mercy for the Wesfolk, so that counts."
-msgstr ""
-
 #. [achievement]: id=ctl_asa
-#: Chasing_the_Light/achievements.cfg:201
+#: Chasing_the_Light/achievements.cfg:216
 msgid "Insurgent"
 msgstr ""
 
 #. [achievement]: id=ctl_asa
-#: Chasing_the_Light/achievements.cfg:202
+#: Chasing_the_Light/achievements.cfg:217
 msgid "Ignore all advices from Sergeant Asa."
 msgstr ""
 
 #. [achievement]: id=ctl_debtor_spirit
-#: Chasing_the_Light/achievements.cfg:210
+#: Chasing_the_Light/achievements.cfg:226
 msgid "Scenario 12h: I'm having a deja vu"
 msgstr ""
 
 #. [achievement]: id=ctl_debtor_spirit
-#: Chasing_the_Light/achievements.cfg:211
+#: Chasing_the_Light/achievements.cfg:227
 msgid "Spirit of Zeham exists long enough to see scenario 12."
 msgstr ""
 
 #. [achievement]: id=ctl_village
-#: Chasing_the_Light/achievements.cfg:217
+#: Chasing_the_Light/achievements.cfg:233
 msgid "Scenario 12h: Mage of Wesfolkcide"
 msgstr ""
 
 #. [achievement]: id=ctl_village
-#: Chasing_the_Light/achievements.cfg:218
+#: Chasing_the_Light/achievements.cfg:234
 msgid "DO IT. AND DO IT QUICKLY!"
 msgstr ""
 
 #. [achievement]: id=ctl_faisim
-#: Chasing_the_Light/achievements.cfg:224
+#: Chasing_the_Light/achievements.cfg:240
 msgid "Still mortal"
 msgstr ""
 
 #. [achievement]: id=ctl_faisim
-#: Chasing_the_Light/achievements.cfg:225
+#: Chasing_the_Light/achievements.cfg:241
 msgid "Every meeting between Haralin and Faisim must end up with her death"
 msgstr ""
 
-#. [achievement]: id=ctl_debtor2
-#: Chasing_the_Light/achievements.cfg:234
-msgid "Scenario 15hx: I knew it!"
-msgstr ""
-
-#. [achievement]: id=ctl_debtor2
-#: Chasing_the_Light/achievements.cfg:235
-msgid "Zeham lives long enough to see scenario 11x."
-msgstr ""
-
 #. [achievement]: id=ctl_caves_undead
-#: Chasing_the_Light/achievements.cfg:241
+#: Chasing_the_Light/achievements.cfg:257
 msgid "Scenario 13d: Final solution"
 msgstr ""
 
 #. [achievement]: id=ctl_caves_undead
-#: Chasing_the_Light/achievements.cfg:242
+#: Chasing_the_Light/achievements.cfg:258
 msgid "Cleanse caves from the cursed undead instead of sealing them."
 msgstr ""
 
-#. [achievement]: id=ctl_nttime
-#: Chasing_the_Light/achievements.cfg:248
-msgid "Scenario 16h: Not this time"
-msgstr ""
-
-#. [achievement]: id=ctl_nttime
-#: Chasing_the_Light/achievements.cfg:249
-msgid "Haralin finally learnt from his own mistakes."
-msgstr ""
-
 #. [achievement]: id=ctl_no_mage_recruit
-#: Chasing_the_Light/achievements.cfg:255
+#: Chasing_the_Light/achievements.cfg:271
 msgid "Hater of Mages"
 msgstr ""
 
 #. [achievement]: id=ctl_no_mage_recruit
-#: Chasing_the_Light/achievements.cfg:257
+#: Chasing_the_Light/achievements.cfg:273
 msgid "Complete the campaign on any difficulty without recruiting a single mage."
 msgstr ""
 
 #. [achievement]: id=ctl_happy_end
-#: Chasing_the_Light/achievements.cfg:263
+#: Chasing_the_Light/achievements.cfg:279
 msgid "Happy ending"
 msgstr ""
 
 #. [achievement]: id=ctl_happy_end
-#: Chasing_the_Light/achievements.cfg:264
-msgid "Zeham, Juangh, Asa, Ywyn, Dolmannumbil and some Spirits live long enough to see The Epilogue of Daeola's branch."
+#: Chasing_the_Light/achievements.cfg:280
+msgid "Zeham, Juangh, Asa, Ywyn, Dolmannumbil, Faisim and some Spirits live long enough to see The Epilogue of Daeola's branch."
 msgstr ""
 
 #. [achievement]: id=ctl_hard_d
-#: Chasing_the_Light/achievements.cfg:270
+#: Chasing_the_Light/achievements.cfg:286
 msgid "The Legend of the Green Isle"
 msgstr ""
 
 #. [achievement]: id=ctl_hard_d
-#: Chasing_the_Light/achievements.cfg:271
+#: Chasing_the_Light/achievements.cfg:287
 msgid "Complete Daeola's branch of the campaign on the Hard Difficulty."
 msgstr ""
 
 #. [achievement]: id=ctl_hard_h
-#: Chasing_the_Light/achievements.cfg:277
+#: Chasing_the_Light/achievements.cfg:293
 msgid "The First Mage of the Green Isle"
 msgstr ""
 
 #. [achievement]: id=ctl_hard_h
-#: Chasing_the_Light/achievements.cfg:278
+#: Chasing_the_Light/achievements.cfg:294
 msgid "Complete Haralin's branch of the campaign on the Hard Difficulty."
 msgstr ""
 
@@ -584,7 +581,7 @@ msgstr ""
 
 #. Керуйте самою природою, створюючи та направляючи її елементи — землю, воду, лаву та повітря.      Для цього закляття використовується <span color='#00bbe6'><i>досвід</i></span> та <span color='#FFD700'><i >золото</i></span>
 #: Chasing_the_Light/lua/skill_set.lua:110
-msgid "<span color='#6ca364'><i><b>Spell:</b></i></span> Control nature itself by creating and bending its elements — earth, water, lava, and air.\n           This spell uses <span color='#FFD700'><i>gold</i></span> and <span color='#00bbe6'><i>experience</i></span>."
+msgid "<span color='#6ca364'><i><b>Spell:</b></i></span> Control nature itself by creating and bending its elements — earth, water, lava, and air.\n           This spell uses <span color='#00bbe6'><i>experience</i></span>."
 msgstr ""
 
 #: Chasing_the_Light/lua/skill_set.lua:122
@@ -759,7 +756,7 @@ msgid "Choose Later"
 msgstr ""
 
 #. [lua]: .on_button_click
-#: Chasing_the_Light/lua/spellcasting.lua:509
+#: Chasing_the_Light/lua/spellcasting.lua:484
 msgid "Cast Spells"
 msgstr ""
 
@@ -877,12 +874,12 @@ msgstr ""
 #. Саме так, Гараліне, хоч ти йдеш проти волі Світла, все ж тобі було вказано, куди саме прямувати, щоб ти не лишився в цих печерах навіки. Але для тебе вже немає шляху назад...
 #. Гараліне, щоб підкорити тутешніх духів, ти маєш прочитати послання Древніх у правильному порядку й лиш після того торкнутися місця сили. Ти вільний це зробити, проте, ім'ям Світла, не вірь жодним оманливим словам, що почуєш!
 #: Chasing_the_Light/scenarios/01_The_Book.cfg:84
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:447
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:647
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:651
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:656
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:668
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:692
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:448
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:648
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:652
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:657
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:669
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:693
 #: Chasing_the_Light/scenarios/02_Invasion.cfg:26
 #: Chasing_the_Light/scenarios/02_Invasion.cfg:34
 #: Chasing_the_Light/scenarios/02_Invasion.cfg:577
@@ -923,11 +920,11 @@ msgstr ""
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:2393
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:4759
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:4762
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2019
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2111
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2113
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:382
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1084
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2278
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2457
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2459
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:383
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1089
 #: Chasing_the_Light/utils/macros.cfg:1369
 msgid "???"
 msgstr ""
@@ -1004,10 +1001,15 @@ msgstr ""
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:3392
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:4799
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:4830
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:690
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2128
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:658
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2474
 #: Chasing_the_Light/utils/macros.cfg:587
 msgid "Death of Haralin"
+msgstr ""
+
+#. [unit]: type=Spearman
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:203
+msgid "Andrin"
 msgstr ""
 
 #. [unit]
@@ -1020,87 +1022,87 @@ msgstr ""
 #. Гаралін
 #. Скажи мені нарешті, хто ти, чому на нас напали та що мені робити далі?
 #. Гаралін
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:232
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:242
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:233
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:243
 #: Chasing_the_Light/scenarios/02_Invasion.cfg:30
 #: Chasing_the_Light/scenarios/02_Invasion.cfg:166
 #: Chasing_the_Light/scenarios/04_Daeola.cfg:150
 #: Chasing_the_Light/scenarios/04x_Southbay.cfg:295
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:752
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:766
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:799
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1122
-#: Chasing_the_Light/utils/characters.cfg:14
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:720
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:734
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:767
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1127
+#: Chasing_the_Light/utils/characters.cfg:3
 msgid "Haralin"
 msgstr ""
 
 #. [event]
 #. Старійшино! Бачу групу неопізнаних людей на північному сході від села! І вони схожі на бандюків!
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:282
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:283
 msgid "Elder! I see a group of strangers northeast of the village! And they look like bandits!"
 msgstr ""
 
 #. [trait]
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:307
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:308
 msgid "overconfident"
 msgstr ""
 
 #. [trait]
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:307
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:308
 msgid "This unit doesn't see the point in using some of their abilities, including nightstalk, because they are too confident in their victory."
 msgstr ""
 
 #. [event]
 #. Складіть зброю, жалюгідні селюки, і може, ми залишимо вас в живих!
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:394
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:395
 msgid "Give up your weapons, miserable peasants, and maybe we'll let you live!"
 msgstr ""
 
 #. [event]
 #. Та й, що це ти торочиш? Поглянь на себе, одягнений, наче місцевий дурень з ярмарку. Забирайся з нашої землі негайно!
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:396
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:397
 msgid "Well-well, what are you babbling about? Look at you, dressed like a local carnival buffoon. Get off our land at once!"
 msgstr ""
 
 #. [event]
 #. Так, забирайся звідси! Інакше помреш!
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:398
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:399
 msgid "Yeah, get out of here! Or you'll die!"
 msgstr ""
 
 #. [event]
 #. Пф, які неосвідчені йолопи. Що ж, ви самі накликали на себе смерть.
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:400
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:401
 msgid "Pfft, what ignorant fools. Well, you brought death on yourselves."
 msgstr ""
 
 #. [event]
 #. Ми ще подивимося, хто тут йолоп, коли скидатимемо твій труп у помийну яму!
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:402
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:403
 msgid "We'll see who's the fool when we dump your corpse in a gutter!"
 msgstr ""
 
 #. [event]
 #. Батьку, що тут відбувається?!
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:419
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:420
 msgid "Dad, what's going on here?!"
 msgstr ""
 
 #. [event]
 #. Та й, просто купка бандитів з ватажком у шутовській одежі.
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:424
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:425
 msgid "Well-well, just a bunch of bandits with a chief in jester's clothes."
 msgstr ""
 
 #. [event]
 #. Що ж, тоді проженемо їх! Нарешті я використаю мою палицю!
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:426
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:427
 msgid "Well, then, let's chase them away! I'm finally going to use my club!"
 msgstr ""
 
 #. [event]
 #. Еге, тільки не заходь далеко та не роби необачних вчинків.
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:428
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:429
 msgid "Aye, just don't go too far from me and do anything rash."
 msgstr ""
 
@@ -1108,7 +1110,7 @@ msgstr ""
 #. [set_variable]
 #. [variable]
 #. [else]
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:432
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:433
 #: Chasing_the_Light/scenarios/02_Invasion.cfg:1392
 #: Chasing_the_Light/scenarios/02_Invasion.cfg:1399
 #: Chasing_the_Light/scenarios/03_Despair.cfg:362
@@ -1145,20 +1147,20 @@ msgstr ""
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:1655
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:1733
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:1826
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:780
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2010
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2181
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:247
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:324
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:494
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1048
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:748
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2261
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2527
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:248
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:325
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:495
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1053
 #: Chasing_the_Light/utils/macros.cfg:454
 msgid "false"
 msgstr ""
 
 #. [event]
 #. Смакуй мою палицю, бандюго!
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:446
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:447
 msgid "Taste my club, you scumbag!"
 msgstr ""
 
@@ -1168,10 +1170,10 @@ msgstr ""
 #. [else]
 #. [message]: speaker=$unit.id
 #. [scenario]: id=06_Miscreants
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:447
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:647
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:651
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:692
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:448
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:648
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:652
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:693
 #: Chasing_the_Light/scenarios/02_Invasion.cfg:584
 #: Chasing_the_Light/scenarios/02_Invasion.cfg:893
 #: Chasing_the_Light/scenarios/02_Invasion.cfg:894
@@ -1211,53 +1213,56 @@ msgstr ""
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:5145
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:5146
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:5147
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1320
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1349
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2113
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:274
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1102
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1106
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1112
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1509
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1538
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2015
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2017
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2459
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2750
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:275
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1107
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1111
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1117
 msgid "..."
 msgstr ""
 
 #. [then]
 #. Ім'ям Темряви, помри!
 #. Ім'ям Темряви, помри!
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:467
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:515
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:468
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:516
 msgid "In the name of Darkness, die!"
 msgstr ""
 
 #. [then]
 #. Аааа, що, що це було таке? Схоже на 'чаклунство' про яке розповідають в казках!
 #. Аааа, що, що це було таке? Схоже на 'чаклунство' про яке розповідають в казках!
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:481
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:529
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:482
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:530
 msgid "Ahhh, what, what was that? It looks like the kind of 'witchcraft' you hear about in fairy tales!"
 msgstr ""
 
 #. [else]
 #. Аааа, що, що це було?
 #. Аааа, що, що це було?
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:486
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:534
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:487
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:535
 msgid "Ahhh, what, what was that?"
 msgstr ""
 
 #. [else]
 #. Батьку, що це? Схоже на 'чаклунство' з казок, які мені розповідали в дитинстві.
 #. Батьку, що це? Схоже на 'чаклунство' з казок, які мені розповідали в дитинстві.
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:488
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:536
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:489
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:537
 msgid "Dad, what is this? It looks like 'witchcraft' from the fairy tales I was told as a child!"
 msgstr ""
 
 #. [then]
 #. Та й, щоб це не було, ми маємо з цим покінчити.
 #. Та й, щоб це не було, ми маємо з цим покінчити.
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:494
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:542
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:495
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:543
 msgid "Aye, whatever it is, we have to put an end to it."
 msgstr ""
 
@@ -1265,8 +1270,8 @@ msgstr ""
 #. [set_variable]
 #. [variable]
 #. [event]
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:496
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:544
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:497
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:545
 #: Chasing_the_Light/scenarios/02_Invasion.cfg:1038
 #: Chasing_the_Light/scenarios/02_Invasion.cfg:1099
 #: Chasing_the_Light/scenarios/02_Invasion.cfg:1153
@@ -1323,12 +1328,17 @@ msgstr ""
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:3938
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:4688
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:5210
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1478
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1590
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2058
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2215
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:97
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:574
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1350
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1727
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1775
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1853
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2348
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2361
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2561
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2768
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2785
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:98
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:579
 #: Chasing_the_Light/utils/macros.cfg:632
 #: Chasing_the_Light/utils/macros.cfg:919
 #: Chasing_the_Light/utils/macros.cfg:933
@@ -1343,107 +1353,107 @@ msgstr ""
 
 #. [event]
 #. Я підвів свого Владику...
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:556
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:557
 msgid "I have failed my Lord..."
 msgstr ""
 
 #. [event]
 #. <i>(удар)</i> Помри вже нарешті!
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:558
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:559
 msgid "<i>(hit)</i> Die already!"
 msgstr ""
 
 #. [message]
 #. Нашого Майстра перемогли, відступаймо!
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:581
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:582
 msgid "Our Master has been slain, retreat!"
 msgstr ""
 
 #. [event]
 #. Батьку, як гадаєш, що це за Владика? Та ще й цей розбійник використовував дивну силу.
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:623
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:624
 msgid "Dad, who do you think this Lord is? And this outlaw also used strange powers..."
 msgstr ""
 
 #. [event]
 #. Та й... Не мороч цим ні мені, ні собі голову. Гайда в село.
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:625
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:626
 msgid "Aye... Don't bother me or yourself with this. Let's go to the village."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:656
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:657
 msgid "<i>You have to see it.</i>"
 msgstr ""
 
 #. [event]
 #. Що? Знову цей голос...
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:663
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:664
 msgid "What? That voice again..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:668
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:669
 msgid "<i>In the name of Light, you have to see it. Now!</i>"
 msgstr ""
 
 #. [event]
 #. У таборі цього розбійника є якась книга. Я якраз нещодавно навчився читати, а книги коштують багато грошей, тож...
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:679
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:680
 msgid "There is a book in this bandit's camp. I have just recently learnt to read, and books cost a lot of money, so..."
 msgstr ""
 
 #. [event]
 #. <i>(роздивляється книгу)</i> Я вперше бачу такі літери, в нас так не пишуть, але я відчуваю, що від цієї книги віє силою. Може, в ній я дізнаюся про ту дивну силу?
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:689
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:690
 msgid "<i>(looking at the book)</i> It's the first time I've seen such letters, we don't write like that here, but I also feel that this book radiates power. Maybe in it I will learn about that strange power?"
 msgstr ""
 
 #. [event]
 #. О! Тут ще є сувої якісь. Написано 'с-ло-в-ни-к' і поряд ота дивна мова. Мені це знадобиться!
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:691
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:692
 msgid "Оh! There are also some scrolls here. It's written 'd-i-c-t-i-o-n-a-r-y' and there's this odd language next to it. Think I'm going to need this!"
 msgstr ""
 
 #. [event]
 #. Нікому не варто про це знати чи бачити, я не хочу проблем.
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:698
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:699
 msgid "No one needs to know or see this, I don't want any problems."
 msgstr ""
 
 #. [event]
 #. Прокляття, схоже, ці селюки виявилися сильнішими, ніж ми гадали. Забираймося звідси!
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:718
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:719
 msgid "Damn, it seems these peasants are stronger than we thought. Let's get out of here!"
 msgstr ""
 
 #. [event]
 #. Перемога, ура! Так, так, забирайтеся звідси!
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:749
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:750
 msgid "Victory, yay! Yes, yes, get out of here!"
 msgstr ""
 
 #. [event]
 #. Та й, та не галасуй ти так... Гайда в село.
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:751
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:752
 msgid "Aye, stop making so much noise... Let's go to the village."
 msgstr ""
 
 #. [message]
 #. Хоч селяни й перемогли цього разу, але зовсім незабаром вони зіткнулися з силою, котру не змогли подолати, ніхто не зміг.
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:757
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:758
 msgid "Although the peasants won this time, they soon faced a force that they could not overcome, no one could."
 msgstr ""
 
 #. [event]
 #. О ні, батьку, ці розбійники захопили нашу хату!
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:790
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:791
 msgid "Oh no, Dad, these bandits have taken over our house!"
 msgstr ""
 
 #. [event]
 #. Та й, та не галасуй ти так... Як проженемо їх, то й хату повернемо.
-#: Chasing_the_Light/scenarios/01_The_Book.cfg:792
+#: Chasing_the_Light/scenarios/01_The_Book.cfg:793
 msgid "Aye, stop making so much noise. When we drive them away, we'll get the house back."
 msgstr ""
 
@@ -1739,7 +1749,7 @@ msgstr ""
 msgid "Shut up, old fool! And die!"
 msgstr ""
 
-#. [unit]: id=zeham, type=Peasant
+#. [unit]: id=Zeham, type=Peasant
 #. Зегам
 #: Chasing_the_Light/scenarios/02_Invasion.cfg:658
 msgid "Zeham"
@@ -1805,13 +1815,13 @@ msgstr ""
 msgid "And now your whole family will join you!"
 msgstr ""
 
-#. [unit]: id=daeola_child, type=daeola_0
-#. [unit]: type=daeola_1_unarmed
+#. [unit]: id=daeola_child, type=Daeola_L0
+#. [unit]: type=Daeola_L0_Apprentice_Unarmed
 #. [side]
 #. [scenario]: id=04_Daeola
 #. [unit]
 #. [message]: speaker=narrator
-#. [unit]: id=daeola, type=daeola_2
+#. [unit]: id=daeola, type=Daeola_L1_Mage
 #. Даеола
 #. Даеола
 #. Даеола
@@ -1832,10 +1842,10 @@ msgstr ""
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:1255
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:1274
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:1286
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:759
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1057
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:727
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1062
 #: Chasing_the_Light/scenarios/99_Playground.cfg:17
-#: Chasing_the_Light/utils/characters.cfg:48
+#: Chasing_the_Light/utils/characters.cfg:17
 msgid "Daeola"
 msgstr ""
 
@@ -2242,7 +2252,7 @@ msgstr ""
 #. (додатково) Дослідити загадкове місце сили
 #: Chasing_the_Light/scenarios/03_Despair.cfg:378
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:2098
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2115
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2461
 msgid "(optional) Explore the mysterious place of force"
 msgstr ""
 
@@ -2286,7 +2296,7 @@ msgstr ""
 msgid "Yes, may the Light protect us... HEY, IS ANYBODY THERE??? HELLO?"
 msgstr ""
 
-#. [unit]: id=juangh, type=Bandit
+#. [unit]: id=Juangh, type=Bandit
 #. Джуанг
 #: Chasing_the_Light/scenarios/03_Despair.cfg:443
 msgid "Juangh"
@@ -2935,7 +2945,7 @@ msgstr ""
 #. Елементалі
 #. Елементалі
 #: Chasing_the_Light/scenarios/04_Daeola.cfg:139
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:216
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:250
 #: Chasing_the_Light/scenarios/99_Playground.cfg:51
 msgid "Elementals"
 msgstr ""
@@ -2977,8 +2987,8 @@ msgstr ""
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:3396
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:4803
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:4834
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:694
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2132
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:662
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2478
 #: Chasing_the_Light/utils/macros.cfg:591
 msgid "Death of Daeola"
 msgstr ""
@@ -4675,8 +4685,8 @@ msgstr ""
 #: Chasing_the_Light/scenarios/04x_Southbay.cfg:61
 #: Chasing_the_Light/scenarios/05_Aftermath.cfg:96
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:114
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:68
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:38
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:97
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:39
 msgid "Haralin's Squad"
 msgstr ""
 
@@ -4714,7 +4724,7 @@ msgstr ""
 #. [message]: speaker=narrator
 #. Сержант Аса
 #: Chasing_the_Light/scenarios/04x_Southbay.cfg:391
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:745
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:713
 msgid "Sergeant Asa"
 msgstr ""
 
@@ -5039,8 +5049,8 @@ msgstr ""
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:3400
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:4807
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:4838
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:698
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2136
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:666
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2482
 #: Chasing_the_Light/utils/macros.cfg:595
 msgid "Death of Asa"
 msgstr ""
@@ -8259,14 +8269,14 @@ msgstr ""
 msgid "May the Light have mercy on us! Without the sergeant's authority, the other soldiers won't obey us, the King's mission is failed!"
 msgstr ""
 
-#. [message]: speaker=zeham
+#. [message]: speaker=Zeham
 #. Це все це кляте чаклу-... *хрусь*
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:4363
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:4423
 msgid "It's all that damned witchcr-... *crack*"
 msgstr ""
 
-#. [message]: speaker=juangh
+#. [message]: speaker=Juangh
 #. Ґа, нє сматрі на-... *хрусь*
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:4369
 #: Chasing_the_Light/scenarios/06_Miscreants.cfg:4428
@@ -8786,13 +8796,33 @@ msgstr ""
 
 #. [part]
 #: Chasing_the_Light/scenarios/07_Scarhane.cfg:25
-msgid "Розповідь про подорож у печері"
+msgid "Коли вони зайшли далеко в глибини землі, віддалившись від поверхні на достатньо велику глибину, подорож по-справжньому почалася. Як не дивно, хоч Даеола завжди була поруч, невідомий голос більше не замовкав та, майже безперервно лунаючи в Гараліновій голові, продовжував направляти хоробрий загін звивистими шляхами темного підземелля. Проте хай все було добре, чаклуна ніяк не могла полишити дивна думка, а точніше питання — чому?"
+msgstr ""
+
+#. [part]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:30
+msgid "Чому цей голос, істота чи щоб це не було, чому воно кардинально змінило свою думку та тепер не виступає проти подорожі та порятунку Графа Чорнотопу? Чому воно без жодних заперечень вказує правильну путь, чому допомагає знаходити їстівні гриби та оминати печерних тварюк? Відповідей Гаралін не знав, та й знати не міг, хіба що... Голос оберігав саме його, хвилювався за долю лише одного мага і більше нікого? Така думка промайнула в голові чоловіка, на що він одразу ж відчув засуджуючий мовчазний тиск голосу і більше нічого."
+msgstr ""
+
+#. [part]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:41
+msgid "Дуб та інші"
+msgstr ""
+
+#. [part]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:48
+msgid "Інші"
+msgstr ""
+
+#. [part]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:54
+msgid "Кінець подорожі."
 msgstr ""
 
 #. [side]: id=blackmore_king, type=Royal Warrior
 #. [unit]: id=blackmore_king, type=Royal Warrior
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:75
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1133
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:104
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1138
 msgid "Count Edvar"
 msgstr ""
 
@@ -8800,208 +8830,213 @@ msgstr ""
 #. [side]
 #. Захисники Скархейну
 #. Захисники Скархейну
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:88
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:49
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:117
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:50
 msgid "Defenders of Scarhane"
 msgstr ""
 
-#. [side]: id=faisim, type=Shadow Lord, gender=female
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:100
+#. [side]: id=faisim, type=Wesfolk Princess, gender=female
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:129
 msgid "Faisim"
 msgstr ""
 
-#. [side]: id=faisim, type=Shadow Lord, gender=female
+#. [side]: id=faisim, type=Wesfolk Princess, gender=female
 #. Війська Ленвана
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:108
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:137
 msgid "Lenvan's Forces"
 msgstr ""
 
 #. [side]: id=s7_necromancer, type=Dark Sorcerer
 #. Західняцькі некроманти
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:136
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:166
 msgid "Wesfolk Necromancers"
 msgstr ""
 
 #. [side]: id=s7_death_knight, type=Death Knight
 #. Західняцька армія
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:157
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:188
 msgid "Wesfolk Army"
 msgstr ""
 
 #. [side]: id=s7_bone_knight, type=Bone Knight
 #. Лицарі Залісся
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:178
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:210
 msgid "Knights of Woodlandor"
 msgstr ""
 
 #. [side]: id=s7_ghast, type=Ghast
 #. Гулі Чорнильного Болота
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:197
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:230
 msgid "Inky Moor Ghouls"
 msgstr ""
 
-#. [message]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:617
-msgid "Тепер військами Графа Едвара керуєте ви. Ви отримаєте контроль над ними як тільки завершите свій хід."
-msgstr ""
-
-#. [message]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:642
-msgid "Тепер військами Графа Едвара керує штучний інтелект. Будьте обережні, він може робити дивні дії!"
-msgstr ""
-
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:679
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:647
 msgid "Defeat the Dark Sorcerer to capture his camp"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:680
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:648
 msgid "Evacuate refugees to the south"
 msgstr ""
 
 #. [objective]: condition=lose
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:702
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:720
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2140
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:670
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:688
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2486
 msgid "Death of Count Edvar"
 msgstr ""
 
 #. [objective]: condition=lose
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:724
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:692
 msgid "Loss of a caravan with refugees"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:746
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:714
 msgid "Чаклуне, ворота не піддаються. Твоє чуття не помилилося?"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:753
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:721
 msgid "Бачить Світло, сержанте, моє чуття не помиляється, "
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:753
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:721
 msgid "quietly^<i>окрім випадків, коли таємничий Голос намагається придушити мою волю.</i>"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:753
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:721
 msgid " Я впевнений, що ми прийшли саме сюди тому, що зможемо знайти спосіб вибратися на поверхню."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:760
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:728
 msgid "Однак, Вчителю, як ми вийдемо назовні — ці ворота зачинені наглухо, наче їх не чіпали десятиліттями та вони зрослися з камінням!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:767
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:735
 msgid ""
-"На жаль, наврядчи це правда: у печері неподалік ми бачили достатньо тіл наших людей. Гадаю, вихід заблоковано ззовні чимось великим, тому мені доведеться скористатися моїм новим закляттям, щоб створити новій прохід. Хай допоможе мені в цьому саме Світло! \n"
+"На жаль, навряд чи це правда: у печері неподалік ми бачили достатньо тіл наших людей. Гадаю, вихід заблоковано ззовні чимось великим, тому мені доведеться скористатися моїм новим закляттям, щоб створити новій прохід. Хай допоможе мені в цьому саме Світло! \n"
 "...\n"
 "De profundis terrae, veni ad liberandum!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:800
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:768
 msgid "De profundis terrae, et leniret et ad somnum!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:830
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:799
 msgid "Неймовірно, нарешті я бачу прекрасне синє небо! Але я б ніколи б не здогадалася, що <i>керування природою</i> можна використо-... Ох, погляньте — який жах, невже ми запізнилися?!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:900
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:869
 msgid "Надія є, місто ще стоїть."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:901
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:870
 msgid "Саме так, сержанте. Хоч, місто в важкій та довгій облозі, й я відчуваю, що якби ми дісталися сюди хоч на день пізніше, положення оборонців Скархейну було б набагато гірше, ми все ж мо-... ...!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:911
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:880
 msgid "УСІ СЮДИ — ВОРОГИ ВИЙШЛИ З КОПАЛЕНЬ НА ПІВДНІ! Я ВІДЧУВАЮ ЧАКЛУНІВ СЕРЕД НИХ!"
 msgstr ""
 
 #. [event]
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:915
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2225
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:884
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2571
 msgid "*клац-клац!*"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:919
-msgid "чаклун? так, я чула, що серед цього нещасного народу був один маг. здається, вперше про нього донесли дев'ятнадцять років незадовго до сутички між моїм власником та карором, після чого невідомість... що ж, ця битва обіцяє бути цікаво..."
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:888
+msgid "чаклуни? так, я чула, що серед цього нещасного народу був один маг. здається, вперше про нього донесли дев'ятнадцять років незадовго до сутички між моїм власником та карором."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:923
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:890
+msgid "через кілька років володар зустрів того дивного чоловіка неподалік звідси, поблизу переправи, проте йому вдалося втекти. зараз же він знову тут, ця битва обіцяє бути цікавою..."
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:894
 msgid "Чаклуне, усе поле бою знає про нашу присутність."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:929
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:900
 msgid "А чому ж так сталося, Гараліне? Правильно, бо твоє кляте закляття було надто гучне! Я не здивуюся, якщо його чули й в Південній Бухті!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:930
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:901
 msgid "Бачить Світло, це ледь не вперше, коли я повністю згоден з тобою, Зегаме — закляття й справді привабило надто багато ворожої уваги. Проте навіть так у нас є перевага — погляньте, на того темного чаклуна неподалік: він вже встиг відіслати майже всі свої війська до стін Скархейну і залишився майже один."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:933
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:904
 msgid "Бачить Світло, виною цьому очевидно є моє закляття, яке привабило надто багато ворожої уваги. Проте навіть так у нас є перевага — погляньте, на того темного чаклуна неподалік: він вже встиг відіслати майже всі свої війська до стін Скархейну і залишився майже один."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:935
-msgid "Вб'ємо його й зможемо розгорнути війська."
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:906
+msgid "Вб'ємо його швидко й зможемо розгорнути війська."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:936
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:907
 msgid "Гарна думка, а подальший план дій обговоримо вже в таборі!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:937
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:908
 msgid "Аґа... Замочимо етого... етого галасливого чаклуна, прямо моєйу булавою це зроблю!"
 msgstr ""
 
 #. [message]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:942
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:947
+msgid "Відтепер військами Графа Едвара керуєте ви. Ви отримаєте контроль над ними як тільки почнеться ход їхньої сторони."
+msgstr ""
+
+#. [message]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:972
+msgid "Тепер військами Графа Едвара керує штучний інтелект. Будьте обережні, він може робити дивні дії!"
+msgstr ""
+
+#. [message]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:983
 msgid "У цьому сценарії від ваших союзників очікуються доволі складні дії, з якими вони можуть не впоратися самостійно, тому ви маєте можливість обрати, хто керуватиме ними:"
 msgstr ""
 
 #. [option]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:945
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:986
 msgid "Я направлятиму війська Графа Едвара своїми порадами."
 msgstr ""
 
 #. [message]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:954
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:995
 msgid ""
-"Тепер оборонцями Скархейну керуєте ви та отримаєте контроль над ними як тільки завершите свій хід.\n"
+"Відтепер оборонцями Скархейну керуєте ви. Покажіть цим західнякам на що ви здатні!\n"
 "						\n"
 "<i>Пам'ятайте, що ви завжди можете змінити свій вибір скориставшись меню за правою кнопкою миші.</i>"
 msgstr ""
 
 #. [option]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:966
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1007
 msgid "Я довіряю оборонцям Скархейну, вони впораються без моїх порад."
 msgstr ""
 
 #. [message]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:975
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1016
 msgid ""
 "Тепер військами Графа Едвара керує штучний інтелект. Будьте обережні, він може робити дивні дії!\n"
 "						\n"
@@ -9009,42 +9044,42 @@ msgid ""
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1010
-msgid "Прокляття, мені потрібні люди, мерці, хто-небудь і негайно! Вони збираються мене вбити!"
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1037
+msgid "Мені й справді потрібні люди, мерці, хто-небудь і негайно! Вони збираються мене вбити!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1012
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1039
 msgid "Принцесо, ти ж збираєшся надіслати підкріплення на південь від переправи?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1013
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1040
 msgid "ні, я не допомагатиму боягузу, що боїться смерті... і не клич мене цим найменням."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1014
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1041
 msgid "Та... та як ти смієш! Наш Владика дізнається про це!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1015
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1042
 msgid "що він зробить, вб'є мене?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1023
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1050
 msgid "як кумедно, погрожував мені, а помер сам..."
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1027
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1054
 msgid "Королівський посланець — близько 20 років"
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1027
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1054
 msgid ""
 "<i>З далекої Південної Бухти привіз до обложеної твердині Скархейн вісті від Короля Аддрорана IV. Невдовзі помер від отриманих в дорозі поранень.\n"
 "	\n"
@@ -9052,12 +9087,12 @@ msgid ""
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1030
-msgid "Юддмила — 83 роки"
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1057
+msgid "Рхелла — 83 роки"
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1030
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1057
 msgid ""
 "<i>Тут лежить мати двох дітей та пращурка кількох поколінь. Кінець життя її був сповнений страждань, проте хай зараз вона спочиває.\n"
 "	\n"
@@ -9065,37 +9100,37 @@ msgid ""
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1034
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1061
 msgid "Велетню зі Зл..аних .ір — вік не......й"
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1034
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1061
 msgid "<i>Іс..тою б.в не.юдс.кою, п..те . .е ..ірячою. І ... дур..й був т. лед.ч.й, в ча.. потр.би до... ... посл...в сво.. с.лою.</i>"
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1035
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1062
 msgid "<i>(Ця могила настільки давня, що на ній не збереглося жодної цілої літери).</i>"
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1037
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1064
 msgid "Аш..ара — 16 ..к.в"
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1037
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1064
 msgid "<i>Хо...ра .ої..лька та влучний стр..ець, про.. се н. ...регло її ..д меча в..л....рця, .ай б.де ... пр....тий</i>"
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1039
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1066
 msgid "Графиня Аввиль — 35 років"
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1039
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1066
 msgid ""
 "<i>Вічним сном навіки спить тут опора та любов моя, Аввиль Чорнотопська.\n"
 "	\n"
@@ -9103,32 +9138,32 @@ msgid ""
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1042
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1069
 msgid "Аленсель Божевільний — більше 60 років"
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1042
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1069
 msgid "<i>Тут покоїться безхатько, що веселив усе місто байками про свої неймовірні пригоди та подвиги.</i>"
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1043
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1070
 msgid "Купець Хиван — 42 роки"
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1043
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1070
 msgid "Благочестивий чоловік, був забитий на смерть жадібними волоцюгами. Їх повісили наступного ранку."
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1044
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1071
 msgid "Брати з Високого Пагорбу"
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1044
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1071
 msgid ""
 "<i>Під цією плитої поховані мої сини, що загинули від закляття західняцького чаклуна. Хай славиться Граф Едвар за те, що зміг врятувати їхні тіла!\n"
 "	\n"
@@ -9140,12 +9175,12 @@ msgid ""
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1052
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1079
 msgid "Об..онцю Ска..е.ну (<i>сколото</i>)"
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1052
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1079
 msgid ""
 "<i>З...яки самоп.жертві твоїй, війська в.личного К...ля Нашого, Ґворва.. .Х., змогли ....... до твердині .кар...ну та про.......ти ... там.\n"
 "	\n"
@@ -9153,314 +9188,670 @@ msgid ""
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1055
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1082
 msgid "Веснотаб Аланс — 16 років"
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1055
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1082
 msgid "<i>Хоч яким неідеальним він був, гірко за ним сумуватимуть.</i>"
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1056
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1083
 msgid "Амакарі Скірван — 25 років"
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1056
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1083
 msgid "<i>Солдат гарнізону, загинув у бою з бандитами на північній заставі. Його дружина та троє дітей пам'ятатимуть його до кінця днів.</i>"
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1060
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1087
 msgid ""
 "Громадські копальні Скархейну.\n"
 "Будь-хто з обома руками матиме можливість заробити тут собі на хліб."
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1062
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1089
 msgid "Будь-яким ворогам Чорнотопу буде дано рішучу відсіч, як ти з таких — повертай негайно заради ж свого блага."
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1063
-msgid "Схід сонця приведе до воріт славетного Скархейну, захід вже вкаже до поселень поблизу витоку Старотічної ріки."
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1090
+msgid "Схід сонця приведе до воріт славетного Скархейну, захід же вкаже до поселень поблизу витоку Старотоку."
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1064
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1091
 msgid "Далі по цій дорозі лежать землі Вудлендору. Будь-який люд Чорнотопу, що перейде цю межу, вважатиметься загарбниками та ворогами."
 msgstr ""
 
-#. [scenario]: id=07_Scarhane
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1215
+msgid "Шановний Долманнумбіле, сподіваюся, що ви відчуваєте полегшення, нарешті діставшись до поверхні? Бо ж бачить Світло, все ж досі вважаю я немудрою та нерозсудливою вашу мандрівку з нами."
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1217
+msgid "Листяних скрони вершин наших радість відчувають знову, нарешті сонце бо ж їх теплом живить..."
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1244
+msgid "Ох, це було зовсім не складно, просто звичайний переляканий некромант. О, Вчителю, погляньте — в нього є руці є якась книга!"
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1246
+msgid "Чаклуне, табір захоплено. Також у ворога була книга."
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1248
+msgid "Нарешті, на одного чаклуна менше! Гей, Гараліне, ти читати вмієш — не хочеш поглянути, що це в нього таке?"
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1250
+msgid "Аґа... Вот і помєр етат чаклун! А шо це?.. книга чи шо?"
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1252
+msgid "Корені знищили наші довногого нечистого, замля радіє, з нею і ми. Та це що мав за річ при собі він?"
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1254
+msgid "Пане Гараліне, темного чаклуна знищено, табір наш! А ще погляньте, в нього була якась книга."
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1256
+msgid "Виглядає, ніби якась дуже старовинна книга. Гадаю, мені варто подивитися на неї поближче."
+msgstr ""
+
+#. [else]
 #: Chasing_the_Light/scenarios/07_Scarhane.cfg:1260
+msgid "Нарешті ми змогли позбавитися від нечистого чаклуна та захопити його табір. А що це в нього?"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1265
+msgid "Бачить Світло, вже багато років я не зустрічав їхніх книг з закляттями. Я спробую використати магію, щоб отримати всі її знання одразу, лише доторкнувшись... (простягає руку)."
+msgstr ""
+
+#. [message]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1279
+msgid "<b>ǂʨƪʨȣƛƔȡǽȵƪɮ! ǽȵƪȵƪɮʑƔȡ! ƪɮʑȣƢƔȡǂ! ʨƪʨƢȣǂʨƪʨƛ! ǂʨƪʨȣƛƔȡǽȵƪɮ! ǽȵƪȵƪɮʑƔȡ! ƪɮʑȣƢƔȡǂ! ʨƪʨƢȣǂʨƪʨƛ!  ǽȵƪȵƪɮʑƔȡ! ƪɮʑȣƢƔȡǂ! ʨƪʨƢȣǂʨƪʨƛ! ǂʨƪʨȣƛƔȡǽȵƪɮ! ǽȵƪȵƪɮʑƔȡ! ʨƪʨƢȣǂʨƪʨƛ! ǂʨƪʨȣƛƔȡǽȵƪɮ! ƪɮʑȣƢƔȡǂ! ʨƪʨƢȣǂʨƪʨƛ!  ǽȵƪȵƪɮʑƔȡ! ƪɮʑȣƢƔȡǂ! ʨƪʨƢȣǂʨƪʨƛ! ǽȵƪȵƪɮʑƔȡ! ƪɮʑȣƢƔȡǂ!</b>"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1283
+msgid "(відсахується) Тс, хай помилує мене Світло: ця книга сповнена нечистої західняцької магії та їхніх ритуалів! Прокляття..."
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1284
+msgid "Вчителю! На що ви розраховували, заглядаючи в західняцьку книгу — вони ж всі, певно, прокляті!?"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1285
+msgid "Не всі їхні закляття є спотвореними темною магією, Даеоло, тож ми маємо перевіряти кожну подібну книгу, раптом знайдемо щось корисне для служіння Світлу. Проте щодо цієї, єдиним розважливим рішенням буде негайно знищити її!"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1286
+msgid "Проти би зазвичай знищення з дерев речей, як і рід наш, ми створених були б, згодні але ми. Відчуваємо її звідси темряву бо ж навіть ми."
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1323
+msgid "quietly^<i>знання боягуза померли з його смертю. проте шкода — його книга містила сильні чари, вони могли знадобитися чаклуну цього острова.</i>"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1324
+msgid "Вчителю, вам не здається, наче за нами хтось слідкує здалля? Я відчуваю на собі чийсь невидимий погляд..."
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1325
+msgid "Ім'ям Світла, Даеоло, моє чуття хоч і мовчить, проте я теж відчуваю якусь чужорідну магію навколо себе, наче... Чи може це бути один з клятих Владик-Лічів?"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1326
+msgid "О ні, Вчителю, тоді це жахливо — ці кляті західняки, певно, знають про кожен наш крок та все, що ми збираємося робити!"
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1333
+msgid "Даеоло, це неважливо. Ми втрачаємо час."
+msgstr ""
+
+#. [else]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1336
+msgid "Чаклунко, це неважливо. Ми втрачаємо час."
+msgstr ""
+
+#. [scenario]: id=07_Scarhane
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1449
 msgid "аргх... мене не вбивали магією надто давно, це... незвично?... і чи повернуся знов?"
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1266
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1455
 msgid "звичайний вогонь... ти точно граєш за правилами?... хай там як, я повернуся... акх..."
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1271
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1460
 msgid "укгх... мечі та леза — найчастіша причина моїх смертей... тож вони, не діють."
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1276
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1465
 msgid "гадаєш, звичайний спис може мене зупинити?.. на жаль, ні. я повернуся..."
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1281
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1470
 msgid "айх... знову мої кістки трощать тупими ударами... навіть після стількох смертей... це найгірше..."
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1286
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1475
 msgid "немагічний мороз... ти точно граєш за правилами?... хай там як, я повернуся... акх..."
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1291
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1480
 msgid "священний вогонь... ти точно граєш за правилами?... хай там як, я повернуся... акх..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1306
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1495
 msgid "За битви звичайної, спалити її нечестиве тіло наказав би я, проте маємо ми відходити на південь, тому лиш розтрощу черепа, щоб точно не повстала як черговий мрець!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1319
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1508
 msgid "Така доля має спіткати <i>усіх</i> клятих чаклунів та відьом на цьому Острові."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1334
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1523
 msgid "Мій володарю, західняцьку чаклунку подолано. Але вона казала якісь занадто дивні слова перед смертю, чи варто нам позбавитися від її тіла?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1335
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1524
 msgid "За битви звичайної, спалити її нечестиве тіло наказав би я, проте маємо ми відходити на південь, тому лиш розтрощіть черепа, щоб точно не повстала як черговий мрець!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1348
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1537
 msgid "Гарний удар, мій слуга. Така доля має спіткати <i>усіх</i> клятих чаклунів та відьом на цьому Острові."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1355
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1544
 msgid "Бачить Світло, ця жінка була ще дивнішою за тих пришелепкуватих темних адептів в Естені. Проте хай, вона вже мертва й навряд чи повернеться, хіба що як бездумний труп."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1357
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1546
 msgid "Вчителю, ви чули це? Ця чаклунка розмовляла так, ніби її вбивали раніше. Як гадаєте, що це може бути?"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1358
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1547
 msgid "Бачить Світло, ця жінка була й справді дивною, дивнішою за тих пришелепкуватих темних адептів в Естені. Проте хай, вона вже мертва й навряд чи повернеться, хіба що як бездумний труп."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1360
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1549
 msgid "Безглузда маячня."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1362
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1551
 msgid "Ти бачив оце, Гараліне? Схожу, що західняцьке чаклунство доводить цих нелюдів до божевілля! Я сподіваюся, що <i>твоя магія</i> не така, вірно ж?"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1363
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1552
 msgid "Ім'ям Світла, Зегаме, мені здається, що ти не вмієш сприймати нічого нового. Скільки десятків разів чи задав мені це питання?"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1365
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1554
 msgid "Ґа?... Шо, нє нравіться м'я булава?.. Ґе-ґе, тоді на тобі по голові іщьо!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1378
-msgid "Гарний удар, старий. Молодший бу в би ти хай би на років сорок, узяв би без роздумів до війська свого."
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1567
+msgid "Гарний удар, старий. Молодший був би ти хай би на років сорок, узяв би без роздумів до війська свого."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1379
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1568
 msgid "Ґа, шо?... Не чую я отсюдова..."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1381
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1570
 msgid "Коріння знищило наше тебе, не повстанеш мрець як навіть більше..."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1383
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1572
 msgid "Що це з цією жінкою не так, вона навіжена?"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1384
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1573
 msgid "Бачить Світло, ми не маємо про це думати — вона вже мертва й навряд чи повернеться, хіба що як бездумний труп."
 msgstr ""
 
+#. [message]: speaker=unit
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1682
+msgid "плати"
+msgstr ""
+
+#. [option]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1684
+msgid "Так. (give {ON_DIFFICULTY 15 20 20 } gold)."
+msgstr ""
+
+#. [option]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1701
+msgid "Ні"
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1712
+msgid "Я візьму"
+msgstr ""
+
+#. [else]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1717
+msgid "відмова"
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1726
+msgid "відмова короля"
+msgstr ""
+
 #. [message]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1473
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1763
+msgid "Гаралін вже має книгу з кращою версією цього закляття, тому він не дізнається нічого нового."
+msgstr ""
+
+#. [message]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1769
 msgid "Наступного сценарію Гаралін знатиме ще одне додаткове закляття — Polymorph."
 msgstr ""
 
 #. [message]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1585
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1841
+msgid "Наступного сценарію Гаралін знатиме не лише Polymorph, а й його розновид у вигляді унікальної техніки перетворення на невідому броньовану істоту."
+msgstr ""
+
+#. [message]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1847
 msgid "Наступного сценарію Гаралін знатиме ще одне додаткове закляття — Polymorph, включаючи унікальну техніку перетворення на невідому броньовану істоту."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1962
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2007
+msgid "Клянуся Світлом, ті двоє західняків володіють якимось вкрай незвичайним закляттям — вони щойно перетворилися на ведмедя та якусь броньовану потвору!"
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2013
+msgid "Та невже, Гараліне, перетворилися на тварин? А от мені здавалося, що вони завжди такими були!"
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2014
+msgid "Пане Зегаме, я часом навіть й не знаю чи ви жартуєте..."
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2019
+msgid "Однак це й справді дивовижне закляття... Вчителю, а ви можете вигадати щось схоже, використовуючи магію Світла? Нам би знадобилась сила ведмедя!"
+msgstr ""
+
+#. [else]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2022
+msgid "Вчителю, а ви можете вигадати щось схоже, використовуючи магію Світла? Нам би знадобилась сила ведмедя!"
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2024
+msgid "Гадаю, що я зможу скопіювати техніку, якщо ми роздобудемо хоч книгу з цим закляттям. Щось підказує мені, що вони, як і інші західняцькі чаклуни, мають при собі щось подібне."
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2193
+msgid "Караван з біженцями Скархейну врятовано, й справа вже близька до завершення — залишився останній!"
+msgstr ""
+
+#. [else]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2196
 msgid "Караван з біженцями Скархейну врятовано, однак справа ще далека від завершення — залишилось ще $caravan_count|."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1965
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2200
 msgid "Радіє серце моє, що змогли врятувати усіх біженців. Потóму наказую усім своїм військам відходити до глибин копальні!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1967
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2202
 msgid "А ми й надалі прикриватимемо відхід скархейнців, саме так, Вчителю?"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:1968
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2203
 msgid "Все вірно, Даеоло. Завдання Короля полягає в тому, щоб врятувати Графа Чорнотопу та усіх, хто буде з ним."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2003
-msgid "ТЕСТ мої люди ще лишились"
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2253
+msgid "Лише боягуз кидатиме своїх підлеглих на призволяще — не відійду я, поки всі люди мої до єдиного опиняться в безпеці."
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2254
+msgid "Хвала і честь Графу Чорнотопу, саме таким має бути справжній володар!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2009
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2260
 msgid "Я ліваю"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2017
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2276
 msgid "Вчителю, що це був за звук? Мені він здався вкрай схожим на ваше нове закляття..."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2018
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2277
 msgid "Не знаю, Даеоло, проте клянуся Світлом — моє чуття лише каже, що тільки що відбулося щось вкрай дивне."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2019
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2278
 msgid "О ні, Гараліне, ти чудово знаєш <i>що</i> саме сталося..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2044
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2290
+msgid "Слава цим дивним чаклунам та Графу, я вже й не думав, шо виберусь з сього капкану живим!"
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2347
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2390
 msgid "Бачить Світло, що ми не можемо відступити до шахт поки всі скархейнці, включно з Графом Едваром, не опиняться в безпеці."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2056
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2359
 msgid "TEST альорт, це зрада!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2078
-msgid "ТЕСТ ще не всі КАРАВАНИ евакуйовані"
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2393
+msgid "Ні кроку назад, поки не буде врятовано усіх немічних людей Скархейну! Маємо ми довести до копалень каравани усі, $caravan_count| лишилося ще."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2092
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2408
 msgid "ТЕСТ ПЕРЕМОГА"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2111
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2423
+msgid "Аааааа, помри, скотина! ЗА ЧОРНОТОП!!!"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2433
+msgid "Зараза, зараза! Ця потвора атакує, я труп!"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2434
+msgid "Ні кроку назад, селюк! Надії нема, ти помреш, але принаймні зроби це з честю!"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2457
 msgid "Гараліне, духи на сході."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2112
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2458
 msgid "quietly^<i>Настільки небагатослівно? Клянуся Світлом, все більше і більше з цим Голосом щось не так. мене вкрай погане передчуття...</i>"
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2235
-msgid "quietly^<i>так, тікай до свого жалюгідного владики, боягузлива істото; у тебе був шанс нарешті померти, проте знову ти його втратив...</i>"
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2581
+msgid "quietly^<i>так, тікай до свого жалюгідного владики, бездушно істото; у тебе був шанс нарешті померти, проте знову ти його втратила...</i>"
 msgstr ""
 
 #. [scenario]: id=07_Scarhane
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2236
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2582
 msgid "Те літаюче чудовисько виглядало... вкрай огидно та небезпечно. Як добре, що воно вирішило покинути своїх товаришів та просто втекти!"
 msgstr ""
 
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2684
+msgid "Чудово, ми змогли дістатися до цього величезного кладовища, воно гарно допоможе поповнити наші ряди. Ім'ям нашого Володаря Ленвана наказую вам — ПОВСТАНЬТЕ!"
+msgstr ""
+
+#. [else]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2687
+msgid "Тутешні кістяки та трупи, ви спочиваєте тут, ви точно тут — я відчуваю вас! Повстаньте та служіть Володарю Ленвану!"
+msgstr ""
+
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2384
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2690
+msgid "Володар Ленван? Я ніколи не чула про такого мерця, але схоже зараз ми боремося проти саме його військ!"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2691
+msgid "Ім'ям Світла, Даеоло, не згадуй цього навіть імені цього огидного мерця. Багато років тому, коли я мандрував Островом, біля цієї ж пере-... Прокляття, погляньте на кладовище!"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2698
+msgid "Рхелла"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2708
+msgid "Гонець Гліззаран"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2710
+msgid "Barark the Giant"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2712
+msgid "Забутий воїн"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2714
+msgid "Countess Avvil"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2717
+msgid "Аленсель Божевільний"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2719
+msgid "Ashevara of Scarhane"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2721
+msgid "Merchant Khivan"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2723
+msgid "Захисник Переправи"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2726
+msgid "Унер"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2728
+msgid "Маеддос"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2730
+msgid "Енис"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2732
+msgid "Лелін"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2735
+msgid "Веснотаб Аланс"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2738
+msgid "Амакарі Скірван"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2744
+msgid "О ні, кладовище Скархейну, здається, було найбільшим на всьому Острові — ворогам вдалося осквернити давні могили та отримати велике підкріплення. Як шкода, що ми не змогли їх зупинити вчасно!"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2745
+msgid "Клянуся Світлом, навряд чи ми б змогли це зробити. Як я починав казати, мені не пощастило зустріти привид оцього 'Ленвана', як раз поблизу цієї ж переправи, тому я знаю про нього не з чуток."
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2746
+msgid "Жах, ви ніколи про це не розповідали! І що ви зробили, Вчителю, ви прогнали його за допомогою магії Світла, чи не так?"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2747
+msgid "Ні, я не зміг. Я тікав настільки швидко, що навіть і не помітив як опинився глибоко в хащах Древнього Лісу. Хоч це був всього лише безтілесний дух, проте навіть так він був занадто сильним."
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2748
+msgid "Неймовірно, Вчителю, навіть ви... навіть ви не змогли нічого з ним зробити?"
+msgstr ""
+
+#. [event]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2749
+msgid "Ти диви, схоже, що наш чаклун перелякався звичайного привида. Отакої!"
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2851
 msgid "Певно, проклятий тисячу разів ворог отримав чергові підкріплення, раз чуємо ми тяжкий поклик сурми... Однак не страшіться, воїни — хай що стане зі Скархейном, нас їм ніколи не подолати!"
 msgstr ""
 
-#. [then]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2410
-msgid "Чаклуни, мертві встають після смерті. Самі."
+#. [message]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2880
+msgid "Ґраааа-аргх!!!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2411
-msgid "Ох, це й справді щось надзвичайно жахливе, сержанте — у Естені ми зустрічали некромантів, що підіймали тіла нещодавно загиблих людей одним лиш своїм дотиком, однак тут темні чаклуни знаходяться вони надто далеко..."
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2884
+msgid "Мертві встають після смерті. Самі."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2412
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2885
+msgid "Ох, це й справді щось надзвичайно жахливе, сержанте — у Естені ми зустрічали некромантів, що підіймали тіла нещодавно загиблих людей одним лиш своїм дотиком, однак тут темні чаклуни знаходяться надто далеко..."
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2886
 msgid "Бачить Світло, Даеола має рацію. Мені теж невідомі причини та й чуття моє мовчить, проте можу припустити, що ці нечестиві діяння є справою рук одного з наймогутніших 'Владик-Лічів', хоча й не можу здогадатися якого саме..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2413
-msgid "Сподіваймося, він не поряд. Також слідкуємо за пораненими."
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2887
+msgid "Сподіваймося, він не поряд. Також слідкуємо за важкопораненими."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2464
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2914
+msgid "Former Ally"
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2922
+msgid "Fallen Defender"
+msgstr ""
+
+#. [else]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2926
+msgid "Wesfolk Servant"
+msgstr ""
+
+#. [then]
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2963
 msgid "Прокляття, нам не вдалося захопити ворожий табір вчасно. Я відчуваю, що тепер ми ніяк не зможемо розгорнути наші сили і вороги просто задавлять нас числом!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2467
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2966
 msgid "Підкріплення ворога прибувають, наче їм нема кінця, а ми досі не споромоглися дістатися до копалень на півдні, ще й ряди наші спорожніли. Схоже, нам не залишається вибору іншого, окрім як хоробро стояти на смерть та знищити стільки проклятих західняків, скільки зможемо!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2468
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2967
 msgid "Прокляття, Граф має рацію — ми занадто тягнули з відходом і нам вже не вибратися звідси. Королівське завдання провалене, а з ним втрачено і наші надії..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2481
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2980
 msgid "Цілий караван з беззахисними біженцями дістався проклятим західнякам на поживу їхнім огидним мерцям! Мало того, що ми втратили багатьох людей Острову, так ще й вороги незабаром отримають велике мертве підкріплення — це неприпустимо!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2497
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2995
 msgid "Аргх... І це все, на що ти здатен? Своєю атакою викликав лише мій правед-... укгггггх..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2509
+#: Chasing_the_Light/scenarios/07_Scarhane.cfg:2997
 msgid "Хай помилує нас Світло — прокляті західняки-таки дісталися до Графа Чорнотопу! Ми не змогли нічим зарадити і тому Королівське завдання провалено!"
 msgstr ""
 
@@ -9471,445 +9862,445 @@ msgid "Quiescence"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:201
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:202
 msgid "Вчителю, почекайте, будь ласка, почекайте мене! Ви ж не збираєтеся наздоганяти Графа наодинці?!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:210
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:211
 msgid ""
 "...\n"
 "(тяжко зітхає)"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:212
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:213
 msgid "Ім'ям Світла, Даеоло... Ти не маєш йти за мною: ти навіть уявити не можеш, яке це матиме наслідки для тебе — я не допущу, щоб моя улюблена учениця стала ворогом Південної Бухти. Негайно повертайся назад, допоможи нашим пораненим і забудь за цю розмову!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:216
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:217
 msgid "Вчителю, о ні, невже ви..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:223
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:224
 msgid "Ні-ні, навіть думати не хочу про це.. ... Невже все дійшло до того, що це <i>я</i> вам кажу, що ви помиляєтесь і поводитеся необачно!.."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:236
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:237
 msgid "Я теж дуже зла на Графа за його вчинок, проте ми <i>Маги Світла</i> та маємо нести лише добро! Там, у Скархейні, ми розмовляли з ним, мені відома причина його зради, вона не оповита темрявою! Будь ласка, Вчителю, я підкажу як правильни-...!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:239
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:240
 msgid "Я теж дуже зла на Графа за його вчинок, проте ми <i>Маги Світла</i> та маємо нести лише добро! Моє серце відчуває — його зрада має сумну причину, що не оповита темрявою! Будь ласка, Вчителю, я підкажу як правильни-...!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:244
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:245
 msgid "<b>ГОДІ!</b> Я вб'ю цього зрадника та всіх, хто буде разом з ним! Клянуся Світлом, має статися щось вкрай дивне, щоб я раптом змінив своє рішення!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:276
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:277
 msgid "Все ж цієї подорожі було достатньо, щоб ти нарешті подорослішала, Даеоло — твої слова, хоч і переповнені наївною добротою, не сказали нічого, окрім правди. Воістину, це не шлях Світла, проте чи можу я вчинити інакше..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:285
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:286
 msgid "Хоча, якщо трохи заспокоїтись, мені починає здаватися, що тут точно відбувається щось неймовірно дивне... Ще мить тому я відчував на собі надзвичайну вагу, наче чиясь невидима рука повільно душила мене, поки я не зайшов до цієї печерної зали і це відчуття зникло..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:286
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:287
 msgid "Ще й той клятий голос, який увесь шлях до Скархейну намагався мені завадити, повернути назад до святилища в Древньому Лісі... але зараз він підживлював мою справедливу лють та змушувати переслідувати Графа, наче хотів, щоб я лишився оди-... О ні, хай помилує мене Світло!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:347
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:348
 msgid "quietly^<i>Цього разу це не зовсім не схоже на ілюзію, наче все довкола... і справді зникло...</i>"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:351
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:352
 msgid "ІМ'ЯМ СВІТЛА, ПОКАЖИ СЕБЕ НАРЕШТІ, ГОДІ ТЯГНУТИ!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:437
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:438
 msgid "Ось ми й нарешті зустрілися, Гараліне... Чи відомо тобі, що минуло вже більш ніж 34 роки з того злощасного дня, як прокляті західняки висадилися на Зелений Острів та розпочали свою війну проти людей Світла?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:438
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:439
 msgid "(відсахується) Щ-що це... що ти таке?.."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:573
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:578
 msgid "Гараліне, бачить Світло, необачно було гадати, що на мене подіють <i>МОЇ</i> ж закляття!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:619
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:624
 msgid "Уркгх... Бачить Світло... я не програю тобі.... кргх..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:846
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:851
 msgid "Мені огидно називати вас Вчителем."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:854
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:859
 msgid "На дерев недруга двоногий перетворився немудрий."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:862
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:867
 msgid "Чаклуне, ти зрадив Королівське завдання."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:870
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:875
 msgid "Ти розчарування, Гараліне."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:878
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:883
 msgid "Звичайний люд ніколи не прийме ні тебе, ні твою 'магію', поганцю."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:886
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:891
 msgid "темрява та гнів охопили тебе, ти такий як і ми."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:976
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:981
 msgid "Хоч Гаралін і здобув довгоочікувану перемогу, він не зміг ні насолодитися нею, ні осягнути її — він, ніби, застряг поза реальністю, з якої його вирвав проклятий Голос задля втілення своїх зловісних планів. Маг зовсім нічого не бачив, не чув, не відчував і навіть не мав жодних думок в голові, наче його й не існувало зовсім."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:982
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:987
 msgid "Здавалося, що в такому стані повільно минали години, дні, тижні, місяці, роки, а може й навіть цілі століття, доки в якийсь момент неіснуючу тишу не прорізали слова; це були питання, проте чиї, від кого та кому?"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:988
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:993
 msgid "А чи справді він переміг, чи насправді іншу душу було остаточно знищено? Як це можна підтвердити чи спростувати?"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:994
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:999
 msgid "Химерна битва в підсвідомості, хто задав їй такі правила? Вона й справді щось вирішувала і чи відбулася вона взагалі?"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1000
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1005
 msgid "А якщо й відбулася, то <i>що саме</i> вийшло переможцем? І найголовніше — історія добігла кінця чи боротьбу ще не закінчено?"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1009
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1014
 msgid "Далі ж пролунав <i>голос</i>, саме не ефімерні питання чи вигадані думки, а справжній людський голос, що до того ж звучав вкрай тривожно і навіть налякано. Той, що почув його, одразу ж впізнав в ньому вкрай близьку та дорогу собі людину, хоч ще й не міг усвідомити яку саме..."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1058
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1063
 msgid "О ні, що тут сталося? Невже... невже це зробив Граф Едвар?!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1070
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1075
 msgid "(падає на коліна поряд з тілом Гараліном) ВЧИТЕЛЮ! Вчителю, будь ласка, прокиньтеся! Прокиньтесь, я вас благаю!..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1085
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1090
 msgid "(розплющує очі) Кха... Невже нарешті... Нарешті мені вдалося... Здобути свободу..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1088
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1093
 msgid "Ох, хвала Світлу, ви ще живі! Однак ви прямо стікаєте кров'ю; я спробую врятувати вас своєю магією зцілення!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1097
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1102
 msgid "Дякую... Твоя магія... Вона завжди була потужною, проте... Її недостатньо..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1098
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1103
 msgid "Мені боляче визнавати, але це поки все, чим можу зарадити. Битва в Скархейні забрала багато моїх сил, залишків ледве вистачає, щоб підтримувати ваше життя та оберіги на вході до цієї копальні!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1110
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1115
 msgid ""
 "(тяжко зітхає)\n"
 "Скажіть, Вчителю, ви-таки билися з Графом Чорнотопу, це він наніс вам ці рани?!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1116
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1121
 msgid "Не він... Я боровся проти... Самозванця... Мотиви якого мені так і не вдалося осягнути... Бачить Світло... На жаль, я не мав іншого вибору..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1117
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1122
 msgid "Вчителю... Ви кажете щось вкрай дивне та незв'язне, однак... Певно це пов'язано з вашими тяжкими ранами? Ви можете розповісти мені все потім, коли вам стане краще та <i>я мирно владнаю</i> все з Графом Едваром."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1118
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1123
 msgid "Я... Не можу розповісти більше... Не можу ніяк, тому що... Ні ... Скажу лише одне..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1123
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1128
 msgid "Даеоло... Пробач мені... Я піддався емоціям та відкинув <i>твою</i> на диво мудру пораду... Пробач..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1124
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1129
 msgid "Вчителю, ви не маєт-... Зачекайте, хтось наближається!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1191
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1196
 msgid "quietly^<i>Бачиться мені, що чаклуни наші змогли виплутатися з халепи та відійти в глибини печери цієї. Проте де ж всі інші їхні воїни, чи вони полягли, не змігши вчасно врятуватися?</i>"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1192
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1197
 msgid "Прокляття, бачить Світло... Не можу навіть поворухнутися. Як невчасно..."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1209
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1214
 msgid "Прикро в такому становищі бачити нашу єдину надію — найсильнішого мага Острову, Гараліна Першого... Принаймні так про тебе казав завжди мій брат улюблений, слова чиї я не смію оскаржувати. Але не впадай у відчай, тому що мої вірні гвардійці подбають про тебе. (подає знак охоронцям)"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1210
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1224
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1215
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1229
 msgid "Зрадники... Не наближайтеся, бо... кхе-кхе... Бачить Світло, перетворю вас на попіл!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1223
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1228
 msgid "Прикро в такому становищі бачити нашу єдину надію — найсильнішого мага Острову, Гараліна Першого... Принаймні так про тебе казав завжди мій брат улюблений, слова чиї я не смію оскаржувати. Але не впадай у відчай, тому що я та мій вірний гвардієць подбаємо про тебе. (подає знак охоронцю)"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1228
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1233
 msgid "Прикро в такому становищі бачити нашу єдину надію — найсильнішого мага Острову, Гараліна Першого... Принаймні так про тебе казав завжди мій брат улюблений, слова чиї я не смію оскаржувати. Але не впадай у відчай, тому що без зволікань подбаю я про тебе."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1229
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1234
 msgid "Зрадник... Не наближайся, бо... кхе-кхе... Бачить Світло, перетворю <i>тебе</i> на попіл!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1245
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1250
 msgid "Вчителю, не гарячкуйте, вам не можна рухатися! Дайте мені самій розібратися з ним!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1258
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1263
 msgid "Графе Чорнотопу, я йду шляхами Світла та прагну нести добро людям Острову, тому спершу закликаю вас — складіть зброю та підіть з миром, не проливаючи більше крові! Інакше... я не хочу думати, що мені доведеться зробити з вами..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1259
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1264
 msgid "(трохи роздратований) Надто хоробра як для селянки та затворниці, проте як не химерно — змушений погодитися я з більшістю твоїх слів."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1272
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1277
 msgid "Залиште нас на самоті, гвардійці, не для вух та очей ваших розмова майбутня призначена."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1273
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1278
 msgid "Мій володарю, ми маємо зобов'язання пред нашим величним Королем Південної Бухти захищати вас. Хто буде тримати відповідь, як з вами станеться лихо?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1274
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1279
 msgid "Не варто випробовувати моє терпіння, воїни, воно не нескінченне!"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1296
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1334
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1301
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1339
 msgid "quietly^<i>Я маю вкрай погане передчуття щодо цього, нащо він відіслав свою варту? Невже гадає, що зможе ось так просто знищити нас наодинці, а потім доповісти Королю, що ми напали перші?</i>"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1310
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1315
 msgid "Залиш нас на самоті, гвардійцю, не для вух та очей твоїх розмова майбутня призначена."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1311
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1316
 msgid "Мій володарю, я маю зобов'язання пред нашим величним Королем Південної Бухти захищати вас. Хто буде тримати відповідь, як з вами станеться лихо?"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1312
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1317
 msgid "Не варто випробовувати моє терпіння, воїне, воно не нескінченне!"
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1340
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1345
 msgid "quietly^<i>Я маю вкрай погане передчуття щодо цього, нащо він прийшов сюди один? Невже гадає, що зможе ось так просто знищити нас наодинці, а потім доповісти Королю, що ми напали перші?</i>"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1354
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1359
 msgid "(відкидає зброю та схиляє коліно) Хоча й нечувано це, встаю я на коліно перед вами та щиро прошу прощення за свою необачну зраду. Я був настільки захоплений праведним гнівом на західняків та їхнє чаклунство, що він затьямарив мій розум, засліпив мене та змусив піти проти людей свого Острову та всього, за що стою."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1355
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1360
 msgid "Даю слово свого Королівського роду, що ніколи більше не буде вчинено ні мною, ні моїми людьми, нічого подібного та настільки ганебного."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1357
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1362
 msgid "quietly^<i>'Затьмарився розум'? Клянуся Світлом, мені вкрай знайоме це огидне відчуття! Невже це було... Ні-ні-ні, навряд, хоча це б пояснило чому ворота в копальню були заблоковані магією...</i>"
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1375
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1380
 msgid "Хоч мені відома причина вашої зради та я б хотіла щиро пробачити вам, Графе, на жаль, я не маю права зробити це — ваша зрада дорого нам коштувала, а найголовніше, вона посіяла недовіру, яку неможливо подолати словами."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1378
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1383
 msgid "Хоч як би мені хотілося вірити, що ваші слова щирі, та пробачити вам, Графе, на жаль, я не маю права зробити це — ваша зрада дорого нам коштувала, а найголовніше, вона посіяла недовіру, яку неможливо подолати словами."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1380
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1385
 msgid "Недовіра ваша має повне право на буття, чаклунко, цілком зрозуміло мені це. Випливає з неї проте лише те, що істинні наміри свої я можу довести лише своїми ділами."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1382
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1387
 msgid "quietly^<i>Моя учениця нарешті набралася достатньо мудрості, щоб казати такі розважливі речі?... Невже в цій копальні вона повелася краще за мене?... Хай там як хай благословить її Світло; я маю її підтримати...</i>"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1383
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1388
 msgid "Кхе-кхе... Графе... Священна клятва... Поклянися ім'ям самого Світла, що... кх-кх... Що ніколи не повстанеш супроти магів нашого... Нашого Зеленого Острову."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1396
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1401
 msgid "І якщо порушиш її... Кхе-кхе-КХЕ!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1409
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1414
 msgid "...Суддею тобі буду не я... Не Королі чи жодна інша людина, проте саме Світло!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1419
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1424
 msgid "Тримайтеся, Вчителю, я підтримую ваші сили!"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1432
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1437
 msgid "quietly^<i>Айх... Стає все важче й важче, ми маємо якнайшвидше взяти з Графа клятву, щоб я змогла присвятити всю свою увагу лікуванню Вчителя!</i>"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1434
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1439
 msgid "То що, Графе?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1435
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1440
 msgid "Гаразд, буде дано мною клятву цьому вашому 'Світлу', хоч і не вірю, що воно не є вашою чаклунською вигадкою."
 msgstr ""
 
 #. [then]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1442
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1447
 msgid "Усім серцем бажаю, щоб ви ніколи не відчули на собі його кари: на болотах Естену на-..."
 msgstr ""
 
 #. [else]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1445
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1450
 msgid "Усім серцем бажаю, щоб ви ніколи не відчули на собі його кари: вона має бути жах-..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1447
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1452
 msgid "Графе, повторюй... Повторюй за мною..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1449
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1454
 msgid "Omnis spiritus... Vitae.. Meae iurare... Numquam..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1461
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1466
 msgid "Omnis spiritus vitae meae iurare numquam."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1463
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1468
 msgid "...Ut Criminalibus... Actionibus... Contra magi... Lucis..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1475
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1480
 msgid "Ut criminalibus actionibus contra magi lucis."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1477
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1482
 msgid "Maledictus sum... Si ego... Conteram... Eam..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1489
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1494
 msgid "Maledictus sum, si ego conteram eam."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1490
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1495
 msgid "<b>OMNIS SPIRITUS VITAE MEAE IURARE NUMQUAM UT CRIMINALIBUS ACTIONIBUS CONTRA MAGI LUCIS. MALEDICTUS SUM, SI EGO CONTERAM EAM!</b>"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1506
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1511
 msgid ""
 "!...\n"
 "Дивовижний спалах цей, що, наче, блимнув звідусіль, це точно не ваше чаклунство, що ж це було тоді?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1508
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1513
 msgid "Cхоже, що сили Світла прийняли вашу клятву Графе та зобов'язалися слідкувати за її дотриманням. Тож тепер ви маєте прощення, принаймні моє."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1510
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1515
 msgid "quietly^<i>Так, я досі можу користуватися закляттями, але чи справді мені допомагає Світло? Чи може то все був черговий обман проклятого Голосу й магія не має сторін? Я.. спробую це з'ясувати...</i>"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1511
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1516
 msgid ""
 "Кх-кх... Не знаю чи це й справді працює... Проте мені тепер спокійніше від думки, що... що моїх учнів, <i>напевно</i>, оберігатиме саме Світло... І тебе, Даеоло...\n"
 "...\n"
@@ -9917,40 +10308,59 @@ msgid ""
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1514
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1519
 msgid "quietly^<i>Аргхх... Голова... Голова просто розколюється, укгх... Зараз, наче, знову провалюся в ніщо... Це все через злиття?..</i>"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1515
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1520
 msgid "Ох, Світло оберігатиме й вас, Вчителю, і моя магія теж! Однак я не розумію, чому ж ваш стан погіршується, я роблю все, що можу!?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1531
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1536
 msgid "Чаклунко, поміж моїх підданих є цілителі. Хоч не володіють вони магією, я пропоную тобі їхні знання та знаряддя, може вони стануть тобі в нагоді."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1542
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1547
 msgid "Так, вони зможуть допомогти впоратися з пораненнями тіла, однак я тепер відчуваю, що скільки їх не загоюй постійно з'являтимуться нові, тому що їхнє джерело є магічного походження. Гадаю, що я змо-..."
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1543
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1548
 msgid "Ґей, Вчителю, що таке!? Будь ласка, залишайтеся зі мною! Ви чує-...!?"
 msgstr ""
 
 #. [event]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1552
+#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1557
 msgid "...?"
 msgstr ""
 
-#. [endlevel]
-#: Chasing_the_Light/scenarios/08_Quiescence.cfg:1571
+#. [scenario]: id=09_New_Journey
+#. Нова подорож
+#: Chasing_the_Light/scenarios/09_New_Journey.cfg:6
+msgid "New Journey"
+msgstr ""
+
+#. [part]
+#. newlines at the beginning help to (depending on the screne size) center this vertically. The space at the end stops the last letter from getting cut off
+#. В гонитві за Світлом | Женучись за Світлом
+#. Частина Перша
+#: Chasing_the_Light/scenarios/09_New_Journey.cfg:25
 msgid ""
-"Story continued in:\n"
-"“Chasing the Light: Chapter III”"
+"<span font_family='Oldania ADF Std' size='90000'>\n"
+"\n"
+"\n"
+"<i>Story continued in: </i>\n"
+"“Chasing the Light: Chapter III”\n"
+" \n"
+"</span>"
+msgstr ""
+
+#. [side]
+#: Chasing_the_Light/scenarios/09_New_Journey.cfg:44
+msgid "Daeola's Wanderers"
 msgstr ""
 
 #. [scenario]: id=99_Playground
@@ -9965,12 +10375,12 @@ msgid "Islefolk"
 msgstr ""
 
 #. [message]: type=Mudcrawler,Giant Mudcrawler
-#: Chasing_the_Light/scenarios/99_Playground.cfg:271
+#: Chasing_the_Light/scenarios/99_Playground.cfg:291
 msgid "Буль-буль"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Chasing_the_Light/scenarios/99_Playground.cfg:276
+#: Chasing_the_Light/scenarios/99_Playground.cfg:296
 msgid "No spells unlocked!"
 msgstr ""
 
@@ -10014,14 +10424,14 @@ msgstr ""
 msgid "The rank of Grand Marshal is one of the most esteemed in the armies of humanity, and those who bear its title have survived many trials by fire, proving both their tactical wit and their considerable mettle at personal combat."
 msgstr ""
 
-#. [unit_type]: id=daeola_0, race=human, gender=female
+#. [unit_type]: id=Daeola_L0, race=human, gender=female
 #. [unit_type]: id=child, race=human, gender=male,female
 #: Chasing_the_Light/units/Daeola/Daeola_L0.cfg:8
 #: Chasing_the_Light/units/Others/ISLEFOLK_Child.cfg:4
 msgid "Child"
 msgstr ""
 
-#. [unit_type]: id=daeola_0, race=human, gender=female
+#. [unit_type]: id=Daeola_L0, race=human, gender=female
 #. [unit_type]: id=child, race=human, gender=male,female
 #. Звичайна людська дитина, що ще ви очікували тут прочитати?
 #: Chasing_the_Light/units/Daeola/Daeola_L0.cfg:18
@@ -10029,8 +10439,8 @@ msgstr ""
 msgid "An ordinary human child, what else did you expect to read here?"
 msgstr ""
 
-#. [unit_type]: id=daeola_1, race=human, gender=female
-#. [unit_type]: id=daeola_1_unarmed, race=human, gender=female
+#. [unit_type]: id=Daeola_L0_Apprentice, race=human, gender=female
+#. [unit_type]: id=Daeola_L0_Apprentice_Unarmed, race=human, gender=female
 #. [unit_type]: id=apprentice, race=human
 #. Будь-який маг починав свій шлях як ученик, бо ж самому без допомоги більш досвідченого чаклуна практично неможливо зрозуміти сутність магії та навчитися її основ, хіба що новачок має неймовірний талант або його веде вища сила
 #: Chasing_the_Light/units/Daeola/Daeola_L1.cfg:21
@@ -10039,12 +10449,12 @@ msgstr ""
 msgid "Any future mage begin their journey as an apprentice, because without the help of a more experienced sorcerer it's almost impossible to understand the essence of magic and learn its basics, unless the beginner has an incredible talent or is guided by a higher power."
 msgstr ""
 
-#. [unit_type]: id=daeola_2, race=human, gender=female
+#. [unit_type]: id=Daeola_L1_Mage, race=human, gender=female
 #: Chasing_the_Light/units/Daeola/Daeola_L2.cfg:8
 msgid "Light Mage"
 msgstr ""
 
-#. [unit_type]: id=daeola_2, race=human, gender=female
+#. [unit_type]: id=Daeola_L1_Mage, race=human, gender=female
 #. Ті, хто кличуться Магами Світла знаходяться на набагато більшому рівні розуміння цілительства та самого Світла, ніж Mage Healers і навіть White Mages. Вони, хоч і поки що можуть бути недостатньо мудрими, наївними чи мати мало досвіду, повністю посвятили своє життя та розум добру та допомозі нужденним, за що вони легко заслуговують повагу більшості людей Зеленого Острову.
 #: Chasing_the_Light/units/Daeola/Daeola_L2.cfg:23
 msgid "Those who are called Light Mages are on a much higher level of understanding of healing and the Light itself than Mage Healers and even White Mages. They may yet be lacking in wisdom, naive and have little experience, but they have devoted their lives and minds to goodness and helping those in need, and for this they easily earn the respect of most of the people of the Green Isle."
@@ -10164,6 +10574,7 @@ msgstr ""
 #: Chasing_the_Light/units/Mages/Rogue_Mage.cfg:35
 #: Chasing_the_Light/units/Mages/Shadow_Lord.cfg:69
 #: Chasing_the_Light/units/Mages/Shadow_Mage.cfg:45
+#: Chasing_the_Light/units/Wesfolk/Princess.cfg:72
 msgid "shadow wave"
 msgstr ""
 
@@ -10218,6 +10629,7 @@ msgstr ""
 
 #. [attack]: type=any
 #: Chasing_the_Light/units/Mages/Shadow_Lord.cfg:48
+#: Chasing_the_Light/units/Wesfolk/Princess.cfg:51
 msgid "astral blade"
 msgstr ""
 
@@ -10572,36 +10984,14 @@ msgstr ""
 msgid "A cluster of spider webs of unprecedented size, found deep underground, where no sane person would venture. One wonders how huge the beast must be to have created it."
 msgstr ""
 
-#. [unit_type]: id=bandit_axe, race=human
-#: Chasing_the_Light/units/Wesfolk/Bandit_Axe.cfg:4
-msgid "Wesfolk Warrior"
+#. [unit_type]: id=Undead Captain, race=undead
+#: Chasing_the_Light/units/Wesfolk/Captain.cfg:4
+msgid "Undead Captain"
 msgstr ""
 
-#. [unit_type]: id=bandit_axe, race=human
-#. Отримавши багато бойового досвіду, найкращі з західняцьких бійців отримують від свого Владики кращі обладунки та змінюють свою булаву з шипами на великий дворучний бойовий топор, який набагато легше рубати плоть поки що живих істот во славу Темряви.
-#: Chasing_the_Light/units/Wesfolk/Bandit_Axe.cfg:18
-msgid "Having gained much combat experience, the best of the Wesfolk Fighters receive better armor from their Lich-Lord and exchange their spiked mace for a large two-handed battle axe, which is much easier to cut the flesh of still living creatures for the glory of Darkness."
-msgstr ""
-
-#. [attack]: type=blade
-#: Chasing_the_Light/units/Wesfolk/Bandit_Axe.cfg:23
-msgid "axe"
-msgstr ""
-
-#. [unit_type]: id=bandit_scythe, race=human
-#: Chasing_the_Light/units/Wesfolk/Bandit_Scythe.cfg:4
-msgid "Wesfolk Reaper"
-msgstr ""
-
-#. [unit_type]: id=bandit_scythe, race=human
-#. Деякі з тих, хто мали б стати чудовими західняцькими воїнами, натомість йдуть схожим проте іншим шляхом — отримавши обладунки з запасів свого Ліч-Лорда, замість бойового топора вони обирають своєю зброєю велику та неймовірно гостру косу, якою вони нещадно проливають кров в ім'я Темряви.
-#: Chasing_the_Light/units/Wesfolk/Bandit_Scythe.cfg:17
-msgid "Some of those who should have become great Wesfolk Warriors instead follow a similar but different path - having received armor from their Lich-Lord's stocks, instead of a battle axe they choose a large and incredibly sharp scythe as their weapon, with which they mercilessly shed blood in the name of Darkness."
-msgstr ""
-
-#. [attack]: type=blade
-#: Chasing_the_Light/units/Wesfolk/Bandit_Scythe.cfg:22
-msgid "scythe"
+#. [unit_type]: id=Undead Captain, race=undead
+#: Chasing_the_Light/units/Wesfolk/Captain.cfg:18
+msgid "Captains are masters in life, but in death they may be slaves to a necromancer. Through sheer force of habit, an undead captain continues to exude authority even if all his other memories have been lost."
 msgstr ""
 
 #. [unit_type]: id=Familiar, race=undead
@@ -10614,12 +11004,12 @@ msgstr ""
 msgid "Powerful magic users sometimes have familiars, creatures which have had a spirit or minor demon drawn into them. A familiar may act as a spy or messenger for its master."
 msgstr ""
 
-#. [unit_type]: id=bandit, race=human
+#. [unit_type]: id=Wesfolk Fighter, race=human
 #: Chasing_the_Light/units/Wesfolk/Fighter.cfg:4
 msgid "Wesfolk Fighter"
 msgstr ""
 
-#. [unit_type]: id=bandit, race=human
+#. [unit_type]: id=Wesfolk Fighter, race=human
 #. Ці бійці є невід'ємними представниками нечисельної людської частини армії західняків. Хоч і усі загарбники в ранньому віці присягають Темряві на вічну службу та проводять огидний ритуал, велика частина з них все ж не має природнього дару до магії, тому в бою їм доводиться покладатися лише на спритність та вірну mace-spiked
 #: Chasing_the_Light/units/Wesfolk/Fighter.cfg:17
 msgid "These soldiers are essential representatives of the sparse alive part of the invader's army. Although almost all of Wesfolk swear eternal service to the Darkness at an early age and perform their hideous rituals, most of them still have no natural gift for magic, so in battle they have to rely only on agility and a trusty mace with spikes."
@@ -10650,12 +11040,12 @@ msgstr ""
 msgid "ruby of fire"
 msgstr ""
 
-#. [unit_type]: id=bandit_net, race=human, gender=male,female
+#. [unit_type]: id=Wesfolk Marauder, race=human, gender=male,female
 #: Chasing_the_Light/units/Wesfolk/Marauder.cfg:4
 msgid "Wesfolk Marauder"
 msgstr ""
 
-#. [unit_type]: id=bandit_net, race=human, gender=male,female
+#. [unit_type]: id=Wesfolk Marauder, race=human, gender=male,female
 #. Взяти до рук велику сіть було достатньо логічним рішенням для деяких з Footpads — все ж західнякам постійно потрібні живі жертвоприношення, для здійснення своїх темних ритуалів. Хоч і за важких умов можна використати когось зі своїх, все ж краще захопити чужинця, чиї жахливі крики звучатимуть гарною музикою для всіх присутніх поклонників темряви.
 #: Chasing_the_Light/units/Wesfolk/Marauder.cfg:20
 msgid "Capturing a large net was a logical enough decision for some of the Footpads - after all, Wesfolk always need live sacrifices to perform their dark rituals. Although it is possible to use one of their own, it's still better to capture a stranger whose horrific screams will sound like good music to all the worshippers of Darkness present."
@@ -10674,6 +11064,20 @@ msgstr ""
 #. [female]: gender=female
 #: Chasing_the_Light/units/Wesfolk/Marauder.cfg:70
 msgid "female^Marauder"
+msgstr ""
+
+#. [unit_type]: id=Wesfolk Princess, race=human, gender=female
+#: Chasing_the_Light/units/Wesfolk/Princess.cfg:18
+msgid "Wesfolk Princess"
+msgstr ""
+
+#. [unit_type]: id=Wesfolk Princess, race=human, gender=female
+#. Хоч насправді й не королівської крові, Західняцькі Принцеси грають важливу роль у своєму wicked суспільстві як вірні прислужниці Ліч-Лордів, керуючи їхніми арміями та задовольняючи будь-які їхні прохання.\nПринцесами не народжуються, а стають після багатьох років виснажливих тренувань, темних ритуалів і важких випробувань, за що їх дуже поважають інші Західняки та навіть деякі з могутніх мерців.\nПроте іноді достатньо лише наказу безсмертного Господаря, щоб звичайну дівчину, яка йому сподобалась, возвели до цього рангу, хоча це й надзвичайно рідкісна подія, на яку здатні лише трохи людяні Ліч-Лорди.
+#: Chasing_the_Light/units/Wesfolk/Princess.cfg:37
+msgid ""
+"Although not actually of royal blood, Wesfolk Princesses play an important role in their wicked society as loyal servants of the Lich-Lords, leading their armies and fulfilling their every demand.\n"
+"Princesses are not born, but become them after many years of exhausting training, dark rituals and difficult trials, for which they are highly respected by other Wesfolk people and even some of the powerful undead.\n"
+"Sometimes, however, it only takes an order from an immortal Master to elevate an ordinary woman it likes to this rank, though this is an extremely rare event that only the slightly more human Lich-Lords are capable of."
 msgstr ""
 
 #. [unit_type]: id=pseudoghoul, race=undead
@@ -10695,6 +11099,38 @@ msgstr ""
 #. [attack]: type=pierce
 #: Chasing_the_Light/units/Wesfolk/Pseudoghoul.cfg:34
 msgid "acid spit"
+msgstr ""
+
+#. [unit_type]: id=Wesfolk Reaper, race=human
+#: Chasing_the_Light/units/Wesfolk/Reaper.cfg:4
+msgid "Wesfolk Reaper"
+msgstr ""
+
+#. [unit_type]: id=Wesfolk Reaper, race=human
+#. Деякі з тих, хто мали б стати чудовими західняцькими воїнами, натомість йдуть схожим проте іншим шляхом — отримавши обладунки з запасів свого Ліч-Лорда, замість бойового топора вони обирають своєю зброєю велику та неймовірно гостру косу, якою вони нещадно проливають кров в ім'я Темряви.
+#: Chasing_the_Light/units/Wesfolk/Reaper.cfg:17
+msgid "Some of those who should have become great Wesfolk Warriors instead follow a similar but different path - having received armor from their Lich-Lord's stocks, instead of a battle axe they choose a large and incredibly sharp scythe as their weapon, with which they mercilessly shed blood in the name of Darkness."
+msgstr ""
+
+#. [attack]: type=blade
+#: Chasing_the_Light/units/Wesfolk/Reaper.cfg:22
+msgid "scythe"
+msgstr ""
+
+#. [unit_type]: id=Wesfolk Warrior, race=human
+#: Chasing_the_Light/units/Wesfolk/Warrior.cfg:4
+msgid "Wesfolk Warrior"
+msgstr ""
+
+#. [unit_type]: id=Wesfolk Warrior, race=human
+#. Отримавши багато бойового досвіду, найкращі з західняцьких бійців отримують від свого Владики кращі обладунки та змінюють свою булаву з шипами на великий дворучний бойовий топор, який набагато легше рубати плоть поки що живих істот во славу Темряви.
+#: Chasing_the_Light/units/Wesfolk/Warrior.cfg:18
+msgid "Having gained much combat experience, the best of the Wesfolk Fighters receive better armor from their Lich-Lord and exchange their spiked mace for a large two-handed battle axe, which is much easier to cut the flesh of still living creatures for the glory of Darkness."
+msgstr ""
+
+#. [attack]: type=blade
+#: Chasing_the_Light/units/Wesfolk/Warrior.cfg:23
+msgid "axe"
 msgstr ""
 
 #. [illuminates]: id=illumination, description=
@@ -10747,23 +11183,19 @@ msgstr ""
 msgid "Gain +1 ranged damage."
 msgstr ""
 
-#: Chasing_the_Light/utils/characters.cfg:4
-msgid "Andrin"
-msgstr ""
-
 #. [trait]
-#: Chasing_the_Light/utils/characters.cfg:19
+#: Chasing_the_Light/utils/characters.cfg:8
 msgid "Zero upkeep."
 msgstr ""
 
 #. [trait]
 #. наївна  Через свій обмежений життєвий досвід може вірити речам, які інші не вважатимуть нічим більшим за маячню.
-#: Chasing_the_Light/utils/characters.cfg:56
+#: Chasing_the_Light/utils/characters.cfg:25
 msgid "naive"
 msgstr ""
 
 #. [trait]
-#: Chasing_the_Light/utils/characters.cfg:56
+#: Chasing_the_Light/utils/characters.cfg:25
 msgid "Due to her limited life experience, Daeola may believe things that others would consider nothing more than nonsense."
 msgstr ""
 
@@ -10779,13 +11211,13 @@ msgstr ""
 msgid "No! Dad, don't leave us!"
 msgstr ""
 
-#. [message]: speaker=zeham
+#. [message]: speaker=Zeham
 #. Це все це кляте чаклунство винне... Ургх...
 #: Chasing_the_Light/utils/herodeaths.cfg:37
 msgid "It's all that damned witchcraft... Urgh..."
 msgstr ""
 
-#. [message]: speaker=juangh
+#. [message]: speaker=Juangh
 #. Як ж ц' розуміти... Я вмєраю... Аргх...
 #: Chasing_the_Light/utils/herodeaths.cfg:56
 msgid "How’s this even happenin’... I’m dyin’... Argh..."
@@ -11289,7 +11721,7 @@ msgstr ""
 msgid "Lost Past"
 msgstr ""
 
-#. [unit]: id=faisim_copy, type=Shadow Lord, gender=female
+#. [unit]: id=faisim_copy, type=Wesfolk Princess, gender=female
 #: Chasing_the_Light/utils/macros.cfg:2371
 msgid "Darkness"
 msgstr ""
