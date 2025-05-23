@@ -3,7 +3,7 @@
 ## Campaign Description
 Peaceful life of the Green Isle's inhabitants turned into a nightmare in an instant when legions of living dead invaded their land from the far West. Play as Haralin, a young peasant from a small village near Blackmore who one day began to hear a mysterious voice calling itself messenger of the Light. Can you discover previously unknown powers, turn the tide of war and save your homeland from the hideous Wesfolk?
 
-(Hard level, 16 scenarios)
+(Hard level, at least 18 scenarios)
 
 
 ## Developer
@@ -12,19 +12,23 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 ## Playtesters
 - [ForestDragon](https://github.com/ForestDragon-wesnoth)
 - [Refumee](https://github.com/Refumee)
-
-## Using resources from
-- [Dalas](https://github.com/Dalas121)
-- [inferno8](https://github.com/inferno8)
-- IftU
-- Archaic_Resources
-- [WesTactics](https://github.com/wtactics)
+- Mechanical
 
 ## With the help of
 - [ForestDragon](https://github.com/ForestDragon-wesnoth)
 - [Refumee](https://github.com/Refumee)
 - Myrion
 - Durzi
+- Emperor/ZombieKnight
+
+## Using resources from
+- [Dalas](https://github.com/Dalas121)
+- [inferno8](https://github.com/inferno8)
+- Maksiu
+- IftU
+- Archaic_Resources
+- [WesTactics](https://github.com/wtactics)
+
 
 ## Scenario structure
 - 01_The_Book✔                                                                                                                                      
@@ -34,29 +38,30 @@ Peaceful life of the Green Isle's inhabitants turned into a nightmare in an inst
 - 04x_Southbay✔                                                                                                                                      
 - 05_Aftermath✔
 - 06_Miscreants✔                                                                                                                              
-- 07_Scarhane⏸️                                                                                                                                        
+- 07_Scarhane🔁️                                                                                                                                        
 - 08_Quiescence🔁                                                                                                                                     
-- 08x_Divergence                                                                                                                                    
-- 09_Hunt                                                                                                                                       
-- 10_Way_of_Light(Duty?)  
+- 08x_Divergence — Cancelled❌ 
+- 09_New_Journey                                                                                                                              
+- 10_Faisim
+- 11_Negligence                                                                                                                                 
+- 12_Duty
 
 #### Haralin's branch 
-- 11h_Avenger 
-- 11hx_Farewell
-- 12h_Massacre 
-- 13h_Southbay_Outskirts
-- 14h_Caror
-- 15h_Unnamed_Scenario(Gambit?)
-- 15hx_Exile(Sins?)
-- 16h_Lenvan
-- 17h_Temple_in_the_Deep
+- 13h_Avenger 
+- 13hx_Farewell
+- 14h_Massacre 
+- 15h_Southbay_Outskirts
+- 16h_Caror
+- 17h_Gambit
+- 17hx_Sins
+- 18h_Lenvan
+- 19h_Temple_in_the_Deep
 
 #### Daeola's branch
-- 11d_Sacrifice
-- 11dx_Farewell
-- 11dxx_New_Dawn(Blitzkrieg?, мб взагалі вирізати)
-- 12d_Southbay_Outskirts 
-- 13d_Scarhane_Revisited
-- 14d_Cave_Rats(Gloom?)
-- 15d_Jevyans_Haven
-- 16d_Epilogue?
+- 13d_Sacrifice
+- 13dx_Farewell
+- 14d_Southbay_Outskirts 
+- 15d_Scarhane_Revisited
+- 16d_Gloom
+- 17d_Jevyans_Haven
+- 18d_Epilogue?
