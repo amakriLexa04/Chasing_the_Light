@@ -3074,7 +3074,7 @@ msgid "Mistress, the guard... killed... without a sound..."
 msgstr ""
 
 #. [unit]: id=dark_sorcerer_2, type=Dark Sorcerer, gender=female
-#. [unit]: id=s10_necromancer, type=Necroprincess, gender=female
+#. [unit]: id=s10_necromancer, type=Aeothyll, gender=female
 #: Chasing_the_Light/scenarios/02_Invasion.cfg:564
 #: Chasing_the_Light/scenarios/10_Priorities.cfg:839
 msgid "Aeothyll"
@@ -19274,12 +19274,12 @@ msgstr ""
 msgid "female^Marauder"
 msgstr ""
 
-#. [unit_type]: id=Necroprincess, gender=female, race=human
+#. [unit_type]: id=Aeothyll, gender=female, race=human
 #: Chasing_the_Light/units/Wesfolk/Princess_Necro.cfg:8
 msgid "Princess of Battle"
 msgstr ""
 
-#. [unit_type]: id=Necroprincess, gender=female, race=human
+#. [unit_type]: id=Aeothyll, gender=female, race=human
 #: Chasing_the_Light/units/Wesfolk/Princess_Necro.cfg:26
 msgid ""
 "Although not actually of royal blood, Wesfolk Princesses play an important role in their wicked society as loyal servants of the Lich-Lords, leading their armies and fulfilling their every demand.\n"
